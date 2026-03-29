@@ -35,7 +35,7 @@ const SolutionsSection = () => {
               <div className="space-y-3 mb-6">
                 <div className="border border-border rounded-lg p-3">
                   <p className="text-sm text-foreground text-center">
-                    Audit, évaluation et labellisation de vos pratiques
+                    Diagnostic, évaluation et labellisation de vos pratiques
                     en matière d'égalité professionnelle.
                   </p>
                 </div>
