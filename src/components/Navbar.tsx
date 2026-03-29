@@ -19,11 +19,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-primary font-bold text-sm leading-tight">
-              <span className="block">women</span>
-              <span className="block">equity</span>
-              <span className="block bg-primary text-primary-foreground px-1">label</span>
-            </span>
+            <img src={welLogo} alt="WEL - Women Equity Label" className="h-10" />
           </div>
 
           {/* Right buttons */}
