@@ -76,10 +76,10 @@ const impacts = [
 ];
 
 const results = [
-  { icon: FileText, title: "Plan d'action personnalisé" },
-  { icon: BarChart3, title: "Indicateurs extra-financiers" },
-  { icon: Megaphone, title: "Kit de communication" },
-  { icon: Handshake, title: "Écosystème de partenaires" },
+  { icon: FileText, title: "Plan d'action personnalisé", desc: "Un plan structuré, priorisé et adapté à vos enjeux, avec des actions concrètes et un rétro-planning pour progresser efficacement." },
+  { icon: BarChart3, title: "Rapport d'indicateurs extra-financiers", desc: "Une synthèse claire de vos performances en égalité professionnelle, pour piloter votre stratégie et valoriser vos engagements." },
+  { icon: Megaphone, title: "Kit de communication", desc: "Des éléments clés pour valoriser votre démarche en interne et en externe, en cohérence avec votre positionnement." },
+  { icon: Handshake, title: "Écosystème de partenaires", desc: "Un accès à des acteurs engagés (formation, accompagnement, sensibilisation) pour déployer concrètement vos actions." },
 ];
 
 /* ── page ── */
