@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: "Qui est derrière le label WEL et comment sa crédibilité est-elle garantie ?",
-    answer: "L'audit est réalisé par les équipes WEL selon une méthodologie structurée et des critères objectifs. Un comité éthique indépendant, composé de dirigeants, DRH et académiciens, supervise le référentiel et les standards du label, garantissant la rigueur, la cohérence et la crédibilité de la démarche.",
+    answer: "L'audit est réalisé par les équipes WEL selon une méthodologie structurée et des critères objectifs. Un comité éthique indépendant, composé de dirigeants, avocats, DRH et académiciens, supervise le référentiel et les standards du label, garantissant la rigueur, la cohérence et la crédibilité de la démarche.",
   },
 ];
 
