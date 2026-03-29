@@ -18,6 +18,7 @@ import {
   Briefcase,
 } from "lucide-react";
 import patternHero from "@/assets/pattern-hero-clean.png";
+import welCertifiedLogo from "@/assets/wel-certified-logo.png";
 
 /* ── scroll reveal hook ── */
 const useScrollReveal = () => {
