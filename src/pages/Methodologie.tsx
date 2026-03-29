@@ -302,7 +302,7 @@ const Methodologie = () => {
             {impacts.map((item, i) => (
               <Reveal key={i}>
                 <div className="relative overflow-hidden rounded-2xl border border-border bg-background p-6 text-center h-full hover:shadow-md hover:shadow-foreground/[0.03] transition-all duration-300">
-                  <img src={patternHero} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-20" />
+                  <img src={patternHero} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-50" />
                   <div className="relative w-11 h-11 rounded-lg bg-primary/[0.06] flex items-center justify-center mx-auto mb-5">
                     <item.icon className="h-5 w-5 text-primary" />
                   </div>
