@@ -41,8 +41,7 @@ const ProcessSection = () => {
           <span className="font-serif-display italic text-primary font-normal">adaptée à votre réalité</span>
         </h2>
         <p className="text-muted-foreground text-center max-w-3xl mx-auto mt-4 mb-16">
-          Notre processus de label WEL repose sur une démarche d'évaluation rigoureuse, adaptée à la taille de votre entreprise,
-          votre convention collective et votre secteur d'activité.
+          Notre processus de labellisation WEL repose sur une démarche d'évaluation rigoureuse, adaptée à la taille de votre entreprise et votre secteur d'activité.
         </p>
 
         {/* Steps */}
