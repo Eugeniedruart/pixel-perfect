@@ -138,7 +138,7 @@ const Methodologie = () => {
               <Reveal key={i}>
                 <div className="group rounded-2xl border border-border bg-gradient-to-br from-[hsl(var(--wel-cream)/0.5)] to-background p-6 h-full hover:shadow-md hover:shadow-foreground/[0.03] hover:border-primary/20 transition-all duration-300">
                   <div className="w-11 h-11 rounded-lg bg-primary/[0.06] flex items-center justify-center mb-5">
-                    <p.icon className="h-5 w-5 text-primary" />
+                    <span className="text-xl">{p.emoji}</span>
                   </div>
                   <h3 className="font-semibold text-foreground mb-2 text-sm leading-snug">{p.title}</h3>
                   <p className="text-muted-foreground text-xs leading-relaxed">{p.desc}</p>
