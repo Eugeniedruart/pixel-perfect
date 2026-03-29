@@ -23,6 +23,7 @@ import offresLabellisation from "@/assets/offres-labellisation.jpg";
 import offresConseil from "@/assets/offres-conseil-v2.jpg";
 import offresFormation from "@/assets/offres-formation-v2.jpg";
 import offresEnquetes from "@/assets/offres-enquetes.jpg";
+import offresApproche from "@/assets/offres-approche.jpg";
 import patternHero from "@/assets/pattern-hero-clean.png";
 
 /* ── scroll reveal ── */
@@ -328,10 +329,26 @@ const Offres = () => {
               Notre{" "}
               <span className="font-serif-display italic text-primary font-normal">approche</span>
             </h2>
-            <p className="font-serif-display italic text-primary/70 text-center text-lg mb-14">
+            <p className="font-serif-display italic text-primary/70 text-center text-lg mb-10">
               Moins de slides, plus de terrain.
             </p>
           </Reveal>
+
+          {/* Full-width image */}
+          <Reveal>
+            <div className="relative rounded-2xl overflow-hidden mb-12">
+              <img
+                src={offresApproche}
+                alt="Équipe en atelier collaboratif"
+                width={1200}
+                height={600}
+                loading="lazy"
+                className="w-full h-64 sm:h-80 object-cover"
+              />
+              <div className="absolute inset-0 ring-1 ring-inset ring-foreground/5 rounded-2xl" />
+            </div>
+          </Reveal>
+
           <div className="grid sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {approche.map((item, i) => (
               <Reveal key={i}>
