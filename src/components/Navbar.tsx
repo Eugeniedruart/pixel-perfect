@@ -14,7 +14,7 @@ const Navbar = () => {
           {/* Left nav links */}
           <div className="hidden md:flex items-center gap-6">
             <a href="#label" className="text-sm text-foreground hover:text-primary transition-colors">Le label WEL</a>
-            <a href="#solutions" className="text-sm text-foreground hover:text-primary transition-colors">Nos offres</a>
+            <Link to="/offres" className="text-sm text-foreground hover:text-primary transition-colors">Nos offres</Link>
             <Link to="/methodologie" className="text-sm text-foreground hover:text-primary transition-colors">Méthodologie</Link>
             <Link to="/contact" className="text-sm text-foreground hover:text-primary transition-colors">Contact</Link>
           </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
       {mobileOpen && (
         <div className="md:hidden border-t border-border bg-background px-4 py-4 space-y-3">
           <a href="#label" className="block text-sm text-foreground">Le label WEL</a>
-          <a href="#solutions" className="block text-sm text-foreground">Nos offres</a>
+          <Link to="/offres" className="block text-sm text-foreground">Nos offres</Link>
           <Link to="/methodologie" className="block text-sm text-foreground">Méthodologie</Link>
           <Link to="/contact" className="block text-sm text-foreground">Contact</Link>
           <div className="flex gap-2 pt-2">
