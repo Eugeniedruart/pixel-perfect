@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Mail } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import solutionLabellisation from "@/assets/solution-labellisation.jpg";
 import solutionConseil from "@/assets/solution-conseil.jpg";
 
@@ -63,7 +63,7 @@ const SolutionsSection = () => {
                 préparation à la conformité réglementaire.
               </p>
               <Button variant="outline" className="w-full gap-2" asChild>
-                <Link to="/contact">En savoir plus <Mail className="h-4 w-4" /></Link>
+                <Link to="/contact">En savoir plus <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </div>
           </div>
