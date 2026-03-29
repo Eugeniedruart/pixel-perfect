@@ -23,32 +23,40 @@ const WhySection = () => {
         {/* Bento grid */}
         <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto py-0 my-0">
           {/* Top left - image */}
-          <div className="rounded-lg overflow-hidden h-64 border border-wel-cream">
-            <img src={whyImg} alt="Équipe diverse collaborant" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
+          <div className="rounded-lg border border-wel-cream bg-card p-2">
+            <div className="rounded overflow-hidden h-60">
+              <img src={whyImg} alt="Équipe diverse collaborant" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
+            </div>
           </div>
 
           {/* Top right - stat */}
-          <div className="rounded-lg bg-primary p-8 flex flex-col justify-center text-primary-foreground border border-wel-cream">
-            <p className="text-lg mb-2 text-center">
-              À ce rythme, l'égalité professionnelle <br /> sera atteinte en
-            </p>
-            <p className="text-7xl font-bold font-serif-display italic text-center sm:text-5xl">2167</p>
+          <div className="rounded-lg border border-wel-cream bg-card p-2">
+            <div className="rounded bg-primary p-8 flex flex-col justify-center text-primary-foreground h-full">
+              <p className="text-lg mb-2 text-center">
+                À ce rythme, l'égalité professionnelle <br /> sera atteinte en
+              </p>
+              <p className="text-7xl font-bold font-serif-display italic text-center sm:text-5xl">2167</p>
+            </div>
           </div>
 
           {/* Bottom left - quote */}
-          <div className="rounded-lg bg-wel-cream p-8 flex flex-col justify-center border border-wel-cream">
-            <p className="text-lg leading-relaxed text-foreground text-center">
-              L'égalité ne peut plus être une intention : elle doit devenir un standard clair,
-              mesurable et partagé.
-            </p>
-            <p className="text-lg font-serif-display italic mt-4 text-foreground text-center font-medium">
-              C'est de cette conviction qu'est né WEL, le Women Equity Label
-            </p>
+          <div className="rounded-lg border border-wel-cream bg-card p-2">
+            <div className="rounded bg-wel-cream p-8 flex flex-col justify-center h-full">
+              <p className="text-lg leading-relaxed text-foreground text-center">
+                L'égalité ne peut plus être une intention : elle doit devenir un standard clair,
+                mesurable et partagé.
+              </p>
+              <p className="text-lg font-serif-display italic mt-4 text-foreground text-center font-medium">
+                C'est de cette conviction qu'est né WEL, le Women Equity Label
+              </p>
+            </div>
           </div>
 
           {/* Bottom right - image */}
-          <div className="rounded-lg overflow-hidden h-72 border border-wel-cream">
-            <img src={womanTablet} alt="Femme professionnelle" className="w-full h-full object-cover" loading="lazy" width={768} height={1024} />
+          <div className="rounded-lg border border-wel-cream bg-card p-2">
+            <div className="rounded overflow-hidden h-68">
+              <img src={womanTablet} alt="Femme professionnelle" className="w-full h-full object-cover" loading="lazy" width={768} height={1024} />
+            </div>
           </div>
         </div>
 
