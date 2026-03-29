@@ -32,7 +32,7 @@ const BenefitsSection = () => {
           <span className="font-serif-display italic text-primary font-normal">apporte à votre entreprise</span>
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mt-4 mb-12">
-          Grâce à une plateforme de mesure et de pilotage d'impact, WEL vous offre :
+          Grâce à une méthodologie de mesure et de pilotage de l’impact, WEL vous offre :
         </p>
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
