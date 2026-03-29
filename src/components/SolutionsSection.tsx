@@ -39,11 +39,6 @@ const SolutionsSection = () => {
                     en matière d'égalité professionnelle.
                   </p>
                 </div>
-                <div className="border-t border-border pt-3">
-                  <p className="text-sm text-muted-foreground text-center">
-                    Un accompagnement pragmatique, progressif et adapté à vos enjeux.
-                  </p>
-                </div>
               </div>
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full" asChild>
                 <Link to="/contact">Je veux être Welbellisé</Link>
@@ -58,9 +53,12 @@ const SolutionsSection = () => {
             </div>
             <div className="p-6">
               <h3 className="text-2xl font-bold text-foreground mb-2">Conseil</h3>
-              <p className="text-sm text-muted-foreground mb-6 text-center">
+              <p className="text-sm text-muted-foreground mb-4 text-center">
                 Parcours sur mesure : formations, sensibilisation, enquêtes internes,
                 préparation à la conformité réglementaire.
+              </p>
+              <p className="text-sm text-muted-foreground mb-6 text-center">
+                Un accompagnement pragmatique, progressif et adapté à vos enjeux.
               </p>
               <Button variant="outline" className="w-full gap-2" asChild>
                 <Link to="/contact">En savoir plus <ArrowRight className="h-4 w-4" /></Link>
