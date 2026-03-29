@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import welLogo from "@/assets/wel-logo.png";
 import { Linkedin, ArrowRight } from "lucide-react";
 
 const footerLinks = [
@@ -18,9 +19,7 @@ const Footer = () => {
             {/* Left - brand */}
             <div>
               <div className="mb-4">
-                <span className="text-2xl font-black text-foreground bg-foreground text-background px-2 py-1 rounded">
-                  WEL
-                </span>
+                <img src={welLogo} alt="WEL - Women Equity Label" className="h-10" />
               </div>
               <p className="text-sm text-muted-foreground mb-6 max-w-xs">
                 Women Equity Label est le premier label européen qui
