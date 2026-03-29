@@ -307,7 +307,7 @@ const Methodologie = () => {
       <hr className="border-border max-w-6xl mx-auto" />
 
       {/* ─── 9. TARIFICATION ─── */}
-      <section className="py-20">
+      <section className="py-20 bg-[hsl(var(--wel-cream))]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="rounded-2xl border border-border bg-card p-10 lg:p-14 text-center">
