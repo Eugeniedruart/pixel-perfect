@@ -6,7 +6,7 @@ const steps = [
     number: 1,
     title: "Évaluer votre éligibilité",
     description: "Quelques questions sur votre entreprise afin de comprendre votre niveau de maturité et l'adéquation avec le label WEL.",
-    badge: null,
+    badge: "Rien ne vous engage !",
   },
   {
     number: 2,
