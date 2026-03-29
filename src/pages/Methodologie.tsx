@@ -85,7 +85,7 @@ const Methodologie = () => {
       <Navbar />
 
       {/* ─── 1. HERO ─── */}
-      <section className="relative overflow-hidden py-24 lg:py-32 bg-[hsl(var(--wel-cream))]">
+      <section className="relative overflow-hidden py-24 lg:py-32">
         {/* pattern bg */}
         <img
           src={patternHero}
