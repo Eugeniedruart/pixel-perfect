@@ -324,19 +324,25 @@ const Offres = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Ce qui nous distingue</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-14">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
               Notre{" "}
               <span className="font-serif-display italic text-primary font-normal">approche</span>
             </h2>
+            <p className="font-serif-display italic text-primary/70 text-center text-lg mb-14">
+              Moins de slides, plus de terrain.
+            </p>
           </Reveal>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {approche.map((item, i) => (
               <Reveal key={i}>
-                <div className="flex items-start gap-4 p-5 rounded-xl border border-transparent hover:border-border hover:bg-[hsl(var(--wel-cream)/0.2)] transition-all duration-300">
-                  <div className="w-10 h-10 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0">
-                    <item.icon className="h-5 w-5 text-primary" />
+                <div className="group relative rounded-2xl border border-border bg-background p-6 hover:border-primary/20 hover:shadow-md hover:shadow-foreground/[0.03] hover:-translate-y-0.5 transition-all duration-300">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-9 h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0 group-hover:bg-primary/[0.12] transition-colors">
+                      <item.icon className="h-4 w-4 text-primary" />
+                    </div>
+                    <h3 className="font-semibold text-foreground text-sm">{item.title}</h3>
                   </div>
-                  <p className="text-sm text-foreground leading-relaxed pt-2">{item.text}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.text}</p>
                 </div>
               </Reveal>
             ))}
