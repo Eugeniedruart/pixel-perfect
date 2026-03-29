@@ -17,7 +17,7 @@ import {
   Award,
   Briefcase,
 } from "lucide-react";
-import patternHero from "@/assets/pattern-hero.png";
+import patternHero from "@/assets/pattern-hero-clean.png";
 
 /* ── scroll reveal hook ── */
 const useScrollReveal = () => {
