@@ -94,7 +94,7 @@ const Methodologie = () => {
           src={patternHero}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-30"
+          className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-50"
         />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
