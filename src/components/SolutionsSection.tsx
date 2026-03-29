@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import solutionLabellisation from "@/assets/solution-labellisation.jpg";
 import solutionConseil from "@/assets/solution-conseil.jpg";
