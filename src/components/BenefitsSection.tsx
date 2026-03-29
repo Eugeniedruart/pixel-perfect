@@ -50,8 +50,8 @@ const BenefitsSection = () => {
           </div>
 
           {/* Right - image */}
-          <div className="rounded-xl overflow-hidden">
-            <img src={benefitsWoman} alt="Professionnelle souriante" className="w-full h-auto object-cover" loading="lazy" width={768} height={1024} />
+          <div className="rounded-xl overflow-hidden self-start">
+            <img src={benefitsWoman} alt="Professionnelle souriante" className="w-full h-full object-cover" loading="lazy" width={768} height={1024} />
           </div>
         </div>
       </div>
