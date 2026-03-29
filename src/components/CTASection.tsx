@@ -32,7 +32,7 @@ const CTASection = () => {
                 </Button>
               </div>
               <p className="text-xs text-muted-foreground">
-                Audit structuré · Accompagnement · Délai flexible
+                Diagnostic structuré - Accompagnement - Stratégie durable
               </p>
             </div>
             <div className="md:col-span-2 min-h-[200px]">
