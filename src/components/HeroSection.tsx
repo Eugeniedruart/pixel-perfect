@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-const partners = ["MARRIOTT", "fnac", "Capgemini", "SAFRAN", "Manpower", "AIRFRANCE", "accenture"];
+
 
 const HeroSection = () => {
   return (
@@ -35,14 +35,6 @@ const HeroSection = () => {
           <span>Premier label français, 100% digital qui certifie et accompagne les entreprises</span>
         </div>
 
-        {/* Partner logos */}
-        <div className="flex flex-wrap items-center justify-center gap-8 mt-12 opacity-60">
-          {partners.map((partner) => (
-            <span key={partner} className="text-sm font-semibold text-muted-foreground tracking-wider">
-              {partner}
-            </span>
-          ))}
-        </div>
       </div>
     </section>
   );
