@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import welLogo from "@/assets/wel-logo.png";
 import { Linkedin, ArrowRight } from "lucide-react";
 
 const footerLinks = [
