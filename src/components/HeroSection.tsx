@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-const partners = ["MARRIOTT", "fnac", "Capgemini", "SAFRAN", "Manpower", "AIRFRANCE", "accenture"];
+
 
 const HeroSection = () => {
   return (
