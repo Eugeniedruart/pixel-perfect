@@ -14,7 +14,7 @@ const Navbar = () => {
           {/* Left nav links */}
           <div className="hidden md:flex items-center gap-6">
             <a href="#label" className="text-sm text-foreground hover:text-primary transition-colors">Le label WEL</a>
-            <a href="#solutions" className="text-sm text-foreground hover:text-primary transition-colors">Nos offres</a>
+            <Link to="/offres" className="text-sm text-foreground hover:text-primary transition-colors">Nos offres</Link>
             <Link to="/methodologie" className="text-sm text-foreground hover:text-primary transition-colors">Méthodologie</Link>
             <Link to="/contact" className="text-sm text-foreground hover:text-primary transition-colors">Contact</Link>
           </div>
