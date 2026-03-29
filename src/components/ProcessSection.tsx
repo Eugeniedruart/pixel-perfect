@@ -4,26 +4,26 @@ import { Link } from "react-router-dom";
 const steps = [
   {
     number: 1,
-    title: "Obtenez un devis personnalisé",
-    description: "Quelques questions sur votre entreprise afin de vous fournir un devis personnalisé à vos besoins.",
-    badge: "Rien ne vous engage !",
+    title: "Évaluer votre éligibilité",
+    description: "Quelques questions sur votre entreprise afin de comprendre votre niveau de maturité et l'adéquation avec le label WEL.",
+    badge: null,
   },
   {
     number: 2,
-    title: "Complétez l'audit basé sur 4 piliers",
-    description: "Une fois votre devis signé et renvoyé, vous avez 3 mois pour remplir l'audit et vous le renvoyer pour validation",
+    title: "Réaliser le diagnostic",
+    description: "Nos équipes interviennent au sein de votre entreprise pour conduire un diagnostic structuré autour des 4 piliers du label WEL, en collaboration avec vos équipes.",
     badge: null,
   },
   {
     number: 3,
-    title: "Analyse par nos experts WEL",
-    description: "Vous obtenez un score provisoire pendant que nous vérifions vos réponses. Sous quelques semaines, obtenez votre score final ainsi que votre label WEL !",
+    title: "Analyse et validation",
+    description: "Les éléments recueillis sont analysés puis examinés par notre équipe d'experts afin d'assurer la rigueur et la cohérence de l'évaluation.",
     badge: null,
   },
   {
     number: 4,
-    title: "Bravo, vous êtes Welbelisé !",
-    description: "Communiquez dès maintenant sur votre label et mettez en place des actions concrètes grâce à nos recommandations personnalisées",
+    title: "Bravo, vous êtes welbellisés !",
+    description: "Si votre niveau de maturité le permet, vous accédez à la labellisation WEL. Dans tous les cas, vous bénéficiez d'une analyse approfondie et de recommandations personnalisées pour inscrire votre démarche dans une trajectoire de progrès durable.",
     badge: null,
   },
 ];
