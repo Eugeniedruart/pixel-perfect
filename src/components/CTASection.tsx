@@ -21,7 +21,7 @@ const CTASection = () => {
             <div className="md:col-span-3 p-8 flex flex-col justify-center">
               <h3 className="text-2xl font-bold text-foreground mb-3">Prêt·e à obtenir votre label ?</h3>
               <p className="text-muted-foreground text-sm mb-6">
-                L'audit WEL vous permet d'évaluer vos pratiques,
+                Le diagnostic WEL vous permet d'évaluer vos pratiques,
                 d'identifier vos leviers d'amélioration et d'obtenir une
                 label reconnue, adaptée à votre entreprise.
               </p>
