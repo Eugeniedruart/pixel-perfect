@@ -38,7 +38,7 @@ const WhySection = () => {
               L'égalité ne peut plus être une intention : elle doit devenir un standard clair,
               mesurable et partagé.
             </p>
-            <p className="text-lg font-semibold font-serif-display italic mt-4 text-foreground">
+            <p className="text-lg font-serif-display italic mt-4 text-foreground text-center font-medium">
               C'est de cette conviction qu'est né WEL, le Women Equity Label
             </p>
           </div>

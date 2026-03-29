@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="md:hidden border-t border-border bg-background px-4 py-4 space-y-3">
           <a href="#label" className="block text-sm text-foreground">Le label WEL</a>
           <a href="#solutions" className="block text-sm text-foreground">Nos offres</a>
-          <a href="#faq" className="block text-sm text-foreground">Blog</a>
+          <a href="#faq" className="block text-sm text-foreground">Méthodologie</a>
           <a href="#contact" className="block text-sm text-foreground">Contact</a>
           <div className="flex gap-2 pt-2">
             <Button variant="outline" size="sm" className="flex-1">Mon compte</Button>
