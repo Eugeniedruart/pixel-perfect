@@ -91,14 +91,9 @@ const Offres = () => {
               <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 max-w-lg">
                 De l'évaluation à la transformation, WEL accompagne les organisations dans des démarches concrètes, mesurables et durables.
               </p>
-              <div className="flex flex-wrap gap-3">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-                  <Link to="/contact">Échanger avec nous</Link>
-                </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <Link to="/methodologie">Notre méthodologie</Link>
-                </Button>
-              </div>
+              <Button size="lg" variant="outline" asChild>
+                <Link to="/contact">Échanger avec nous</Link>
+              </Button>
             </Reveal>
             <Reveal>
               <div className="relative">
