@@ -16,7 +16,7 @@ const Navbar = () => {
             <a href="#label" className="text-sm text-foreground hover:text-primary transition-colors">Le label WEL</a>
             <a href="#solutions" className="text-sm text-foreground hover:text-primary transition-colors">Nos offres</a>
             <a href="#faq" className="text-sm text-foreground hover:text-primary transition-colors">Méthodologie</a>
-            <a href="#contact" className="text-sm text-foreground hover:text-primary transition-colors">Contact</a>
+            <Link to="/contact" className="text-sm text-foreground hover:text-primary transition-colors">Contact</Link>
           </div>
 
           {/* Logo */}
