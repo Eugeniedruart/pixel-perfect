@@ -321,8 +321,9 @@ const Methodologie = () => {
       </div>
 
       {/* ─── 8. RÉSULTATS CONCRETS ─── */}
-      <section className="py-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden py-20">
+        <img src={patternHero} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-[0.65]" />
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Livrables</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-14">
