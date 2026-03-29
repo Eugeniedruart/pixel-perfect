@@ -76,10 +76,10 @@ const impacts = [
 ];
 
 const results = [
-  { icon: FileText, title: "Plan d'action personnalisé" },
-  { icon: BarChart3, title: "Indicateurs extra-financiers" },
-  { icon: Megaphone, title: "Kit de communication" },
-  { icon: Handshake, title: "Écosystème de partenaires" },
+  { icon: FileText, title: "Plan d'action personnalisé", desc: "Un plan structuré, priorisé et adapté à vos enjeux, avec des actions concrètes et un rétro-planning pour progresser efficacement." },
+  { icon: BarChart3, title: "Rapport d'indicateurs extra-financiers", desc: "Une synthèse claire de vos performances en égalité professionnelle, pour piloter votre stratégie et valoriser vos engagements." },
+  { icon: Megaphone, title: "Kit de communication", desc: "Des éléments clés pour valoriser votre démarche en interne et en externe, en cohérence avec votre positionnement." },
+  { icon: Handshake, title: "Écosystème de partenaires", desc: "Un accès à des acteurs engagés (formation, accompagnement, sensibilisation) pour déployer concrètement vos actions." },
 ];
 
 /* ── page ── */
@@ -322,22 +322,26 @@ const Methodologie = () => {
       {/* ─── 8. RÉSULTATS CONCRETS ─── */}
       <section className="relative overflow-hidden py-20">
         <img src={patternHero} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-[0.65]" />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Livrables</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-14">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
               Des résultats{" "}
               <span className="font-serif-display italic text-primary font-normal">concrets</span>
             </h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-14">
+              À l'issue de la démarche, vous recevez des livrables opérationnels pour structurer et valoriser votre engagement.
+            </p>
           </Reveal>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {results.map((r, i) => (
               <Reveal key={i}>
-                <div className="rounded-2xl border border-border bg-background p-6 text-center h-full hover:border-primary/20 hover:shadow-md hover:shadow-foreground/[0.03] transition-all duration-300">
-                  <div className="w-11 h-11 rounded-lg bg-primary/[0.06] flex items-center justify-center mx-auto mb-4">
+                <div className="rounded-2xl border border-border bg-[hsl(var(--wel-cream)/0.35)] backdrop-blur-sm p-6 h-full hover:border-primary/20 hover:shadow-lg hover:shadow-foreground/[0.04] hover:-translate-y-0.5 transition-all duration-300">
+                  <div className="w-11 h-11 rounded-lg bg-primary/[0.08] flex items-center justify-center mb-5">
                     <r.icon className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground text-sm">{r.title}</h3>
+                  <h3 className="font-semibold text-foreground text-sm mb-2 leading-snug">{r.title}</h3>
+                  <p className="text-muted-foreground text-xs leading-relaxed">{r.desc}</p>
                 </div>
               </Reveal>
             ))}
