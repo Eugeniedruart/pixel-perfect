@@ -65,10 +65,10 @@ const formations = [
 ];
 
 const approche = [
-  { icon: MapPin, text: "Nous intervenons sur le terrain, au plus près de vos équipes." },
-  { icon: Handshake, text: "Nous travaillons avec vos collaborateurs, pas en chambre." },
-  { icon: Settings, text: "Nous adaptons notre approche à vos réalités opérationnelles." },
-  { icon: Target, text: "Nous visons des résultats concrets et mesurables." },
+  { icon: MapPin, title: "Sur le terrain", text: "Pas de théorie déconnectée. Nous venons chez vous, nous écoutons, nous observons." },
+  { icon: Handshake, title: "Avec vos équipes", text: "Nous travaillons avec ceux qui font tourner l'organisation, pas en chambre." },
+  { icon: Settings, title: "À votre rythme", text: "Chaque entreprise est différente. Notre approche s'adapte à vos réalités." },
+  { icon: Target, title: "Pour du concret", text: "Des résultats mesurables, pas des rapports qui prennent la poussière." },
 ];
 
 /* ── page ── */
