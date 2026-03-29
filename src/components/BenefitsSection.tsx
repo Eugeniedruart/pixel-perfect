@@ -50,7 +50,7 @@ const BenefitsSection = () => {
           </div>
 
           {/* Right - image */}
-          <div className="rounded-xl overflow-hidden self-start">
+          <div className="rounded-xl overflow-hidden max-h-72">
             <img src={benefitsWoman} alt="Professionnelle souriante" className="w-full h-full object-cover" loading="lazy" width={768} height={1024} />
           </div>
         </div>
