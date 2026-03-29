@@ -1,15 +1,12 @@
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const partners = ["MARRIOTT", "fnac", "Capgemini", "SAFRAN", "Manpower", "AIRFRANCE", "accenture"];
 
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0 z-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover opacity-20" width={1920} height={1080} />
-      </div>
+      {/* Background gradient */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-[hsl(35,40%,92%)] via-[hsl(30,30%,95%)] to-background" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 text-center">
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">
