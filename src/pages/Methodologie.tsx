@@ -56,10 +56,10 @@ const Reveal = ({ children, className = "" }: { children: React.ReactNode; class
 
 /* ── data ── */
 const pillars = [
-  { icon: Scale, title: "Égalité salariale", desc: "Analyse des écarts de rémunération et des pratiques d'égalité salariale." },
-  { icon: Users, title: "Représentation dans les instances de décision", desc: "Mesure de la représentation des femmes aux postes de cadres dirigeants, au sein des comités exécutifs (COMEX) et des conseils d'administration." },
-  { icon: ShieldCheck, title: "Prévention du sexisme et du harcèlement", desc: "Évaluation des dispositifs de prévention et de la culture inclusive." },
-  { icon: Heart, title: "Équilibre de vie", desc: "Politiques de flexibilité, parentalité et bien-être au travail." },
+  { emoji: "⚖️", title: "Égalité salariale", desc: "Analyse des écarts de rémunération et des pratiques d'égalité salariale." },
+  { emoji: "👥", title: "Représentation dans les instances de décision", desc: "Mesure de la représentation des femmes aux postes de cadres dirigeants, au sein des comités exécutifs (COMEX) et des conseils d'administration." },
+  { emoji: "🛡️", title: "Prévention du sexisme et du harcèlement", desc: "Évaluation des dispositifs de prévention et de la culture inclusive." },
+  { emoji: "💜", title: "Équilibre de vie", desc: "Politiques de flexibilité, parentalité et bien-être au travail." },
 ];
 
 const steps = [
@@ -138,7 +138,7 @@ const Methodologie = () => {
               <Reveal key={i}>
                 <div className="group rounded-2xl border border-border bg-gradient-to-br from-[hsl(var(--wel-cream)/0.5)] to-background p-6 h-full hover:shadow-md hover:shadow-foreground/[0.03] hover:border-primary/20 transition-all duration-300">
                   <div className="w-11 h-11 rounded-lg bg-primary/[0.06] flex items-center justify-center mb-5">
-                    <p.icon className="h-5 w-5 text-primary" />
+                    <span className="text-xl">{p.emoji}</span>
                   </div>
                   <h3 className="font-semibold text-foreground mb-2 text-sm leading-snug">{p.title}</h3>
                   <p className="text-muted-foreground text-xs leading-relaxed">{p.desc}</p>
