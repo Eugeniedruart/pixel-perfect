@@ -62,8 +62,8 @@ const SolutionsSection = () => {
                 Parcours sur mesure : formations, sensibilisation, enquêtes internes,
                 préparation à la conformité réglementaire.
               </p>
-              <Button variant="outline" className="w-full gap-2">
-                Nous contacter <Mail className="h-4 w-4" />
+              <Button variant="outline" className="w-full gap-2" asChild>
+                <Link to="/contact">Nous contacter <Mail className="h-4 w-4" /></Link>
               </Button>
             </div>
           </div>
