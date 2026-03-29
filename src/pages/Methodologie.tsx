@@ -85,7 +85,7 @@ const Methodologie = () => {
       <Navbar />
 
       {/* ─── 1. HERO ─── */}
-      <section className="relative overflow-hidden py-24 lg:py-32">
+      <section className="relative overflow-hidden py-24 lg:py-32 bg-[hsl(var(--wel-cream))]">
         {/* pattern bg */}
         <img
           src={patternHero}
@@ -177,7 +177,7 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 4. AU-DELÀ DE LA CONFORMITÉ ─── */}
-      <section className="py-20 bg-primary/[0.04]">
+      <section className="py-20 bg-[hsl(var(--wel-cream))]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Au-delà de la conformité</p>
@@ -225,7 +225,7 @@ const Methodologie = () => {
       <hr className="border-border max-w-6xl mx-auto" />
 
       {/* ─── 6. GOUVERNANCE ─── */}
-      <section className="py-20">
+      <section className="py-20 bg-[hsl(var(--wel-cream))]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
@@ -307,7 +307,7 @@ const Methodologie = () => {
       <hr className="border-border max-w-6xl mx-auto" />
 
       {/* ─── 9. TARIFICATION ─── */}
-      <section className="py-20">
+      <section className="py-20 bg-[hsl(var(--wel-cream))]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="rounded-2xl border border-border bg-card p-10 lg:p-14 text-center">
