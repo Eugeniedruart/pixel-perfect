@@ -29,13 +29,14 @@ const WhySection = () => {
 
           {/* Top right - stat */}
           <div className="rounded-xl bg-primary p-8 flex flex-col justify-center text-primary-foreground">
-            <p className="text-lg mb-1 text-center">À ce rythme, l'égalité professionnelle <br /> sera atteinte en</p>
-            <div className="flex justify-center mb-1">
-              <svg width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2 Q28 2 28 14 Q28 22 20 22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
-                <path d="M16 18 L20 24 L24 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+            <p className="text-lg mb-2 text-center">
+              À ce rythme, l'égalité professionnelle <br /> sera atteinte en
+              <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block ml-1 -mb-1">
+                <path d="M2 2 C14 2, 16 6, 16 12 C16 16, 14 20, 10 22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+                <path d="M13 19 L10 23 L7 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
               </svg>
-            </div>
+            </p>
+            <p className="text-7xl font-bold font-serif-display italic text-center sm:text-5xl">2167</p>
             <p className="text-7xl font-bold font-serif-display italic text-center sm:text-5xl">2167</p>
           </div>
 
