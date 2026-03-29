@@ -37,7 +37,6 @@ const WhySection = () => {
               </svg>
             </p>
             <p className="text-7xl font-bold font-serif-display italic text-center sm:text-5xl">2167</p>
-            <p className="text-7xl font-bold font-serif-display italic text-center sm:text-5xl">2167</p>
           </div>
 
           {/* Bottom left - quote */}
