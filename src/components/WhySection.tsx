@@ -31,9 +31,9 @@ const WhySection = () => {
           <div className="rounded-xl bg-primary p-8 flex flex-col justify-center text-primary-foreground">
             <p className="text-lg mb-2 text-center">
               À ce rythme, l'égalité professionnelle <br /> sera atteinte en
-                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block ml-1 -mb-0.5">
-                <path d="M2 2 C10 2 16 5 20 14" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" fill="none" />
-                <path d="M15 12 L20 14 L21 8" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                <svg width="40" height="28" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block ml-2 -mb-1">
+                <path d="M2 2 C10 2 16 5 20 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
+                <path d="M15 12 L20 14 L21 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
               </svg>
             </p>
             <p className="text-7xl font-bold font-serif-display italic text-center sm:text-5xl">2167</p>
