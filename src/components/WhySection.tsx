@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import whyImg from "@/assets/why-section.jpg";
 import womanTablet from "@/assets/woman-tablet.jpg";
 
