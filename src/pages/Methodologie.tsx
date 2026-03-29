@@ -225,7 +225,7 @@ const Methodologie = () => {
       <hr className="border-border max-w-6xl mx-auto" />
 
       {/* ─── 6. GOUVERNANCE ─── */}
-      <section className="py-20">
+      <section className="py-20 bg-[hsl(var(--wel-cream))]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
