@@ -23,7 +23,7 @@ const WhySection = () => {
         {/* Bento grid */}
         <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto py-0 my-0">
           {/* Top left - image */}
-          <div className="rounded-xl overflow-hidden h-64">
+          <div className="rounded-lg overflow-hidden h-64 border border-wel-cream">
             <img src={whyImg} alt="Équipe diverse collaborant" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
           </div>
 
