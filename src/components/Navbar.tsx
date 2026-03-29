@@ -45,7 +45,7 @@ const Navbar = () => {
           <a href="#label" className="block text-sm text-foreground">Le label WEL</a>
           <a href="#solutions" className="block text-sm text-foreground">Nos offres</a>
           <a href="#faq" className="block text-sm text-foreground">Méthodologie</a>
-          <a href="#contact" className="block text-sm text-foreground">Contact</a>
+          <Link to="/contact" className="block text-sm text-foreground">Contact</Link>
           <div className="flex gap-2 pt-2">
             <Button variant="outline" size="sm" className="flex-1">Mon compte</Button>
             <Button size="sm" className="flex-1 bg-primary text-primary-foreground" asChild><Link to="/contact">Je veux être Welbellisé</Link></Button>
