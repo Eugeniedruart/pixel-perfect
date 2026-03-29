@@ -39,11 +39,6 @@ const SolutionsSection = () => {
                     en matière d'égalité professionnelle.
                   </p>
                 </div>
-                <div className="border-t border-border pt-3">
-                  <p className="text-sm text-muted-foreground text-center">
-                    Un accompagnement pragmatique, progressif et adapté à vos enjeux.
-                  </p>
-                </div>
               </div>
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full" asChild>
                 <Link to="/contact">Je veux être Welbellisé</Link>
