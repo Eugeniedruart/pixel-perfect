@@ -41,7 +41,7 @@ const WhySection = () => {
 
           {/* Bottom left - quote */}
           <div className="rounded-lg border border-wel-cream bg-card p-2">
-            <div className="rounded bg-wel-cream p-8 flex flex-col justify-center h-full">
+            <div className="rounded bg-wel-cream p-6 flex flex-col justify-center h-full">
               <p className="text-lg leading-relaxed text-foreground text-center">
                 L'égalité ne peut plus être une intention : elle doit devenir un standard clair,
                 mesurable et partagé.
@@ -54,7 +54,7 @@ const WhySection = () => {
 
           {/* Bottom right - image */}
           <div className="rounded-lg border border-wel-cream bg-card p-2">
-            <div className="rounded overflow-hidden h-68">
+            <div className="rounded overflow-hidden h-48">
               <img src={womanTablet} alt="Femme professionnelle" className="w-full h-full object-cover" loading="lazy" width={768} height={1024} />
             </div>
           </div>
