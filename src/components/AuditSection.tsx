@@ -18,9 +18,9 @@ const AuditSection = () => {
           <span className="font-serif-display italic text-primary font-normal">personnalisé à votre entreprise</span>
         </h2>
         <p className="text-muted-foreground text-center max-w-3xl mx-auto mt-4 mb-12">
-          Dès la signature du devis, vous avez 3 mois pour{" "}
-          <strong className="text-foreground">remplir à votre rythme l'audit qui repose sur 4 piliers</strong>{" "}
-          essentiels à la label WEL. Une fois l'audit complet, vous pourrez l'envoyer pour validation à notre équipe d'experts WEL.
+          Nos équipes interviennent au sein de votre entreprise pour réaliser un{" "}
+          <strong className="text-foreground">audit structuré autour des 4 piliers du label WEL</strong>.{" "}
+          Les éléments sont ensuite analysés et validés par notre équipe d'experts. Cette démarche s'accompagne d'outils concrets, afin d'inscrire votre engagement dans une trajectoire de progrès durable.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
