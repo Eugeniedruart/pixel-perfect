@@ -36,7 +36,7 @@ const WhySection = () => {
           </div>
 
           {/* Bottom left - quote */}
-          <div className="rounded-lg bg-card p-8 flex flex-col justify-center border border-wel-cream">
+          <div className="rounded-lg bg-wel-cream p-8 flex flex-col justify-center border border-wel-cream">
             <p className="text-lg leading-relaxed text-foreground text-center">
               L'égalité ne peut plus être une intention : elle doit devenir un standard clair,
               mesurable et partagé.
