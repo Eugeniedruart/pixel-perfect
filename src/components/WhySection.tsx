@@ -28,17 +28,17 @@ const WhySection = () => {
 
           {/* Top right - stat */}
           <div className="rounded-xl bg-primary p-8 flex flex-col justify-center text-primary-foreground">
-            <p className="text-lg mb-2">À ce rythme, l'égalité professionnelle sera atteinte en</p>
-            <p className="text-7xl sm:text-8xl font-bold font-serif-display italic">2167</p>
+            <p className="text-lg mb-2 text-center">À ce rythme, l'égalité professionnelle sera atteinte en</p>
+            <p className="text-7xl sm:text-8xl font-bold font-serif-display italic text-center">2167</p>
           </div>
 
           {/* Bottom left - quote */}
           <div className="rounded-xl bg-wel-cream p-8 flex flex-col justify-center">
-            <p className="text-lg leading-relaxed text-foreground">
+            <p className="text-lg leading-relaxed text-foreground text-center">
               L'égalité ne peut plus être une intention : elle doit devenir un standard clair,
               mesurable et partagé.
             </p>
-            <p className="text-lg font-semibold font-serif-display italic mt-4 text-foreground">
+            <p className="text-lg font-serif-display italic mt-4 text-foreground text-center font-medium">
               C'est de cette conviction qu'est né WEL, le Women Equity Label
             </p>
           </div>
