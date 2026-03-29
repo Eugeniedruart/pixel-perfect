@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { CheckCircle2 } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const pillars = [
   "Équité salariale",
@@ -16,21 +17,59 @@ const resultsList = [
   "une mise en relation avec un écosystème de partenaires engagés",
 ];
 
-const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
-  <div className="mb-12">
-    <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">{title}</h2>
-    {children}
-  </div>
-);
+const useScrollReveal = () => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add("animate-fade-in");
+          el.classList.remove("opacity-0", "translate-y-4");
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.15 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return ref;
+};
+
+const Section = ({ title, children, delay = 0 }: { title: string; children: React.ReactNode; delay?: number }) => {
+  const ref = useScrollReveal();
+  return (
+    <div
+      ref={ref}
+      className="mb-12 opacity-0 translate-y-4 transition-none"
+      style={{ animationDelay: `${delay}ms`, animationFillMode: "forwards" }}
+    >
+      <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">{title}</h2>
+      {children}
+    </div>
+  );
+};
 
 const Methodologie = () => {
+  const heroRef = useScrollReveal();
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
 
       {/* Hero */}
       <section className="py-20 bg-muted/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div
+          ref={heroRef}
+          className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center opacity-0 translate-y-4"
+          style={{ animationFillMode: "forwards" }}
+        >
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
             Méthodologie
           </p>
@@ -48,14 +87,13 @@ const Methodologie = () => {
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* 4 Piliers */}
           <Section title="Une approche structurée autour de 4 piliers">
             <p className="text-muted-foreground mb-6">
               La méthodologie WEL s'articule autour de quatre piliers couvrant l'ensemble des enjeux structurants de l'égalité professionnelle :
             </p>
             <div className="grid sm:grid-cols-2 gap-3">
               {pillars.map((pillar, i) => (
-                <div key={i} className="flex items-start gap-3 rounded-xl border border-border p-4 bg-card">
+                <div key={i} className="flex items-start gap-3 rounded-xl border border-border p-4 bg-card hover-scale">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                   <p className="text-foreground font-medium text-sm">{pillar}</p>
                 </div>
@@ -63,8 +101,7 @@ const Methodologie = () => {
             </div>
           </Section>
 
-          {/* Référentiel */}
-          <Section title="Un référentiel aligné aux exigences légales">
+          <Section title="Un référentiel aligné aux exigences légales" delay={50}>
             <p className="text-muted-foreground mb-4">
               Le référentiel WEL est construit en alignement avec les lois françaises (Index Égalité Professionnelle, loi Rixain…) et les directives européennes, notamment en matière de transparence salariale.
             </p>
@@ -73,8 +110,7 @@ const Methodologie = () => {
             </p>
           </Section>
 
-          {/* Complémentaire */}
-          <Section title="Une démarche complémentaire à l'Index Égalité">
+          <Section title="Une démarche complémentaire à l'Index Égalité" delay={50}>
             <p className="text-muted-foreground mb-4">
               Le label WEL est complémentaire à l'Index Égalité Professionnelle. Là où l'Index mesure un niveau de conformité, WEL permet de valoriser l'ensemble des actions mises en place par l'organisation.
             </p>
@@ -83,8 +119,7 @@ const Methodologie = () => {
             </p>
           </Section>
 
-          {/* Évaluation */}
-          <Section title="Une évaluation fondée sur des éléments concrets">
+          <Section title="Une évaluation fondée sur des éléments concrets" delay={50}>
             <p className="text-muted-foreground mb-4">
               L'évaluation repose sur un diagnostic structuré, fondé sur des critères mesurables, l'analyse de données et des échanges avec les équipes.
             </p>
@@ -93,14 +128,13 @@ const Methodologie = () => {
             </p>
           </Section>
 
-          {/* Adaptée */}
-          <Section title="Une méthodologie adaptée à chaque organisation">
+          <Section title="Une méthodologie adaptée à chaque organisation" delay={50}>
             <p className="text-muted-foreground mb-4">
               Le diagnostic WEL est conçu pour s'adapter aux spécificités de chaque structure :
             </p>
             <div className="flex gap-4 mb-4">
               {["entreprises privées", "organisations publiques"].map((item, i) => (
-                <div key={i} className="flex items-center gap-2 rounded-lg border border-border px-4 py-2 bg-card">
+                <div key={i} className="flex items-center gap-2 rounded-lg border border-border px-4 py-2 bg-card hover-scale">
                   <CheckCircle2 className="h-4 w-4 text-primary shrink-0" />
                   <span className="text-foreground text-sm font-medium">{item}</span>
                 </div>
@@ -111,8 +145,7 @@ const Methodologie = () => {
             </p>
           </Section>
 
-          {/* Gouvernance */}
-          <Section title="Une gouvernance garantissant la crédibilité du label">
+          <Section title="Une gouvernance garantissant la crédibilité du label" delay={50}>
             <p className="text-muted-foreground mb-4">
               Le référentiel et les standards du label sont supervisés par un comité éthique indépendant, composé de dirigeants, DRH et experts académiques.
             </p>
@@ -121,8 +154,7 @@ const Methodologie = () => {
             </p>
           </Section>
 
-          {/* Transformation */}
-          <Section title="Une démarche orientée transformation">
+          <Section title="Une démarche orientée transformation" delay={50}>
             <p className="text-muted-foreground mb-4">
               Au-delà de l'évaluation, la méthodologie WEL vise à structurer une trajectoire de progrès durable.
             </p>
@@ -131,8 +163,7 @@ const Methodologie = () => {
             </p>
           </Section>
 
-          {/* Performance extra-financière */}
-          <Section title="Des outils au service de votre performance extra-financière">
+          <Section title="Des outils au service de votre performance extra-financière" delay={50}>
             <p className="text-muted-foreground mb-4">
               Le label WEL constitue un levier de valorisation extra-financière et un atout dans le cadre des appels d'offres, où les critères ESG et d'égalité professionnelle prennent une place croissante.
             </p>
@@ -141,14 +172,13 @@ const Methodologie = () => {
             </p>
           </Section>
 
-          {/* Résultats */}
-          <Section title="Des résultats concrets pour structurer votre démarche">
+          <Section title="Des résultats concrets pour structurer votre démarche" delay={50}>
             <p className="text-muted-foreground mb-6">
               La démarche WEL s'accompagne de résultats concrets, parmi lesquels :
             </p>
             <div className="space-y-3">
               {resultsList.map((item, i) => (
-                <div key={i} className="flex items-start gap-3 rounded-xl border border-border p-4 bg-card">
+                <div key={i} className="flex items-start gap-3 rounded-xl border border-border p-4 bg-card hover-scale">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                   <p className="text-foreground text-sm">{item}</p>
                 </div>
@@ -156,8 +186,7 @@ const Methodologie = () => {
             </div>
           </Section>
 
-          {/* Modèle accessible */}
-          <Section title="Un modèle accessible et structuré">
+          <Section title="Un modèle accessible et structuré" delay={50}>
             <div className="rounded-xl border border-border bg-muted/30 p-6 text-center">
               <p className="text-muted-foreground mb-2">L'accompagnement débute à partir de</p>
               <p className="text-3xl font-bold text-primary">3 900€</p>
