@@ -21,7 +21,7 @@ const WhySection = () => {
         </p>
 
         {/* Bento grid */}
-        <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto py-0 my-0">
           {/* Top left - image */}
           <div className="rounded-xl overflow-hidden h-64">
             <img src={whyImg} alt="Équipe diverse collaborant" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
@@ -29,8 +29,8 @@ const WhySection = () => {
 
           {/* Top right - stat */}
           <div className="rounded-xl bg-primary p-8 flex flex-col justify-center text-primary-foreground">
-            <p className="text-lg mb-2 text-center">À ce rythme, l'égalité professionnelle sera atteinte en</p>
-            <p className="text-7xl sm:text-8xl font-bold font-serif-display italic text-center mt-4">2167</p>
+            <p className="text-lg mb-2 text-center">À ce rythme, l'égalité professionnelle <br /> sera atteinte en</p>
+            <p className="text-7xl font-bold font-serif-display italic text-center sm:text-5xl">2167</p>
           </div>
 
           {/* Bottom left - quote */}
