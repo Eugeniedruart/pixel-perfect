@@ -28,7 +28,7 @@ const WhySection = () => {
           </div>
 
           {/* Top right - stat */}
-          <div className="rounded-xl bg-primary p-8 flex flex-col justify-center text-primary-foreground">
+          <div className="rounded-lg bg-primary p-8 flex flex-col justify-center text-primary-foreground border border-wel-cream">
             <p className="text-lg mb-2 text-center">
               À ce rythme, l'égalité professionnelle <br /> sera atteinte en
             </p>
