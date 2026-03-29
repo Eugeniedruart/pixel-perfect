@@ -1,17 +1,5 @@
 import { Button } from "@/components/ui/button";
-
-const partners = ["MARRIOTT", "fnac", "Capgemini", "SAFRAN", "Manpower", "AIRFRANCE", "accenture"];
-
-const HeroSection = () => {
-  return (
-    <section className="relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-[hsl(35,40%,92%)] via-[hsl(30,30%,95%)] to-background" />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 text-center">
-        <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">
-          Women Equity Label
-        </p>
+import welLogo from "@/assets/wel-logo.png";
 
         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground leading-tight mb-2">
           La référence de
