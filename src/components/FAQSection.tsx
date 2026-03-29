@@ -18,6 +18,10 @@ const faqs = [
     question: "Quels documents dois-je fournir ?",
     answer: "Les documents nécessaires dépendent de la taille de votre entreprise et de votre secteur d'activité. Notre équipe vous guidera à chaque étape pour vous assurer de fournir les éléments requis.",
   },
+  {
+    question: "Comment garantissez-vous la confidentialité des données que vous récoltez via vos enquêtes ?",
+    answer: "Women Equity Label, WEL, s'est engagé dans une mise en conformité avec les exigences RGPD. Au-delà du cadre légal, le respect de la confidentialité des réponses est une priorité pour le Women Equity Label.",
+  },
 ];
 
 const FAQSection = () => {
