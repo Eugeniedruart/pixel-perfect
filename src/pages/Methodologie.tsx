@@ -19,6 +19,9 @@ import {
 } from "lucide-react";
 import patternHero from "@/assets/pattern-hero-clean.png";
 import welCertifiedLogo from "@/assets/wel-certified-logo.png";
+import corporateMeeting from "@/assets/corporate-meeting.jpg";
+import corporateCollaboration from "@/assets/corporate-collaboration.jpg";
+import corporateLeadership from "@/assets/corporate-leadership.jpg";
 
 /* ── scroll reveal hook ── */
 const useScrollReveal = () => {
@@ -91,24 +94,46 @@ const Methodologie = () => {
           src={patternHero}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-40"
+          className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-30"
         />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Reveal>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-5">Méthodologie</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Notre{" "}
-              <span className="font-serif-display italic text-primary font-normal">méthodologie</span>
-            </h1>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
-              Une approche rigoureuse, structurée et alignée aux exigences françaises et européennes.
-            </p>
-          </Reveal>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <Reveal>
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-5">Méthodologie</p>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                Notre{" "}
+                <span className="font-serif-display italic text-primary font-normal">méthodologie</span>
+              </h1>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+                Une approche rigoureuse, structurée et alignée aux exigences françaises et européennes.
+              </p>
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+                <Link to="/contact">Découvrir notre approche</Link>
+              </Button>
+            </Reveal>
+            <Reveal>
+              <div className="relative">
+                <img
+                  src={corporateMeeting}
+                  alt="Réunion de comité de direction"
+                  width={1280}
+                  height={854}
+                  className="rounded-2xl shadow-xl shadow-foreground/5 object-cover w-full aspect-[4/3]"
+                />
+                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 
+      {/* ─── thin divider ─── */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="h-px bg-border" />
+      </div>
+
       {/* ─── 2. 4 PILIERS ─── */}
-      <section className="py-20 bg-wel-cream">
+      <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Le référentiel</p>
@@ -123,9 +148,9 @@ const Methodologie = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {pillars.map((p, i) => (
               <Reveal key={i}>
-                <div className="group rounded-2xl border border-border/60 bg-white p-6 h-full hover:shadow-lg hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-wel-blue-light flex items-center justify-center mb-5">
-                    <p.icon className="h-6 w-6 text-primary" />
+                <div className="group rounded-2xl border border-border bg-background p-6 h-full hover:shadow-md hover:shadow-foreground/[0.03] hover:border-primary/20 transition-all duration-300">
+                  <div className="w-11 h-11 rounded-lg bg-primary/[0.06] flex items-center justify-center mb-5">
+                    <p.icon className="h-5 w-5 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2 text-sm leading-snug">{p.title}</h3>
                   <p className="text-muted-foreground text-xs leading-relaxed">{p.desc}</p>
@@ -136,8 +161,8 @@ const Methodologie = () => {
         </div>
       </section>
 
-      {/* ─── 3. CONFORMITÉ & CRÉDIBILITÉ ─── */}
-      <section className="py-20">
+      {/* ─── 3. CONFORMITÉ & CRÉDIBILITÉ (image right) ─── */}
+      <section className="py-20 bg-[hsl(var(--wel-cream)/0.4)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
             <Reveal>
@@ -146,7 +171,7 @@ const Methodologie = () => {
                 Un référentiel aligné aux{" "}
                 <span className="font-serif-display italic text-primary font-normal">exigences légales</span>
               </h2>
-              <div className="space-y-4">
+              <div className="space-y-4 mb-8">
                 {[
                   "Aligné aux lois françaises (Index Égalité, loi Rixain) et directives européennes",
                   "Seules les entreprises conformes peuvent être labellisées",
@@ -160,8 +185,8 @@ const Methodologie = () => {
               </div>
             </Reveal>
             <Reveal>
-              <div className="rounded-2xl bg-gradient-to-br from-wel-blue-light to-wel-cream border border-primary/10 p-8 lg:p-10 text-center">
-                <img src={welCertifiedLogo} alt="WEL Certified" className="w-32 h-auto mx-auto mb-6" />
+              <div className="rounded-2xl border border-border bg-background p-8 lg:p-10 text-center shadow-sm">
+                <img src={welCertifiedLogo} alt="WEL Certified" className="w-28 h-auto mx-auto mb-6" />
                 <p className="font-semibold text-foreground mb-2">Label certifié</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Là où l'Index mesure la conformité, WEL valorise l'ensemble des actions concrètes mises en place par l'organisation.
@@ -172,21 +197,41 @@ const Methodologie = () => {
         </div>
       </section>
 
-      {/* ─── 4. AU-DELÀ DE LA CONFORMITÉ ─── */}
-      <section className="py-20 bg-gradient-to-b from-wel-navy to-wel-blue text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Reveal>
-            <p className="text-xs tracking-[0.3em] uppercase text-white/60 mb-3">Au-delà de la conformité</p>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Valoriser les{" "}
-              <span className="font-serif-display italic font-normal text-wel-blue-light">actions concrètes</span>
-            </h2>
-            <p className="text-white/80 text-base leading-relaxed max-w-3xl mx-auto">
-              WEL reconnaît les efforts des entreprises évoluant dans des secteurs historiquement masculins, pour lesquelles l'atteinte d'une parfaite mixité peut être structurellement plus complexe, mais qui déploient des initiatives concrètes et engagées.
-            </p>
-          </Reveal>
+      {/* ─── 4. AU-DELÀ DE LA CONFORMITÉ (image left) ─── */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <Reveal>
+              <div className="relative">
+                <img
+                  src={corporateCollaboration}
+                  alt="Collaboration entre professionnels"
+                  width={1280}
+                  height={854}
+                  loading="lazy"
+                  className="rounded-2xl shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3]"
+                />
+                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
+              </div>
+            </Reveal>
+            <Reveal>
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Au-delà de la conformité</p>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+                Valoriser les{" "}
+                <span className="font-serif-display italic text-primary font-normal">actions concrètes</span>
+              </h2>
+              <p className="text-muted-foreground text-base leading-relaxed">
+                WEL reconnaît les efforts des entreprises évoluant dans des secteurs historiquement masculins, pour lesquelles l'atteinte d'une parfaite mixité peut être structurellement plus complexe, mais qui déploient des initiatives concrètes et engagées.
+              </p>
+            </Reveal>
+          </div>
         </div>
       </section>
+
+      {/* ─── thin divider ─── */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="h-px bg-border" />
+      </div>
 
       {/* ─── 5. TIMELINE / ÉTAPES ─── */}
       <section className="py-20">
@@ -201,9 +246,9 @@ const Methodologie = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {steps.map((step, i) => (
               <Reveal key={i}>
-                <div className="relative rounded-2xl border border-border/60 bg-white p-6 h-full hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
-                  <span className="text-4xl font-bold text-primary/10 absolute top-4 right-5">{step.num}</span>
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-wel-blue text-primary-foreground flex items-center justify-center text-xs font-bold mb-4">
+                <div className="relative rounded-2xl border border-border bg-background p-6 h-full hover:shadow-md hover:shadow-foreground/[0.03] transition-all duration-300">
+                  <span className="text-4xl font-bold text-primary/[0.07] absolute top-4 right-5">{step.num}</span>
+                  <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold mb-4">
                     {step.num}
                   </div>
                   <h3 className="font-semibold text-foreground text-sm mb-2">{step.title}</h3>
@@ -218,37 +263,49 @@ const Methodologie = () => {
         </div>
       </section>
 
-      {/* ─── 6. GOUVERNANCE ─── */}
-      <section className="py-20 bg-wel-cream">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Reveal>
-            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/15 to-wel-blue-light flex items-center justify-center mx-auto mb-6">
-              <Users className="h-8 w-8 text-primary" />
-            </div>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Gouvernance</p>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Un comité éthique{" "}
-              <span className="font-serif-display italic text-primary font-normal">indépendant</span>
-            </h2>
-            <p className="text-muted-foreground text-base leading-relaxed max-w-2xl mx-auto mb-8">
-              Composé de dirigeants, avocats, DRH et académiciens, le comité éthique supervise le référentiel et les standards du label, garantissant la rigueur, la cohérence et la crédibilité de la démarche.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {["Dirigeants", "Avocats", "DRH", "Académiciens"].map((role, i) => (
-                <span
-                  key={i}
-                  className="rounded-full border border-primary/15 bg-white px-4 py-1.5 text-xs font-medium text-foreground shadow-sm"
-                >
-                  {role}
-                </span>
-              ))}
-            </div>
-          </Reveal>
+      {/* ─── 6. GOUVERNANCE (image right) ─── */}
+      <section className="py-20 bg-[hsl(var(--wel-cream)/0.4)]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <Reveal>
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Gouvernance</p>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+                Un comité éthique{" "}
+                <span className="font-serif-display italic text-primary font-normal">indépendant</span>
+              </h2>
+              <p className="text-muted-foreground text-base leading-relaxed mb-8">
+                Composé de dirigeants, avocats, DRH et académiciens, le comité éthique supervise le référentiel et les standards du label, garantissant la rigueur, la cohérence et la crédibilité de la démarche.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {["Dirigeants", "Avocats", "DRH", "Académiciens"].map((role, i) => (
+                  <span
+                    key={i}
+                    className="rounded-full border border-border bg-background px-4 py-1.5 text-xs font-medium text-foreground"
+                  >
+                    {role}
+                  </span>
+                ))}
+              </div>
+            </Reveal>
+            <Reveal>
+              <div className="relative">
+                <img
+                  src={corporateLeadership}
+                  alt="Comité de direction en réunion"
+                  width={1280}
+                  height={854}
+                  loading="lazy"
+                  className="rounded-2xl shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3]"
+                />
+                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 
       {/* ─── 7. IMPACT & VALEUR ESG ─── */}
-      <section className="py-20 bg-wel-blue-light">
+      <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Impact</p>
@@ -260,9 +317,9 @@ const Methodologie = () => {
           <div className="grid sm:grid-cols-3 gap-6">
             {impacts.map((item, i) => (
               <Reveal key={i}>
-                <div className="rounded-2xl border border-primary/10 bg-white p-6 text-center h-full hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-wel-blue-light flex items-center justify-center mx-auto mb-5">
-                    <item.icon className="h-6 w-6 text-primary" />
+                <div className="rounded-2xl border border-border bg-background p-6 text-center h-full hover:shadow-md hover:shadow-foreground/[0.03] transition-all duration-300">
+                  <div className="w-11 h-11 rounded-lg bg-primary/[0.06] flex items-center justify-center mx-auto mb-5">
+                    <item.icon className="h-5 w-5 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground text-sm mb-2">{item.title}</h3>
                   <p className="text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
@@ -272,6 +329,11 @@ const Methodologie = () => {
           </div>
         </div>
       </section>
+
+      {/* ─── thin divider ─── */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="h-px bg-border" />
+      </div>
 
       {/* ─── 8. RÉSULTATS CONCRETS ─── */}
       <section className="py-20">
@@ -286,9 +348,9 @@ const Methodologie = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {results.map((r, i) => (
               <Reveal key={i}>
-                <div className="rounded-2xl border border-border/60 bg-white p-6 text-center h-full hover:border-primary/20 hover:shadow-md hover:shadow-primary/5 transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-wel-blue-light flex items-center justify-center mx-auto mb-4">
-                    <r.icon className="h-6 w-6 text-primary" />
+                <div className="rounded-2xl border border-border bg-background p-6 text-center h-full hover:border-primary/20 hover:shadow-md hover:shadow-foreground/[0.03] transition-all duration-300">
+                  <div className="w-11 h-11 rounded-lg bg-primary/[0.06] flex items-center justify-center mx-auto mb-4">
+                    <r.icon className="h-5 w-5 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground text-sm">{r.title}</h3>
                 </div>
@@ -299,17 +361,17 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 9. TARIFICATION ─── */}
-      <section className="py-20 bg-wel-cream">
+      <section className="py-20 bg-[hsl(var(--wel-cream)/0.4)]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="rounded-2xl border border-primary/10 bg-white p-10 lg:p-14 text-center shadow-sm">
+            <div className="rounded-2xl border border-border bg-background p-10 lg:p-14 text-center shadow-sm">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">Tarification</p>
               <p className="text-muted-foreground mb-2">L'accompagnement débute à partir de</p>
               <p className="text-5xl font-bold text-primary mb-2">3 900€</p>
               <p className="text-muted-foreground text-sm mb-8">
                 en fonction de la taille et de la complexité de l'organisation.
               </p>
-              <Button size="lg" className="bg-gradient-to-r from-primary to-wel-blue text-primary-foreground hover:opacity-90 shadow-md shadow-primary/20" asChild>
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
                 <Link to="/contact">Demander un devis</Link>
               </Button>
             </div>
