@@ -177,7 +177,7 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 4. AU-DELÀ DE LA CONFORMITÉ ─── */}
-      <section className="py-20 bg-primary/[0.04]">
+      <section className="py-20 bg-[hsl(var(--wel-cream))]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Au-delà de la conformité</p>
