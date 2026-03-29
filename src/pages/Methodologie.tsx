@@ -52,10 +52,10 @@ const Reveal = ({ children, className = "" }: { children: React.ReactNode; class
 
 /* ── data ── */
 const pillars = [
-  { icon: Scale, title: "Équité salariale", desc: "Analyse des écarts de rémunération et des pratiques d'égalité salariale." },
-  { icon: Users, title: "Représentation dans les instances de décision", desc: "Mesure de la place des femmes dans la gouvernance et le leadership." },
+  { icon: Scale, title: "Égalité salariale", desc: "Analyse des écarts de rémunération et des pratiques d'égalité salariale." },
+  { icon: Users, title: "Représentation dans les instances de décision", desc: "Mesure de la représentation des femmes aux postes de cadres dirigeants, au sein des comités exécutifs (COMEX) et des conseils d’administration." },
   { icon: ShieldCheck, title: "Prévention du sexisme et du harcèlement", desc: "Évaluation des dispositifs de prévention et de la culture inclusive." },
-  { icon: Heart, title: "Équilibre vie pro / vie perso", desc: "Politiques de flexibilité, parentalité et bien-être au travail." },
+  { icon: Heart, title: "Équilibre de vie", desc: "Politiques de flexibilité, parentalité et bien-être au travail." },
 ];
 
 const steps = [
