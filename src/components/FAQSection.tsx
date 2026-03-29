@@ -7,10 +7,6 @@ import {
 
 const faqs = [
   {
-    question: "Qui peut candidater au label WEL ?",
-    answer: "Toutes les entreprises, organisations ou institutions, quels que soit leur taille ou leur secteur, peuvent candidater. Le processus est adapté aux spécificités des TPE, PME, ETI et grands groupes qui souhaitent améliorer, valoriser et certifier leurs engagements pour l'égalité professionnelle.",
-  },
-  {
     question: "Ai-je le droit d'utiliser le logo ?",
     answer: "Oui, une fois labellisé, vous recevez le droit d'utiliser le logo WEL sur vos supports de communication selon les conditions définies dans votre contrat de labellisation.",
   },
