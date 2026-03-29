@@ -352,13 +352,11 @@ const Methodologie = () => {
           <Reveal>
             <div className="rounded-2xl border border-border bg-background p-10 lg:p-14 text-center shadow-sm">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">Tarification</p>
-              <p className="text-muted-foreground mb-2">L'accompagnement débute à partir de</p>
-              <p className="text-5xl font-bold text-primary mb-2">3 900€</p>
-              <p className="text-muted-foreground text-sm mb-8">
-                en fonction de la taille et de la complexité de l'organisation.
+              <p className="text-muted-foreground text-base leading-relaxed mb-8">
+                Les modalités d'accompagnement WEL débutent à partir de <strong className="text-foreground">3 900€</strong> et sont ajustées en fonction de la taille de l'organisation et du périmètre du diagnostic. Une brochure détaillant l'offre est disponible sur demande.
               </p>
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-                <Link to="/contact">Demander un devis</Link>
+                <Link to="/contact">Demander la brochure</Link>
               </Button>
             </div>
           </Reveal>
