@@ -1,3 +1,5 @@
+import fourPillarsImg from "@/assets/four-pillars.jpg";
+
 const pillars = [
   { title: "La gouvernance", questions: "XX questions" },
   { title: "L'égalité salariale", questions: "XX questions" },
@@ -25,25 +27,8 @@ const AuditSection = () => {
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {/* Left - platform mockup */}
-          <div className="rounded-xl border border-border bg-muted/30 p-4 flex items-center justify-center min-h-[300px]">
-            <div className="w-full max-w-md bg-background rounded-lg shadow-sm border border-border p-6 space-y-4">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-2 h-2 rounded-full bg-destructive" />
-                <div className="w-2 h-2 rounded-full bg-wel-green" />
-                <div className="w-2 h-2 rounded-full bg-primary" />
-                <span className="text-xs text-muted-foreground ml-2">www.womenequitylabel.fr</span>
-              </div>
-              <p className="font-semibold text-sm text-foreground">Votre audit <span className="font-serif-display italic text-primary">WEL</span></p>
-              {pillars.map((p, i) => (
-                <div key={i} className="border border-border rounded-lg p-3">
-                  <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1">Pilier {i + 1}</p>
-                  <p className="text-sm font-semibold text-foreground">{p.title}</p>
-                  <div className="mt-2">
-                    <span className="text-xs bg-primary text-primary-foreground px-2 py-1 rounded">Compléter le pilier →</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="rounded-xl overflow-hidden flex items-center justify-center min-h-[300px]">
+            <img src={fourPillarsImg} alt="Les 4 piliers du label WEL" className="w-full h-full object-cover rounded-xl" loading="lazy" width={1024} height={768} />
           </div>
 
           {/* Right - pillar cards */}
