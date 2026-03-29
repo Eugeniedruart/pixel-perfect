@@ -15,7 +15,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-6">
             <a href="#label" className="text-sm text-foreground hover:text-primary transition-colors">Le label WEL</a>
             <a href="#solutions" className="text-sm text-foreground hover:text-primary transition-colors">Nos offres</a>
-            <a href="#faq" className="text-sm text-foreground hover:text-primary transition-colors">Méthodologie</a>
+            <Link to="/methodologie" className="text-sm text-foreground hover:text-primary transition-colors">Méthodologie</Link>
             <Link to="/contact" className="text-sm text-foreground hover:text-primary transition-colors">Contact</Link>
           </div>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="md:hidden border-t border-border bg-background px-4 py-4 space-y-3">
           <a href="#label" className="block text-sm text-foreground">Le label WEL</a>
           <a href="#solutions" className="block text-sm text-foreground">Nos offres</a>
-          <a href="#faq" className="block text-sm text-foreground">Méthodologie</a>
+          <Link to="/methodologie" className="block text-sm text-foreground">Méthodologie</Link>
           <Link to="/contact" className="block text-sm text-foreground">Contact</Link>
           <div className="flex gap-2 pt-2">
             <Button variant="outline" size="sm" className="flex-1">Mon compte</Button>
