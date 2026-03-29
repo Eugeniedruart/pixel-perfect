@@ -289,7 +289,7 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 7. IMPACT & VALEUR ESG ─── */}
-      <section className="py-20">
+      <section className="py-20 bg-[hsl(var(--wel-cream)/0.4)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Impact</p>
