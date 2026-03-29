@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import welLogo from "@/assets/wel-logo.png";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -19,11 +20,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-primary font-bold text-sm leading-tight">
-              <span className="block">women</span>
-              <span className="block">equity</span>
-              <span className="block bg-primary text-primary-foreground px-1">label</span>
-            </span>
+            <img src={welLogo} alt="WEL - Women Equity Label" className="h-10" />
           </div>
 
           {/* Right buttons */}
