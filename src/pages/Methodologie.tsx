@@ -173,12 +173,8 @@ const Methodologie = () => {
               </div>
             </Reveal>
             <Reveal>
-              <div className="rounded-2xl border border-border bg-background p-8 lg:p-10 text-center shadow-sm">
-                <img src={welCertifiedLogo} alt="WEL Certified" className="w-28 h-auto mx-auto mb-6" />
-                <p className="font-semibold text-foreground mb-2">Label certifié</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  Là où l'Index mesure la conformité, WEL valorise l'ensemble des actions concrètes mises en place par l'organisation.
-                </p>
+              <div className="rounded-2xl border border-border bg-background p-8 lg:p-10 flex items-center justify-center shadow-sm">
+                <img src={welCertifiedDark} alt="WEL Certified" className="w-44 h-auto" />
               </div>
             </Reveal>
           </div>
