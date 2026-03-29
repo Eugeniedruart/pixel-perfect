@@ -1,3 +1,5 @@
+import fourPillarsImg from "@/assets/four-pillars.jpg";
+
 const pillars = [
   { title: "La gouvernance", questions: "XX questions" },
   { title: "L'égalité salariale", questions: "XX questions" },
