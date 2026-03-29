@@ -79,6 +79,7 @@ const Offres = () => {
 
       {/* ─── 1. HERO ─── */}
       <section className="relative overflow-hidden">
+        <img src={patternHero} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-60" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <Reveal>
