@@ -18,6 +18,7 @@ import {
   Briefcase,
 } from "lucide-react";
 import patternHero from "@/assets/pattern-hero-clean.png";
+import welCertifiedLogo from "@/assets/wel-certified-logo.png";
 
 /* ── scroll reveal hook ── */
 const useScrollReveal = () => {
@@ -163,9 +164,7 @@ const Methodologie = () => {
             </Reveal>
             <Reveal>
               <div className="rounded-2xl bg-muted/40 border border-border p-8 lg:p-10 text-center">
-                <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                  <ShieldCheck className="h-10 w-10 text-primary" />
-                </div>
+                <img src={welCertifiedLogo} alt="WEL Certified" className="w-32 h-auto mx-auto mb-6" />
                 <p className="font-semibold text-foreground mb-2">Label certifié</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Là où l'Index mesure la conformité, WEL valorise l'ensemble des actions concrètes mises en place par l'organisation.
