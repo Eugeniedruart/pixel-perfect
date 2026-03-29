@@ -1,5 +1,3 @@
-import fourPillarsImg from "@/assets/four-pillars.jpg";
-
 const pillars = [
   { title: "La gouvernance", questions: "XX questions" },
   { title: "L'égalité salariale", questions: "XX questions" },
@@ -25,27 +23,19 @@ const AuditSection = () => {
           essentiels à la label WEL. Une fois l'audit complet, vous pourrez l'envoyer pour validation à notre équipe d'experts WEL.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          {/* Left - platform mockup */}
-          <div className="rounded-xl overflow-hidden flex items-center justify-center min-h-[300px]">
-            <img src={fourPillarsImg} alt="Les 4 piliers du label WEL" className="w-full h-full object-cover rounded-xl" loading="lazy" width={1024} height={768} />
-          </div>
-
-          {/* Right - pillar cards */}
-          <div className="space-y-3">
-            {pillars.map((pillar, i) => (
-              <div
-                key={i}
-                className="rounded-xl p-5 flex items-center justify-between"
-                style={{
-                  background: `linear-gradient(135deg, hsl(245 58% ${63 + i * 5}%), hsl(245 58% ${70 + i * 5}%))`,
-                }}
-              >
-                <p className="text-primary-foreground font-medium text-sm pr-4">{pillar.title}</p>
-                <span className="text-primary-foreground/80 text-sm whitespace-nowrap">{pillar.questions}</span>
-              </div>
-            ))}
-          </div>
+        <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+          {pillars.map((pillar, i) => (
+            <div
+              key={i}
+              className="rounded-xl p-5 flex items-center justify-between"
+              style={{
+                background: `linear-gradient(135deg, hsl(245 58% ${63 + i * 5}%), hsl(245 58% ${70 + i * 5}%))`,
+              }}
+            >
+              <p className="text-primary-foreground font-medium text-sm pr-4">{pillar.title}</p>
+              <span className="text-primary-foreground/80 text-sm whitespace-nowrap">{pillar.questions}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
