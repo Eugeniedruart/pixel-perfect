@@ -21,7 +21,7 @@ import {
 import offresHero from "@/assets/offres-hero-v2.jpg";
 import offresLabellisation from "@/assets/offres-labellisation.jpg";
 import offresConseil from "@/assets/offres-conseil-v2.jpg";
-import offresFormation from "@/assets/offres-formation-v2.jpg";
+import offresFormation from "@/assets/offres-formation-v3.jpg";
 import offresEnquetes from "@/assets/offres-enquetes.jpg";
 import offresApproche from "@/assets/offres-approche.jpg";
 import patternHero from "@/assets/pattern-hero-clean.png";
