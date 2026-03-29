@@ -51,8 +51,8 @@ const WhySection = () => {
         </div>
 
         <div className="text-center mt-10">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Je veux être Welbellisé
+          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+            <Link to="/contact">Je veux être Welbellisé</Link>
           </Button>
         </div>
       </div>

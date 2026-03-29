@@ -45,8 +45,8 @@ const SolutionsSection = () => {
                   </p>
                 </div>
               </div>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full">
-                Je veux être Welbellisé
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full" asChild>
+                <Link to="/contact">Je veux être Welbellisé</Link>
               </Button>
             </div>
           </div>

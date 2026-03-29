@@ -73,8 +73,8 @@ const ProcessSection = () => {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-14">
           <Button variant="outline" size="lg">Tester mon éligibilité</Button>
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Je veux être Welbellisé
+          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+            <Link to="/contact">Je veux être Welbellisé</Link>
           </Button>
         </div>
       </div>

@@ -26,8 +26,8 @@ const HeroSection = () => {
           <Button variant="outline" size="lg" className="min-w-[200px]">
             Tester mon éligibilité
           </Button>
-          <Button size="lg" className="min-w-[200px] bg-primary text-primary-foreground hover:bg-primary/90">
-            Je veux être Welbellisé
+          <Button size="lg" className="min-w-[200px] bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+            <Link to="/contact">Je veux être Welbellisé</Link>
           </Button>
         </div>
 

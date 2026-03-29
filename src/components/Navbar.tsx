@@ -48,7 +48,7 @@ const Navbar = () => {
           <a href="#contact" className="block text-sm text-foreground">Contact</a>
           <div className="flex gap-2 pt-2">
             <Button variant="outline" size="sm" className="flex-1">Mon compte</Button>
-            <Button size="sm" className="flex-1 bg-primary text-primary-foreground">Je veux être Welbellisé</Button>
+            <Button size="sm" className="flex-1 bg-primary text-primary-foreground" asChild><Link to="/contact">Je veux être Welbellisé</Link></Button>
           </div>
         </div>
       )}
