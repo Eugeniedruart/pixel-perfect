@@ -197,7 +197,7 @@ const Offres = () => {
                   width={800}
                   height={600}
                   loading="lazy"
-                  className="rounded-2xl shadow-lg shadow-foreground/5 object-contain w-full aspect-[3/4] bg-[hsl(var(--wel-cream)/0.2)]"
+                  className="rounded-2xl shadow-lg shadow-foreground/5 object-cover w-full max-h-[400px]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
               </div>
