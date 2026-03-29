@@ -54,7 +54,7 @@ const Reveal = ({ children, className = "" }: { children: React.ReactNode; class
 /* ── data ── */
 const pillars = [
   { icon: Scale, title: "Égalité salariale", desc: "Analyse des écarts de rémunération et des pratiques d'égalité salariale." },
-  { icon: Users, title: "Représentation dans les instances de décision", desc: "Mesure de la représentation des femmes aux postes de cadres dirigeants, au sein des comités exécutifs (COMEX) et des conseils d’administration." },
+  { icon: Users, title: "Représentation dans les instances de décision", desc: "Mesure de la représentation des femmes aux postes de cadres dirigeants, au sein des comités exécutifs (COMEX) et des conseils d'administration." },
   { icon: ShieldCheck, title: "Prévention du sexisme et du harcèlement", desc: "Évaluation des dispositifs de prévention et de la culture inclusive." },
   { icon: Heart, title: "Équilibre de vie", desc: "Politiques de flexibilité, parentalité et bien-être au travail." },
 ];
@@ -87,7 +87,6 @@ const Methodologie = () => {
 
       {/* ─── 1. HERO ─── */}
       <section className="relative overflow-hidden py-24 lg:py-32">
-        {/* pattern bg */}
         <img
           src={patternHero}
           alt=""
@@ -109,7 +108,7 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 2. 4 PILIERS ─── */}
-      <section className="py-20">
+      <section className="py-20 bg-wel-cream">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Le référentiel</p>
@@ -124,8 +123,8 @@ const Methodologie = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {pillars.map((p, i) => (
               <Reveal key={i}>
-                <div className="group rounded-2xl border border-border bg-card p-6 h-full hover:shadow-lg hover:border-primary/30 transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                <div className="group rounded-2xl border border-border/60 bg-white p-6 h-full hover:shadow-lg hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-wel-blue-light flex items-center justify-center mb-5">
                     <p.icon className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2 text-sm leading-snug">{p.title}</h3>
@@ -136,8 +135,6 @@ const Methodologie = () => {
           </div>
         </div>
       </section>
-
-      <hr className="border-border max-w-6xl mx-auto" />
 
       {/* ─── 3. CONFORMITÉ & CRÉDIBILITÉ ─── */}
       <section className="py-20">
@@ -163,7 +160,7 @@ const Methodologie = () => {
               </div>
             </Reveal>
             <Reveal>
-              <div className="rounded-2xl bg-muted/40 border border-border p-8 lg:p-10 text-center">
+              <div className="rounded-2xl bg-gradient-to-br from-wel-blue-light to-wel-cream border border-primary/10 p-8 lg:p-10 text-center">
                 <img src={welCertifiedLogo} alt="WEL Certified" className="w-32 h-auto mx-auto mb-6" />
                 <p className="font-semibold text-foreground mb-2">Label certifié</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -176,15 +173,15 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 4. AU-DELÀ DE LA CONFORMITÉ ─── */}
-      <section className="py-20 bg-[hsl(var(--wel-cream))]">
+      <section className="py-20 bg-gradient-to-b from-wel-navy to-wel-blue text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Au-delà de la conformité</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-white/60 mb-3">Au-delà de la conformité</p>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
               Valoriser les{" "}
-              <span className="font-serif-display italic text-primary font-normal">actions concrètes</span>
+              <span className="font-serif-display italic font-normal text-wel-blue-light">actions concrètes</span>
             </h2>
-            <p className="text-muted-foreground text-base leading-relaxed max-w-3xl mx-auto">
+            <p className="text-white/80 text-base leading-relaxed max-w-3xl mx-auto">
               WEL reconnaît les efforts des entreprises évoluant dans des secteurs historiquement masculins, pour lesquelles l'atteinte d'une parfaite mixité peut être structurellement plus complexe, mais qui déploient des initiatives concrètes et engagées.
             </p>
           </Reveal>
@@ -204,9 +201,9 @@ const Methodologie = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {steps.map((step, i) => (
               <Reveal key={i}>
-                <div className="relative rounded-2xl border border-border bg-card p-6 h-full">
-                  <span className="text-4xl font-bold text-primary/15 absolute top-4 right-5">{step.num}</span>
-                  <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold mb-4">
+                <div className="relative rounded-2xl border border-border/60 bg-white p-6 h-full hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                  <span className="text-4xl font-bold text-primary/10 absolute top-4 right-5">{step.num}</span>
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-wel-blue text-primary-foreground flex items-center justify-center text-xs font-bold mb-4">
                     {step.num}
                   </div>
                   <h3 className="font-semibold text-foreground text-sm mb-2">{step.title}</h3>
@@ -221,13 +218,11 @@ const Methodologie = () => {
         </div>
       </section>
 
-      <hr className="border-border max-w-6xl mx-auto" />
-
       {/* ─── 6. GOUVERNANCE ─── */}
-      <section className="py-20 bg-[hsl(var(--wel-cream))]">
+      <section className="py-20 bg-wel-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
-            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/15 to-wel-blue-light flex items-center justify-center mx-auto mb-6">
               <Users className="h-8 w-8 text-primary" />
             </div>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Gouvernance</p>
@@ -242,7 +237,7 @@ const Methodologie = () => {
               {["Dirigeants", "Avocats", "DRH", "Académiciens"].map((role, i) => (
                 <span
                   key={i}
-                  className="rounded-full border border-border bg-card px-4 py-1.5 text-xs font-medium text-foreground"
+                  className="rounded-full border border-primary/15 bg-white px-4 py-1.5 text-xs font-medium text-foreground shadow-sm"
                 >
                   {role}
                 </span>
@@ -253,7 +248,7 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 7. IMPACT & VALEUR ESG ─── */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-wel-blue-light">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Impact</p>
@@ -265,8 +260,8 @@ const Methodologie = () => {
           <div className="grid sm:grid-cols-3 gap-6">
             {impacts.map((item, i) => (
               <Reveal key={i}>
-                <div className="rounded-2xl border border-border bg-card p-6 text-center h-full hover:shadow-lg transition-shadow duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-5">
+                <div className="rounded-2xl border border-primary/10 bg-white p-6 text-center h-full hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-wel-blue-light flex items-center justify-center mx-auto mb-5">
                     <item.icon className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground text-sm mb-2">{item.title}</h3>
@@ -291,8 +286,8 @@ const Methodologie = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {results.map((r, i) => (
               <Reveal key={i}>
-                <div className="rounded-2xl border border-border bg-card p-6 text-center h-full hover:border-primary/30 transition-colors duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <div className="rounded-2xl border border-border/60 bg-white p-6 text-center h-full hover:border-primary/20 hover:shadow-md hover:shadow-primary/5 transition-all duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-wel-blue-light flex items-center justify-center mx-auto mb-4">
                     <r.icon className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground text-sm">{r.title}</h3>
@@ -303,20 +298,18 @@ const Methodologie = () => {
         </div>
       </section>
 
-      <hr className="border-border max-w-6xl mx-auto" />
-
       {/* ─── 9. TARIFICATION ─── */}
-      <section className="py-20 bg-[hsl(var(--wel-cream))]">
+      <section className="py-20 bg-wel-cream">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="rounded-2xl border border-border bg-card p-10 lg:p-14 text-center">
+            <div className="rounded-2xl border border-primary/10 bg-white p-10 lg:p-14 text-center shadow-sm">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">Tarification</p>
               <p className="text-muted-foreground mb-2">L'accompagnement débute à partir de</p>
               <p className="text-5xl font-bold text-primary mb-2">3 900€</p>
               <p className="text-muted-foreground text-sm mb-8">
                 en fonction de la taille et de la complexité de l'organisation.
               </p>
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <Button size="lg" className="bg-gradient-to-r from-primary to-wel-blue text-primary-foreground hover:opacity-90 shadow-md shadow-primary/20" asChild>
                 <Link to="/contact">Demander un devis</Link>
               </Button>
             </div>
