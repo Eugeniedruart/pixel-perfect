@@ -22,6 +22,10 @@ const faqs = [
     question: "Comment garantissez-vous la confidentialité des données ?",
     answer: "WEL, s'est engagé dans une mise en conformité alignée avec les exigences RGPD, contractualisé en amont de l'audit. Au-delà du cadre légal, le respect de la confidentialité des réponses est une priorité pour WEL. ",
   },
+  {
+    question: "Pourquoi WEL n'est pas du \"women washing\" ?",
+    answer: "WEL ne repose pas sur du déclaratif, mais sur des preuves, des critères mesurables et une analyse indépendante. L'objectif n'est pas de valoriser une image, mais de transformer durablement les pratiques.",
+  },
 ];
 
 const FAQSection = () => {
