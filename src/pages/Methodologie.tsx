@@ -97,7 +97,7 @@ const Methodologie = () => {
           className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-30"
         />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="max-w-3xl mx-auto text-center">
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-5">Méthodologie</p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -110,18 +110,6 @@ const Methodologie = () => {
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
                 <Link to="/contact">Découvrir notre approche</Link>
               </Button>
-            </Reveal>
-            <Reveal>
-              <div className="relative">
-                <img
-                  src={corporateMeeting}
-                  alt="Réunion de comité de direction"
-                  width={1280}
-                  height={854}
-                  className="rounded-2xl shadow-xl shadow-foreground/5 object-cover w-full aspect-[4/3]"
-                />
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
-              </div>
             </Reveal>
           </div>
         </div>
