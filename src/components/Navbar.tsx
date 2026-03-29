@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import welLogo from "@/assets/wel-logo.png";
 
 const Navbar = () => {
@@ -26,8 +27,8 @@ const Navbar = () => {
           {/* Right buttons */}
           <div className="hidden md:flex items-center gap-3">
             <Button variant="outline" size="sm">Mon compte</Button>
-            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Je veux être Welbellisé
+            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <Link to="/contact">Je veux être Welbellisé</Link>
             </Button>
           </div>
 
@@ -47,7 +48,7 @@ const Navbar = () => {
           <a href="#contact" className="block text-sm text-foreground">Contact</a>
           <div className="flex gap-2 pt-2">
             <Button variant="outline" size="sm" className="flex-1">Mon compte</Button>
-            <Button size="sm" className="flex-1 bg-primary text-primary-foreground">Je veux être Welbellisé</Button>
+            <Button size="sm" className="flex-1 bg-primary text-primary-foreground" asChild><Link to="/contact">Je veux être Welbellisé</Link></Button>
           </div>
         </div>
       )}

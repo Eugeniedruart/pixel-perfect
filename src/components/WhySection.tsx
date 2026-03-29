@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import whyImg from "@/assets/why-section.jpg";
 import womanTablet from "@/assets/woman-tablet.jpg";
 
@@ -50,8 +51,8 @@ const WhySection = () => {
         </div>
 
         <div className="text-center mt-10">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Je veux être Welbellisé
+          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+            <Link to="/contact">Je veux être Welbellisé</Link>
           </Button>
         </div>
       </div>

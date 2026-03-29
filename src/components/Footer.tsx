@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import welLogo from "@/assets/wel-logo.png";
 import { Linkedin, ArrowRight } from "lucide-react";
 
@@ -57,8 +58,8 @@ const Footer = () => {
                 leviers d'amélioration et obtenez
                 une label reconnue
               </p>
-              <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2">
-                Je veux être Welbellisé <ArrowRight className="h-4 w-4" />
+              <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2" asChild>
+                <Link to="/contact">Je veux être Welbellisé <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </div>
           </div>

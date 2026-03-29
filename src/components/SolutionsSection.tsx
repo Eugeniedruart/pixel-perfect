@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import solutionLabellisation from "@/assets/solution-labellisation.jpg";
 import solutionConseil from "@/assets/solution-conseil.jpg";
@@ -44,8 +45,8 @@ const SolutionsSection = () => {
                   </p>
                 </div>
               </div>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full">
-                Je veux être Welbellisé
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full" asChild>
+                <Link to="/contact">Je veux être Welbellisé</Link>
               </Button>
             </div>
           </div>

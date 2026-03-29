@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import ctaPortrait from "@/assets/cta-portrait.jpg";
 
 const CTASection = () => {
@@ -26,8 +27,8 @@ const CTASection = () => {
               </p>
               <div className="flex flex-wrap gap-3 mb-4">
                 <Button variant="outline" size="sm">Tester mon éligibilité</Button>
-                <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  Je veux être Welbellisé
+                <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+                  <Link to="/contact">Je veux être Welbellisé</Link>
                 </Button>
               </div>
               <p className="text-xs text-muted-foreground">
