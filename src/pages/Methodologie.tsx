@@ -258,7 +258,6 @@ const Methodologie = () => {
                 <span className="font-serif-display italic text-primary font-normal">indépendant</span>
               </h2>
               <p className="text-muted-foreground text-base leading-relaxed mb-8">
-                Composé de dirigeants, avocats, DRH et académiciens, le comité éthique supervise le référentiel et les standards du label, garantissant la rigueur, la cohérence et la crédibilité de la démarche.
               </p>
               <div className="flex flex-wrap gap-2">
                 {["Dirigeants", "Avocats", "DRH", "Académiciens"].map((role, i) => (
