@@ -1,0 +1,100 @@
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import EligibiliteHeader from "@/components/eligibilite/EligibiliteHeader";
+import StepIndicator from "@/components/eligibilite/StepIndicator";
+import DecorativeBackground from "@/components/eligibilite/DecorativeBackground";
+import StepSiret from "@/components/eligibilite/StepSiret";
+import StepTaille from "@/components/eligibilite/StepTaille";
+import StepConvention from "@/components/eligibilite/StepConvention";
+import StepContact from "@/components/eligibilite/StepContact";
+import ResultScreen from "@/components/eligibilite/ResultScreen";
+import { eligibiliteSchema, stepFields, type EligibiliteFormData } from "@/lib/eligibilite-schema";
+
+const Eligibilite = () => {
+  const [currentStep, setCurrentStep] = useState(1);
+
+  const form = useForm<EligibiliteFormData>({
+    resolver: zodResolver(eligibiliteSchema),
+    defaultValues: {
+      selectedCompany: "",
+      companySize: "",
+      conventionCollective: "",
+      contactNom: "",
+      contactPrenom: "",
+      contactEmail: "",
+      contactFonction: "",
+    },
+  });
+
+  const handleNext = async () => {
+    const fields = stepFields[currentStep];
+    const valid = await form.trigger(fields);
+    if (!valid) return;
+
+    setCurrentStep((s) => s + 1);
+  };
+
+  const handlePrevious = () => {
+    setCurrentStep((s) => Math.max(1, s - 1));
+  };
+
+  const handleSkipContact = () => {
+    setCurrentStep(5);
+  };
+
+  if (currentStep === 5) {
+    return (
+      <div>
+        <EligibiliteHeader />
+        <ResultScreen data={form.getValues()} />
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen flex flex-col bg-background">
+      <EligibiliteHeader />
+
+      <div className="flex-1 grid grid-cols-1 lg:grid-cols-2">
+        {/* Left - Form */}
+        <div className="px-6 sm:px-10 lg:px-16 py-8 flex flex-col">
+          <StepIndicator currentStep={currentStep} />
+
+          <div className="flex-1">
+            {currentStep === 1 && <StepSiret form={form} />}
+            {currentStep === 2 && <StepTaille form={form} />}
+            {currentStep === 3 && <StepConvention form={form} />}
+            {currentStep === 4 && <StepContact form={form} onSkip={handleSkipContact} />}
+          </div>
+
+          {/* Navigation buttons */}
+          <div className="flex items-center gap-4 mt-10 pb-8">
+            {currentStep > 1 && (
+              <Button type="button" variant="outline" onClick={handlePrevious} className="gap-2">
+                <ArrowLeft className="h-4 w-4" /> Précédent
+              </Button>
+            )}
+            <Button
+              type="button"
+              onClick={handleNext}
+              className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
+            >
+              {currentStep === 4 ? "Découvrez votre éligibilité" : "Suivant"}
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          </div>
+        </div>
+
+        {/* Right - Decorative */}
+        <div className="hidden lg:block">
+          <DecorativeBackground />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Eligibilite;

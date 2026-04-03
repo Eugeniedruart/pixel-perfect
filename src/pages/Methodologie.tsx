@@ -16,6 +16,9 @@ import {
   TrendingUp,
   Award,
   Briefcase,
+  ClipboardList,
+  Search,
+  Clock,
 } from "lucide-react";
 import patternHero from "@/assets/pattern-hero-clean.png";
 import welCertifiedDark from "@/assets/wel-certified-dark.png";
@@ -68,6 +71,14 @@ const steps = [
   { num: "03", title: "Analyse et revue experte", desc: "Revue approfondie des données collectées par notre comité d'experts." },
   { num: "04", title: "Résultats et structuration", desc: "Restitution des résultats et mise en place d'une trajectoire de progrès durable." },
 ];
+
+const timelineNodes = [
+  { label: "Éligibilité", icon: ClipboardList },
+  { label: "Diagnostic", icon: Search },
+  { label: "Analyse", icon: BarChart3 },
+  { label: "Labellisation", icon: Award },
+];
+const delays = ["~ 1 semaine", "3 à 4 semaines", "2 à 3 semaines"];
 
 const impacts = [
   { icon: TrendingUp, title: "Valorisation extra-financière", desc: "Structurez et objectivez vos engagements ESG." },
@@ -227,6 +238,111 @@ const Methodologie = () => {
               <span className="font-serif-display italic text-primary font-normal">4 étapes</span>
             </h2>
           </Reveal>
+          {/* ── Timeline infographic ── */}
+          <Reveal>
+            {/* Desktop */}
+            <div className="hidden lg:block max-w-3xl mx-auto mb-14">
+              <div className="relative">
+                {/* Track line */}
+                <div className="absolute top-[24px] left-[48px] right-[48px] h-[2px] bg-border">
+                  <div
+                    className="absolute inset-0 rounded-full opacity-50"
+                    style={{ background: "linear-gradient(90deg, hsl(var(--wel-purple)), hsl(var(--wel-blue)), hsl(var(--wel-purple)))" }}
+                  />
+                </div>
+
+                {/* Nodes row */}
+                <div className="relative grid grid-cols-7 items-start">
+                  {timelineNodes.map((node, i) => (
+                    <>
+                      {/* Node */}
+                      <div key={`node-${i}`} className={`flex flex-col items-center ${i === 0 ? "col-start-1" : ""}`} style={{ gridColumn: i * 2 + 1 }}>
+                        <div
+                          className="w-[48px] h-[48px] rounded-full flex items-center justify-center text-white relative z-10"
+                          style={{
+                            background: "linear-gradient(135deg, hsl(var(--wel-purple)), hsl(var(--wel-navy)))",
+                            boxShadow: "0 4px 14px hsla(var(--wel-purple), 0.3)",
+                          }}
+                        >
+                          <node.icon size={20} strokeWidth={2} />
+                        </div>
+                        <span className="mt-2 text-[11px] font-bold tracking-widest uppercase text-primary">
+                          {node.label}
+                        </span>
+                      </div>
+                      {/* Delay badge */}
+                      {i < delays.length && (
+                        <div key={`delay-${i}`} className="flex items-start justify-center pt-[14px]" style={{ gridColumn: i * 2 + 2 }}>
+                          <span
+                            className="px-3 py-1 rounded-full text-[11px] font-medium whitespace-nowrap"
+                            style={{ background: "hsl(var(--wel-blue-light))", color: "hsl(var(--wel-navy))" }}
+                          >
+                            {delays[i]}
+                          </span>
+                        </div>
+                      )}
+                    </>
+                  ))}
+                </div>
+              </div>
+              {/* Total duration */}
+              <div className="flex justify-center mt-6">
+                <span
+                  className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium"
+                  style={{ background: "hsl(var(--wel-blue-light))", color: "hsl(var(--wel-navy))", border: "1px solid hsla(var(--wel-purple), 0.15)" }}
+                >
+                  <Clock size={14} />
+                  Durée totale estimée : 6 à 8 semaines
+                </span>
+              </div>
+            </div>
+
+            {/* Mobile / Tablet */}
+            <div className="lg:hidden relative pl-8 mb-14">
+              {/* Vertical line */}
+              <div
+                className="absolute left-[28px] top-4 bottom-12 w-[2px] opacity-40"
+                style={{ background: "linear-gradient(180deg, hsl(var(--wel-purple)), hsl(var(--wel-blue)), hsl(var(--wel-purple)))" }}
+              />
+              {timelineNodes.map((node, i) => (
+                <div key={i} className="relative flex items-start gap-4 mb-8">
+                  <div
+                    className="relative z-10 w-[38px] h-[38px] rounded-full flex items-center justify-center text-white shrink-0"
+                    style={{
+                      background: "linear-gradient(135deg, hsl(var(--wel-purple)), hsl(var(--wel-navy)))",
+                      boxShadow: "0 3px 10px hsla(var(--wel-purple), 0.3)",
+                    }}
+                  >
+                    <node.icon size={18} strokeWidth={2} />
+                  </div>
+                  <div className="pt-1.5">
+                    <span className="text-[10px] font-bold tracking-widest uppercase text-primary">
+                      Étape {node.label === "Éligibilité" ? "01" : node.label === "Diagnostic" ? "02" : node.label === "Analyse" ? "03" : "04"}
+                    </span>
+                    <p className="text-sm font-semibold text-foreground">{node.label}</p>
+                    {i < delays.length && (
+                      <span
+                        className="inline-block mt-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-medium"
+                        style={{ background: "hsl(var(--wel-blue-light))", color: "hsl(var(--wel-navy))" }}
+                      >
+                        {delays[i]}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ))}
+              <div className="ml-[54px]">
+                <span
+                  className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-medium"
+                  style={{ background: "hsl(var(--wel-blue-light))", color: "hsl(var(--wel-navy))", border: "1px solid hsla(var(--wel-purple), 0.15)" }}
+                >
+                  <Clock size={13} />
+                  Durée totale : 6 à 8 semaines
+                </span>
+              </div>
+            </div>
+          </Reveal>
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {steps.map((step, i) => (
               <Reveal key={i}>

@@ -26,7 +26,9 @@ const CTASection = () => {
                 label reconnue, adaptée à votre entreprise.
               </p>
               <div className="flex flex-wrap gap-3 mb-4">
-                <Button variant="outline" size="sm">Tester mon éligibilité</Button>
+                <Button variant="outline" size="sm" asChild>
+                  <Link to="/eligibilite">Tester mon éligibilité</Link>
+                </Button>
                 <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
                   <Link to="/contact">Je veux être Welbellisé</Link>
                 </Button>

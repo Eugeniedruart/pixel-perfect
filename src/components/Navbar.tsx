@@ -26,7 +26,6 @@ const Navbar = () => {
 
           {/* Right buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="outline" size="sm">Mon compte</Button>
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
               <Link to="/contact">Je veux être Welbellisé</Link>
             </Button>
@@ -47,7 +46,6 @@ const Navbar = () => {
           <Link to="/methodologie" className="block text-sm text-foreground">Méthodologie</Link>
           <Link to="/contact" className="block text-sm text-foreground">Contact</Link>
           <div className="flex gap-2 pt-2">
-            <Button variant="outline" size="sm" className="flex-1">Mon compte</Button>
             <Button size="sm" className="flex-1 bg-primary text-primary-foreground" asChild><Link to="/contact">Je veux être Welbellisé</Link></Button>
           </div>
         </div>

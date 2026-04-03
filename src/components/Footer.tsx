@@ -7,7 +7,7 @@ const footerLinks = [
   { label: "Le label", href: "#label" },
   { label: "Nos offres", href: "#solutions" },
   { label: "Notre blog", href: "#" },
-  { label: "Test d'éligibilité", href: "#" },
+  { label: "Test d'éligibilité", href: "/eligibilite" },
 ];
 
 const Footer = () => {
@@ -27,9 +27,11 @@ const Footer = () => {
                 certifie et accompagne les entreprises engagées pour
                 l'égalité professionnelle femmes-hommes.
               </p>
-              <Button variant="outline" size="sm" className="gap-2">
-                <Linkedin className="h-4 w-4" />
-                Rejoignez-nous sur LinkedIn
+              <Button variant="outline" size="sm" className="gap-2" asChild>
+                <a href="https://www.linkedin.com/company/women-equity-label/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-4 w-4" />
+                  Rejoignez-nous sur LinkedIn
+                </a>
               </Button>
             </div>
 
@@ -71,7 +73,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">Women Equity Label</p>
           <div className="flex flex-wrap gap-6 text-xs text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">Contact</a>
+            <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
             <a href="#" className="hover:text-foreground transition-colors">Mentions légales</a>
             <a href="#" className="hover:text-foreground transition-colors">Politiques de confidentialité</a>
             <a href="#" className="hover:text-foreground transition-colors">Gestion des cookies</a>

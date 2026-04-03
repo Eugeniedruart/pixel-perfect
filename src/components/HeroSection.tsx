@@ -24,8 +24,8 @@ const HeroSection = () => {
         </h1>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-          <Button variant="outline" size="lg" className="min-w-[200px]">
-            Tester mon éligibilité
+          <Button variant="outline" size="lg" className="min-w-[200px]" asChild>
+            <Link to="/eligibilite">Tester mon éligibilité</Link>
           </Button>
           <Button size="lg" className="min-w-[200px] bg-primary text-primary-foreground hover:bg-primary/90" asChild>
             <Link to="/contact">Je veux être Welbellisé</Link>
