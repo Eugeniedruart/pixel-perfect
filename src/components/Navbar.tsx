@@ -13,16 +13,16 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Left nav links */}
           <div className="hidden md:flex items-center gap-6">
-            <a href="#label" className="text-sm text-foreground hover:text-primary transition-colors">Le label WEL</a>
+            <Link to="/#label" className="text-sm text-foreground hover:text-primary transition-colors">Le label WEL</Link>
             <Link to="/offres" className="text-sm text-foreground hover:text-primary transition-colors">Nos offres</Link>
             <Link to="/methodologie" className="text-sm text-foreground hover:text-primary transition-colors">Méthodologie</Link>
             <Link to="/contact" className="text-sm text-foreground hover:text-primary transition-colors">Contact</Link>
           </div>
 
           {/* Logo */}
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src={welLogo} alt="WEL - Women Equity Label" className="h-10" />
-          </div>
+          </Link>
 
           {/* Right buttons */}
           <div className="hidden md:flex items-center gap-3">
@@ -42,7 +42,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden border-t border-border bg-background px-4 py-4 space-y-3">
-          <a href="#label" className="block text-sm text-foreground">Le label WEL</a>
+          <Link to="/#label" className="block text-sm text-foreground">Le label WEL</Link>
           <Link to="/offres" className="block text-sm text-foreground">Nos offres</Link>
           <Link to="/methodologie" className="block text-sm text-foreground">Méthodologie</Link>
           <Link to="/contact" className="block text-sm text-foreground">Contact</Link>
