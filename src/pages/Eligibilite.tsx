@@ -5,7 +5,6 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import EligibiliteHeader from "@/components/eligibilite/EligibiliteHeader";
 import StepIndicator from "@/components/eligibilite/StepIndicator";
-import DecorativeBackground from "@/components/eligibilite/DecorativeBackground";
 import StepSiret from "@/components/eligibilite/StepSiret";
 import StepTaille from "@/components/eligibilite/StepTaille";
 import StepConvention from "@/components/eligibilite/StepConvention";
@@ -58,39 +57,30 @@ const Eligibilite = () => {
     <div className="min-h-screen flex flex-col bg-background">
       <EligibiliteHeader />
 
-      <div className="flex-1 grid grid-cols-1 lg:grid-cols-2">
-        {/* Left - Form */}
-        <div className="px-6 sm:px-10 lg:px-16 py-8 flex flex-col">
-          <StepIndicator currentStep={currentStep} />
+      <div className="flex-1 flex flex-col max-w-2xl mx-auto w-full px-6 sm:px-10 py-8">
+        <StepIndicator currentStep={currentStep} />
 
-          <div className="flex-1">
-            {currentStep === 1 && <StepSiret form={form} />}
-            {currentStep === 2 && <StepTaille form={form} />}
-            {currentStep === 3 && <StepConvention form={form} />}
-            {currentStep === 4 && <StepContact form={form} onSkip={handleSkipContact} />}
-          </div>
-
-          {/* Navigation buttons */}
-          <div className="flex items-center gap-4 mt-10 pb-8">
-            {currentStep > 1 && (
-              <Button type="button" variant="outline" onClick={handlePrevious} className="gap-2">
-                <ArrowLeft className="h-4 w-4" /> Précédent
-              </Button>
-            )}
-            <Button
-              type="button"
-              onClick={handleNext}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
-            >
-              {currentStep === 4 ? "Découvrez votre éligibilité" : "Suivant"}
-              <ArrowRight className="h-4 w-4" />
-            </Button>
-          </div>
+        <div className="flex-1">
+          {currentStep === 1 && <StepSiret form={form} />}
+          {currentStep === 2 && <StepTaille form={form} />}
+          {currentStep === 3 && <StepConvention form={form} />}
+          {currentStep === 4 && <StepContact form={form} onSkip={handleSkipContact} />}
         </div>
 
-        {/* Right - Decorative */}
-        <div className="hidden lg:block">
-          <DecorativeBackground />
+        <div className="flex items-center gap-4 mt-10 pb-8">
+          {currentStep > 1 && (
+            <Button type="button" variant="outline" onClick={handlePrevious} className="gap-2">
+              <ArrowLeft className="h-4 w-4" /> Précédent
+            </Button>
+          )}
+          <Button
+            type="button"
+            onClick={handleNext}
+            className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
+          >
+            {currentStep === 4 ? "Découvrez votre éligibilité" : "Suivant"}
+            <ArrowRight className="h-4 w-4" />
+          </Button>
         </div>
       </div>
     </div>

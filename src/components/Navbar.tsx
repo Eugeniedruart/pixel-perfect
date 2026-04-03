@@ -10,29 +10,29 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Left nav links */}
-          <div className="hidden md:flex items-center gap-6">
+        <div className="flex items-center h-16">
+          {/* Logo – left */}
+          <Link to="/" className="flex items-center shrink-0">
+            <img src={welLogo} alt="WEL - Women Equity Label" className="h-10" />
+          </Link>
+
+          {/* Center nav links */}
+          <div className="hidden md:flex items-center justify-center gap-6 flex-1">
             <Link to="/#label" className="text-sm text-foreground hover:text-primary transition-colors">Le label WEL</Link>
             <Link to="/offres" className="text-sm text-foreground hover:text-primary transition-colors">Nos offres</Link>
             <Link to="/methodologie" className="text-sm text-foreground hover:text-primary transition-colors">Méthodologie</Link>
             <Link to="/contact" className="text-sm text-foreground hover:text-primary transition-colors">Contact</Link>
           </div>
 
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img src={welLogo} alt="WEL - Women Equity Label" className="h-10" />
-          </Link>
-
-          {/* Right buttons */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* Right button */}
+          <div className="hidden md:flex items-center gap-3 shrink-0">
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
               <Link to="/contact">Je veux être Welbellisé</Link>
             </Button>
           </div>
 
           {/* Mobile toggle */}
-          <button className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
+          <button className="md:hidden ml-auto" onClick={() => setMobileOpen(!mobileOpen)}>
             {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>

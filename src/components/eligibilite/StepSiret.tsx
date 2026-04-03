@@ -12,7 +12,7 @@ interface StepSiretProps {
 
 const StepSiret = ({ form }: StepSiretProps) => {
   const [siretQuery, setSiretQuery] = useState("");
-  const [results, setResults] = useState<typeof mockCompanies>([]);
+  const [results, setResults] = useState(mockCompanies.slice(0, 2));
   const selectedCompany = form.watch("selectedCompany");
 
   const handleSearch = () => {

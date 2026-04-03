@@ -1,17 +1,54 @@
 import FloatingStatCard from "./FloatingStatCard";
 
+type Corner = "tl" | "tr" | "bl" | "br";
+type Color = "cream" | "lavender";
+
+const borderRadiusMap: Record<Corner, string> = {
+  tl: "100% 0 0 0",
+  tr: "0 100% 0 0",
+  bl: "0 0 0 100%",
+  br: "0 0 100% 0",
+};
+
+const colorMap: Record<Color, string> = {
+  cream: "hsl(var(--wel-cream-deep))",
+  lavender: "hsl(var(--wel-blue-light))",
+};
+
+const Cell = ({ corner, color = "cream" }: { corner: Corner; color?: Color }) => (
+  <div className="relative overflow-hidden aspect-square">
+    <div
+      className="absolute inset-0"
+      style={{
+        background: colorMap[color],
+        borderRadius: borderRadiusMap[corner],
+      }}
+    />
+  </div>
+);
+
+// Each row defines 4 cells: [corner, color?]
+const rows: [Corner, Color?][][] = [
+  [["br"], ["bl"], ["tl", "lavender"], ["br"]],
+  [["tl"], ["bl", "lavender"], ["br"], ["tl"]],
+  [["br"], ["tr"], ["tl"], ["bl"]],
+  [["tl", "lavender"], ["tr"], ["bl"], ["br", "lavender"]],
+  [["bl"], ["br", "lavender"], ["tl"], ["tr"]],
+  [["tr"], ["tl"], ["br", "lavender"], ["bl"]],
+  [["br"], ["bl"], ["tr"], ["tl"]],
+  [["tl"], ["tr", "lavender"], ["bl"], ["br"]],
+];
+
 const DecorativeBackground = () => {
   return (
-    <div className="relative h-full w-full overflow-hidden bg-wel-cream/50 rounded-l-3xl">
-      <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-wel-cream-deep/60" />
-      <div className="absolute top-16 -left-24 w-64 h-64 rounded-full bg-primary/20" />
-      <div className="absolute top-8 right-16 w-48 h-48 rounded-full bg-wel-blue-light/70" />
-      <div className="absolute top-48 right-0 w-72 h-72 rounded-full bg-wel-cream-deep/50" />
-      <div className="absolute bottom-32 right-16 w-56 h-56 rounded-full bg-primary/15 overflow-hidden">
-        <div className="absolute inset-0 bg-wel-blue-light/40" />
+    <div className="relative h-full w-full bg-white/60 overflow-hidden">
+      <div className="absolute inset-0 grid grid-cols-4 auto-rows-fr">
+        {rows.map((row, r) =>
+          row.map(([corner, color], c) => (
+            <Cell key={`${r}-${c}`} corner={corner} color={color ?? "cream"} />
+          ))
+        )}
       </div>
-      <div className="absolute bottom-48 left-8 w-32 h-32 rounded-full bg-wel-blue-light/50" />
-      <div className="absolute -bottom-16 left-16 w-64 h-64 rounded-full bg-wel-cream-deep/40" />
       <FloatingStatCard />
     </div>
   );
