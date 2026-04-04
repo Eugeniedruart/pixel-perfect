@@ -68,7 +68,7 @@ const formations = [
 
 const approche = [
   { icon: MapPin, title: "Sur le terrain", text: "Pas de théorie déconnectée. Nous venons chez vous, nous écoutons, nous observons." },
-  { icon: Handshake, title: "Avec vos équipes", text: "Nous travaillons avec ceux qui font tourner l'organisation, pas en chambre." },
+  { icon: Handshake, title: "Avec vos équipes", text: "Nous travaillons avec celles et ceux qui font tourner l’entreprise, au plus près du terrain." },
   { icon: Settings, title: "À votre rythme", text: "Chaque entreprise est différente. Notre approche s'adapte à vos réalités." },
   { icon: Target, title: "Pour du concret", text: "Des résultats mesurables, traduits en actions concrètes et accompagnés de mises en relation ciblées, nous allons bien au-delà d'un simple rapport." },
 ];
@@ -293,7 +293,7 @@ const Offres = () => {
                 Transformer les intentions en actions.
               </p>
               <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
-                Stratégie, audits, plans d'action, communication — nous vous accompagnons à chaque étape.
+                Stratégie, audits, plans d'action, communication, nous vous accompagnons à chaque étape.
               </p>
               <div className="flex flex-wrap gap-2">
                 {["Stratégie", "Conformité", "Plans d'action", "Communication", "Audits"].map((tag, i) => (
