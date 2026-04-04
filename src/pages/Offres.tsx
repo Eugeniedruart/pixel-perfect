@@ -293,7 +293,7 @@ const Offres = () => {
                 Transformer les intentions en actions.
               </p>
               <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
-                Stratégie, audits, plans d'action, communication — nous vous accompagnons à chaque étape.
+                Stratégie, audits, plans d'action, communication, nous vous accompagnons à chaque étape.
               </p>
               <div className="flex flex-wrap gap-2">
                 {["Stratégie", "Conformité", "Plans d'action", "Communication", "Audits"].map((tag, i) => (
