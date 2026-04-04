@@ -156,7 +156,7 @@ const Offres = () => {
               <div className="space-y-3 mb-8">
                 {[
                   "Un diagnostic structuré autour de 4 piliers concrets",
-                  "Des critères mesurables, pas des déclarations",
+                  "Des critères mesurables, pas déclaratif",
                   "Une reconnaissance qui valorise l'action",
                   "Un atout pour vos appels d'offres et votre stratégie ESG",
                 ].map((text, i) => (
