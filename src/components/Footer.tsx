@@ -75,7 +75,7 @@ const Footer = () => {
           <div className="flex flex-wrap gap-6 text-xs text-muted-foreground">
             <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
             <Link to="/mentions-legales" className="hover:text-foreground transition-colors">Mentions légales</Link>
-            <a href="#" className="hover:text-foreground transition-colors">Politiques de confidentialité</a>
+            <Link to="/politique-confidentialite" className="hover:text-foreground transition-colors">Politiques de confidentialité</Link>
             <a href="#" className="hover:text-foreground transition-colors">Gestion des cookies</a>
           </div>
         </div>
