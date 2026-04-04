@@ -74,7 +74,7 @@ const Footer = () => {
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">Women Equity Label</p>
           <div className="flex flex-wrap gap-6 text-xs text-muted-foreground">
             <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
-            <a href="#" className="hover:text-foreground transition-colors">Mentions légales</a>
+            <Link to="/mentions-legales" className="hover:text-foreground transition-colors">Mentions légales</Link>
             <a href="#" className="hover:text-foreground transition-colors">Politiques de confidentialité</a>
             <a href="#" className="hover:text-foreground transition-colors">Gestion des cookies</a>
           </div>
