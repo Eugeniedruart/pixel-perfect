@@ -41,8 +41,8 @@ const WhySection = () => {
 
           {/* Woman photo - mobile only, after 2167 */}
           <div className="md:hidden rounded-lg border border-wel-cream bg-card p-2">
-            <div className="rounded overflow-hidden h-52">
-              <img src={womanTablet} alt="Femme professionnelle" className="w-full h-full object-cover object-[center_15%]" loading="lazy" width={768} height={1024} />
+            <div className="rounded overflow-hidden h-56">
+              <img src={womanTablet} alt="Femme professionnelle" className="w-full h-full object-cover object-[center_8%]" loading="lazy" width={768} height={1024} />
             </div>
           </div>
 
