@@ -72,11 +72,11 @@ const ProcessSection = () => {
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mt-8 md:mt-14">
-          <Button variant="outline" size="lg" className="w-full sm:w-auto h-12" asChild>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mt-8 md:mt-14">
+          <Button variant="outline" size="default" className="h-10 sm:h-12 text-sm sm:text-base" asChild>
             <Link to="/eligibilite">Tester mon éligibilité</Link>
           </Button>
-          <Button size="lg" className="w-full sm:w-auto h-12 bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+          <Button size="default" className="h-10 sm:h-12 text-sm sm:text-base bg-primary text-primary-foreground hover:bg-primary/90" asChild>
             <Link to="/contact">Je veux être Welbellisé</Link>
           </Button>
         </div>

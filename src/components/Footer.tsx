@@ -54,7 +54,7 @@ const Footer = () => {
               <p className="text-xs md:text-sm text-muted-foreground mb-3">
                 Évaluez vos pratiques et obtenez un label reconnu.
               </p>
-              <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 w-full sm:w-auto" asChild>
+              <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2" asChild>
                 <Link to="/contact">Je veux être Welbellisé <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </div>
