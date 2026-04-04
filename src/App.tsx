@@ -10,6 +10,7 @@ import Offres from "./pages/Offres.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Eligibilite from "./pages/Eligibilite.tsx";
 import MentionsLegales from "./pages/MentionsLegales.tsx";
+import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
 
 const queryClient = new QueryClient();
 
