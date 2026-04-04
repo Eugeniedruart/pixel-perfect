@@ -312,7 +312,7 @@ const Offres = () => {
 
       {/* ─── QUOTE BREAK 2 ─── */}
       <Reveal>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-16 text-center">
           <blockquote className="text-lg sm:text-2xl font-serif-display italic text-foreground/80 leading-relaxed">
             "Un label n'a de valeur que par les transformations qu'il engage."
           </blockquote>
