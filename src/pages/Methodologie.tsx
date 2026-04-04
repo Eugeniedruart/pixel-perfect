@@ -199,12 +199,12 @@ const Methodologie = () => {
             <Reveal>
               <div className="relative overflow-hidden rounded-2xl">
                 <img
-                  src={corporateCollaboration}
-                  alt="Collaboration entre professionnels"
+                  src={constructionWorkers}
+                  alt="Professionnels sur un chantier"
                   width={1280}
                   height={854}
                   loading="lazy"
-                  className="shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3] object-[center_15%] scale-[1.3]"
+                  className="shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3] object-[center_30%] scale-[1.15]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
               </div>
