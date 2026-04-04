@@ -63,6 +63,7 @@ const formations = [
   { icon: Heart, title: "Parentalité & carrière", desc: "Comprendre et réduire les inégalités" },
   { icon: Eye, title: "Sexisme ordinaire", desc: "Ce que nous ne voyons plus" },
   { icon: Rocket, title: "Femmes et leadership", desc: "Dynamiques d'accès aux responsabilités" },
+  { icon: Search, title: "Process de recrutement", desc: "Adopter un process de recrutement inclusif" },
 ];
 
 const approche = [
