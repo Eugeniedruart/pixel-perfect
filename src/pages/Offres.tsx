@@ -285,15 +285,15 @@ const Offres = () => {
             </Reveal>
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Sur mesure</p>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+              <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 Missions de{" "}
                 <span className="font-serif-display italic text-primary font-normal">conseil</span>
               </h3>
-              <p className="font-serif-display italic text-primary/70 text-base mb-4">
-                Transformer les intentions en actions concrètes.
+              <p className="font-serif-display italic text-primary/70 text-sm md:text-base mb-3 md:mb-4">
+                Transformer les intentions en actions.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                Structurer votre stratégie, préparer vos audits, déployer vos plans d'action, communiquer en interne et en externe — nous vous accompagnons à chaque étape.
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
+                Stratégie, audits, plans d'action, communication — nous vous accompagnons à chaque étape.
               </p>
               <div className="flex flex-wrap gap-2">
                 {["Stratégie", "Conformité", "Plans d'action", "Communication", "Audits"].map((tag, i) => (
