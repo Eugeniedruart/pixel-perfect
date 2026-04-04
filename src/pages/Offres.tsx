@@ -115,7 +115,7 @@ const Offres = () => {
 
       {/* ─── QUOTE BREAK ─── */}
       <Reveal>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-10 -mt-2 text-center">
           <blockquote className="text-lg sm:text-2xl font-serif-display italic text-foreground/80 leading-relaxed">
             "L'égalité ne se décrète pas. Elle se construit, au quotidien."
           </blockquote>
