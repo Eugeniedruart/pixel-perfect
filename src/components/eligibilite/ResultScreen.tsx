@@ -127,7 +127,7 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
             className={`group rounded-2xl border border-border bg-background p-6 sm:p-7 transition-all duration-700 hover:shadow-lg hover:-translate-y-1 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             style={{ transitionDelay: "120ms" }}
           >
-            <p className="text-xs tracking-[0.15em] uppercase text-muted-foreground mb-1">Bloc 2</p>
+            
             <p className="font-bold text-foreground mb-5">Écart de pension de retraite</p>
             <div className="space-y-3 mb-4">
               <Bar pct={100} color="bg-wel-blue" label="Hommes" animate={visible} />
