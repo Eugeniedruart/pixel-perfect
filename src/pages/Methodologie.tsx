@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Scale,
   Users,
@@ -13,6 +13,7 @@ import {
   BarChart3,
   Megaphone,
   Handshake,
+  ChevronDown,
   TrendingUp,
   Award,
   Briefcase,
@@ -92,6 +93,30 @@ const results = [
   { icon: Megaphone, title: "Kit de communication", desc: "Des éléments clés pour valoriser votre démarche en interne et en externe, en cohérence avec votre positionnement." },
   { icon: Handshake, title: "Écosystème de partenaires", desc: "Un accès à des acteurs engagés (formation, accompagnement, sensibilisation) pour déployer concrètement vos actions." },
 ];
+
+/* ── accordion card for mobile results ── */
+const ResultAccordionCard = ({ icon: Icon, title, desc }: { icon: React.ElementType; title: string; desc: string }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <button
+      onClick={() => setOpen(!open)}
+      className="w-full text-left rounded-2xl border border-border bg-[hsl(var(--wel-cream)/0.35)] backdrop-blur-sm p-4 transition-all duration-300"
+    >
+      <div className="flex items-center gap-3">
+        <div className="w-9 h-9 rounded-lg bg-primary/[0.08] flex items-center justify-center shrink-0">
+          <Icon className="h-4 w-4 text-primary" />
+        </div>
+        <h3 className="font-semibold text-foreground text-sm leading-snug flex-1">{title}</h3>
+        <ChevronDown className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+      </div>
+      <div
+        className={`overflow-hidden transition-all duration-200 ${open ? "max-h-40 mt-3 opacity-100" : "max-h-0 opacity-0"}`}
+      >
+        <p className="text-muted-foreground text-xs leading-relaxed pl-12">{desc}</p>
+      </div>
+    </button>
+  );
+};
 
 /* ── page ── */
 const Methodologie = () => {
@@ -449,7 +474,8 @@ const Methodologie = () => {
               À l'issue de la démarche, vous recevez des livrables opérationnels pour structurer et valoriser votre engagement.
             </p>
           </Reveal>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {/* Desktop: grid */}
+          <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {results.map((r, i) => (
               <Reveal key={i}>
                 <div className="rounded-2xl border border-border bg-[hsl(var(--wel-cream)/0.35)] backdrop-blur-sm p-6 h-full hover:border-primary/20 hover:shadow-lg hover:shadow-foreground/[0.04] hover:-translate-y-0.5 transition-all duration-300">
@@ -460,6 +486,12 @@ const Methodologie = () => {
                   <p className="text-muted-foreground text-xs leading-relaxed">{r.desc}</p>
                 </div>
               </Reveal>
+            ))}
+          </div>
+          {/* Mobile: accordion cards */}
+          <div className="sm:hidden space-y-3">
+            {results.map((r, i) => (
+              <ResultAccordionCard key={i} icon={r.icon} title={r.title} desc={r.desc} />
             ))}
           </div>
         </div>
