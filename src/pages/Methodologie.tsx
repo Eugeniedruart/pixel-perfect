@@ -184,8 +184,8 @@ const Methodologie = () => {
               </div>
             </Reveal>
             <Reveal>
-              <div className="rounded-2xl border border-border bg-background p-8 lg:p-10 flex items-center justify-center shadow-sm">
-                <img src={welCertifiedDark} alt="WEL Certified" className="w-44 h-auto" />
+              <div className="rounded-2xl border border-border bg-background p-6 md:p-8 lg:p-10 flex items-center justify-center shadow-sm">
+                <img src={welCertifiedDark} alt="WEL Certified" className="w-28 md:w-44 h-auto" />
               </div>
             </Reveal>
           </div>
