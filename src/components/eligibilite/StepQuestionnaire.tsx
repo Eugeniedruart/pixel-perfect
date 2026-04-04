@@ -38,7 +38,6 @@ type PillarQuestion = {
 type Pillar = {
   num: number;
   title: string;
-  icon: string;
   questions: PillarQuestion[];
 };
 
