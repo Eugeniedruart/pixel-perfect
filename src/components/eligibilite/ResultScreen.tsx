@@ -171,7 +171,7 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
             className={`group rounded-2xl border border-border bg-background p-6 sm:p-7 transition-all duration-700 hover:shadow-lg hover:-translate-y-1 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             style={{ transitionDelay: "360ms" }}
           >
-            <p className="text-xs tracking-[0.15em] uppercase text-muted-foreground mb-1">Bloc 4</p>
+            
             <p className="font-bold text-foreground mb-5">Écart de rémunération</p>
             {/* Gauge visual */}
             <div className="relative mx-auto w-40 h-40 mb-4">
