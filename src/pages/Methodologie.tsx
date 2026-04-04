@@ -13,6 +13,7 @@ import {
   BarChart3,
   Megaphone,
   Handshake,
+  ChevronDown,
   TrendingUp,
   Award,
   Briefcase,
