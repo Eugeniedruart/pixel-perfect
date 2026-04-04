@@ -374,6 +374,7 @@ const Methodologie = () => {
                 <span className="font-serif-display italic text-primary font-normal">indépendant</span>
               </h2>
               <p className="text-muted-foreground text-base leading-relaxed mb-8">
+                Un comité composé d'experts indépendants, DRH, juristes, chercheurs et dirigeants, qui garantit la rigueur, la cohérence et l'intégrité du référentiel WEL.
               </p>
               <div className="flex flex-wrap gap-2">
                 {["Dirigeants", "Avocats", "DRH", "Académiciens"].map((role, i) => (
