@@ -132,15 +132,15 @@ const Methodologie = () => {
       </div>
 
       {/* ─── 2. 4 PILIERS ─── */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Le référentiel</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-4">
               Une approche structurée autour de{" "}
               <span className="font-serif-display italic text-primary font-normal">4 piliers</span>
             </h2>
-            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-14">
+            <p className="text-muted-foreground text-xs sm:text-base text-center max-w-2xl mx-auto mb-8 md:mb-14">
               Quatre dimensions fondamentales couvrant l'ensemble des enjeux de l'égalité professionnelle.
             </p>
           </Reveal>
