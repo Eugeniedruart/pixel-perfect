@@ -118,6 +118,30 @@ const ResultAccordionCard = ({ icon: Icon, title, desc }: { icon: React.ElementT
   );
 };
 
+/* ── accordion card for mobile pillars ── */
+const PillarAccordionCard = ({ emoji, title, desc }: { emoji: string; title: string; desc: string }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <button
+      onClick={() => setOpen(!open)}
+      className="w-full text-left rounded-2xl border border-border bg-gradient-to-br from-[hsl(var(--wel-cream)/0.5)] to-background p-4 transition-all duration-300"
+    >
+      <div className="flex items-center gap-3">
+        <div className="w-9 h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0">
+          <span className="text-lg">{emoji}</span>
+        </div>
+        <h3 className="font-semibold text-foreground text-sm leading-snug flex-1">{title}</h3>
+        <ChevronDown className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+      </div>
+      <div
+        className={`overflow-hidden transition-all duration-200 ${open ? "max-h-40 mt-3 opacity-100" : "max-h-0 opacity-0"}`}
+      >
+        <p className="text-muted-foreground text-xs leading-relaxed pl-12">{desc}</p>
+      </div>
+    </button>
+  );
+};
+
 /* ── page ── */
 const Methodologie = () => {
   return (
@@ -169,7 +193,8 @@ const Methodologie = () => {
               Quatre dimensions fondamentales couvrant l'ensemble des enjeux de l'égalité professionnelle.
             </p>
           </Reveal>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {/* Desktop */}
+          <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {pillars.map((p, i) => (
               <Reveal key={i}>
                 <div className="group rounded-2xl border border-border bg-gradient-to-br from-[hsl(var(--wel-cream)/0.5)] to-background p-6 h-full hover:shadow-md hover:shadow-foreground/[0.03] hover:border-primary/20 transition-all duration-300">
@@ -180,6 +205,12 @@ const Methodologie = () => {
                   <p className="text-muted-foreground text-xs leading-relaxed">{p.desc}</p>
                 </div>
               </Reveal>
+            ))}
+          </div>
+          {/* Mobile: accordion */}
+          <div className="sm:hidden space-y-3">
+            {pillars.map((p, i) => (
+              <PillarAccordionCard key={i} emoji={p.emoji} title={p.title} desc={p.desc} />
             ))}
           </div>
         </div>
