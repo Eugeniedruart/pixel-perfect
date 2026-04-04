@@ -45,7 +45,7 @@ const pillars: Pillar[] = [
   {
     num: 1,
     title: "Écart de rémunération",
-    icon: "💰",
+    
     questions: [
       {
         field: "q_remuneration_mesure",
