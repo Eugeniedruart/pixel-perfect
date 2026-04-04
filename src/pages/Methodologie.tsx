@@ -69,7 +69,7 @@ const steps = [
   { num: "01", title: "Évaluation de l'éligibilité", desc: "Vérification des prérequis réglementaires et de la conformité de base." },
   { num: "02", title: "Diagnostic sur site", desc: "Intervention des équipes WEL au sein de votre organisation pour un audit structuré." },
   { num: "03", title: "Analyse et revue experte", desc: "Revue approfondie des données collectées par notre comité d'experts." },
-  { num: "04", title: "Résultats et structuration", desc: "Restitution des résultats et mise en place d'une trajectoire de progrès durable." },
+  { num: "04", title: "Labellisation : pas un verdict, un levier de transformation", desc: "Restitution des résultats et mise en place d'une trajectoire de progrès durable." },
 ];
 
 const timelineNodes = [
