@@ -89,7 +89,7 @@ const Contact = () => {
 
           <div className="space-y-2">
             <Label htmlFor="email">Email professionnel</Label>
-            <Input id="email" name="email" type="email" placeholder="vous@entreprise.com" required />
+            <Input id="email" name="email" type="email" placeholder="vous@entreprise.com" required maxLength={320} />
           </div>
 
           <div className="space-y-2">
