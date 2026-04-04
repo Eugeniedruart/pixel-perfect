@@ -48,11 +48,11 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
           <CheckCircle className="h-12 w-12 text-primary mx-auto mb-6" />
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Bravo, {companyName}
+            Merci, nous avons bien reçu
             <br />
-            est éligible au{" "}
+            votre test d'
             <span className="font-serif-display italic font-normal">
-              Women Equity Label !
+              éligibilité !
             </span>
           </h1>
           <p className="text-muted-foreground max-w-xl mx-auto mb-8">
