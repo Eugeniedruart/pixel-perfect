@@ -210,12 +210,6 @@ const StepQuestionnaire = ({ form }: StepQuestionnaireProps) => {
 
       {/* Final engagement question */}
       <div className="mt-8 rounded-xl border-2 border-primary/30 bg-primary/[0.03] p-6">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-base">
-            🎯
-          </div>
-          <p className="text-base font-bold text-foreground">Question finale</p>
-        </div>
         <p className="text-sm font-medium text-foreground mb-4">
           Êtes-vous prêt à structurer une démarche sur les 12 prochains mois ?
         </p>
