@@ -1,9 +1,9 @@
 import { z } from "zod";
 
 export const eligibiliteSchema = z.object({
-  selectedCompany: z.string().min(1, "Veuillez sélectionner une entreprise"),
-  companySize: z.string().min(1, "Veuillez sélectionner la taille de votre entreprise"),
-  conventionCollective: z.string().min(1, "Veuillez sélectionner votre convention collective"),
+  companyName: z.string().trim().min(1, "Veuillez entrer le nom de votre entreprise").max(200),
+  employeeCount: z.string().trim().min(1, "Veuillez entrer le nombre de salariés").max(50),
+  conventionCollective: z.string().trim().min(1, "Veuillez entrer votre convention collective").max(300),
   contactNom: z.string().optional(),
   contactPrenom: z.string().optional(),
   contactEmail: z.string().email("Veuillez entrer un e-mail valide").optional().or(z.literal("")),
@@ -13,8 +13,6 @@ export const eligibiliteSchema = z.object({
 export type EligibiliteFormData = z.infer<typeof eligibiliteSchema>;
 
 export const stepFields: Record<number, (keyof EligibiliteFormData)[]> = {
-  1: ["selectedCompany"],
-  2: ["companySize"],
-  3: ["conventionCollective"],
-  4: ["contactNom", "contactPrenom", "contactEmail", "contactFonction"],
+  1: ["companyName", "employeeCount", "conventionCollective"],
+  2: ["contactNom", "contactPrenom", "contactEmail", "contactFonction"],
 };
