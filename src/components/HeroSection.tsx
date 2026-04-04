@@ -32,10 +32,10 @@ const HeroSection = () => {
           </Button>
         </div>
 
-        <div className="flex items-center justify-center gap-2 mt-8 text-sm text-muted-foreground">
-          <img src={frenchFlag} alt="Drapeau français" className="h-5 w-5 object-contain" width={512} height={512} />
-          <span>Premier label français, 100% digital qui certifie et accompagne les entreprises</span>
-        </div>
+        <p className="mt-8 text-sm text-muted-foreground text-center">
+          <img src={frenchFlag} alt="Drapeau français" className="inline-block h-5 w-5 object-contain align-middle mr-1" width={512} height={512} />
+          <span className="align-middle">Premier label français, 100% digital qui certifie et accompagne les entreprises</span>
+        </p>
 
       </div>
     </section>
