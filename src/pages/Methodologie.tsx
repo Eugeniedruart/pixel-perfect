@@ -197,14 +197,14 @@ const Methodologie = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
             <Reveal>
-              <div className="relative">
+              <div className="relative overflow-hidden rounded-2xl">
                 <img
                   src={corporateCollaboration}
                   alt="Collaboration entre professionnels"
                   width={1280}
                   height={854}
                   loading="lazy"
-                  className="rounded-2xl shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3] object-top"
+                  className="shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3] object-[center_15%] scale-[1.3]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
               </div>
