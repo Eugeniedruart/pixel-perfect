@@ -203,12 +203,12 @@ const Offres = () => {
             </Reveal>
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Sensibilisation</p>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+              <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 Formations &{" "}
                 <span className="font-serif-display italic text-primary font-normal">conférences</span>
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-8">
-                Des interventions conçues pour faire évoluer les regards et déclencher l'action.
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-8">
+                Interventions pour faire évoluer les regards et déclencher l'action.
               </p>
               <div className="space-y-4">
                 {formations.map((f, i) => (
