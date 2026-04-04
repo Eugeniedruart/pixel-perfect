@@ -100,7 +100,7 @@ const Methodologie = () => {
       <Navbar />
 
       {/* ─── 1. HERO ─── */}
-      <section className="relative overflow-hidden py-24 lg:py-32">
+      <section className="relative overflow-hidden py-12 md:py-24 lg:py-32">
         <img
           src={patternHero}
           alt=""
@@ -111,11 +111,11 @@ const Methodologie = () => {
         <div className="max-w-3xl mx-auto text-center">
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-5">Méthodologie</p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              <h1 className="text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6">
                 Notre{" "}
                 <span className="font-serif-display italic text-primary font-normal">méthodologie</span>
               </h1>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed mb-5 md:mb-8">
                 Une approche rigoureuse, structurée et alignée aux exigences françaises et européennes.
               </p>
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
@@ -132,15 +132,15 @@ const Methodologie = () => {
       </div>
 
       {/* ─── 2. 4 PILIERS ─── */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Le référentiel</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-4">
               Une approche structurée autour de{" "}
               <span className="font-serif-display italic text-primary font-normal">4 piliers</span>
             </h2>
-            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-14">
+            <p className="text-muted-foreground text-xs sm:text-base text-center max-w-2xl mx-auto mb-8 md:mb-14">
               Quatre dimensions fondamentales couvrant l'ensemble des enjeux de l'égalité professionnelle.
             </p>
           </Reveal>
@@ -161,12 +161,12 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 3. CONFORMITÉ & CRÉDIBILITÉ (image right) ─── */}
-      <section className="py-20 bg-[hsl(var(--wel-cream)/0.4)]">
+      <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.4)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-20 items-center">
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Conformité & crédibilité</p>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-4xl font-bold mb-4 md:mb-6">
                 Un référentiel aligné aux{" "}
                 <span className="font-serif-display italic text-primary font-normal">exigences légales</span>
               </h2>
@@ -184,8 +184,8 @@ const Methodologie = () => {
               </div>
             </Reveal>
             <Reveal>
-              <div className="rounded-2xl border border-border bg-background p-8 lg:p-10 flex items-center justify-center shadow-sm">
-                <img src={welCertifiedDark} alt="WEL Certified" className="w-44 h-auto" />
+              <div className="rounded-2xl border border-border bg-background p-6 md:p-8 lg:p-10 flex items-center justify-center shadow-sm">
+                <img src={welCertifiedDark} alt="WEL Certified" className="w-28 md:w-44 h-auto" />
               </div>
             </Reveal>
           </div>
@@ -193,9 +193,9 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 4. AU-DELÀ DE LA CONFORMITÉ (image left) ─── */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-20 items-center">
             <Reveal>
               <div className="relative overflow-hidden rounded-2xl">
                 <img
@@ -204,18 +204,18 @@ const Methodologie = () => {
                   width={1280}
                   height={854}
                   loading="lazy"
-                  className="shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3] object-[center_30%] scale-[1.15]"
+                  className="shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3] object-[center_30%] scale-[1.15]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Au-delà de la conformité</p>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-4xl font-bold mb-4 md:mb-6">
                 Valoriser les{" "}
                 <span className="font-serif-display italic text-primary font-normal">actions concrètes</span>
               </h2>
-              <p className="text-muted-foreground text-base leading-relaxed">
+              <p className="text-muted-foreground text-xs md:text-base leading-relaxed">
                 WEL valorise les démarches engagées des entreprises, quels que soient leur secteur et leurs réalités opérationnelles, en reconnaissant les initiatives concrètes mises en œuvre, y compris lorsque certains équilibres sont structurellement plus difficiles à atteindre.
               </p>
             </Reveal>
@@ -229,11 +229,11 @@ const Methodologie = () => {
       </div>
 
       {/* ─── 5. TIMELINE / ÉTAPES ─── */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Le processus</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-14">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8 md:mb-14">
               Une démarche en{" "}
               <span className="font-serif-display italic text-primary font-normal">4 étapes</span>
             </h2>
@@ -364,12 +364,12 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 6. GOUVERNANCE (image right) ─── */}
-      <section className="py-20 bg-[hsl(var(--wel-cream)/0.4)]">
+      <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.4)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-20 items-center">
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Gouvernance</p>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-4xl font-bold mb-4 md:mb-6">
                 Un comité éthique{" "}
                 <span className="font-serif-display italic text-primary font-normal">indépendant</span>
               </h2>
@@ -395,7 +395,7 @@ const Methodologie = () => {
                   width={1280}
                   height={854}
                   loading="lazy"
-                  className="rounded-2xl shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3]"
+                  className="rounded-2xl shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
               </div>
@@ -405,11 +405,11 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 7. IMPACT & VALEUR ESG ─── */}
-      <section className="py-20 bg-[hsl(var(--wel-cream)/0.4)]">
+      <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.4)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Impact</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-14">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8 md:mb-14">
               Un levier de{" "}
               <span className="font-serif-display italic text-primary font-normal">valeur ESG</span>
             </h2>
@@ -436,16 +436,16 @@ const Methodologie = () => {
       </div>
 
       {/* ─── 8. RÉSULTATS CONCRETS ─── */}
-      <section className="relative overflow-hidden py-20">
+      <section className="relative overflow-hidden py-10 md:py-20">
         <img src={patternHero} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-[0.65]" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Livrables</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-4">
               Des résultats{" "}
               <span className="font-serif-display italic text-primary font-normal">concrets</span>
             </h2>
-            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-14">
+            <p className="text-muted-foreground text-xs sm:text-base text-center max-w-2xl mx-auto mb-8 md:mb-14">
               À l'issue de la démarche, vous recevez des livrables opérationnels pour structurer et valoriser votre engagement.
             </p>
           </Reveal>
@@ -466,10 +466,10 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 9. TARIFICATION ─── */}
-      <section className="py-20 bg-[hsl(var(--wel-cream)/0.4)]">
+      <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.4)]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="rounded-2xl border border-border bg-background p-10 lg:p-14 text-center shadow-sm">
+            <div className="rounded-2xl border border-border bg-background p-6 md:p-10 lg:p-14 text-center shadow-sm">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">Tarification</p>
               <p className="text-muted-foreground text-base leading-relaxed mb-8">
                 Les modalités d'accompagnement WEL débutent à partir de <strong className="text-foreground">3 900€</strong> et sont ajustées en fonction de la taille de l'organisation et du périmètre du diagnostic. Une brochure détaillant l'offre est disponible sur demande.
