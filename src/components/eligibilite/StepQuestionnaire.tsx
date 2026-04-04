@@ -38,7 +38,6 @@ type PillarQuestion = {
 type Pillar = {
   num: number;
   title: string;
-  icon: string;
   questions: PillarQuestion[];
 };
 
@@ -46,7 +45,7 @@ const pillars: Pillar[] = [
   {
     num: 1,
     title: "Écart de rémunération",
-    icon: "💰",
+    
     questions: [
       {
         field: "q_remuneration_mesure",
@@ -63,7 +62,7 @@ const pillars: Pillar[] = [
   {
     num: 2,
     title: "Gouvernance",
-    icon: "🏛️",
+    
     questions: [
       {
         field: "q_gouvernance_part",
@@ -80,7 +79,7 @@ const pillars: Pillar[] = [
   {
     num: 3,
     title: "Prévention & culture",
-    icon: "🛡️",
+    
     questions: [
       {
         field: "q_prevention_actions",
@@ -97,7 +96,7 @@ const pillars: Pillar[] = [
   {
     num: 4,
     title: "Équilibre & conditions de travail",
-    icon: "⚖️",
+    
     questions: [
       {
         field: "q_equilibre_dispositifs",
@@ -182,8 +181,8 @@ const StepQuestionnaire = ({ form }: StepQuestionnaireProps) => {
         <div key={pillar.num}>
           {/* Pillar header */}
           <div className="flex items-center gap-3 mb-1 mt-2">
-            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-base">
-              {pillar.icon}
+            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10">
+              <span className="text-xs font-bold text-primary">{pillar.num}</span>
             </div>
             <div>
               <p className="text-xs font-semibold tracking-wider uppercase text-primary">
@@ -211,12 +210,6 @@ const StepQuestionnaire = ({ form }: StepQuestionnaireProps) => {
 
       {/* Final engagement question */}
       <div className="mt-8 rounded-xl border-2 border-primary/30 bg-primary/[0.03] p-6">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-base">
-            🎯
-          </div>
-          <p className="text-base font-bold text-foreground">Question finale</p>
-        </div>
         <p className="text-sm font-medium text-foreground mb-4">
           Êtes-vous prêt à structurer une démarche sur les 12 prochains mois ?
         </p>
