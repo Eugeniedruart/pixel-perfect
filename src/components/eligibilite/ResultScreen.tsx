@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 import type { EligibiliteFormData } from "@/lib/eligibilite-schema";
 import ctaPortrait from "@/assets/cta-portrait.jpg";
-import patternBg from "@/assets/pattern-hero-2.png";
+import patternBg from "@/assets/pattern-hero-clean.png";
 interface ResultScreenProps {
   data: EligibiliteFormData;
 }
@@ -43,10 +43,7 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
     <div>
       {/* Decorative header */}
       <div className="relative overflow-hidden py-16 min-h-[420px] bg-wel-cream">
-        <div
-          className="absolute inset-0 bg-repeat bg-center"
-          style={{ backgroundImage: `url(${patternBg})`, backgroundSize: '800px' }}
-        />
+        <img src={patternBg} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-60" />
 
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
           <CheckCircle className="h-12 w-12 text-primary mx-auto mb-6" />
