@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import DecorativeBackground from "@/components/eligibilite/DecorativeBackground";
 
 import type { EligibiliteFormData } from "@/lib/eligibilite-schema";
 import ctaPortrait from "@/assets/cta-portrait.jpg";
+import patternBg from "@/assets/pattern-hero-2.png";
 interface ResultScreenProps {
   data: EligibiliteFormData;
 }
@@ -43,10 +43,10 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
     <div>
       {/* Decorative header */}
       <div className="relative overflow-hidden py-16 min-h-[420px]">
-        {/* Quarter-circle grid background */}
-        <div className="absolute inset-0 opacity-60">
-          <DecorativeBackground />
-        </div>
+        <div
+          className="absolute inset-0 bg-repeat bg-center opacity-40"
+          style={{ backgroundImage: `url(${patternBg})`, backgroundSize: '800px' }}
+        />
 
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
           <CheckCircle className="h-12 w-12 text-primary mx-auto mb-6" />
