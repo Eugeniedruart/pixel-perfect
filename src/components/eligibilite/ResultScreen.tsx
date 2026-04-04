@@ -37,8 +37,7 @@ const stats = [
 ];
 
 const ResultScreen = ({ data }: ResultScreenProps) => {
-  const company = mockCompanies.find((c) => c.id === data.selectedCompany);
-  const companyName = company?.name ?? "Votre entreprise";
+  const companyName = data.companyName?.trim() || "Votre entreprise";
 
   return (
     <div>
