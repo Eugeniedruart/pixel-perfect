@@ -106,9 +106,9 @@ const Offres = () => {
                   alt="Échange professionnel authentique"
                   width={1280}
                   height={720}
-                  className="rounded-xl shadow-xl shadow-foreground/[0.06] object-cover w-full aspect-[4/3]"
+                  className="rounded-lg shadow-xl shadow-foreground/[0.06] object-cover w-full aspect-[4/3]"
                 />
-                <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-foreground/5" />
+                <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
           </div>
@@ -136,9 +136,9 @@ const Offres = () => {
                   width={800}
                   height={600}
                   loading="lazy"
-                  className="rounded-xl shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3]"
+                  className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3]"
                 />
-                <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-foreground/5" />
+                <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
             <Reveal>
@@ -198,9 +198,9 @@ const Offres = () => {
                   width={800}
                   height={600}
                   loading="lazy"
-                  className="rounded-xl shadow-lg shadow-foreground/5 object-cover w-[85%] max-h-[400px]"
+                  className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-[85%] max-h-[400px]"
                 />
-                <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-foreground/5" />
+                <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
             <Reveal>
@@ -263,9 +263,9 @@ const Offres = () => {
                   width={800}
                   height={600}
                   loading="lazy"
-                  className="rounded-xl shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3]"
+                  className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3]"
                 />
-                <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-foreground/5" />
+                <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
           </div>
@@ -280,9 +280,9 @@ const Offres = () => {
                   width={800}
                   height={600}
                   loading="lazy"
-                  className="rounded-xl shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3]"
+                  className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3]"
                 />
-                <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-foreground/5" />
+                <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
             <Reveal>
@@ -337,7 +337,7 @@ const Offres = () => {
 
           {/* Full-width image */}
           <Reveal>
-            <div className="relative rounded-xl overflow-hidden mb-12">
+            <div className="relative rounded-lg overflow-hidden mb-12">
               <img
                 src={offresApproche}
                 alt="Équipe en atelier collaboratif"
@@ -346,7 +346,7 @@ const Offres = () => {
                 loading="lazy"
                 className="w-full h-64 sm:h-80 object-cover object-bottom"
               />
-              <div className="absolute inset-0 ring-1 ring-inset ring-foreground/5 rounded-xl" />
+              <div className="absolute inset-0 ring-1 ring-inset ring-foreground/5 rounded-lg" />
             </div>
           </Reveal>
 
