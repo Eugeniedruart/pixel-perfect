@@ -229,7 +229,7 @@ const Offres = () => {
           </div>
 
           {/* 3.2 Enquêtes */}
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center mb-24">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
             <Reveal className="order-2 md:order-1">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Écoute</p>
               <h3 className="text-2xl sm:text-3xl font-bold mb-3">
