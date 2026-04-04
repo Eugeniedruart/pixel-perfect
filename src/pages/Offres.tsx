@@ -367,7 +367,7 @@ const Offres = () => {
       </section>
 
       {/* ─── 5. CTA FINAL ─── */}
-      <section className="py-12 md:py-24 bg-[hsl(var(--wel-cream)/0.25)]">
+      <section className="py-10 md:py-24 bg-[hsl(var(--wel-cream)/0.25)]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">Parlons-en</p>
