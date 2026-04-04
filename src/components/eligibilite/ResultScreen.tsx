@@ -50,9 +50,9 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Merci, nous avons bien reçu
             <br />
-            votre test d'
+            votre{" "}
             <span className="font-serif-display italic font-normal">
-              éligibilité !
+              test d'éligibilité !
             </span>
           </h1>
           <p className="text-muted-foreground max-w-xl mx-auto mb-8">
