@@ -212,8 +212,8 @@ const Offres = () => {
               </p>
               <div className="space-y-3 md:space-y-4">
                 {formations.map((f, i) => (
-                  <div key={i} className="flex items-start gap-4 group">
-                    <div className="w-9 h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0 group-hover:bg-primary/[0.12] transition-colors">
+                   <div key={i} className="flex items-start gap-3 group">
+                    <div className="w-8 h-8 md:w-9 md:h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0 group-hover:bg-primary/[0.12] transition-colors">
                       <f.icon className="h-4 w-4 text-primary" />
                     </div>
                     <div>
