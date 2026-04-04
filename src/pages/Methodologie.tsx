@@ -23,7 +23,7 @@ import {
 import patternHero from "@/assets/pattern-hero-clean.png";
 import welCertifiedDark from "@/assets/wel-certified-dark.png";
 import corporateMeeting from "@/assets/corporate-meeting.jpg";
-import corporateCollaboration from "@/assets/corporate-collaboration.jpg";
+import constructionWorkers from "@/assets/pexels-mikael-blomkvist-8961026.jpg";
 import corporateLeadership from "@/assets/pexels-kampus-8190807.jpg";
 
 /* ── scroll reveal hook ── */
@@ -199,12 +199,12 @@ const Methodologie = () => {
             <Reveal>
               <div className="relative overflow-hidden rounded-2xl">
                 <img
-                  src={corporateCollaboration}
-                  alt="Collaboration entre professionnels"
+                  src={constructionWorkers}
+                  alt="Professionnels sur un chantier"
                   width={1280}
                   height={854}
                   loading="lazy"
-                  className="shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3] object-[center_15%] scale-[1.3]"
+                  className="shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3] object-[center_30%] scale-[1.15]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
               </div>
