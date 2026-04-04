@@ -70,7 +70,7 @@ const approche = [
   { icon: MapPin, title: "Sur le terrain", text: "Pas de théorie déconnectée. Nous venons chez vous, nous écoutons, nous observons." },
   { icon: Handshake, title: "Avec vos équipes", text: "Nous travaillons avec ceux qui font tourner l'organisation, pas en chambre." },
   { icon: Settings, title: "À votre rythme", text: "Chaque entreprise est différente. Notre approche s'adapte à vos réalités." },
-  { icon: Target, title: "Pour du concret", text: "Des résultats mesurables, traduits en actions concrètes et accompagnés de mises en relation ciblées, bien au-delà d'un simple rapport." },
+  { icon: Target, title: "Pour du concret", text: "Des résultats mesurables, traduits en actions concrètes et accompagnés de mises en relation ciblées, nous allons bien au-delà d'un simple rapport." },
 ];
 
 /* ── page ── */
