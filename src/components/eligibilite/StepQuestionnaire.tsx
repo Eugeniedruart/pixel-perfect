@@ -181,8 +181,8 @@ const StepQuestionnaire = ({ form }: StepQuestionnaireProps) => {
         <div key={pillar.num}>
           {/* Pillar header */}
           <div className="flex items-center gap-3 mb-1 mt-2">
-            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-base">
-              {pillar.icon}
+            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10">
+              <span className="text-xs font-bold text-primary">{pillar.num}</span>
             </div>
             <div>
               <p className="text-xs font-semibold tracking-wider uppercase text-primary">
