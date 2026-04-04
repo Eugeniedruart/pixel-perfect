@@ -78,7 +78,7 @@ const timelineNodes = [
   { label: "Analyse", icon: BarChart3 },
   { label: "Labellisation", icon: Award },
 ];
-const delays = ["~ 1 semaine", "3 à 4 semaines", "2 à 3 semaines"];
+const delays = ["~ 1 semaine", "1 semaine", "2 à 3 semaines"];
 
 const impacts = [
   { icon: TrendingUp, title: "Valorisation extra-financière", desc: "Structurez et objectivez vos engagements ESG." },
