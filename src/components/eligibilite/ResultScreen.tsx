@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { mockCompanies } from "@/lib/eligibilite-mock-data";
+
 import type { EligibiliteFormData } from "@/lib/eligibilite-schema";
 import ctaPortrait from "@/assets/cta-portrait.jpg";
 
@@ -37,8 +37,7 @@ const stats = [
 ];
 
 const ResultScreen = ({ data }: ResultScreenProps) => {
-  const company = mockCompanies.find((c) => c.id === data.selectedCompany);
-  const companyName = company?.name ?? "Votre entreprise";
+  const companyName = data.companyName?.trim() || "Votre entreprise";
 
   return (
     <div>

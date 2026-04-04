@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button";
 import EligibiliteHeader from "@/components/eligibilite/EligibiliteHeader";
 import StepIndicator from "@/components/eligibilite/StepIndicator";
 import StepSiret from "@/components/eligibilite/StepSiret";
-import StepTaille from "@/components/eligibilite/StepTaille";
-import StepConvention from "@/components/eligibilite/StepConvention";
 import StepContact from "@/components/eligibilite/StepContact";
 import ResultScreen from "@/components/eligibilite/ResultScreen";
 import { eligibiliteSchema, stepFields, type EligibiliteFormData } from "@/lib/eligibilite-schema";
+
+const TOTAL_STEPS = 2;
 
 const Eligibilite = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -18,8 +18,8 @@ const Eligibilite = () => {
   const form = useForm<EligibiliteFormData>({
     resolver: zodResolver(eligibiliteSchema),
     defaultValues: {
-      selectedCompany: "",
-      companySize: "",
+      companyName: "",
+      employeeCount: "",
       conventionCollective: "",
       contactNom: "",
       contactPrenom: "",
@@ -41,10 +41,10 @@ const Eligibilite = () => {
   };
 
   const handleSkipContact = () => {
-    setCurrentStep(5);
+    setCurrentStep(TOTAL_STEPS + 1);
   };
 
-  if (currentStep === 5) {
+  if (currentStep === TOTAL_STEPS + 1) {
     return (
       <div>
         <EligibiliteHeader />
@@ -58,13 +58,11 @@ const Eligibilite = () => {
       <EligibiliteHeader />
 
       <div className="flex-1 flex flex-col max-w-2xl mx-auto w-full px-6 sm:px-10 py-8">
-        <StepIndicator currentStep={currentStep} />
+        <StepIndicator currentStep={currentStep} totalSteps={TOTAL_STEPS} />
 
         <div className="flex-1">
           {currentStep === 1 && <StepSiret form={form} />}
-          {currentStep === 2 && <StepTaille form={form} />}
-          {currentStep === 3 && <StepConvention form={form} />}
-          {currentStep === 4 && <StepContact form={form} onSkip={handleSkipContact} />}
+          {currentStep === 2 && <StepContact form={form} onSkip={handleSkipContact} />}
         </div>
 
         <div className="flex items-center gap-4 mt-10 pb-8">
@@ -78,7 +76,7 @@ const Eligibilite = () => {
             onClick={handleNext}
             className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
           >
-            {currentStep === 4 ? "Découvrez votre éligibilité" : "Suivant"}
+            {currentStep === TOTAL_STEPS ? "Découvrez votre éligibilité" : "Suivant"}
             <ArrowRight className="h-4 w-4" />
           </Button>
         </div>
