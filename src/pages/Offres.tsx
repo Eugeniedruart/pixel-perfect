@@ -82,8 +82,8 @@ const Offres = () => {
       {/* ─── 1. HERO ─── */}
       <section className="relative overflow-hidden">
         <img src={patternHero} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-60" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 lg:py-28">
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-16 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20 lg:py-28">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3 md:mb-5">Nos offres</p>
               <h1 className="text-2xl sm:text-5xl lg:text-[3.5rem] font-bold leading-[1.15] mb-4 md:mb-6">
@@ -115,7 +115,7 @@ const Offres = () => {
 
       {/* ─── QUOTE BREAK ─── */}
       <Reveal>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-16 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 text-center">
           <blockquote className="text-lg sm:text-2xl font-serif-display italic text-foreground/80 leading-relaxed">
             "L'égalité ne se décrète pas. Elle se construit, au quotidien."
           </blockquote>
@@ -123,9 +123,9 @@ const Offres = () => {
       </Reveal>
 
       {/* ─── 2. LABELLISATION ─── */}
-      <section className="py-8 md:py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-5 md:gap-12 lg:gap-20 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center">
             <Reveal>
               <div className="relative">
                 <img
@@ -173,7 +173,7 @@ const Offres = () => {
       </section>
 
       {/* ─── 3. CONSEIL & ACCOMPAGNEMENT ─── */}
-      <section className="py-8 md:py-20 bg-[hsl(var(--wel-cream)/0.3)]">
+      <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.3)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Accompagnement</p>
@@ -187,7 +187,7 @@ const Offres = () => {
           </Reveal>
 
           {/* 3.1 Formations */}
-          <div className="grid md:grid-cols-2 gap-4 md:gap-12 lg:gap-16 items-center mb-8 md:mb-24">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
             <Reveal>
               <div className="relative">
                 <img
@@ -227,7 +227,7 @@ const Offres = () => {
           </div>
 
           {/* 3.2 Enquêtes */}
-          <div className="grid md:grid-cols-2 gap-4 md:gap-12 lg:gap-16 items-center mb-8 md:mb-24">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
             <Reveal className="order-2 md:order-1">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Écoute</p>
               <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
@@ -269,7 +269,7 @@ const Offres = () => {
           </div>
 
           {/* 3.3 Missions de conseil */}
-          <div className="grid md:grid-cols-2 gap-4 md:gap-12 lg:gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center">
             <Reveal>
               <div className="relative">
                 <img
@@ -295,11 +295,11 @@ const Offres = () => {
               <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
                 Stratégie, audits, plans d'action, communication — nous vous accompagnons à chaque étape.
               </p>
-              <div className="flex flex-wrap gap-1.5 md:gap-2">
+              <div className="flex flex-wrap gap-2">
                 {["Stratégie", "Conformité", "Plans d'action", "Communication", "Audits"].map((tag, i) => (
                   <span
                     key={i}
-                    className="rounded-full border border-border bg-background px-3 py-1 md:px-4 md:py-1.5 text-xs font-medium text-foreground hover:border-primary/30 transition-colors"
+                    className="rounded-full border border-border bg-background px-4 py-1.5 text-xs font-medium text-foreground hover:border-primary/30 transition-colors"
                   >
                     {tag}
                   </span>
@@ -312,7 +312,7 @@ const Offres = () => {
 
       {/* ─── QUOTE BREAK 2 ─── */}
       <Reveal>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-16 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 text-center">
           <blockquote className="text-lg sm:text-2xl font-serif-display italic text-foreground/80 leading-relaxed">
             "Un label n'a de valeur que par les transformations qu'il engage."
           </blockquote>
@@ -320,7 +320,7 @@ const Offres = () => {
       </Reveal>
 
       {/* ─── 4. NOTRE APPROCHE ─── */}
-      <section className="py-8 md:py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Ce qui nous distingue</p>
@@ -367,7 +367,7 @@ const Offres = () => {
       </section>
 
       {/* ─── 5. CTA FINAL ─── */}
-      <section className="py-10 md:py-24 bg-[hsl(var(--wel-cream)/0.25)]">
+      <section className="py-12 md:py-24 bg-[hsl(var(--wel-cream)/0.25)]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">Parlons-en</p>
