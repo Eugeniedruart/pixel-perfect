@@ -14,53 +14,47 @@ const Footer = () => {
   return (
     <footer className="relative overflow-hidden">
       {/* Main footer */}
-      <div className="bg-muted/50 py-16">
+      <div className="bg-muted/50 py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-12">
-            {/* Left - brand */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+            {/* Brand */}
             <div>
-              <div className="mb-4">
-                <img src={welLogo} alt="WEL - Women Equity Label" className="h-10" />
+              <div className="mb-3">
+                <img src={welLogo} alt="WEL - Women Equity Label" className="h-8 md:h-10" />
               </div>
-              <p className="text-sm text-muted-foreground mb-6 max-w-xs">
-                Women Equity Label est le premier label européen qui
-                certifie et accompagne les entreprises engagées pour
-                l'égalité professionnelle femmes-hommes.
+              <p className="text-xs md:text-sm text-muted-foreground mb-4 max-w-xs">
+                Premier label européen qui certifie et accompagne les entreprises pour l'égalité professionnelle.
               </p>
-              <Button variant="outline" size="sm" className="gap-2" asChild>
+              <Button variant="outline" size="sm" className="gap-2 text-xs" asChild>
                 <a href="https://www.linkedin.com/company/women-equity-label/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-4 w-4" />
-                  Rejoignez-nous sur LinkedIn
+                  LinkedIn
                 </a>
               </Button>
             </div>
 
-            {/* Middle - links */}
-            <div className="space-y-3">
+            {/* Links */}
+            <div className="flex flex-row md:flex-col flex-wrap gap-2 md:gap-3">
               {footerLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors"
+                  className="flex items-center gap-1 text-xs md:text-sm text-foreground hover:text-primary transition-colors"
                 >
                   {link.label} <ArrowRight className="h-3 w-3" />
                 </a>
               ))}
             </div>
 
-            {/* Right - CTA */}
-            <div className="rounded-xl bg-wel-cream p-6">
-              <h4 className="font-bold text-foreground mb-2">
-                Prêt·e à obtenir
-                <br />
-                votre label WEL ?
+            {/* CTA */}
+            <div className="rounded-xl bg-wel-cream p-4 md:p-6">
+              <h4 className="font-bold text-foreground text-sm md:text-base mb-2">
+                Prêt·e à obtenir votre label WEL ?
               </h4>
-              <p className="text-sm text-muted-foreground mb-4">
-                Évaluez vos pratiques, identifiez vos
-                leviers d'amélioration et obtenez
-                une label reconnue
+              <p className="text-xs md:text-sm text-muted-foreground mb-3">
+                Évaluez vos pratiques et obtenez un label reconnu.
               </p>
-              <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2" asChild>
+              <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 w-full sm:w-auto" asChild>
                 <Link to="/contact">Je veux être Welbellisé <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </div>
@@ -69,14 +63,14 @@ const Footer = () => {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-border bg-background py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="border-t border-border bg-background py-3 md:py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">Women Equity Label</p>
-          <div className="flex flex-wrap gap-6 text-xs text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-xs text-muted-foreground">
             <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
             <Link to="/mentions-legales" className="hover:text-foreground transition-colors">Mentions légales</Link>
-            <Link to="/politique-confidentialite" className="hover:text-foreground transition-colors">Politiques de confidentialité</Link>
-            <Link to="/gestion-cookies" className="hover:text-foreground transition-colors">Gestion des cookies</Link>
+            <Link to="/politique-confidentialite" className="hover:text-foreground transition-colors">Confidentialité</Link>
+            <Link to="/gestion-cookies" className="hover:text-foreground transition-colors">Cookies</Link>
           </div>
         </div>
       </div>
