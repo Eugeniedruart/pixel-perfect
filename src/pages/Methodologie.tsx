@@ -215,7 +215,7 @@ const Methodologie = () => {
                 Valoriser les{" "}
                 <span className="font-serif-display italic text-primary font-normal">actions concrètes</span>
               </h2>
-              <p className="text-muted-foreground text-base leading-relaxed">
+              <p className="text-muted-foreground text-xs md:text-base leading-relaxed">
                 WEL valorise les démarches engagées des entreprises, quels que soient leur secteur et leurs réalités opérationnelles, en reconnaissant les initiatives concrètes mises en œuvre, y compris lorsque certains équilibres sont structurellement plus difficiles à atteindre.
               </p>
             </Reveal>
