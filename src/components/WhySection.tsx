@@ -69,7 +69,7 @@ const WhySection = () => {
         </div>
 
         <div className="mt-6 md:mt-10 px-0">
-          <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 h-12 mx-auto block shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 transition-all" asChild>
+          <Button size="default" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 h-10 sm:h-12 text-sm sm:text-base mx-auto block shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 transition-all" asChild>
             <Link to="/contact">Je veux être Welbellisé</Link>
           </Button>
         </div>
