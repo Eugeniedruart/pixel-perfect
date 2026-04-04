@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import DecorativeBackground from "@/components/eligibilite/DecorativeBackground";
 
 import type { EligibiliteFormData } from "@/lib/eligibilite-schema";
 import ctaPortrait from "@/assets/cta-portrait.jpg";
-
 interface ResultScreenProps {
   data: EligibiliteFormData;
 }
