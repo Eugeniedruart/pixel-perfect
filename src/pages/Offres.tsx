@@ -230,15 +230,15 @@ const Offres = () => {
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
             <Reveal className="order-2 md:order-1">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Écoute</p>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+              <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 Enquêtes{" "}
                 <span className="font-serif-display italic text-primary font-normal">internes</span>
               </h3>
-              <p className="font-serif-display italic text-primary/70 text-base mb-4">
-                Donner la parole pour mieux comprendre et agir.
+              <p className="font-serif-display italic text-primary/70 text-sm md:text-base mb-3 md:mb-4">
+                Donner la parole pour mieux comprendre.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                Des enquêtes quantitatives et qualitatives pour mesurer la perception, identifier les zones de risque et objectiver les enjeux.
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
+                Enquêtes quantitatives et qualitatives pour mesurer la perception et identifier les zones de risque.
               </p>
               <div className="space-y-3">
                 {[
