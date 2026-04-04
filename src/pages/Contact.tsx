@@ -78,7 +78,7 @@ const Contact = () => {
             </div>
             <div className="space-y-2">
               <Label htmlFor="lastName">Nom</Label>
-              <Input id="lastName" name="lastName" placeholder="Votre nom" required />
+              <Input id="lastName" name="lastName" placeholder="Votre nom" required maxLength={200} />
             </div>
           </div>
 
