@@ -94,7 +94,7 @@ const Contact = () => {
 
           <div className="space-y-2">
             <Label htmlFor="message">Message</Label>
-            <Textarea id="message" name="message" placeholder="Décrivez votre projet ou posez-nous vos questions..." rows={5} />
+            <Textarea id="message" name="message" placeholder="Décrivez votre projet ou posez-nous vos questions..." rows={5} maxLength={5000} />
           </div>
 
           <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90" disabled={loading}>
