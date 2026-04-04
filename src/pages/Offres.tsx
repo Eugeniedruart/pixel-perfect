@@ -360,7 +360,7 @@ const Offres = () => {
                     </div>
                     <h3 className="font-semibold text-foreground text-sm">{item.title}</h3>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{item.text}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{item.text}</p>
                 </div>
               </Reveal>
             ))}
