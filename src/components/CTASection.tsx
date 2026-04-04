@@ -37,8 +37,8 @@ const CTASection = () => {
                 Diagnostic structuré · Accompagnement · Stratégie durable
               </p>
             </div>
-            <div className="md:col-span-2 flex items-center justify-center min-h-[200px]">
-              <img src={ctaPortrait} alt="Professionnelle" className="max-h-[320px] w-auto object-cover rounded-lg" loading="lazy" width={600} height={800} />
+            <div className="md:col-span-2 min-h-[200px]">
+              <img src={ctaPortrait} alt="Professionnelle" className="w-full h-full object-cover object-[center_20%]" loading="lazy" width={600} height={800} />
             </div>
           </div>
         </div>
