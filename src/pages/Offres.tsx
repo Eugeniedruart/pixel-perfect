@@ -155,7 +155,7 @@ const Offres = () => {
               </p>
               <div className="space-y-3 mb-8">
                 {[
-                  "Une évaluation structurée autour de 4 piliers concrets",
+                  "Un diagnostic structuré autour de 4 piliers concrets",
                   "Des critères mesurables, pas des déclarations",
                   "Une reconnaissance qui valorise l'action",
                   "Un atout pour vos appels d'offres et votre stratégie ESG",
