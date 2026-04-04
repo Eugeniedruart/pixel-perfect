@@ -15,7 +15,7 @@ const faqs = [
     answer: "Les documents nécessaires dépendent de la taille de votre entreprise et de votre secteur d'activité. Notre équipe vous guidera à chaque étape pour vous assurer de fournir les éléments requis.",
   },
   {
-    question: "Comment garantissez-vous la confidentialité ?",
+    question: "Comment garantissez-vous la\u00a0confidentialité\u00a0?",
     answer: "WEL s'est engagé dans une mise en conformité RGPD, contractualisée en amont. La confidentialité des réponses est une priorité absolue.",
   },
   {
