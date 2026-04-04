@@ -74,7 +74,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="firstName">Prénom</Label>
-              <Input id="firstName" name="firstName" placeholder="Votre prénom" required />
+              <Input id="firstName" name="firstName" placeholder="Votre prénom" required maxLength={200} />
             </div>
             <div className="space-y-2">
               <Label htmlFor="lastName">Nom</Label>
