@@ -33,7 +33,7 @@ const HeroSection = () => {
 
         <p className="mt-5 sm:mt-8 text-xs sm:text-sm text-muted-foreground text-center">
           <img src={frenchFlag} alt="Drapeau français" className="inline-block h-4 w-4 sm:h-5 sm:w-5 object-contain align-middle mr-1" width={512} height={512} />
-          <span className="align-middle">Premier label français, 100% digital qui certifie et accompagne les entreprises</span>
+          <span className="align-middle">Premier label français<br />qui certifie et accompagne les entreprises</span>
         </p>
       </div>
     </section>
