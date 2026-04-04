@@ -84,7 +84,7 @@ const Contact = () => {
 
           <div className="space-y-2">
             <Label htmlFor="company">Entreprise</Label>
-            <Input id="company" name="company" placeholder="Nom de votre entreprise" />
+            <Input id="company" name="company" placeholder="Nom de votre entreprise" maxLength={300} />
           </div>
 
           <div className="space-y-2">
