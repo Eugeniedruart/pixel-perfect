@@ -73,6 +73,27 @@ const approche = [
   { icon: Settings, title: "À votre rythme", text: "Chaque entreprise est différente. Notre approche s'adapte à vos réalités." },
   { icon: Target, title: "Pour du concret", text: "Des résultats mesurables, traduits en actions concrètes et accompagnés de mises en relation ciblées, nous allons bien au-delà d'un simple rapport." },
 ];
+/* ── accordion card for mobile approche ── */
+const ApprochAccordionCard = ({ icon: Icon, title, text }: { icon: React.ElementType; title: string; text: string }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <button
+      onClick={() => setOpen(!open)}
+      className="w-full text-left rounded-2xl border border-border bg-background p-4 transition-all duration-300"
+    >
+      <div className="flex items-center gap-3">
+        <div className="w-9 h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0">
+          <Icon className="h-4 w-4 text-primary" />
+        </div>
+        <h3 className="font-semibold text-foreground text-sm flex-1">{title}</h3>
+        <ChevronDown className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+      </div>
+      <div className={`overflow-hidden transition-all duration-200 ${open ? "max-h-40 mt-3 opacity-100" : "max-h-0 opacity-0"}`}>
+        <p className="text-muted-foreground text-xs leading-relaxed pl-12">{text}</p>
+      </div>
+    </button>
+  );
+};
 
 /* ── page ── */
 const Offres = () => {
