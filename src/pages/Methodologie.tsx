@@ -229,11 +229,11 @@ const Methodologie = () => {
       </div>
 
       {/* ─── 5. TIMELINE / ÉTAPES ─── */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Le processus</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-14">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8 md:mb-14">
               Une démarche en{" "}
               <span className="font-serif-display italic text-primary font-normal">4 étapes</span>
             </h2>
