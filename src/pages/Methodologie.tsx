@@ -102,10 +102,10 @@ const Methodologie = () => {
       {/* ─── 1. HERO ─── */}
       <section className="relative overflow-hidden py-24 lg:py-32">
         <img
-          src={corporateCollaboration}
+          src={patternHero}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-20"
+          className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-60"
         />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
