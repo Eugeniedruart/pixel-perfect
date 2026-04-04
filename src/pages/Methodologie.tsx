@@ -298,7 +298,7 @@ const Methodologie = () => {
             </div>
 
             {/* Mobile / Tablet */}
-            <div className="lg:hidden relative pl-8 mb-14">
+            <div className="md:hidden relative pl-8 mb-14">
               {/* Vertical line */}
               <div
                 className="absolute left-[28px] top-4 bottom-12 w-[2px] opacity-40"
