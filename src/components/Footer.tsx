@@ -76,7 +76,7 @@ const Footer = () => {
             <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
             <Link to="/mentions-legales" className="hover:text-foreground transition-colors">Mentions légales</Link>
             <Link to="/politique-confidentialite" className="hover:text-foreground transition-colors">Politiques de confidentialité</Link>
-            <a href="#" className="hover:text-foreground transition-colors">Gestion des cookies</a>
+            <Link to="/gestion-cookies" className="hover:text-foreground transition-colors">Gestion des cookies</Link>
           </div>
         </div>
       </div>
