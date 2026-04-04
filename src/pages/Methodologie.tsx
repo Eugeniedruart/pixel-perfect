@@ -211,7 +211,7 @@ const Methodologie = () => {
             </Reveal>
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Au-delà de la conformité</p>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-4xl font-bold mb-4 md:mb-6">
                 Valoriser les{" "}
                 <span className="font-serif-display italic text-primary font-normal">actions concrètes</span>
               </h2>
