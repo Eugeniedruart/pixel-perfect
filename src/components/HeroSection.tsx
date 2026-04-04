@@ -22,11 +22,11 @@ const HeroSection = () => {
           <span className="font-serif-display italic text-foreground font-normal">femmes-hommes</span>
         </h1>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mt-6 sm:mt-10">
-          <Button variant="outline" size="default" className="sm:min-w-[200px] h-10 sm:h-12 text-sm sm:text-base" asChild>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mt-6 sm:mt-10 w-full px-2 sm:px-0">
+          <Button variant="outline" size="default" className="w-full sm:w-auto sm:min-w-[200px] h-10 sm:h-12 text-sm sm:text-base" asChild>
             <Link to="/eligibilite">Tester mon éligibilité</Link>
           </Button>
-          <Button size="default" className="sm:min-w-[200px] h-10 sm:h-12 text-sm sm:text-base bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+          <Button size="default" className="w-full sm:w-auto sm:min-w-[200px] h-10 sm:h-12 text-sm sm:text-base bg-primary text-primary-foreground hover:bg-primary/90" asChild>
             <Link to="/contact">Je veux être Welbellisé</Link>
           </Button>
         </div>
