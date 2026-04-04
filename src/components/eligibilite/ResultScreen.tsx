@@ -143,20 +143,31 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
           >
             
             <p className="font-bold text-foreground mb-5">Répartition du travail domestique</p>
-            <div className="flex items-end justify-around mb-4 pt-2">
-              {/* Femmes — 2x */}
-              <div className="flex flex-col items-center gap-2">
-                <PersonIcons count={4} color="text-wel-purple" animate={visible} />
-                <PersonIcons count={4} color="text-wel-purple" animate={visible} />
-                <span className="text-xs font-semibold text-foreground/70 mt-1">Femmes</span>
-                <span className="text-lg font-bold text-wel-purple font-serif-display italic">2x</span>
+            {/* Proportional bar chart */}
+            <div className="space-y-4 mb-4">
+              <div>
+                <div className="flex justify-between items-baseline mb-1.5">
+                  <span className="text-xs font-semibold text-foreground/70">Femmes</span>
+                  <span className="text-lg font-bold text-wel-purple font-serif-display italic">2h40 / jour</span>
+                </div>
+                <div className="h-8 rounded-full bg-muted/60 overflow-hidden">
+                  <div
+                    className="h-full rounded-full bg-wel-purple transition-all duration-1000 ease-out"
+                    style={{ width: visible ? "100%" : "0%" }}
+                  />
+                </div>
               </div>
-              <div className="text-2xl font-bold text-muted-foreground/30 self-center">vs</div>
-              {/* Hommes — 1x */}
-              <div className="flex flex-col items-center gap-2">
-                <PersonIcons count={4} color="text-wel-navy" animate={visible} />
-                <span className="text-xs font-semibold text-foreground/70 mt-1">Hommes</span>
-                <span className="text-lg font-bold text-wel-navy font-serif-display italic">1x</span>
+              <div>
+                <div className="flex justify-between items-baseline mb-1.5">
+                  <span className="text-xs font-semibold text-foreground/70">Hommes</span>
+                  <span className="text-lg font-bold text-wel-navy font-serif-display italic">1h20 / jour</span>
+                </div>
+                <div className="h-8 rounded-full bg-muted/60 overflow-hidden">
+                  <div
+                    className="h-full rounded-full bg-wel-navy transition-all duration-1000 ease-out"
+                    style={{ width: visible ? "50%" : "0%" }}
+                  />
+                </div>
               </div>
             </div>
             <p className="text-[11px] text-muted-foreground/60">Source : INSEE</p>
