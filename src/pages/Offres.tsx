@@ -100,7 +100,7 @@ const Offres = () => {
               </Button>
             </Reveal>
             <Reveal>
-              <div className="relative">
+              <div className="relative hidden md:block">
                 <img
                   src={offresHero}
                   alt="Échange professionnel authentique"
