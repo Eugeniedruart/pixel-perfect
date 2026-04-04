@@ -4,10 +4,10 @@ import ctaPortrait from "@/assets/cta-portrait.jpg";
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-10 md:py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Quote banner */}
-        <div className="rounded-xl bg-primary p-8 sm:p-12 text-center mb-16">
+        <div className="rounded-xl bg-primary p-6 sm:p-12 text-center mb-8 md:mb-16">
           <p className="text-primary-foreground text-lg sm:text-xl font-medium leading-relaxed max-w-3xl mx-auto">
             L'égalité femmes-hommes n'est pas un combat de genre.
             <br />
