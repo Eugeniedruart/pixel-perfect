@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { mockCompanies } from "@/lib/eligibilite-mock-data";
+
 import type { EligibiliteFormData } from "@/lib/eligibilite-schema";
 import ctaPortrait from "@/assets/cta-portrait.jpg";
 
