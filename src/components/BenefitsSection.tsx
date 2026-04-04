@@ -35,7 +35,7 @@ const BenefitsSection = () => {
           Grâce à une méthodologie de mesure et de pilotage de l’impact, WEL vous offre :
         </p>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 items-stretch max-w-5xl mx-auto">
           {/* Left - benefits list */}
           <div className="space-y-6">
             {benefits.map((benefit, i) => (
@@ -50,7 +50,7 @@ const BenefitsSection = () => {
           </div>
 
           {/* Right - image */}
-          <div className="rounded-xl overflow-hidden max-h-72">
+          <div className="rounded-xl overflow-hidden">
             <img src={benefitsWoman} alt="Professionnelle souriante" className="w-full h-full object-cover" loading="lazy" width={768} height={1024} />
           </div>
         </div>
