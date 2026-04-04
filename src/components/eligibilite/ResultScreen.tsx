@@ -133,10 +133,6 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
               <Bar pct={100} color="bg-wel-blue" label="Hommes" animate={visible} />
               <Bar pct={60} color="bg-destructive" label="Femmes" animate={visible} />
             </div>
-            <div className="flex items-baseline gap-1 mb-1">
-              <span className="text-2xl font-bold text-destructive font-serif-display italic">–40%</span>
-              <span className="text-xs text-muted-foreground">d'écart</span>
-            </div>
             <p className="text-[11px] text-muted-foreground/60">Source : DREES</p>
           </div>
 
