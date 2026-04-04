@@ -79,7 +79,7 @@ const pillars: Pillar[] = [
   {
     num: 3,
     title: "Prévention & culture",
-    icon: "🛡️",
+    
     questions: [
       {
         field: "q_prevention_actions",
