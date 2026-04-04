@@ -7,21 +7,21 @@ export const eligibiliteSchema = z.object({
   conventionCollective: z.string().trim().min(1, "Veuillez entrer votre convention collective").max(300),
 
   // Step 2 — Questionnaire
-  q_remuneration_mesure: z.string().min(1, "Veuillez répondre à cette question"),
-  q_remuneration_actions: z.string().min(1, "Veuillez répondre à cette question"),
-  q_gouvernance_part: z.string().min(1, "Veuillez répondre à cette question"),
-  q_gouvernance_objectifs: z.string().min(1, "Veuillez répondre à cette question"),
-  q_prevention_actions: z.string().min(1, "Veuillez répondre à cette question"),
-  q_prevention_formation: z.string().min(1, "Veuillez répondre à cette question"),
-  q_equilibre_dispositifs: z.string().min(1, "Veuillez répondre à cette question"),
-  q_equilibre_politiques: z.string().min(1, "Veuillez répondre à cette question"),
-  q_engagement_12mois: z.string().min(1, "Veuillez répondre à cette question"),
+  q_remuneration_mesure: z.string().min(1, "Veuillez répondre à cette question").max(1000),
+  q_remuneration_actions: z.string().min(1, "Veuillez répondre à cette question").max(1000),
+  q_gouvernance_part: z.string().min(1, "Veuillez répondre à cette question").max(1000),
+  q_gouvernance_objectifs: z.string().min(1, "Veuillez répondre à cette question").max(1000),
+  q_prevention_actions: z.string().min(1, "Veuillez répondre à cette question").max(1000),
+  q_prevention_formation: z.string().min(1, "Veuillez répondre à cette question").max(1000),
+  q_equilibre_dispositifs: z.string().min(1, "Veuillez répondre à cette question").max(1000),
+  q_equilibre_politiques: z.string().min(1, "Veuillez répondre à cette question").max(1000),
+  q_engagement_12mois: z.string().min(1, "Veuillez répondre à cette question").max(1000),
 
   // Step 3 — Contact
-  contactNom: z.string().optional(),
-  contactPrenom: z.string().optional(),
-  contactEmail: z.string().email("Veuillez entrer un e-mail valide").optional().or(z.literal("")),
-  contactFonction: z.string().optional(),
+  contactNom: z.string().max(200).optional(),
+  contactPrenom: z.string().max(200).optional(),
+  contactEmail: z.string().email("Veuillez entrer un e-mail valide").max(320).optional().or(z.literal("")),
+  contactFonction: z.string().max(200).optional(),
 });
 
 export type EligibiliteFormData = z.infer<typeof eligibiliteSchema>;

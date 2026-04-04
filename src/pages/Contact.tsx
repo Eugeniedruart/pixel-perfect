@@ -19,14 +19,20 @@ const Contact = () => {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    const firstName = (formData.get("firstName") as string)?.trim();
-    const lastName = (formData.get("lastName") as string)?.trim();
-    const email = (formData.get("email") as string)?.trim();
-    const company = (formData.get("company") as string)?.trim();
-    const message = (formData.get("message") as string)?.trim();
+    const firstName = (formData.get("firstName") as string)?.trim().slice(0, 200);
+    const lastName = (formData.get("lastName") as string)?.trim().slice(0, 200);
+    const email = (formData.get("email") as string)?.trim().slice(0, 320);
+    const company = (formData.get("company") as string)?.trim().slice(0, 300);
+    const message = (formData.get("message") as string)?.trim().slice(0, 5000);
 
     if (!firstName || !lastName || !email) {
       toast({ title: "Erreur", description: "Veuillez remplir les champs obligatoires.", variant: "destructive" });
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast({ title: "Erreur", description: "Veuillez entrer un email valide.", variant: "destructive" });
       return;
     }
 
@@ -68,27 +74,27 @@ const Contact = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="firstName">Prénom</Label>
-              <Input id="firstName" name="firstName" placeholder="Votre prénom" required />
+              <Input id="firstName" name="firstName" placeholder="Votre prénom" required maxLength={200} />
             </div>
             <div className="space-y-2">
               <Label htmlFor="lastName">Nom</Label>
-              <Input id="lastName" name="lastName" placeholder="Votre nom" required />
+              <Input id="lastName" name="lastName" placeholder="Votre nom" required maxLength={200} />
             </div>
           </div>
 
           <div className="space-y-2">
             <Label htmlFor="company">Entreprise</Label>
-            <Input id="company" name="company" placeholder="Nom de votre entreprise" />
+            <Input id="company" name="company" placeholder="Nom de votre entreprise" maxLength={300} />
           </div>
 
           <div className="space-y-2">
             <Label htmlFor="email">Email professionnel</Label>
-            <Input id="email" name="email" type="email" placeholder="vous@entreprise.com" required />
+            <Input id="email" name="email" type="email" placeholder="vous@entreprise.com" required maxLength={320} />
           </div>
 
           <div className="space-y-2">
             <Label htmlFor="message">Message</Label>
-            <Textarea id="message" name="message" placeholder="Décrivez votre projet ou posez-nous vos questions..." rows={5} />
+            <Textarea id="message" name="message" placeholder="Décrivez votre projet ou posez-nous vos questions..." rows={5} maxLength={5000} />
           </div>
 
           <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90" disabled={loading}>
