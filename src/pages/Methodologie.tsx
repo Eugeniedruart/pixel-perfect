@@ -450,7 +450,8 @@ const Methodologie = () => {
               À l'issue de la démarche, vous recevez des livrables opérationnels pour structurer et valoriser votre engagement.
             </p>
           </Reveal>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {/* Desktop: grid */}
+          <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {results.map((r, i) => (
               <Reveal key={i}>
                 <div className="rounded-2xl border border-border bg-[hsl(var(--wel-cream)/0.35)] backdrop-blur-sm p-6 h-full hover:border-primary/20 hover:shadow-lg hover:shadow-foreground/[0.04] hover:-translate-y-0.5 transition-all duration-300">
@@ -461,6 +462,12 @@ const Methodologie = () => {
                   <p className="text-muted-foreground text-xs leading-relaxed">{r.desc}</p>
                 </div>
               </Reveal>
+            ))}
+          </div>
+          {/* Mobile: accordion cards */}
+          <div className="sm:hidden space-y-3">
+            {results.map((r, i) => (
+              <ResultAccordionCard key={i} icon={r.icon} title={r.title} desc={r.desc} />
             ))}
           </div>
         </div>
