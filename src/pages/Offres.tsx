@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
   Users,
@@ -17,6 +17,7 @@ import {
   Handshake,
   Settings,
   Target,
+  ChevronDown,
 } from "lucide-react";
 import offresHero from "@/assets/offres-hero-v2.jpg";
 import offresLabellisation from "@/assets/offres-labellisation.jpg";
@@ -72,6 +73,27 @@ const approche = [
   { icon: Settings, title: "À votre rythme", text: "Chaque entreprise est différente. Notre approche s'adapte à vos réalités." },
   { icon: Target, title: "Pour du concret", text: "Des résultats mesurables, traduits en actions concrètes et accompagnés de mises en relation ciblées, nous allons bien au-delà d'un simple rapport." },
 ];
+/* ── accordion card for mobile approche ── */
+const ApprochAccordionCard = ({ icon: Icon, title, text }: { icon: React.ElementType; title: string; text: string }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <button
+      onClick={() => setOpen(!open)}
+      className="w-full text-left rounded-2xl border border-border bg-background p-4 transition-all duration-300"
+    >
+      <div className="flex items-center gap-3">
+        <div className="w-9 h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0">
+          <Icon className="h-4 w-4 text-primary" />
+        </div>
+        <h3 className="font-semibold text-foreground text-sm flex-1">{title}</h3>
+        <ChevronDown className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+      </div>
+      <div className={`overflow-hidden transition-all duration-200 ${open ? "max-h-40 mt-3 opacity-100" : "max-h-0 opacity-0"}`}>
+        <p className="text-muted-foreground text-xs leading-relaxed pl-12">{text}</p>
+      </div>
+    </button>
+  );
+};
 
 /* ── page ── */
 const Offres = () => {
@@ -348,7 +370,8 @@ const Offres = () => {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5 max-w-4xl mx-auto">
+          {/* Desktop */}
+          <div className="hidden sm:grid sm:grid-cols-2 gap-3 md:gap-5 max-w-4xl mx-auto">
             {approche.map((item, i) => (
               <Reveal key={i}>
                 <div className="group relative rounded-2xl border border-border bg-background p-4 md:p-6 hover:border-primary/20 hover:shadow-md hover:shadow-foreground/[0.03] hover:-translate-y-0.5 transition-all duration-300">
@@ -361,6 +384,12 @@ const Offres = () => {
                   <p className="text-xs text-muted-foreground leading-relaxed">{item.text}</p>
                 </div>
               </Reveal>
+            ))}
+          </div>
+          {/* Mobile: accordion */}
+          <div className="sm:hidden space-y-3">
+            {approche.map((item, i) => (
+              <ApprochAccordionCard key={i} icon={item.icon} title={item.title} text={item.text} />
             ))}
           </div>
         </div>
