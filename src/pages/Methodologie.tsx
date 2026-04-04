@@ -161,12 +161,12 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 3. CONFORMITÉ & CRÉDIBILITÉ (image right) ─── */}
-      <section className="py-20 bg-[hsl(var(--wel-cream)/0.4)]">
+      <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.4)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-20 items-center">
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Conformité & crédibilité</p>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-4xl font-bold mb-4 md:mb-6">
                 Un référentiel aligné aux{" "}
                 <span className="font-serif-display italic text-primary font-normal">exigences légales</span>
               </h2>
