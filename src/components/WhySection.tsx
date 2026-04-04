@@ -24,7 +24,7 @@ const WhySection = () => {
         <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto py-0 my-0">
           {/* Top left - image */}
           <div className="rounded-lg border border-wel-cream bg-card p-2">
-            <div className="rounded overflow-hidden h-60">
+            <div className="rounded overflow-hidden h-72">
               <img src={whyImg} alt="Équipe diverse collaborant" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
             </div>
           </div>
