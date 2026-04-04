@@ -42,7 +42,7 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
   return (
     <div>
       {/* Decorative header */}
-      <div className="relative overflow-hidden py-16 min-h-[420px] bg-wel-cream">
+      <div className="relative overflow-hidden py-16 min-h-[420px]">
         <img src={patternBg} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-60" />
 
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
