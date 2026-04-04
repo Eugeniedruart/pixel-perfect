@@ -10,11 +10,14 @@ import StepQuestionnaire from "@/components/eligibilite/StepQuestionnaire";
 import StepContact from "@/components/eligibilite/StepContact";
 import ResultScreen from "@/components/eligibilite/ResultScreen";
 import { eligibiliteSchema, stepFields, type EligibiliteFormData } from "@/lib/eligibilite-schema";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const TOTAL_STEPS = 3;
 
 const Eligibilite = () => {
   const [currentStep, setCurrentStep] = useState(1);
+  const { toast } = useToast();
 
   const form = useForm<EligibiliteFormData>({
     resolver: zodResolver(eligibiliteSchema),
@@ -38,11 +41,38 @@ const Eligibilite = () => {
     },
   });
 
+  const saveToDatabase = async (data: EligibiliteFormData) => {
+    const { error } = await supabase.from("eligibilite_submissions").insert({
+      company_name: data.companyName,
+      employee_count: data.employeeCount,
+      convention_collective: data.conventionCollective,
+      q_remuneration_mesure: data.q_remuneration_mesure,
+      q_remuneration_actions: data.q_remuneration_actions,
+      q_gouvernance_part: data.q_gouvernance_part,
+      q_gouvernance_objectifs: data.q_gouvernance_objectifs,
+      q_prevention_actions: data.q_prevention_actions,
+      q_prevention_formation: data.q_prevention_formation,
+      q_equilibre_dispositifs: data.q_equilibre_dispositifs,
+      q_equilibre_politiques: data.q_equilibre_politiques,
+      q_engagement_12mois: data.q_engagement_12mois,
+      contact_nom: data.contactNom || null,
+      contact_prenom: data.contactPrenom || null,
+      contact_email: data.contactEmail || null,
+      contact_fonction: data.contactFonction || null,
+    });
+    if (error) {
+      toast({ title: "Erreur", description: "Une erreur est survenue lors de l'envoi.", variant: "destructive" });
+    }
+  };
+
   const handleNext = async () => {
     const fields = stepFields[currentStep];
     const valid = await form.trigger(fields);
     if (!valid) return;
 
+    if (currentStep === TOTAL_STEPS) {
+      await saveToDatabase(form.getValues());
+    }
     setCurrentStep((s) => s + 1);
   };
 
