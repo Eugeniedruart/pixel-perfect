@@ -405,11 +405,11 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 7. IMPACT & VALEUR ESG ─── */}
-      <section className="py-20 bg-[hsl(var(--wel-cream)/0.4)]">
+      <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.4)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Impact</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-14">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8 md:mb-14">
               Un levier de{" "}
               <span className="font-serif-display italic text-primary font-normal">valeur ESG</span>
             </h2>
