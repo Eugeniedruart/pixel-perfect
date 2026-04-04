@@ -95,8 +95,8 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
             </p>
             <p className="font-bold text-foreground">Eugénie Druart</p>
             <p className="text-sm text-muted-foreground mb-3">Fondatrice du label WEL</p>
-            <Button variant="outline" size="sm">
-              Contacter par e-mail
+            <Button variant="outline" size="sm" asChild>
+              <Link to="/contact">Contacter par e-mail</Link>
             </Button>
           </div>
         </div>
