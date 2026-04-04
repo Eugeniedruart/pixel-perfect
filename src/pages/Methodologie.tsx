@@ -24,7 +24,7 @@ import patternHero from "@/assets/pattern-hero-clean.png";
 import welCertifiedDark from "@/assets/wel-certified-dark.png";
 import corporateMeeting from "@/assets/corporate-meeting.jpg";
 import corporateCollaboration from "@/assets/corporate-collaboration.jpg";
-import corporateLeadership from "@/assets/corporate-leadership.jpg";
+import corporateLeadership from "@/assets/pexels-kampus-8190807.jpg";
 
 /* ── scroll reveal hook ── */
 const useScrollReveal = () => {
