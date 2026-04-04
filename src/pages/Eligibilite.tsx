@@ -6,11 +6,12 @@ import { Button } from "@/components/ui/button";
 import EligibiliteHeader from "@/components/eligibilite/EligibiliteHeader";
 import StepIndicator from "@/components/eligibilite/StepIndicator";
 import StepSiret from "@/components/eligibilite/StepSiret";
+import StepQuestionnaire from "@/components/eligibilite/StepQuestionnaire";
 import StepContact from "@/components/eligibilite/StepContact";
 import ResultScreen from "@/components/eligibilite/ResultScreen";
 import { eligibiliteSchema, stepFields, type EligibiliteFormData } from "@/lib/eligibilite-schema";
 
-const TOTAL_STEPS = 2;
+const TOTAL_STEPS = 3;
 
 const Eligibilite = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -21,6 +22,15 @@ const Eligibilite = () => {
       companyName: "",
       employeeCount: "",
       conventionCollective: "",
+      q_remuneration_mesure: "",
+      q_remuneration_actions: "",
+      q_gouvernance_part: "",
+      q_gouvernance_objectifs: "",
+      q_prevention_actions: "",
+      q_prevention_formation: "",
+      q_equilibre_dispositifs: "",
+      q_equilibre_politiques: "",
+      q_engagement_12mois: "",
       contactNom: "",
       contactPrenom: "",
       contactEmail: "",
@@ -62,7 +72,8 @@ const Eligibilite = () => {
 
         <div className="flex-1">
           {currentStep === 1 && <StepSiret form={form} />}
-          {currentStep === 2 && <StepContact form={form} onSkip={handleSkipContact} />}
+          {currentStep === 2 && <StepQuestionnaire form={form} />}
+          {currentStep === 3 && <StepContact form={form} onSkip={handleSkipContact} />}
         </div>
 
         <div className="flex items-center gap-4 mt-10 pb-8">
