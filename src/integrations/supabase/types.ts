@@ -14,7 +14,99 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      contact_submissions: {
+        Row: {
+          company: string | null
+          created_at: string
+          email: string
+          first_name: string
+          id: string
+          last_name: string
+          message: string | null
+        }
+        Insert: {
+          company?: string | null
+          created_at?: string
+          email: string
+          first_name: string
+          id?: string
+          last_name: string
+          message?: string | null
+        }
+        Update: {
+          company?: string | null
+          created_at?: string
+          email?: string
+          first_name?: string
+          id?: string
+          last_name?: string
+          message?: string | null
+        }
+        Relationships: []
+      }
+      eligibilite_submissions: {
+        Row: {
+          company_name: string
+          contact_email: string | null
+          contact_fonction: string | null
+          contact_nom: string | null
+          contact_prenom: string | null
+          convention_collective: string
+          created_at: string
+          employee_count: string
+          id: string
+          q_engagement_12mois: string | null
+          q_equilibre_dispositifs: string | null
+          q_equilibre_politiques: string | null
+          q_gouvernance_objectifs: string | null
+          q_gouvernance_part: string | null
+          q_prevention_actions: string | null
+          q_prevention_formation: string | null
+          q_remuneration_actions: string | null
+          q_remuneration_mesure: string | null
+        }
+        Insert: {
+          company_name: string
+          contact_email?: string | null
+          contact_fonction?: string | null
+          contact_nom?: string | null
+          contact_prenom?: string | null
+          convention_collective: string
+          created_at?: string
+          employee_count: string
+          id?: string
+          q_engagement_12mois?: string | null
+          q_equilibre_dispositifs?: string | null
+          q_equilibre_politiques?: string | null
+          q_gouvernance_objectifs?: string | null
+          q_gouvernance_part?: string | null
+          q_prevention_actions?: string | null
+          q_prevention_formation?: string | null
+          q_remuneration_actions?: string | null
+          q_remuneration_mesure?: string | null
+        }
+        Update: {
+          company_name?: string
+          contact_email?: string | null
+          contact_fonction?: string | null
+          contact_nom?: string | null
+          contact_prenom?: string | null
+          convention_collective?: string
+          created_at?: string
+          employee_count?: string
+          id?: string
+          q_engagement_12mois?: string | null
+          q_equilibre_dispositifs?: string | null
+          q_equilibre_politiques?: string | null
+          q_gouvernance_objectifs?: string | null
+          q_gouvernance_part?: string | null
+          q_prevention_actions?: string | null
+          q_prevention_formation?: string | null
+          q_remuneration_actions?: string | null
+          q_remuneration_mesure?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
