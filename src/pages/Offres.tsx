@@ -248,7 +248,7 @@ const Offres = () => {
                 ].map((b, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <b.icon className="h-4 w-4 text-primary shrink-0" />
-                    <p className="text-sm text-foreground">{b.text}</p>
+                    <p className="text-xs md:text-sm text-foreground">{b.text}</p>
                   </div>
                 ))}
               </div>
