@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 import type { EligibiliteFormData } from "@/lib/eligibilite-schema";
 import ctaPortrait from "@/assets/cta-portrait.jpg";
-import patternBg from "@/assets/pattern-hero-2.png";
+import patternBg from "@/assets/pattern-hero-clean.png";
 interface ResultScreenProps {
   data: EligibiliteFormData;
 }
