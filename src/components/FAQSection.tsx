@@ -19,7 +19,7 @@ const faqs = [
     answer: "WEL s'est engagé dans une mise en conformité RGPD, contractualisée en amont. La confidentialité des réponses est une priorité absolue.",
   },
   {
-    question: "Pourquoi WEL n'est pas du \"women washing\" ?",
+    question: "Pourquoi WEL n'est pas du \"women washing\"\u00a0?",
     answer: "WEL repose sur des preuves, des critères mesurables et une analyse indépendante. L'objectif est de transformer durablement les pratiques, pas de valoriser une image.",
   },
   {
