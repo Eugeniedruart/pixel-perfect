@@ -1,14 +1,13 @@
 import { UseFormReturn } from "react-hook-form";
 import { Input } from "@/components/ui/input";
-import { ArrowRight } from "lucide-react";
 import type { EligibiliteFormData } from "@/lib/eligibilite-schema";
 
 interface StepContactProps {
   form: UseFormReturn<EligibiliteFormData>;
-  onSkip: () => void;
+  onSkip?: () => void;
 }
 
-const StepContact = ({ form, onSkip }: StepContactProps) => {
+const StepContact = ({ form }: StepContactProps) => {
   const { register, formState: { errors } } = form;
 
   return (
@@ -44,14 +43,6 @@ const StepContact = ({ form, onSkip }: StepContactProps) => {
           <Input {...register("contactFonction")} placeholder="Votre fonction" />
         </div>
       </div>
-
-      <button
-        type="button"
-        onClick={onSkip}
-        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-      >
-        Passer cette étape <ArrowRight className="h-3.5 w-3.5" />
-      </button>
     </div>
   );
 };
