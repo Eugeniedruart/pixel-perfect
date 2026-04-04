@@ -24,11 +24,11 @@ const CTASection = () => {
               <p className="text-muted-foreground text-xs md:text-sm mb-4 md:mb-6">
                 Évaluez vos pratiques, identifiez vos leviers et obtenez un label reconnu.
               </p>
-              <div className="flex flex-col sm:flex-row gap-2 md:gap-3 mb-3 items-center">
-                <Button variant="outline" size="sm" className="h-10" asChild>
+              <div className="flex flex-row gap-2 md:gap-3 mb-3 items-center justify-center">
+                <Button variant="outline" size="sm" className="h-9 text-xs sm:text-sm" asChild>
                   <Link to="/eligibilite">Tester mon éligibilité</Link>
                 </Button>
-                <Button size="sm" className="h-10 bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+                <Button size="sm" className="h-9 text-xs sm:text-sm bg-primary text-primary-foreground hover:bg-primary/90" asChild>
                   <Link to="/contact">Je veux être Welbellisé</Link>
                 </Button>
               </div>
