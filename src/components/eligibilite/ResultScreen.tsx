@@ -42,9 +42,9 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
   return (
     <div>
       {/* Decorative header */}
-      <div className="relative overflow-hidden py-16 min-h-[420px]">
+      <div className="relative overflow-hidden py-16 min-h-[420px] bg-wel-cream">
         <div
-          className="absolute inset-0 bg-repeat bg-center opacity-40"
+          className="absolute inset-0 bg-repeat bg-center"
           style={{ backgroundImage: `url(${patternBg})`, backgroundSize: '800px' }}
         />
 
