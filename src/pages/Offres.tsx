@@ -189,7 +189,7 @@ const Offres = () => {
           </Reveal>
 
           {/* 3.1 Formations */}
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center mb-24">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
             <Reveal>
               <div className="relative">
                 <img
