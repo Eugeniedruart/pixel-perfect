@@ -19,14 +19,20 @@ const Contact = () => {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    const firstName = (formData.get("firstName") as string)?.trim();
-    const lastName = (formData.get("lastName") as string)?.trim();
-    const email = (formData.get("email") as string)?.trim();
-    const company = (formData.get("company") as string)?.trim();
-    const message = (formData.get("message") as string)?.trim();
+    const firstName = (formData.get("firstName") as string)?.trim().slice(0, 200);
+    const lastName = (formData.get("lastName") as string)?.trim().slice(0, 200);
+    const email = (formData.get("email") as string)?.trim().slice(0, 320);
+    const company = (formData.get("company") as string)?.trim().slice(0, 300);
+    const message = (formData.get("message") as string)?.trim().slice(0, 5000);
 
     if (!firstName || !lastName || !email) {
       toast({ title: "Erreur", description: "Veuillez remplir les champs obligatoires.", variant: "destructive" });
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast({ title: "Erreur", description: "Veuillez entrer un email valide.", variant: "destructive" });
       return;
     }
 
