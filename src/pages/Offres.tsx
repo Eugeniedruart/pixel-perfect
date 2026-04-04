@@ -324,11 +324,11 @@ const Offres = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Ce qui nous distingue</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-3 md:mb-4">
               Notre{" "}
               <span className="font-serif-display italic text-primary font-normal">approche</span>
             </h2>
-            <p className="font-serif-display italic text-primary/70 text-center text-lg mb-10">
+            <p className="font-serif-display italic text-primary/70 text-center text-sm md:text-lg mb-6 md:mb-10">
               Moins de slides, plus de terrain.
             </p>
           </Reveal>
