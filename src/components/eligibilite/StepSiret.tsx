@@ -1,7 +1,4 @@
-import { useState } from "react";
 import { UseFormReturn } from "react-hook-form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import CompanyCard from "./CompanyCard";
 import { mockCompanies } from "@/lib/eligibilite-mock-data";
 import type { EligibiliteFormData } from "@/lib/eligibilite-schema";
@@ -11,19 +8,7 @@ interface StepSiretProps {
 }
 
 const StepSiret = ({ form }: StepSiretProps) => {
-  const [siretQuery, setSiretQuery] = useState("");
-  const [results, setResults] = useState(mockCompanies.slice(0, 2));
   const selectedCompany = form.watch("selectedCompany");
-
-  const handleSearch = () => {
-    if (!siretQuery.trim()) return;
-    const filtered = mockCompanies.filter(
-      (c) =>
-        c.siret.includes(siretQuery.replace(/\s/g, "")) ||
-        c.name.toLowerCase().includes(siretQuery.toLowerCase())
-    );
-    setResults(filtered);
-  };
 
   return (
     <div>
@@ -37,29 +22,8 @@ const StepSiret = ({ form }: StepSiretProps) => {
         Info supplémentaire pour comprendre la question si besoin
       </p>
 
-      <label className="block text-sm font-semibold text-foreground mb-2">SIRET</label>
-      <div className="flex gap-3 mb-6">
-        <Input
-          value={siretQuery}
-          onChange={(e) => setSiretQuery(e.target.value)}
-          placeholder="845 405 711 00027"
-          className="flex-1"
-          onKeyDown={(e) => e.key === "Enter" && (e.preventDefault(), handleSearch())}
-        />
-        <Button type="button" variant="outline" onClick={handleSearch}>
-          Rechercher
-        </Button>
-      </div>
-
-      {results.length > 0 && (
-        <p className="text-sm text-muted-foreground mb-4">
-          {results.length} entreprise{results.length > 1 ? "s" : ""} trouvée
-          {results.length > 1 ? "s" : ""}
-        </p>
-      )}
-
       <div className="space-y-3">
-        {results.map((company) => (
+        {mockCompanies.map((company) => (
           <CompanyCard
             key={company.id}
             company={company}
