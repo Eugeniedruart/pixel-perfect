@@ -6,7 +6,7 @@ import { Linkedin, ArrowRight } from "lucide-react";
 const footerLinks = [
   { label: "Le label", href: "#label" },
   { label: "Nos offres", href: "/offres" },
-  { label: "Notre blog", href: "#" },
+  { label: "Méthodologie", href: "/methodologie" },
   { label: "Test d'éligibilité", href: "/eligibilite" },
 ];
 
