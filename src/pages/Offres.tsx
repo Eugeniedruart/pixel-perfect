@@ -123,9 +123,9 @@ const Offres = () => {
       </Reveal>
 
       {/* ─── 2. LABELLISATION ─── */}
-      <section className="py-10 md:py-20">
+      <section className="py-8 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center">
+          <div className="grid md:grid-cols-2 gap-5 md:gap-12 lg:gap-20 items-center">
             <Reveal>
               <div className="relative">
                 <img
