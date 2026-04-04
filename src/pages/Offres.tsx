@@ -17,6 +17,7 @@ import {
   Handshake,
   Settings,
   Target,
+  ChevronDown,
 } from "lucide-react";
 import offresHero from "@/assets/offres-hero-v2.jpg";
 import offresLabellisation from "@/assets/offres-labellisation.jpg";
