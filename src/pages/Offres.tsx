@@ -351,7 +351,7 @@ const Offres = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5 max-w-4xl mx-auto">
             {approche.map((item, i) => (
               <Reveal key={i}>
-                <div className="group relative rounded-2xl border border-border bg-background p-6 hover:border-primary/20 hover:shadow-md hover:shadow-foreground/[0.03] hover:-translate-y-0.5 transition-all duration-300">
+                <div className="group relative rounded-2xl border border-border bg-background p-4 md:p-6 hover:border-primary/20 hover:shadow-md hover:shadow-foreground/[0.03] hover:-translate-y-0.5 transition-all duration-300">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-9 h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0 group-hover:bg-primary/[0.12] transition-colors">
                       <item.icon className="h-4 w-4 text-primary" />
