@@ -335,7 +335,7 @@ const Offres = () => {
 
           {/* Full-width image */}
           <Reveal>
-            <div className="relative rounded-lg overflow-hidden mb-12">
+            <div className="relative rounded-lg overflow-hidden mb-6 md:mb-12">
               <img
                 src={offresApproche}
                 alt="Équipe en atelier collaboratif"
