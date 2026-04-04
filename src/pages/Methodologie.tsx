@@ -474,7 +474,7 @@ const Methodologie = () => {
               <p className="text-muted-foreground text-base leading-relaxed mb-8">
                 Les modalités d'accompagnement WEL débutent à partir de <strong className="text-foreground">3 900€</strong> et sont ajustées en fonction de la taille de l'organisation et du périmètre du diagnostic. Une brochure détaillant l'offre est disponible sur demande.
               </p>
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto" asChild>
                 <Link to="/contact">Demander la brochure</Link>
               </Button>
             </div>
