@@ -22,7 +22,7 @@ const HeroSection = () => {
           <span className="font-serif-display italic text-foreground font-normal">femmes-hommes</span>
         </h1>
 
-        <div className="flex flex-row items-center justify-center gap-2 sm:gap-3 mt-6 sm:mt-10">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mt-6 sm:mt-10">
           <Button variant="outline" size="default" className="sm:min-w-[200px] h-10 sm:h-12 text-sm sm:text-base" asChild>
             <Link to="/eligibilite">Tester mon éligibilité</Link>
           </Button>
