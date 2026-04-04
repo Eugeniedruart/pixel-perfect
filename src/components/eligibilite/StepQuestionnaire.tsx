@@ -96,7 +96,7 @@ const pillars: Pillar[] = [
   {
     num: 4,
     title: "Équilibre & conditions de travail",
-    icon: "⚖️",
+    
     questions: [
       {
         field: "q_equilibre_dispositifs",
