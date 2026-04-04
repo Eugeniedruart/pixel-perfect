@@ -169,7 +169,8 @@ const Methodologie = () => {
               Quatre dimensions fondamentales couvrant l'ensemble des enjeux de l'égalité professionnelle.
             </p>
           </Reveal>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {/* Desktop */}
+          <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {pillars.map((p, i) => (
               <Reveal key={i}>
                 <div className="group rounded-2xl border border-border bg-gradient-to-br from-[hsl(var(--wel-cream)/0.5)] to-background p-6 h-full hover:shadow-md hover:shadow-foreground/[0.03] hover:border-primary/20 transition-all duration-300">
@@ -180,6 +181,12 @@ const Methodologie = () => {
                   <p className="text-muted-foreground text-xs leading-relaxed">{p.desc}</p>
                 </div>
               </Reveal>
+            ))}
+          </div>
+          {/* Mobile: accordion */}
+          <div className="sm:hidden space-y-3">
+            {pillars.map((p, i) => (
+              <PillarAccordionCard key={i} emoji={p.emoji} title={p.title} desc={p.desc} />
             ))}
           </div>
         </div>
