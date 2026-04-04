@@ -175,7 +175,7 @@ const Offres = () => {
       </section>
 
       {/* ─── 3. CONSEIL & ACCOMPAGNEMENT ─── */}
-      <section className="py-20 bg-[hsl(var(--wel-cream)/0.3)]">
+      <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.3)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Accompagnement</p>
