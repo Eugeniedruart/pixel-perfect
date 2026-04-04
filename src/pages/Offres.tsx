@@ -210,7 +210,7 @@ const Offres = () => {
               <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-8">
                 Interventions pour faire évoluer les regards et déclencher l'action.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-3 md:space-y-4">
                 {formations.map((f, i) => (
                   <div key={i} className="flex items-start gap-4 group">
                     <div className="w-9 h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0 group-hover:bg-primary/[0.12] transition-colors">
