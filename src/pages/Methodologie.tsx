@@ -466,10 +466,10 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 9. TARIFICATION ─── */}
-      <section className="py-20 bg-[hsl(var(--wel-cream)/0.4)]">
+      <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.4)]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="rounded-2xl border border-border bg-background p-10 lg:p-14 text-center shadow-sm">
+            <div className="rounded-2xl border border-border bg-background p-6 md:p-10 lg:p-14 text-center shadow-sm">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">Tarification</p>
               <p className="text-muted-foreground text-base leading-relaxed mb-8">
                 Les modalités d'accompagnement WEL débutent à partir de <strong className="text-foreground">3 900€</strong> et sont ajustées en fonction de la taille de l'organisation et du périmètre du diagnostic. Une brochure détaillant l'offre est disponible sur demande.
