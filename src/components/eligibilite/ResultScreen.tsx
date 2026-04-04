@@ -56,9 +56,7 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
             </span>
           </h1>
           <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-            Votre entreprise répond aux critères d'éligibilité du Women Equity Label.
-            Vous pouvez dès maintenant entamer votre démarche de labellisation pour
-            valoriser vos engagements en faveur de l'égalité professionnelle.
+            Nos équipes analysent actuellement vos réponses et reviendront vers vous rapidement avec des recommandations adaptées.
           </p>
 
           <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2" asChild>
