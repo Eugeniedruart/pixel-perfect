@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound.tsx";
 import Eligibilite from "./pages/Eligibilite.tsx";
 import MentionsLegales from "./pages/MentionsLegales.tsx";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
+import GestionCookies from "./pages/GestionCookies.tsx";
 
 const queryClient = new QueryClient();
 
