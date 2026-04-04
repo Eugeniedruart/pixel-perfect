@@ -349,7 +349,8 @@ const Offres = () => {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5 max-w-4xl mx-auto">
+          {/* Desktop */}
+          <div className="hidden sm:grid sm:grid-cols-2 gap-3 md:gap-5 max-w-4xl mx-auto">
             {approche.map((item, i) => (
               <Reveal key={i}>
                 <div className="group relative rounded-2xl border border-border bg-background p-4 md:p-6 hover:border-primary/20 hover:shadow-md hover:shadow-foreground/[0.03] hover:-translate-y-0.5 transition-all duration-300">
@@ -362,6 +363,12 @@ const Offres = () => {
                   <p className="text-xs text-muted-foreground leading-relaxed">{item.text}</p>
                 </div>
               </Reveal>
+            ))}
+          </div>
+          {/* Mobile: accordion */}
+          <div className="sm:hidden space-y-3">
+            {approche.map((item, i) => (
+              <ApprochAccordionCard key={i} icon={item.icon} title={item.title} text={item.text} />
             ))}
           </div>
         </div>
