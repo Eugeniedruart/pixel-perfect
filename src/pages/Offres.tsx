@@ -295,11 +295,11 @@ const Offres = () => {
               <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
                 Stratégie, audits, plans d'action, communication — nous vous accompagnons à chaque étape.
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5 md:gap-2">
                 {["Stratégie", "Conformité", "Plans d'action", "Communication", "Audits"].map((tag, i) => (
                   <span
                     key={i}
-                    className="rounded-full border border-border bg-background px-4 py-1.5 text-xs font-medium text-foreground hover:border-primary/30 transition-colors"
+                    className="rounded-full border border-border bg-background px-3 py-1 md:px-4 md:py-1.5 text-xs font-medium text-foreground hover:border-primary/30 transition-colors"
                   >
                     {tag}
                   </span>
