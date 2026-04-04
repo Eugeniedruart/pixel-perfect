@@ -395,7 +395,7 @@ const Methodologie = () => {
                   width={1280}
                   height={854}
                   loading="lazy"
-                  className="rounded-2xl shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3]"
+                  className="rounded-2xl shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
               </div>
