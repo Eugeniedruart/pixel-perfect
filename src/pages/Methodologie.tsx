@@ -193,9 +193,9 @@ const Methodologie = () => {
       </section>
 
       {/* ─── 4. AU-DELÀ DE LA CONFORMITÉ (image left) ─── */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-20 items-center">
             <Reveal>
               <div className="relative overflow-hidden rounded-2xl">
                 <img
@@ -204,7 +204,7 @@ const Methodologie = () => {
                   width={1280}
                   height={854}
                   loading="lazy"
-                  className="shadow-lg shadow-foreground/5 object-cover w-full aspect-[4/3] object-[center_30%] scale-[1.15]"
+                  className="shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3] object-[center_30%] scale-[1.15]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
               </div>
