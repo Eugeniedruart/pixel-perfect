@@ -89,9 +89,9 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
               Votre contact privilégié WEL
             </p>
             <p className="text-sm text-muted-foreground mb-3">
-              Ma conviction : l'égalité doit devenir un véritable indicateur de performance,
-              et non une simple célébration annuelle. Cette conviction a donné naissance au
-              label Women Equity Label !
+              Ce n’est pas le genre qui doit décider des opportunités, mais le talent.
+              <br />
+              Notre rôle est de structurer les conditions pour que cette promesse devienne une réalité.
             </p>
             <p className="font-bold text-foreground">Eugénie Druart</p>
             <p className="text-sm text-muted-foreground mb-3">Fondatrice du label WEL</p>
