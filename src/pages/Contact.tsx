@@ -58,46 +58,46 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <section className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-8">
+      <section className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20">
+        <Link to="/" className="inline-flex items-center gap-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground mb-6 md:mb-8">
           <ArrowLeft className="h-4 w-4" /> Retour à l'accueil
         </Link>
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
+        <h1 className="text-2xl sm:text-4xl font-bold text-foreground mb-2">
           Je veux être <span className="font-serif-display italic font-normal">Welbellisé</span>
         </h1>
-        <p className="text-muted-foreground mb-10">
+        <p className="text-xs sm:text-base text-muted-foreground mb-6 md:mb-10">
           Remplissez le formulaire ci-dessous et notre équipe vous recontactera rapidement.
         </p>
 
-        <form className="space-y-6" onSubmit={handleSubmit}>
+        <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="firstName">Prénom</Label>
-              <Input id="firstName" name="firstName" placeholder="Votre prénom" required maxLength={200} />
+              <Label htmlFor="firstName" className="text-xs md:text-sm">Prénom</Label>
+              <Input id="firstName" name="firstName" placeholder="Votre prénom" required maxLength={200} className="h-10 md:h-11 text-sm" />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="lastName">Nom</Label>
-              <Input id="lastName" name="lastName" placeholder="Votre nom" required maxLength={200} />
+              <Label htmlFor="lastName" className="text-xs md:text-sm">Nom</Label>
+              <Input id="lastName" name="lastName" placeholder="Votre nom" required maxLength={200} className="h-10 md:h-11 text-sm" />
             </div>
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="company">Entreprise</Label>
-            <Input id="company" name="company" placeholder="Nom de votre entreprise" maxLength={300} />
+            <Label htmlFor="company" className="text-xs md:text-sm">Entreprise</Label>
+            <Input id="company" name="company" placeholder="Nom de votre entreprise" maxLength={300} className="h-10 md:h-11 text-sm" />
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="email">Email professionnel</Label>
-            <Input id="email" name="email" type="email" placeholder="vous@entreprise.com" required maxLength={320} />
+            <Label htmlFor="email" className="text-xs md:text-sm">Email professionnel</Label>
+            <Input id="email" name="email" type="email" placeholder="vous@entreprise.com" required maxLength={320} className="h-10 md:h-11 text-sm" />
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="message">Message</Label>
-            <Textarea id="message" name="message" placeholder="Décrivez votre projet ou posez-nous vos questions..." rows={5} maxLength={5000} />
+            <Label htmlFor="message" className="text-xs md:text-sm">Message</Label>
+            <Textarea id="message" name="message" placeholder="Décrivez votre projet ou posez-nous vos questions..." rows={4} maxLength={5000} className="text-sm" />
           </div>
 
-          <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90" disabled={loading}>
+          <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-11 md:h-12" disabled={loading}>
             {loading ? "Envoi en cours..." : "Envoyer ma demande"}
           </Button>
         </form>

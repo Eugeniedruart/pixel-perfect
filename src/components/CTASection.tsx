@@ -8,7 +8,7 @@ const CTASection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Quote banner */}
         <div className="rounded-xl bg-primary p-5 sm:p-12 text-center mb-6 md:mb-16">
-          <p className="text-primary-foreground text-sm sm:text-xl font-medium leading-relaxed max-w-3xl mx-auto">
+          <p className="text-primary-foreground text-xs sm:text-xl font-medium leading-relaxed max-w-3xl mx-auto">
             L'égalité femmes-hommes n'est pas un combat de genre.
             <br className="hidden sm:block" />
             <span className="sm:hidden"> </span>
@@ -20,7 +20,7 @@ const CTASection = () => {
         <div className="max-w-3xl mx-auto rounded-xl bg-muted/50 border border-border overflow-hidden">
           <div className="grid md:grid-cols-5 gap-0">
             <div className="md:col-span-3 p-5 md:p-8 flex flex-col justify-center">
-              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">Prêt·e à obtenir votre label ?</h3>
+              <h3 className="text-lg md:text-2xl font-bold text-foreground mb-2">Prêt·e à obtenir votre label ?</h3>
               <p className="text-muted-foreground text-xs md:text-sm mb-4 md:mb-6">
                 Évaluez vos pratiques, identifiez vos leviers et obtenez un label reconnu.
               </p>
@@ -36,7 +36,8 @@ const CTASection = () => {
                 Diagnostic · Accompagnement · Stratégie durable
               </p>
             </div>
-            <div className="hidden md:block md:col-span-2 min-h-[200px]">
+            {/* Portrait - compact on mobile */}
+            <div className="md:col-span-2 h-40 md:h-auto md:min-h-[200px]">
               <img src={ctaPortrait} alt="Professionnelle" className="w-full h-full object-cover object-[center_20%] scale-110" loading="lazy" width={600} height={800} />
             </div>
           </div>

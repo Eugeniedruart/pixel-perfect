@@ -31,13 +31,13 @@ const BenefitsSection = () => {
           <br />
           <span className="font-serif-display italic text-primary font-normal">apporte</span>
         </h2>
-        <p className="text-sm sm:text-base text-muted-foreground text-center max-w-2xl mx-auto mt-3 mb-8 md:mb-12">
+        <p className="text-xs sm:text-base text-muted-foreground text-center max-w-2xl mx-auto mt-3 mb-8 md:mb-12">
           Une méthodologie de mesure et de pilotage de l'impact :
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-stretch max-w-5xl mx-auto">
           {/* Benefits list */}
-          <div className="space-y-4 md:space-y-6">
+          <div className="space-y-3 md:space-y-6">
             {benefits.map((benefit, i) => (
               <div key={i} className="flex gap-3">
                 <div className="mt-1.5 w-2 h-2 rounded-full bg-foreground shrink-0" />
@@ -49,8 +49,8 @@ const BenefitsSection = () => {
             ))}
           </div>
 
-          {/* Image - hidden on mobile */}
-          <div className="hidden md:block rounded-xl overflow-hidden">
+          {/* Image - compact on mobile, tall on desktop */}
+          <div className="rounded-xl overflow-hidden h-48 md:h-auto">
             <img src={benefitsWoman} alt="Professionnelle souriante" className="w-full h-full object-cover" loading="lazy" width={768} height={1024} />
           </div>
         </div>
