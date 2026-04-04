@@ -344,7 +344,7 @@ const Offres = () => {
                 width={1200}
                 height={600}
                 loading="lazy"
-                className="w-full h-64 sm:h-80 object-cover object-top"
+                className="w-full h-64 sm:h-80 object-cover object-bottom"
               />
               <div className="absolute inset-0 ring-1 ring-inset ring-foreground/5 rounded-2xl" />
             </div>
