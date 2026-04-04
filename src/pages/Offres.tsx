@@ -85,17 +85,15 @@ const Offres = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20 lg:py-28">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <Reveal>
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-5">Nos offres</p>
-              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-bold leading-[1.1] mb-6">
-                Agir concrètement
-                <br />
-                pour l'égalité{" "}
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3 md:mb-5">Nos offres</p>
+              <h1 className="text-2xl sm:text-5xl lg:text-[3.5rem] font-bold leading-[1.15] mb-4 md:mb-6">
+                Agir pour l'égalité{" "}
                 <span className="font-serif-display italic text-primary font-normal">professionnelle</span>
               </h1>
-              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 max-w-lg">
-                De l'évaluation à la transformation, WEL accompagne les organisations dans des démarches concrètes, mesurables et durables.
+              <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed mb-5 md:mb-8 max-w-lg">
+                WEL accompagne les organisations dans des démarches concrètes et durables.
               </p>
-              <Button size="lg" variant="outline" asChild>
+              <Button size="lg" variant="outline" className="w-full sm:w-auto h-11" asChild>
                 <Link to="/contact">Échanger avec nous</Link>
               </Button>
             </Reveal>
@@ -143,30 +141,30 @@ const Offres = () => {
             </Reveal>
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Labellisation</p>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-3">
+              <h2 className="text-2xl sm:text-4xl font-bold mb-2 md:mb-3">
                 Le label{" "}
                 <span className="font-serif-display italic text-primary font-normal">WEL</span>
               </h2>
-              <p className="font-serif-display italic text-primary/80 text-lg mb-6">
-                Un label, mais surtout un levier de transformation.
+              <p className="font-serif-display italic text-primary/80 text-base md:text-lg mb-4 md:mb-6">
+                Un levier de transformation.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                Évaluer vos pratiques. Reconnaître vos engagements. Vous inscrire dans une trajectoire de progrès durable, alignée aux exigences françaises et européennes.
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
+                Évaluer vos pratiques. Reconnaître vos engagements. Vous inscrire dans une trajectoire de progrès durable.
               </p>
-              <div className="space-y-3 mb-8">
+              <div className="space-y-2 md:space-y-3 mb-5 md:mb-8">
                 {[
-                  "Un diagnostic structuré autour de 4 piliers concrets",
-                  "Des critères mesurables, pas déclaratif",
-                  "Une reconnaissance qui valorise l'action",
-                  "Un atout pour vos appels d'offres et votre stratégie ESG",
+                  "Diagnostic structuré, 4 piliers concrets",
+                  "Critères mesurables, pas déclaratif",
+                  "Reconnaissance qui valorise l'action",
+                  "Atout pour vos appels d'offres et ESG",
                 ].map((text, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 shrink-0" />
-                    <p className="text-sm text-foreground">{text}</p>
+                  <div key={i} className="flex items-start gap-2 md:gap-3">
+                    <CheckCircle2 className="h-3.5 w-3.5 md:h-4 md:w-4 text-primary mt-0.5 shrink-0" />
+                    <p className="text-xs md:text-sm text-foreground">{text}</p>
                   </div>
                 ))}
               </div>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2" asChild>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 w-full sm:w-auto h-11" asChild>
                 <Link to="/methodologie">Découvrir la méthodologie <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </Reveal>
@@ -179,12 +177,12 @@ const Offres = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Accompagnement</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-2 md:mb-3">
               Conseil &{" "}
               <span className="font-serif-display italic text-primary font-normal">accompagnement</span>
             </h2>
-            <p className="font-serif-display italic text-primary/80 text-center text-lg mb-16">
-              Parce que l'égalité ne se décrète pas, elle se construit.
+            <p className="font-serif-display italic text-primary/80 text-center text-base md:text-lg mb-8 md:mb-16">
+              L'égalité ne se décrète pas, elle se construit.
             </p>
           </Reveal>
 
@@ -205,17 +203,17 @@ const Offres = () => {
             </Reveal>
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Sensibilisation</p>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+              <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 Formations &{" "}
                 <span className="font-serif-display italic text-primary font-normal">conférences</span>
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-8">
-                Des interventions conçues pour faire évoluer les regards et déclencher l'action.
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-8">
+                Interventions pour faire évoluer les regards et déclencher l'action.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-3 md:space-y-4">
                 {formations.map((f, i) => (
-                  <div key={i} className="flex items-start gap-4 group">
-                    <div className="w-9 h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0 group-hover:bg-primary/[0.12] transition-colors">
+                   <div key={i} className="flex items-start gap-3 group">
+                    <div className="w-8 h-8 md:w-9 md:h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0 group-hover:bg-primary/[0.12] transition-colors">
                       <f.icon className="h-4 w-4 text-primary" />
                     </div>
                     <div>
@@ -232,15 +230,15 @@ const Offres = () => {
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
             <Reveal className="order-2 md:order-1">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Écoute</p>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+              <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 Enquêtes{" "}
                 <span className="font-serif-display italic text-primary font-normal">internes</span>
               </h3>
-              <p className="font-serif-display italic text-primary/70 text-base mb-4">
-                Donner la parole pour mieux comprendre et agir.
+              <p className="font-serif-display italic text-primary/70 text-sm md:text-base mb-3 md:mb-4">
+                Donner la parole pour mieux comprendre.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                Des enquêtes quantitatives et qualitatives pour mesurer la perception, identifier les zones de risque et objectiver les enjeux.
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
+                Enquêtes quantitatives et qualitatives pour mesurer la perception et identifier les zones de risque.
               </p>
               <div className="space-y-3">
                 {[
@@ -250,7 +248,7 @@ const Offres = () => {
                 ].map((b, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <b.icon className="h-4 w-4 text-primary shrink-0" />
-                    <p className="text-sm text-foreground">{b.text}</p>
+                    <p className="text-xs md:text-sm text-foreground">{b.text}</p>
                   </div>
                 ))}
               </div>
@@ -287,15 +285,15 @@ const Offres = () => {
             </Reveal>
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Sur mesure</p>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+              <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 Missions de{" "}
                 <span className="font-serif-display italic text-primary font-normal">conseil</span>
               </h3>
-              <p className="font-serif-display italic text-primary/70 text-base mb-4">
-                Transformer les intentions en actions concrètes.
+              <p className="font-serif-display italic text-primary/70 text-sm md:text-base mb-3 md:mb-4">
+                Transformer les intentions en actions.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                Structurer votre stratégie, préparer vos audits, déployer vos plans d'action, communiquer en interne et en externe — nous vous accompagnons à chaque étape.
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
+                Stratégie, audits, plans d'action, communication — nous vous accompagnons à chaque étape.
               </p>
               <div className="flex flex-wrap gap-2">
                 {["Stratégie", "Conformité", "Plans d'action", "Communication", "Audits"].map((tag, i) => (
@@ -326,18 +324,18 @@ const Offres = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Ce qui nous distingue</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-3 md:mb-4">
               Notre{" "}
               <span className="font-serif-display italic text-primary font-normal">approche</span>
             </h2>
-            <p className="font-serif-display italic text-primary/70 text-center text-lg mb-10">
+            <p className="font-serif-display italic text-primary/70 text-center text-sm md:text-lg mb-6 md:mb-10">
               Moins de slides, plus de terrain.
             </p>
           </Reveal>
 
           {/* Full-width image */}
           <Reveal>
-            <div className="relative rounded-lg overflow-hidden mb-12">
+            <div className="relative rounded-lg overflow-hidden mb-6 md:mb-12">
               <img
                 src={offresApproche}
                 alt="Équipe en atelier collaboratif"
@@ -350,12 +348,12 @@ const Offres = () => {
             </div>
           </Reveal>
 
-          <div className="grid sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5 max-w-4xl mx-auto">
             {approche.map((item, i) => (
               <Reveal key={i}>
-                <div className="group relative rounded-2xl border border-border bg-background p-6 hover:border-primary/20 hover:shadow-md hover:shadow-foreground/[0.03] hover:-translate-y-0.5 transition-all duration-300">
+                <div className="group relative rounded-2xl border border-border bg-background p-4 md:p-6 hover:border-primary/20 hover:shadow-md hover:shadow-foreground/[0.03] hover:-translate-y-0.5 transition-all duration-300">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-9 h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0 group-hover:bg-primary/[0.12] transition-colors">
+                    <div className="w-8 h-8 md:w-9 md:h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0 group-hover:bg-primary/[0.12] transition-colors">
                       <item.icon className="h-4 w-4 text-primary" />
                     </div>
                     <h3 className="font-semibold text-foreground text-sm">{item.title}</h3>
@@ -373,14 +371,14 @@ const Offres = () => {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">Parlons-en</p>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold mb-3 md:mb-4">
               Échangeons sur votre{" "}
               <span className="font-serif-display italic text-primary font-normal">démarche</span>
             </h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Chaque organisation est unique. Discutons de vos enjeux pour construire ensemble la bonne approche.
+            <p className="text-muted-foreground text-sm md:text-base mb-6 md:mb-8 max-w-xl mx-auto">
+              Chaque organisation est unique. Discutons de vos enjeux.
             </p>
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto h-11" asChild>
               <Link to="/contact">Nous contacter</Link>
             </Button>
           </Reveal>
