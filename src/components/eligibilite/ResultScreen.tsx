@@ -1,43 +1,66 @@
 import { Link } from "react-router-dom";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 
 import type { EligibiliteFormData } from "@/lib/eligibilite-schema";
 import ctaPortrait from "@/assets/eugenie-portrait.png";
 import patternBg from "@/assets/pattern-hero-clean.png";
+
 interface ResultScreenProps {
   data: EligibiliteFormData;
 }
 
 const stats = [
   {
-    title: "Les Femmes dans le numérique",
-    value: "24%",
-    description: "contre 76% d'hommes",
-    source: "Source : xxxxxx",
+    value: "27%",
+    description: "des emplois du numérique sont occupés par des femmes",
+    source: "Source : Commission européenne",
+    color: "wel-purple" as const,
   },
   {
-    title: "Le Travail domestique",
-    value: "71%",
-    description: "du travail domestique non rémunéré est fait par les femmes",
-    source: "Source : xxxxxx",
+    value: "–40%",
+    description: "d'écart de pension de retraite entre les femmes et les hommes",
+    source: "Source : DREES",
+    color: "wel-navy" as const,
   },
   {
-    title: "Les femmes dirigeantes",
-    value: "22%",
-    description: "contre 78% d'hommes",
-    source: "Source : Banque de France",
+    value: "2x plus",
+    description: "de temps consacré aux tâches domestiques par les femmes",
+    source: "Source : INSEE",
+    color: "wel-blue" as const,
   },
   {
-    title: "Les postes les mieux rémunérés dans le privé",
-    value: "24%",
-    description: "de ces postes sont occupés par des femmes",
-    source: "Source : Fondation des Femmes & Genres",
+    value: "–22%",
+    description: "d'écart de rémunération entre les femmes et les hommes",
+    source: "Source : INSEE",
+    color: "destructive" as const,
   },
 ];
 
+const colorMap = {
+  "wel-purple": { bg: "bg-wel-blue-light", text: "text-wel-purple", border: "border-wel-purple/20", accent: "bg-wel-purple" },
+  "wel-navy": { bg: "bg-wel-blue-light", text: "text-wel-navy", border: "border-wel-navy/20", accent: "bg-wel-navy" },
+  "wel-blue": { bg: "bg-wel-blue-light", text: "text-wel-blue", border: "border-wel-blue/20", accent: "bg-wel-blue" },
+  "destructive": { bg: "bg-red-50", text: "text-destructive", border: "border-destructive/20", accent: "bg-destructive" },
+};
+
+function useInView() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect(); } }, { threshold: 0.2 });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+  return { ref, visible };
+}
+
 const ResultScreen = ({ data }: ResultScreenProps) => {
   const companyName = data.companyName?.trim() || "Votre entreprise";
+  const { ref: statsRef, visible: statsVisible } = useInView();
 
   return (
     <div>
@@ -89,7 +112,7 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
               Votre contact privilégié WEL
             </p>
             <p className="text-sm text-muted-foreground mb-3">
-              Ce n’est pas le genre qui doit décider des opportunités, mais le talent.
+              Ce n'est pas le genre qui doit décider des opportunités, mais le talent.
               <br />
               Notre rôle est de structurer les conditions pour que cette promesse devienne une réalité.
             </p>
@@ -103,25 +126,43 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
       </div>
 
       {/* Stats section */}
-      <div className="max-w-4xl mx-auto px-4 pb-16">
+      <div ref={statsRef} className="max-w-4xl mx-auto px-4 pb-16">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-2">
           État des lieux de
         </h2>
-        <p className="text-2xl sm:text-3xl font-serif-display italic text-primary text-center mb-10">
+        <p className="text-2xl sm:text-3xl font-serif-display italic text-primary text-center mb-4">
           l'égalité professionnelle !
         </p>
+        <p className="text-center text-muted-foreground max-w-lg mx-auto mb-10 text-sm sm:text-base">
+          Les inégalités ne disparaissent pas avec le temps. Elles se cumulent.
+        </p>
 
-        <div className="grid sm:grid-cols-2 gap-4 mb-10">
-          {stats.map((stat) => (
-            <div key={stat.title} className="border border-border rounded-xl p-6">
-              <p className="font-bold text-foreground mb-2">{stat.title}</p>
-              <p className="text-4xl font-bold text-primary font-serif-display italic mb-2">
-                {stat.value}
-              </p>
-              <p className="text-sm text-muted-foreground">{stat.description}</p>
-              <p className="text-xs text-muted-foreground mt-1">{stat.source}</p>
-            </div>
-          ))}
+        <div className="grid sm:grid-cols-2 gap-5 mb-10">
+          {stats.map((stat, i) => {
+            const c = colorMap[stat.color];
+            return (
+              <div
+                key={i}
+                className={`group relative rounded-2xl border ${c.border} ${c.bg} p-7 transition-all duration-500 hover:shadow-lg hover:-translate-y-1 ${
+                  statsVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-6"
+                }`}
+                style={{ transitionDelay: `${i * 120}ms` }}
+              >
+                {/* Accent bar */}
+                <div className={`absolute top-0 left-6 right-6 h-1 rounded-b-full ${c.accent} opacity-60`} />
+
+                <p className={`text-5xl sm:text-6xl font-bold ${c.text} font-serif-display italic leading-none mb-3 mt-2`}>
+                  {stat.value}
+                </p>
+                <p className="text-sm sm:text-base text-foreground/80 leading-snug mb-3">
+                  {stat.description}
+                </p>
+                <p className="text-xs text-muted-foreground/70">{stat.source}</p>
+              </div>
+            );
+          })}
         </div>
 
         {/* Quote banner */}
