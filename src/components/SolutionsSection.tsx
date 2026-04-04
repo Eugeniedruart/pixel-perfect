@@ -31,7 +31,7 @@ const SolutionsSection = () => {
               <p className="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4">
                 Diagnostic, évaluation et labellisation de vos pratiques en égalité professionnelle.
               </p>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 h-10 text-sm" asChild>
+              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-10 text-sm" asChild>
                 <Link to="/contact">Je veux être Welbellisé</Link>
               </Button>
             </div>
