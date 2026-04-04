@@ -62,7 +62,7 @@ const pillars: Pillar[] = [
   {
     num: 2,
     title: "Gouvernance",
-    icon: "🏛️",
+    
     questions: [
       {
         field: "q_gouvernance_part",
