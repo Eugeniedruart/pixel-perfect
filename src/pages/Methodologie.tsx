@@ -118,7 +118,7 @@ const Methodologie = () => {
               <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed mb-5 md:mb-8">
                 Une approche rigoureuse, structurée et alignée aux exigences françaises et européennes.
               </p>
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto" asChild>
                 <Link to="/contact">Découvrir notre approche</Link>
               </Button>
             </Reveal>
