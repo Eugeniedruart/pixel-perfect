@@ -100,7 +100,7 @@ const Methodologie = () => {
       <Navbar />
 
       {/* ─── 1. HERO ─── */}
-      <section className="relative overflow-hidden py-12 md:py-24 lg:py-32">
+      <section className="relative overflow-hidden py-10 md:py-24 lg:py-32">
         <img
           src={patternHero}
           alt=""
@@ -118,7 +118,7 @@ const Methodologie = () => {
               <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed mb-5 md:mb-8">
                 Une approche rigoureuse, structurée et alignée aux exigences françaises et européennes.
               </p>
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto" asChild>
                 <Link to="/contact">Découvrir notre approche</Link>
               </Button>
             </Reveal>
@@ -373,7 +373,7 @@ const Methodologie = () => {
                 Un comité éthique{" "}
                 <span className="font-serif-display italic text-primary font-normal">indépendant</span>
               </h2>
-              <p className="text-muted-foreground text-base leading-relaxed mb-8">
+              <p className="text-muted-foreground text-xs md:text-base leading-relaxed mb-6 md:mb-8">
                 Un comité composé d'experts indépendants, DRH, juristes, chercheurs et dirigeants, qui garantit la rigueur, la cohérence et l'intégrité du référentiel WEL.
               </p>
               <div className="flex flex-wrap gap-2">
@@ -474,7 +474,7 @@ const Methodologie = () => {
               <p className="text-muted-foreground text-base leading-relaxed mb-8">
                 Les modalités d'accompagnement WEL débutent à partir de <strong className="text-foreground">3 900€</strong> et sont ajustées en fonction de la taille de l'organisation et du périmètre du diagnostic. Une brochure détaillant l'offre est disponible sur demande.
               </p>
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto" asChild>
                 <Link to="/contact">Demander la brochure</Link>
               </Button>
             </div>
