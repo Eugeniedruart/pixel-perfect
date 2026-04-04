@@ -111,11 +111,11 @@ const Methodologie = () => {
         <div className="max-w-3xl mx-auto text-center">
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-5">Méthodologie</p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              <h1 className="text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6">
                 Notre{" "}
                 <span className="font-serif-display italic text-primary font-normal">méthodologie</span>
               </h1>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed mb-5 md:mb-8">
                 Une approche rigoureuse, structurée et alignée aux exigences françaises et européennes.
               </p>
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
