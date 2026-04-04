@@ -292,7 +292,7 @@ const Methodologie = () => {
                   style={{ background: "hsl(var(--wel-blue-light))", color: "hsl(var(--wel-navy))", border: "1px solid hsla(var(--wel-purple), 0.15)" }}
                 >
                   <Clock size={14} />
-                  Durée totale estimée : 6 à 8 semaines
+                  Durée totale estimée : 4 à 6 semaines
                 </span>
               </div>
             </div>
