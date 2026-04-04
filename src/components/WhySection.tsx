@@ -55,7 +55,7 @@ const WhySection = () => {
           {/* Bottom right - image */}
           <div className="rounded-lg border border-wel-cream bg-card p-2">
             <div className="rounded overflow-hidden h-72">
-              <img src={womanTablet} alt="Femme professionnelle" className="w-full h-full object-contain" loading="lazy" width={768} height={1024} />
+              <img src={womanTablet} alt="Femme professionnelle" className="w-full h-full object-cover object-[center_30%]" loading="lazy" width={768} height={1024} />
             </div>
           </div>
         </div>
