@@ -33,7 +33,9 @@ const WhySection = () => {
           <div className="rounded-lg border border-wel-cream bg-card p-2">
             <div className="rounded bg-primary p-5 md:p-8 flex flex-col justify-center text-primary-foreground h-full">
               <p className="text-xs md:text-lg mb-2 text-center">
-                À ce rythme, l'égalité pro sera atteinte en
+                À ce rythme, l'égalité professionnelle
+                <br />
+                sera atteinte en
               </p>
               <p className="text-5xl md:text-7xl font-bold font-serif-display italic text-center">2167</p>
             </div>
