@@ -316,7 +316,7 @@ const Offres = () => {
       <Reveal>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <blockquote className="text-xl sm:text-2xl font-serif-display italic text-foreground/80 leading-relaxed">
-            "Ce qui fait la différence, ce n'est pas un label sur un mur. C'est ce qui change dans la vie des gens."
+            "Un label n'a de valeur que par les transformations qu'il engage. C'est là que se mesure l'impact."
           </blockquote>
         </div>
       </Reveal>
