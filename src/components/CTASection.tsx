@@ -36,10 +36,6 @@ const CTASection = () => {
                 Diagnostic · Accompagnement · Stratégie durable
               </p>
             </div>
-            {/* Portrait - compact on mobile */}
-            <div className="md:col-span-2 h-40 md:h-auto md:min-h-[200px]">
-              <img src={ctaPortrait} alt="Professionnelle" className="w-full h-full object-cover object-[center_20%] scale-110" loading="lazy" width={600} height={800} />
-            </div>
           </div>
         </div>
       </div>
