@@ -177,12 +177,12 @@ const Offres = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Accompagnement</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3">
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-2 md:mb-3">
               Conseil &{" "}
               <span className="font-serif-display italic text-primary font-normal">accompagnement</span>
             </h2>
-            <p className="font-serif-display italic text-primary/80 text-center text-lg mb-16">
-              Parce que l'égalité ne se décrète pas, elle se construit.
+            <p className="font-serif-display italic text-primary/80 text-center text-base md:text-lg mb-8 md:mb-16">
+              L'égalité ne se décrète pas, elle se construit.
             </p>
           </Reveal>
 
