@@ -322,7 +322,7 @@ const Offres = () => {
       </Reveal>
 
       {/* ─── 4. NOTRE APPROCHE ─── */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Ce qui nous distingue</p>
