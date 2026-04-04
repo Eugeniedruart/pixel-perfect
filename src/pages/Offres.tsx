@@ -141,15 +141,15 @@ const Offres = () => {
             </Reveal>
             <Reveal>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Labellisation</p>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-3">
+              <h2 className="text-2xl sm:text-4xl font-bold mb-2 md:mb-3">
                 Le label{" "}
                 <span className="font-serif-display italic text-primary font-normal">WEL</span>
               </h2>
-              <p className="font-serif-display italic text-primary/80 text-lg mb-6">
-                Un label, mais surtout un levier de transformation.
+              <p className="font-serif-display italic text-primary/80 text-base md:text-lg mb-4 md:mb-6">
+                Un levier de transformation.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                Évaluer vos pratiques. Reconnaître vos engagements. Vous inscrire dans une trajectoire de progrès durable, alignée aux exigences françaises et européennes.
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
+                Évaluer vos pratiques. Reconnaître vos engagements. Vous inscrire dans une trajectoire de progrès durable.
               </p>
               <div className="space-y-3 mb-8">
                 {[
