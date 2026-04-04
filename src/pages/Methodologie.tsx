@@ -23,7 +23,7 @@ import {
 import patternHero from "@/assets/pattern-hero-clean.png";
 import welCertifiedDark from "@/assets/wel-certified-dark.png";
 import corporateMeeting from "@/assets/corporate-meeting.jpg";
-import corporateCollaboration from "@/assets/corporate-collaboration.jpg";
+import constructionWorkers from "@/assets/pexels-mikael-blomkvist-8961026.jpg";
 import corporateLeadership from "@/assets/pexels-kampus-8190807.jpg";
 
 /* ── scroll reveal hook ── */
