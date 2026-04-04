@@ -85,17 +85,15 @@ const Offres = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20 lg:py-28">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <Reveal>
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-5">Nos offres</p>
-              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-bold leading-[1.1] mb-6">
-                Agir concrètement
-                <br />
-                pour l'égalité{" "}
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3 md:mb-5">Nos offres</p>
+              <h1 className="text-2xl sm:text-5xl lg:text-[3.5rem] font-bold leading-[1.15] mb-4 md:mb-6">
+                Agir pour l'égalité{" "}
                 <span className="font-serif-display italic text-primary font-normal">professionnelle</span>
               </h1>
-              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 max-w-lg">
-                De l'évaluation à la transformation, WEL accompagne les organisations dans des démarches concrètes, mesurables et durables.
+              <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed mb-5 md:mb-8 max-w-lg">
+                WEL accompagne les organisations dans des démarches concrètes et durables.
               </p>
-              <Button size="lg" variant="outline" asChild>
+              <Button size="lg" variant="outline" className="w-full sm:w-auto h-11" asChild>
                 <Link to="/contact">Échanger avec nous</Link>
               </Button>
             </Reveal>
