@@ -191,10 +191,6 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
                 <span className="text-[10px] text-muted-foreground">du salaire masculin</span>
               </div>
             </div>
-            <div className="flex items-baseline gap-1 mb-1">
-              <span className="text-2xl font-bold text-destructive font-serif-display italic">–22%</span>
-              <span className="text-xs text-muted-foreground">d'écart</span>
-            </div>
             <p className="text-[11px] text-muted-foreground/60">Source : INSEE</p>
           </div>
         </div>
