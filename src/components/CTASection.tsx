@@ -37,7 +37,7 @@ const CTASection = () => {
                 Diagnostic structuré · Accompagnement · Stratégie durable
               </p>
             </div>
-            <div className="md:col-span-2 min-h-[200px]">
+            <div className="hidden md:block md:col-span-2 min-h-[200px]">
               <img src={ctaPortrait} alt="Professionnelle" className="w-full h-full object-cover object-[center_20%] scale-110" loading="lazy" width={600} height={800} />
             </div>
           </div>
