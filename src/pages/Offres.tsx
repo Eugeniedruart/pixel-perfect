@@ -151,20 +151,20 @@ const Offres = () => {
               <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
                 Évaluer vos pratiques. Reconnaître vos engagements. Vous inscrire dans une trajectoire de progrès durable.
               </p>
-              <div className="space-y-3 mb-8">
+              <div className="space-y-2 md:space-y-3 mb-5 md:mb-8">
                 {[
-                  "Un diagnostic structuré autour de 4 piliers concrets",
-                  "Des critères mesurables, pas déclaratif",
-                  "Une reconnaissance qui valorise l'action",
-                  "Un atout pour vos appels d'offres et votre stratégie ESG",
+                  "Diagnostic structuré, 4 piliers concrets",
+                  "Critères mesurables, pas déclaratif",
+                  "Reconnaissance qui valorise l'action",
+                  "Atout pour vos appels d'offres et ESG",
                 ].map((text, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 shrink-0" />
-                    <p className="text-sm text-foreground">{text}</p>
+                  <div key={i} className="flex items-start gap-2 md:gap-3">
+                    <CheckCircle2 className="h-3.5 w-3.5 md:h-4 md:w-4 text-primary mt-0.5 shrink-0" />
+                    <p className="text-xs md:text-sm text-foreground">{text}</p>
                   </div>
                 ))}
               </div>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2" asChild>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 w-full sm:w-auto h-11" asChild>
                 <Link to="/methodologie">Découvrir la méthodologie <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </Reveal>
