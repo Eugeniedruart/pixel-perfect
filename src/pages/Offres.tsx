@@ -348,7 +348,7 @@ const Offres = () => {
             </div>
           </Reveal>
 
-          <div className="grid sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5 max-w-4xl mx-auto">
             {approche.map((item, i) => (
               <Reveal key={i}>
                 <div className="group relative rounded-2xl border border-border bg-background p-6 hover:border-primary/20 hover:shadow-md hover:shadow-foreground/[0.03] hover:-translate-y-0.5 transition-all duration-300">
