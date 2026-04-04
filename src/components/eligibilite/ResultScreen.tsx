@@ -3,7 +3,7 @@ import { CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import type { EligibiliteFormData } from "@/lib/eligibilite-schema";
-import ctaPortrait from "@/assets/cta-portrait.jpg";
+import ctaPortrait from "@/assets/eugenie-portrait.png";
 import patternBg from "@/assets/pattern-hero-clean.png";
 interface ResultScreenProps {
   data: EligibiliteFormData;
