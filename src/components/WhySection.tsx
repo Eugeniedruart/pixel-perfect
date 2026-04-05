@@ -70,7 +70,7 @@ const WhySection = () => {
 
         <div className="mt-6 md:mt-10 px-0">
           <div className="flex justify-center">
-            <Button size="default" className="bg-primary text-primary-foreground hover:bg-primary/90 h-10 sm:h-12 text-sm sm:text-base shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 transition-all" asChild>
+            <Button size="sm" className="h-9 text-xs sm:h-12 sm:text-base sm:px-8 bg-primary text-primary-foreground hover:bg-primary/90" asChild>
               <Link to="/contact">Je veux être Welbellisé</Link>
             </Button>
           </div>
