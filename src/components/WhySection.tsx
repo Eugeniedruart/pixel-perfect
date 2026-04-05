@@ -13,7 +13,7 @@ const WhySection = () => {
         <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-center mb-2">
           Pourquoi un label
           <br />
-          <span className="font-serif-display italic text-primary font-normal">d'égalité F/H ?</span>
+          <span className="font-serif-display italic text-primary font-normal">d'égalité femmes-hommes ?</span>
         </h2>
         <p className="text-xs sm:text-base text-muted-foreground text-center max-w-2xl mx-auto mt-3 mb-8 md:mb-12">
           Premier label européen qui certifie et accompagne les entreprises engagées
