@@ -17,7 +17,7 @@ const HeroSection = () => {
           La référence de
           <br />
           <span className="hidden sm:inline">l'égalité professionnelle</span>
-          <span className="sm:hidden">l'égalité pro</span>
+          <span className="sm:hidden">l'égalité professionnelle</span>
           <br />
           <span className="font-serif-display italic text-foreground font-normal">femmes-hommes</span>
         </h1>

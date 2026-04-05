@@ -2,7 +2,7 @@ const pillars = [
   { title: "La gouvernance", questions: "15 questions" },
   { title: "L'égalité salariale", questions: "15 questions" },
   { title: "Prévention du sexisme et culture inclusive", questions: "15 questions" },
-  { title: "L'équilibre vie pro / perso", questions: "15 questions" },
+  { title: "L'équilibre de vie", questions: "15 questions" },
 ];
 
 const AuditSection = () => {
