@@ -17,7 +17,7 @@ const steps = [
   {
     number: 3,
     title: "Analyse",
-    description: "Examen rigoureux par notre équipe d'experts indépendants.",
+    description: "Examen rigoureux de vos réponses.",
     badge: null,
   },
   {
