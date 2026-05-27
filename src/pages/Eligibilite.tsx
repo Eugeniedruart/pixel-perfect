@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import EligibiliteHeader from "@/components/eligibilite/EligibiliteHeader";
 import StepIndicator from "@/components/eligibilite/StepIndicator";
@@ -18,26 +19,18 @@ const TOTAL_STEPS = 3;
 const Eligibilite = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const form = useForm<EligibiliteFormData>({
     resolver: zodResolver(eligibiliteSchema),
     defaultValues: {
-      companyName: "",
-      employeeCount: "",
-      conventionCollective: "",
-      q_remuneration_mesure: "",
-      q_remuneration_actions: "",
-      q_gouvernance_part: "",
-      q_gouvernance_objectifs: "",
-      q_prevention_actions: "",
-      q_prevention_formation: "",
-      q_equilibre_dispositifs: "",
-      q_equilibre_politiques: "",
+      companyName: "", employeeCount: "", conventionCollective: "",
+      q_remuneration_mesure: "", q_remuneration_actions: "",
+      q_gouvernance_part: "", q_gouvernance_objectifs: "",
+      q_prevention_actions: "", q_prevention_formation: "",
+      q_equilibre_dispositifs: "", q_equilibre_politiques: "",
       q_engagement_12mois: "",
-      contactNom: "",
-      contactPrenom: "",
-      contactEmail: "",
-      contactFonction: "",
+      contactNom: "", contactPrenom: "", contactEmail: "", contactFonction: "",
     },
   });
 
@@ -61,7 +54,7 @@ const Eligibilite = () => {
       contact_fonction: data.contactFonction || null,
     });
     if (error) {
-      toast({ title: "Erreur", description: "Une erreur est survenue lors de l'envoi.", variant: "destructive" });
+      toast({ title: t("eligibilite.errorTitle"), description: t("eligibilite.errorToast"), variant: "destructive" });
     }
   };
 
@@ -69,20 +62,12 @@ const Eligibilite = () => {
     const fields = stepFields[currentStep];
     const valid = await form.trigger(fields);
     if (!valid) return;
-
-    if (currentStep === TOTAL_STEPS) {
-      await saveToDatabase(form.getValues());
-    }
+    if (currentStep === TOTAL_STEPS) await saveToDatabase(form.getValues());
     setCurrentStep((s) => s + 1);
   };
 
-  const handlePrevious = () => {
-    setCurrentStep((s) => Math.max(1, s - 1));
-  };
-
-  const handleSkipContact = () => {
-    setCurrentStep(TOTAL_STEPS + 1);
-  };
+  const handlePrevious = () => setCurrentStep((s) => Math.max(1, s - 1));
+  const handleSkipContact = () => setCurrentStep(TOTAL_STEPS + 1);
 
   if (currentStep === TOTAL_STEPS + 1) {
     return (
@@ -109,7 +94,7 @@ const Eligibilite = () => {
         <div className="flex items-center gap-4 mt-10 pb-8">
           {currentStep > 1 && (
             <Button type="button" variant="outline" onClick={handlePrevious} className="gap-2">
-              <ArrowLeft className="h-4 w-4" /> Précédent
+              <ArrowLeft className="h-4 w-4" /> {t("eligibilite.previous")}
             </Button>
           )}
           <Button
@@ -117,7 +102,7 @@ const Eligibilite = () => {
             onClick={handleNext}
             className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
           >
-            {currentStep === TOTAL_STEPS ? "Découvrez votre éligibilité" : "Suivant"}
+            {currentStep === TOTAL_STEPS ? t("eligibilite.submit") : t("eligibilite.next")}
             <ArrowRight className="h-4 w-4" />
           </Button>
         </div>

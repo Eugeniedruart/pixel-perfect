@@ -1,13 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 interface StepIndicatorProps {
   currentStep: number;
   totalSteps?: number;
 }
 
 const StepIndicator = ({ currentStep, totalSteps = 4 }: StepIndicatorProps) => {
+  const { t } = useTranslation();
   return (
     <div className="mb-10">
       <p className="text-sm text-muted-foreground mb-2">
-        Étape {currentStep}/{totalSteps}
+        {t("eligibilite.stepLabel")} {currentStep}/{totalSteps}
       </p>
       <div className="flex gap-2">
         {Array.from({ length: totalSteps }, (_, i) => (
