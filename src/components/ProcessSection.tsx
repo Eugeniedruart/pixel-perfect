@@ -1,57 +1,34 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-const steps = [
-  {
-    number: 1,
-    title: "Éligibilité",
-    description: "Quelques questions pour comprendre votre niveau de maturité.",
-    badge: "Sans engagement",
-  },
-  {
-    number: 2,
-    title: "Diagnostic",
-    description: "Un audit structuré autour des 4 piliers du label WEL.",
-    badge: null,
-  },
-  {
-    number: 3,
-    title: "Analyse",
-    description: "Examen rigoureux de vos réponses.",
-    badge: null,
-  },
-  {
-    number: 4,
-    title: "Labellisation",
-    description: "Accédez au label et bénéficiez de recommandations personnalisées.",
-    badge: null,
-  },
-];
+type Step = { title: string; description: string; badge?: string };
 
 const ProcessSection = () => {
+  const { t } = useTranslation();
+  const steps = t("process.steps", { returnObjects: true }) as Step[];
+
   return (
     <section className="py-10 md:py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">
-          Notre processus
+          {t("process.eyebrow")}
         </p>
         <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-center mb-2">
-          Une méthode
+          {t("process.title1")}
           <br />
-          <span className="font-serif-display italic text-primary font-normal">objective</span>
+          <span className="font-serif-display italic text-primary font-normal">{t("process.title2")}</span>
         </h2>
         <p className="text-sm sm:text-base text-muted-foreground text-center max-w-3xl mx-auto mt-3 mb-8 md:mb-16">
-          Une démarche rigoureuse, adaptée à votre taille et secteur.
+          {t("process.subtitle")}
         </p>
 
-        {/* Steps - vertical on mobile, 4 cols on desktop */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 max-w-6xl mx-auto">
           {steps.map((step, i) => (
             <div key={i} className="flex sm:block items-start gap-4 sm:gap-0">
-              {/* Number circle */}
               <div className="flex items-center mb-0 sm:mb-6 shrink-0">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-border flex items-center justify-center text-base sm:text-lg font-semibold text-foreground">
-                  {step.number}
+                  {i + 1}
                 </div>
                 {i < steps.length - 1 && (
                   <div className="hidden lg:block flex-1 border-t-2 border-dashed border-border ml-2" />
@@ -74,10 +51,10 @@ const ProcessSection = () => {
 
         <div className="flex flex-row items-center justify-center gap-2 sm:gap-3 mt-8 md:mt-14">
           <Button variant="outline" size="sm" className="h-9 text-xs sm:h-12 sm:text-base sm:px-8" asChild>
-            <Link to="/eligibilite">Tester mon éligibilité</Link>
+            <Link to="/eligibilite">{t("hero.ctaTest")}</Link>
           </Button>
           <Button size="sm" className="h-9 text-xs sm:h-12 sm:text-base sm:px-8 bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-            <Link to="/contact">Je veux être Welbellisé</Link>
+            <Link to="/contact">{t("nav.cta")}</Link>
           </Button>
         </div>
       </div>

@@ -3,21 +3,10 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
-  ArrowRight,
-  Users,
-  Heart,
-  Eye,
-  Rocket,
-  Search,
-  MessageSquare,
-  FileText,
-  CheckCircle2,
-  MapPin,
-  Handshake,
-  Settings,
-  Target,
-  ChevronDown,
+  ArrowRight, Users, Heart, Eye, Rocket, Search, MessageSquare, FileText,
+  CheckCircle2, MapPin, Handshake, Settings, Target, ChevronDown,
 } from "lucide-react";
 import offresHero from "@/assets/offres-hero-v2.jpg";
 import offresLabellisation from "@/assets/offres-labellisation.jpg";
@@ -27,22 +16,14 @@ import offresEnquetes from "@/assets/offres-enquetes.jpg";
 import offresApproche from "@/assets/offres-approche.jpg";
 import patternHero from "@/assets/pattern-hero-clean.png";
 
-/* ── scroll reveal ── */
 const useScrollReveal = () => {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const obs = new IntersectionObserver(
-      ([e]) => {
-        if (e.isIntersecting) {
-          el.classList.add("animate-fade-in");
-          el.classList.remove("opacity-0", "translate-y-4");
-          obs.unobserve(el);
-        }
-      },
-      { threshold: 0.12 }
-    );
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { el.classList.add("animate-fade-in"); el.classList.remove("opacity-0", "translate-y-4"); obs.unobserve(el); }
+    }, { threshold: 0.12 });
     obs.observe(el);
     return () => obs.disconnect();
   }, []);
@@ -51,40 +32,19 @@ const useScrollReveal = () => {
 
 const Reveal = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
   const ref = useScrollReveal();
-  return (
-    <div ref={ref} className={`opacity-0 translate-y-4 ${className}`} style={{ animationFillMode: "forwards" }}>
-      {children}
-    </div>
-  );
+  return <div ref={ref} className={`opacity-0 translate-y-4 ${className}`} style={{ animationFillMode: "forwards" }}>{children}</div>;
 };
 
-/* ── data ── */
-const formations = [
-  { icon: Users, title: "Égalité femmes-hommes", desc: "Quelle place pour les hommes ?" },
-  { icon: Heart, title: "Parentalité & carrière", desc: "Comprendre et réduire les inégalités" },
-  { icon: Eye, title: "Sexisme ordinaire", desc: "Ce que nous ne voyons plus" },
-  { icon: Rocket, title: "Femmes et leadership", desc: "Dynamiques d'accès aux responsabilités" },
-  { icon: Search, title: "Process de recrutement", desc: "Adopter un process de recrutement inclusif" },
-];
+const formationIcons = [Users, Heart, Eye, Rocket, Search];
+const approcheIcons = [MapPin, Handshake, Settings, Target];
+const enqueteIcons = [Search, MessageSquare, FileText];
 
-const approche = [
-  { icon: MapPin, title: "Sur le terrain", text: "Pas de théorie déconnectée. Nous venons chez vous, nous écoutons, nous observons." },
-  { icon: Handshake, title: "Avec vos équipes", text: "Nous travaillons avec celles et ceux qui font tourner l’entreprise, au plus près du terrain." },
-  { icon: Settings, title: "À votre rythme", text: "Chaque entreprise est différente. Notre approche s'adapte à vos réalités." },
-  { icon: Target, title: "Pour du concret", text: "Des résultats mesurables, traduits en actions concrètes et accompagnés de mises en relation ciblées, nous allons bien au-delà d'un simple rapport." },
-];
-/* ── accordion card for mobile approche ── */
 const ApprochAccordionCard = ({ icon: Icon, title, text }: { icon: React.ElementType; title: string; text: string }) => {
   const [open, setOpen] = useState(false);
   return (
-    <button
-      onClick={() => setOpen(!open)}
-      className="w-full text-left rounded-2xl border border-border bg-background p-4 transition-all duration-300"
-    >
+    <button onClick={() => setOpen(!open)} className="w-full text-left rounded-2xl border border-border bg-background p-4 transition-all duration-300">
       <div className="flex items-center gap-3">
-        <div className="w-9 h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0">
-          <Icon className="h-4 w-4 text-primary" />
-        </div>
+        <div className="w-9 h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0"><Icon className="h-4 w-4 text-primary" /></div>
         <h3 className="font-semibold text-foreground text-sm flex-1">{title}</h3>
         <ChevronDown className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
       </div>
@@ -95,39 +55,38 @@ const ApprochAccordionCard = ({ icon: Icon, title, text }: { icon: React.Element
   );
 };
 
-/* ── page ── */
 const Offres = () => {
+  const { t } = useTranslation();
+  const formations = (t("offres.formations", { returnObjects: true }) as Array<{ title: string; desc: string }>).map((f, i) => ({ ...f, icon: formationIcons[i] }));
+  const labelBullets = t("offres.labelBullets", { returnObjects: true }) as string[];
+  const enquetesBullets = (t("offres.enquetesBullets", { returnObjects: true }) as string[]).map((text, i) => ({ icon: enqueteIcons[i], text }));
+  const missionsTags = t("offres.missionsTags", { returnObjects: true }) as string[];
+  const approche = (t("offres.approche", { returnObjects: true }) as Array<{ title: string; text: string }>).map((a, i) => ({ ...a, icon: approcheIcons[i] }));
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* ─── 1. HERO ─── */}
       <section className="relative overflow-hidden">
         <img src={patternHero} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-[70%] object-cover opacity-60" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20 lg:py-28">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <Reveal>
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3 md:mb-5">Nos offres</p>
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3 md:mb-5">{t("offres.eyebrow")}</p>
               <h1 className="text-2xl sm:text-5xl lg:text-[3.5rem] font-bold leading-[1.15] mb-4 md:mb-6">
-                Agir pour l'égalité{" "}
-                <span className="font-serif-display italic text-primary font-normal">professionnelle</span>
+                {t("offres.title1")}{" "}
+                <span className="font-serif-display italic text-primary font-normal">{t("offres.title2")}</span>
               </h1>
               <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed mb-5 md:mb-8 max-w-lg">
-                WEL accompagne les organisations dans des démarches concrètes et durables.
+                {t("offres.subtitle")}
               </p>
               <Button size="lg" variant="outline" className="w-full sm:w-auto h-11" asChild>
-                <Link to="/contact">Échanger avec nous</Link>
+                <Link to="/contact">{t("offres.heroCta")}</Link>
               </Button>
             </Reveal>
             <Reveal>
               <div className="relative hidden md:block">
-                <img
-                  src={offresHero}
-                  alt="Échange professionnel authentique"
-                  width={1280}
-                  height={720}
-                  className="rounded-lg shadow-xl shadow-foreground/[0.06] object-cover w-full aspect-[4/3]"
-                />
+                <img src={offresHero} alt="" width={1280} height={720} className="rounded-lg shadow-xl shadow-foreground/[0.06] object-cover w-full aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
@@ -135,51 +94,33 @@ const Offres = () => {
         </div>
       </section>
 
-      {/* ─── QUOTE BREAK ─── */}
       <Reveal>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-10 -mt-2 text-center">
           <blockquote className="text-lg sm:text-2xl font-serif-display italic text-foreground/80 leading-relaxed">
-            "L'égalité ne se décrète pas. Elle se construit, au quotidien."
+            {t("offres.quote1")}
           </blockquote>
         </div>
       </Reveal>
 
-      {/* ─── 2. LABELLISATION ─── */}
       <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center">
             <Reveal>
               <div className="relative">
-                <img
-                  src={offresLabellisation}
-                  alt="Équipe en réunion stratégique"
-                  width={800}
-                  height={600}
-                  loading="lazy"
-                  className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]"
-                />
+                <img src={offresLabellisation} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
             <Reveal>
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Labellisation</p>
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.labelEyebrow")}</p>
               <h2 className="text-2xl sm:text-4xl font-bold mb-2 md:mb-3">
-                Le label{" "}
-                <span className="font-serif-display italic text-primary font-normal">WEL</span>
+                {t("offres.labelTitle1")}{" "}
+                <span className="font-serif-display italic text-primary font-normal">{t("offres.labelTitle2")}</span>
               </h2>
-              <p className="font-serif-display italic text-primary/80 text-base md:text-lg mb-4 md:mb-6">
-                Un levier de transformation.
-              </p>
-              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
-                Évaluer vos pratiques. Reconnaître vos engagements. Vous inscrire dans une trajectoire de progrès durable.
-              </p>
+              <p className="font-serif-display italic text-primary/80 text-base md:text-lg mb-4 md:mb-6">{t("offres.labelTagline")}</p>
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">{t("offres.labelIntro")}</p>
               <div className="space-y-2 md:space-y-3 mb-5 md:mb-8">
-                {[
-                  "Diagnostic structuré, 4 piliers concrets",
-                  "Critères mesurables, pas déclaratif",
-                  "Reconnaissance qui valorise l'action",
-                  "Atout pour vos appels d'offres et ESG",
-                ].map((text, i) => (
+                {labelBullets.map((text, i) => (
                   <div key={i} className="flex items-start gap-2 md:gap-3">
                     <CheckCircle2 className="h-3.5 w-3.5 md:h-4 md:w-4 text-primary mt-0.5 shrink-0" />
                     <p className="text-xs md:text-sm text-foreground">{text}</p>
@@ -187,54 +128,43 @@ const Offres = () => {
                 ))}
               </div>
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 w-full sm:w-auto h-11" asChild>
-                <Link to="/methodologie">Découvrir la méthodologie <ArrowRight className="h-4 w-4" /></Link>
+                <Link to="/methodologie">{t("offres.labelCta")} <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </Reveal>
           </div>
         </div>
       </section>
 
-      {/* ─── 3. CONSEIL & ACCOMPAGNEMENT ─── */}
       <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.3)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Accompagnement</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">{t("offres.conseilEyebrow")}</p>
             <h2 className="text-2xl sm:text-4xl font-bold text-center mb-2 md:mb-3">
-              Conseil &{" "}
-              <span className="font-serif-display italic text-primary font-normal">accompagnement</span>
+              {t("offres.conseilTitle1")}{" "}
+              <span className="font-serif-display italic text-primary font-normal">{t("offres.conseilTitle2")}</span>
             </h2>
             <p className="font-serif-display italic text-primary/80 text-center text-base md:text-lg mb-8 md:mb-16">
-              L'égalité ne se décrète pas, elle se construit.
+              {t("offres.conseilTagline")}
             </p>
           </Reveal>
 
-          {/* 3.1 Formations */}
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
             <Reveal>
               <div className="relative">
-                <img
-                  src={offresFormation}
-                  alt="Formation en entreprise"
-                  width={800}
-                  height={600}
-                  loading="lazy"
-                  className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full md:w-[85%] max-h-[200px] md:max-h-[400px]"
-                />
+                <img src={offresFormation} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full md:w-[85%] max-h-[200px] md:max-h-[400px]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
             <Reveal>
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Sensibilisation</p>
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.formationsEyebrow")}</p>
               <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
-                Formations &{" "}
-                <span className="font-serif-display italic text-primary font-normal">conférences</span>
+                {t("offres.formationsTitle1")}{" "}
+                <span className="font-serif-display italic text-primary font-normal">{t("offres.formationsTitle2")}</span>
               </h3>
-              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-8">
-                Interventions pour faire évoluer les regards et déclencher l'action.
-              </p>
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-8">{t("offres.formationsIntro")}</p>
               <div className="space-y-3 md:space-y-4">
                 {formations.map((f, i) => (
-                   <div key={i} className="flex items-start gap-3 group">
+                  <div key={i} className="flex items-start gap-3 group">
                     <div className="w-8 h-8 md:w-9 md:h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0 group-hover:bg-primary/[0.12] transition-colors">
                       <f.icon className="h-4 w-4 text-primary" />
                     </div>
@@ -248,26 +178,17 @@ const Offres = () => {
             </Reveal>
           </div>
 
-          {/* 3.2 Enquêtes */}
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
             <Reveal className="order-2 md:order-1">
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Écoute</p>
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.enquetesEyebrow")}</p>
               <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
-                Enquêtes{" "}
-                <span className="font-serif-display italic text-primary font-normal">internes</span>
+                {t("offres.enquetesTitle1")}{" "}
+                <span className="font-serif-display italic text-primary font-normal">{t("offres.enquetesTitle2")}</span>
               </h3>
-              <p className="font-serif-display italic text-primary/70 text-sm md:text-base mb-3 md:mb-4">
-                Donner la parole pour mieux comprendre.
-              </p>
-              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
-                Enquêtes quantitatives et qualitatives pour mesurer la perception et identifier les zones de risque.
-              </p>
+              <p className="font-serif-display italic text-primary/70 text-sm md:text-base mb-3 md:mb-4">{t("offres.enquetesTagline")}</p>
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">{t("offres.enquetesIntro")}</p>
               <div className="space-y-3">
-                {[
-                  { icon: Search, text: "Baromètres internes" },
-                  { icon: MessageSquare, text: "Enquêtes anonymes" },
-                  { icon: FileText, text: "Analyse et recommandations" },
-                ].map((b, i) => (
+                {enquetesBullets.map((b, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <b.icon className="h-4 w-4 text-primary shrink-0" />
                     <p className="text-xs md:text-sm text-foreground">{b.text}</p>
@@ -277,54 +198,30 @@ const Offres = () => {
             </Reveal>
             <Reveal className="order-1 md:order-2">
               <div className="relative">
-                <img
-                  src={offresEnquetes}
-                  alt="Échange entre collaborateurs"
-                  width={800}
-                  height={600}
-                  loading="lazy"
-                  className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]"
-                />
+                <img src={offresEnquetes} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
           </div>
 
-          {/* 3.3 Missions de conseil */}
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center">
             <Reveal>
               <div className="relative">
-                <img
-                  src={offresConseil}
-                  alt="Atelier collaboratif"
-                  width={800}
-                  height={600}
-                  loading="lazy"
-                  className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]"
-                />
+                <img src={offresConseil} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
             <Reveal>
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Sur mesure</p>
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.missionsEyebrow")}</p>
               <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
-                Missions de{" "}
-                <span className="font-serif-display italic text-primary font-normal">conseil</span>
+                {t("offres.missionsTitle1")}{" "}
+                <span className="font-serif-display italic text-primary font-normal">{t("offres.missionsTitle2")}</span>
               </h3>
-              <p className="font-serif-display italic text-primary/70 text-sm md:text-base mb-3 md:mb-4">
-                Transformer les intentions en actions.
-              </p>
-              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
-                Stratégie, audits, plans d'action, communication, nous vous accompagnons à chaque étape.
-              </p>
+              <p className="font-serif-display italic text-primary/70 text-sm md:text-base mb-3 md:mb-4">{t("offres.missionsTagline")}</p>
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">{t("offres.missionsIntro")}</p>
               <div className="flex flex-wrap gap-2">
-                {["Stratégie", "Conformité", "Plans d'action", "Communication", "Audits"].map((tag, i) => (
-                  <span
-                    key={i}
-                    className="rounded-full border border-border bg-background px-4 py-1.5 text-xs font-medium text-foreground hover:border-primary/30 transition-colors"
-                  >
-                    {tag}
-                  </span>
+                {missionsTags.map((tag, i) => (
+                  <span key={i} className="rounded-full border border-border bg-background px-4 py-1.5 text-xs font-medium text-foreground hover:border-primary/30 transition-colors">{tag}</span>
                 ))}
               </div>
             </Reveal>
@@ -332,45 +229,34 @@ const Offres = () => {
         </div>
       </section>
 
-      {/* ─── QUOTE BREAK 2 ─── */}
       <Reveal>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 text-center">
           <blockquote className="text-lg sm:text-2xl font-serif-display italic text-foreground/80 leading-relaxed">
-            "Un label n'a de valeur que par les transformations qu'il engage."
+            {t("offres.quote2")}
           </blockquote>
         </div>
       </Reveal>
 
-      {/* ─── 4. NOTRE APPROCHE ─── */}
       <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">Ce qui nous distingue</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">{t("offres.approcheEyebrow")}</p>
             <h2 className="text-2xl sm:text-4xl font-bold text-center mb-3 md:mb-4">
-              Notre{" "}
-              <span className="font-serif-display italic text-primary font-normal">approche</span>
+              {t("offres.approcheTitle1")}{" "}
+              <span className="font-serif-display italic text-primary font-normal">{t("offres.approcheTitle2")}</span>
             </h2>
             <p className="font-serif-display italic text-primary/70 text-center text-sm md:text-lg mb-6 md:mb-10">
-              Moins de slides, plus de terrain.
+              {t("offres.approcheTagline")}
             </p>
           </Reveal>
 
-          {/* Full-width image */}
           <Reveal>
             <div className="relative rounded-lg overflow-hidden mb-6 md:mb-12">
-              <img
-                src={offresApproche}
-                alt="Équipe en atelier collaboratif"
-                width={1200}
-                height={600}
-                loading="lazy"
-                className="w-full h-48 sm:h-80 object-cover object-bottom"
-              />
+              <img src={offresApproche} alt="" width={1200} height={600} loading="lazy" className="w-full h-48 sm:h-80 object-cover object-bottom" />
               <div className="absolute inset-0 ring-1 ring-inset ring-foreground/5 rounded-lg" />
             </div>
           </Reveal>
 
-          {/* Desktop */}
           <div className="hidden sm:grid sm:grid-cols-2 gap-3 md:gap-5 max-w-4xl mx-auto">
             {approche.map((item, i) => (
               <Reveal key={i}>
@@ -386,29 +272,25 @@ const Offres = () => {
               </Reveal>
             ))}
           </div>
-          {/* Mobile: accordion */}
           <div className="sm:hidden space-y-3">
-            {approche.map((item, i) => (
-              <ApprochAccordionCard key={i} icon={item.icon} title={item.title} text={item.text} />
-            ))}
+            {approche.map((item, i) => <ApprochAccordionCard key={i} icon={item.icon} title={item.title} text={item.text} />)}
           </div>
         </div>
       </section>
 
-      {/* ─── 5. CTA FINAL ─── */}
       <section className="py-12 md:py-24 bg-[hsl(var(--wel-cream)/0.25)]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">Parlons-en</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">{t("offres.ctaEyebrow")}</p>
             <h2 className="text-2xl sm:text-4xl font-bold mb-3 md:mb-4">
-              Échangeons sur votre{" "}
-              <span className="font-serif-display italic text-primary font-normal">démarche</span>
+              {t("offres.ctaTitle1")}{" "}
+              <span className="font-serif-display italic text-primary font-normal">{t("offres.ctaTitle2")}</span>
             </h2>
             <p className="text-muted-foreground text-sm md:text-base mb-6 md:mb-8 max-w-xl mx-auto">
-              Chaque organisation est unique. Discutons de vos enjeux.
+              {t("offres.ctaSubtitle")}
             </p>
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto h-11" asChild>
-              <Link to="/contact">Nous contacter</Link>
+              <Link to="/contact">{t("offres.ctaButton")}</Link>
             </Button>
           </Reveal>
         </div>
