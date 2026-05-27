@@ -1,25 +1,24 @@
-const pillars = [
-  { title: "La gouvernance", questions: "15 questions" },
-  { title: "L'égalité salariale", questions: "15 questions" },
-  { title: "Prévention du sexisme et culture inclusive", questions: "15 questions" },
-  { title: "L'équilibre de vie", questions: "15 questions" },
-];
+import { useTranslation } from "react-i18next";
 
 const AuditSection = () => {
+  const { t } = useTranslation();
+  const pillars = t("audit.pillars", { returnObjects: true }) as Array<{ title: string; questions: string }>;
+
   return (
     <section className="py-10 md:py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">
-          L'audit en 4 piliers
+          {t("audit.eyebrow")}
         </p>
         <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-center mb-2">
-          Un audit
+          {t("audit.title1")}
           <br />
-          <span className="font-serif-display italic text-primary font-normal">personnalisé</span>
+          <span className="font-serif-display italic text-primary font-normal">{t("audit.title2")}</span>
         </h2>
-        <p className="text-sm sm:text-base text-muted-foreground text-center max-w-3xl mx-auto mt-3 mb-8 md:mb-12">
-          Un <strong className="text-foreground">audit structuré autour de 4 piliers</strong>, analysé par nos experts pour inscrire votre engagement dans une trajectoire durable.
-        </p>
+        <p
+          className="text-sm sm:text-base text-muted-foreground text-center max-w-3xl mx-auto mt-3 mb-8 md:mb-12 [&_strong]:text-foreground"
+          dangerouslySetInnerHTML={{ __html: t("audit.intro") }}
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-3xl mx-auto">
           {pillars.map((pillar, i) => (
