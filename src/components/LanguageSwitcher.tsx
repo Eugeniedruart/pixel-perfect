@@ -12,6 +12,7 @@ const LANGS = [
   { code: "en", flag: "🇬🇧", label: "English" },
   { code: "es", flag: "🇪🇸", label: "Español" },
   { code: "de", flag: "🇩🇪", label: "Deutsch" },
+  { code: "sv", flag: "🇸🇪", label: "Svenska" },
 ];
 
 interface Props {
