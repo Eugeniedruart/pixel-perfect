@@ -6,6 +6,7 @@ import fr from "./locales/fr.json";
 import en from "./locales/en.json";
 import es from "./locales/es.json";
 import de from "./locales/de.json";
+import sv from "./locales/sv.json";
 
 i18n
   .use(LanguageDetector)
@@ -16,9 +17,10 @@ i18n
       en: { translation: en },
       es: { translation: es },
       de: { translation: de },
+      sv: { translation: sv },
     },
     fallbackLng: "fr",
-    supportedLngs: ["fr", "en", "es", "de"],
+    supportedLngs: ["fr", "en", "es", "de", "sv"],
     interpolation: { escapeValue: false },
     detection: {
       order: ["localStorage", "navigator"],
