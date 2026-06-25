@@ -44,18 +44,18 @@ const HeroSection = () => {
 
         <div className="mt-8 sm:mt-12 relative max-w-4xl mx-auto pt-16 sm:pt-6">
           <div className="flex flex-nowrap items-center justify-center gap-3 sm:gap-6 lg:gap-10 overflow-x-auto">
-            <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition-opacity shrink-0" />
-            <img src={mobiapps.url} alt="Mobiapps" className="h-8 sm:h-10 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition-opacity shrink-0" />
-            <img src={kanoma.url} alt="Kanoma" className="h-10 sm:h-14 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition-opacity shrink-0" />
-            <img src={prolaser.url} alt="Prolaser" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition-opacity shrink-0" />
-            <img src={exponantes.url} alt="Exponantes Le Parc" className="h-12 sm:h-16 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition-opacity shrink-0" />
+            <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={mobiapps.url} alt="Mobiapps" className="h-5 sm:h-7 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={kanoma.url} alt="Kanoma" className="h-10 sm:h-14 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={prolaser.url} alt="Prolaser" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={exponantes.url} alt="Exponantes Le Parc" className="h-12 sm:h-16 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
           </div>
 
           <div className="absolute top-0 right-0 sm:right-2 -translate-y-1/4 sm:-translate-y-3/4 flex flex-col items-center">
             <img
               src={certifiedWel.url}
               alt="Certified WEL"
-              className="h-16 sm:h-24 w-auto object-contain"
+              className="h-16 sm:h-24 w-auto object-contain rotate-[-8deg]"
             />
             <svg
               className="text-foreground w-10 sm:w-16 h-8 sm:h-10 mt-1"
@@ -67,8 +67,8 @@ const HeroSection = () => {
               strokeLinejoin="round"
               aria-hidden="true"
             >
-              <path d="M70 5 C 60 20, 40 35, 15 40" />
-              <path d="M22 32 L 15 40 L 26 45" />
+              <path d="M60 5 C 65 20, 60 35, 62 45" />
+              <path d="M55 40 L 62 45 L 55 50" />
             </svg>
           </div>
         </div>
