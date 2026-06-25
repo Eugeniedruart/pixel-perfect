@@ -43,12 +43,17 @@ const HeroSection = () => {
           <span className="align-middle" dangerouslySetInnerHTML={{ __html: t("hero.tagline") }} />
         </p>
 
+        <div className="mt-3 sm:mt-4 flex flex-col items-center justify-center gap-1">
+          <span className="text-xs sm:text-sm text-muted-foreground">{t("hero.frenchTech")}</span>
+          <img src={frenchTech.url} alt="French Tech" className="h-10 sm:h-14 w-auto object-contain" />
+        </div>
+
         <div className="mt-8 sm:mt-12 relative max-w-4xl mx-auto pt-16 sm:pt-6">
           <div className="flex flex-nowrap items-center justify-center gap-3 sm:gap-6 lg:gap-10 overflow-x-auto">
             <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={mobiapps.url} alt="Mobiapps" className="h-4 sm:h-5 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={kanoma.url} alt="Kanoma" className="h-10 sm:h-14 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
-            <img src={prolaser.url} alt="Prolaser" className="h-24 sm:h-32 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={prolaser.url} alt="Prolaser" className="h-28 sm:h-36 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={exponantes.url} alt="Exponantes Le Parc" className="h-12 sm:h-16 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
           </div>
 
