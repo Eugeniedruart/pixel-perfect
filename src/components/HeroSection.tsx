@@ -47,7 +47,7 @@ const HeroSection = () => {
             <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={mobiapps.url} alt="Mobiapps" className="h-4 sm:h-5 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={kanoma.url} alt="Kanoma" className="h-10 sm:h-14 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
-            <img src={prolaser.url} alt="Prolaser" className="h-20 sm:h-28 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={prolaser.url} alt="Prolaser" className="h-24 sm:h-32 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={exponantes.url} alt="Exponantes Le Parc" className="h-12 sm:h-16 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
           </div>
 
