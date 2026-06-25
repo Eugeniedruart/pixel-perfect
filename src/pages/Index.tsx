@@ -22,6 +22,7 @@ const Index = () => {
       <SolutionsSection />
       <CTASection />
       <FAQSection />
+      <PartnersSection />
       <Footer />
     </div>
   );
