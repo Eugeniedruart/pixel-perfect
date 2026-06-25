@@ -30,10 +30,22 @@
     "title2": "apporte",
     "subtitle": "Une méthodologie de mesure et de pilotage de l'impact :",
     "items": [
-      { "title": "Pilotage RH & RSE", "description": "Identifiez vos leviers d'action et suivez vos progrès." },
-      { "title": "Conformité claire", "description": "Anticipez les obligations françaises et européennes." },
-      { "title": "Marque employeur renforcée", "description": "Attirez talents, partenaires et investisseurs engagés." },
-      { "title": "Performance durable", "description": "L'égalité comme moteur d'engagement et de transformation." }
+      {
+        "title": "Pilotage RH & RSE",
+        "description": "Identifiez vos leviers d'action et suivez vos progrès."
+      },
+      {
+        "title": "Conformité claire",
+        "description": "Anticipez les obligations françaises et européennes."
+      },
+      {
+        "title": "Marque employeur renforcée",
+        "description": "Attirez talents, partenaires et investisseurs engagés."
+      },
+      {
+        "title": "Performance durable",
+        "description": "L'égalité comme moteur d'engagement et de transformation."
+      }
     ]
   },
   "audit": {
@@ -42,10 +54,22 @@
     "title2": "personnalisé",
     "intro": "Un <strong>audit structuré autour de 4 piliers</strong>, analysé par nos experts pour inscrire votre engagement dans une trajectoire durable.",
     "pillars": [
-      { "title": "La gouvernance", "questions": "15 questions" },
-      { "title": "L'égalité salariale", "questions": "15 questions" },
-      { "title": "Prévention du sexisme et culture inclusive", "questions": "15 questions" },
-      { "title": "L'équilibre de vie", "questions": "15 questions" }
+      {
+        "title": "La gouvernance",
+        "questions": "15 questions"
+      },
+      {
+        "title": "L'égalité salariale",
+        "questions": "15 questions"
+      },
+      {
+        "title": "Prévention du sexisme et culture inclusive",
+        "questions": "15 questions"
+      },
+      {
+        "title": "L'équilibre de vie",
+        "questions": "15 questions"
+      }
     ]
   },
   "process": {
@@ -54,10 +78,23 @@
     "title2": "objective",
     "subtitle": "Une démarche rigoureuse, adaptée à votre taille et secteur.",
     "steps": [
-      { "title": "Éligibilité", "description": "Quelques questions pour comprendre votre niveau de maturité.", "badge": "Sans engagement" },
-      { "title": "Diagnostic", "description": "Un audit structuré autour des 4 piliers du label WEL." },
-      { "title": "Analyse", "description": "Examen rigoureux de vos réponses." },
-      { "title": "Labellisation", "description": "Accédez au label et bénéficiez de recommandations personnalisées." }
+      {
+        "title": "Éligibilité",
+        "description": "Quelques questions pour comprendre votre niveau de maturité.",
+        "badge": "Sans engagement"
+      },
+      {
+        "title": "Diagnostic",
+        "description": "Un audit structuré autour des 4 piliers du label WEL."
+      },
+      {
+        "title": "Analyse",
+        "description": "Examen rigoureux de vos réponses."
+      },
+      {
+        "title": "Labellisation",
+        "description": "Accédez au label et bénéficiez de recommandations personnalisées."
+      }
     ]
   },
   "solutions": {
@@ -65,8 +102,15 @@
     "title1": "Des solutions",
     "title2": "sur-mesure",
     "subtitle": "Adaptées à votre niveau de maturité en égalité F/H.",
-    "labellisation": { "title": "Labellisation", "desc": "Diagnostic, évaluation et labellisation de vos pratiques en égalité professionnelle." },
-    "conseil": { "title": "Conseil", "desc": "Formations, sensibilisation, enquêtes internes et préparation à la conformité. Un accompagnement pragmatique et progressif.", "cta": "En savoir plus" }
+    "labellisation": {
+      "title": "Labellisation",
+      "desc": "Diagnostic, évaluation et labellisation de vos pratiques en égalité professionnelle."
+    },
+    "conseil": {
+      "title": "Conseil",
+      "desc": "Formations, sensibilisation, enquêtes internes et préparation à la conformité. Un accompagnement pragmatique et progressif.",
+      "cta": "En savoir plus"
+    }
   },
   "cta": {
     "quote": "L'égalité femmes-hommes n'est pas un combat de genre.<br/>C'est une question de droits et de responsabilité collective.",
@@ -78,25 +122,57 @@
     "title1": "Foire aux",
     "title2": "questions",
     "items": [
-      { "q": "Ai-je le droit d'utiliser le logo ?", "a": "Oui, une fois labellisé, vous recevez le droit d'utiliser le logo WEL sur vos supports de communication selon les conditions définies dans votre contrat de labellisation." },
-      { "q": "Quels documents dois-je fournir ?", "a": "Les documents nécessaires dépendent de la taille de votre entreprise et de votre secteur d'activité. Notre équipe vous guidera à chaque étape pour vous assurer de fournir les éléments requis." },
-      { "q": "Comment garantissez-vous la confidentialité ?", "a": "WEL s'est engagé dans une mise en conformité RGPD, contractualisée en amont. La confidentialité des réponses est une priorité absolue." },
-      { "q": "Pourquoi WEL n'est pas du \"women washing\" ?", "a": "WEL repose sur des preuves, des critères mesurables et une analyse indépendante. L'objectif est de transformer durablement les pratiques, pas de valoriser une image." },
-      { "q": "Qui est derrière le label WEL ?", "a": "L'audit est réalisé par les équipes WEL selon une méthodologie structurée. Un comité éthique indépendant supervise le référentiel et garantit la rigueur de la démarche." }
+      {
+        "q": "Ai-je le droit d'utiliser le logo ?",
+        "a": "Oui, une fois labellisé, vous recevez le droit d'utiliser le logo WEL sur vos supports de communication selon les conditions définies dans votre contrat de labellisation."
+      },
+      {
+        "q": "Quels documents dois-je fournir ?",
+        "a": "Les documents nécessaires dépendent de la taille de votre entreprise et de votre secteur d'activité. Notre équipe vous guidera à chaque étape pour vous assurer de fournir les éléments requis."
+      },
+      {
+        "q": "Comment garantissez-vous la confidentialité ?",
+        "a": "WEL s'est engagé dans une mise en conformité RGPD, contractualisée en amont. La confidentialité des réponses est une priorité absolue."
+      },
+      {
+        "q": "Pourquoi WEL n'est pas du \"women washing\" ?",
+        "a": "WEL repose sur des preuves, des critères mesurables et une analyse indépendante. L'objectif est de transformer durablement les pratiques, pas de valoriser une image."
+      },
+      {
+        "q": "Qui est derrière le label WEL ?",
+        "a": "L'audit est réalisé par les équipes WEL selon une méthodologie structurée. Un comité éthique indépendant supervise le référentiel et garantit la rigueur de la démarche."
+      }
     ]
   },
   "footer": {
     "tagline": "Premier label européen qui certifie et accompagne les entreprises pour l'égalité professionnelle.",
     "links": [
-      { "label": "Le label", "href": "#label" },
-      { "label": "Nos offres", "href": "/offres" },
-      { "label": "Méthodologie", "href": "/methodologie" },
-      { "label": "Test d'éligibilité", "href": "/eligibilite" }
+      {
+        "label": "Le label",
+        "href": "#label"
+      },
+      {
+        "label": "Nos offres",
+        "href": "/offres"
+      },
+      {
+        "label": "Méthodologie",
+        "href": "/methodologie"
+      },
+      {
+        "label": "Test d'éligibilité",
+        "href": "/eligibilite"
+      }
     ],
     "ctaTitle": "Prêt·e à obtenir votre label WEL ?",
     "ctaDesc": "Évaluez vos pratiques et obtenez un label reconnu.",
     "ctaButton": "Je veux être Welbellisé",
-    "legal": { "contact": "Contact", "mentions": "Mentions légales", "privacy": "Confidentialité", "cookies": "Cookies" }
+    "legal": {
+      "contact": "Contact",
+      "mentions": "Mentions légales",
+      "privacy": "Confidentialité",
+      "cookies": "Cookies"
+    }
   },
   "contact": {
     "back": "Retour à l'accueil",
@@ -133,10 +209,26 @@
     "pillarsTitle2": "4 piliers",
     "pillarsSubtitle": "Quatre dimensions fondamentales couvrant l'ensemble des enjeux de l'égalité professionnelle.",
     "pillars": [
-      { "emoji": "⚖️", "title": "Égalité salariale", "desc": "Analyse des écarts de rémunération et des pratiques d'égalité salariale." },
-      { "emoji": "👥", "title": "Représentation dans les instances de décision", "desc": "Mesure de la représentation des femmes aux postes de cadres dirigeants, au sein des comités exécutifs (COMEX) et des conseils d'administration." },
-      { "emoji": "🛡️", "title": "Prévention du sexisme et du harcèlement", "desc": "Évaluation des dispositifs de prévention et de la culture inclusive." },
-      { "emoji": "💜", "title": "Équilibre de vie", "desc": "Politiques de flexibilité, parentalité et bien-être au travail." }
+      {
+        "emoji": "⚖️",
+        "title": "Égalité salariale",
+        "desc": "Analyse des écarts de rémunération et des pratiques d'égalité salariale."
+      },
+      {
+        "emoji": "👥",
+        "title": "Représentation dans les instances de décision",
+        "desc": "Mesure de la représentation des femmes aux postes de cadres dirigeants, au sein des comités exécutifs (COMEX) et des conseils d'administration."
+      },
+      {
+        "emoji": "🛡️",
+        "title": "Prévention du sexisme et du harcèlement",
+        "desc": "Évaluation des dispositifs de prévention et de la culture inclusive."
+      },
+      {
+        "emoji": "💜",
+        "title": "Équilibre de vie",
+        "desc": "Politiques de flexibilité, parentalité et bien-être au travail."
+      }
     ],
     "complianceEyebrow": "Conformité & crédibilité",
     "complianceTitle1": "Un référentiel aligné aux",
@@ -153,39 +245,90 @@
     "processEyebrow": "Le processus",
     "processTitle1": "Une démarche en",
     "processTitle2": "4 étapes",
-    "timelineLabels": ["Éligibilité", "Diagnostic", "Analyse", "Labellisation"],
-    "delays": ["~ 1 semaine", "~ 1 semaine", "2 à 3 semaines"],
+    "timelineLabels": [
+      "Éligibilité",
+      "Diagnostic",
+      "Analyse",
+      "Labellisation"
+    ],
+    "delays": [
+      "~ 1 semaine",
+      "~ 1 semaine",
+      "2 à 3 semaines"
+    ],
     "totalDuration": "Durée totale estimée : 4 à 6 semaines",
     "totalDurationMobile": "Durée totale : 6 à 8 semaines",
     "stepLabel": "Étape",
     "steps": [
-      { "num": "01", "title": "Évaluation de l'éligibilité", "desc": "Vérification des prérequis réglementaires et de la conformité de base." },
-      { "num": "02", "title": "Diagnostic sur site", "desc": "Intervention des équipes WEL au sein de votre organisation pour un audit structuré." },
-      { "num": "03", "title": "Analyse et revue experte", "desc": "Revue approfondie des données collectées par notre comité d'experts." },
-      { "num": "04", "title": "Labellisation : pas un verdict, un levier de transformation", "desc": "Restitution des résultats et mise en place d'une trajectoire de progrès durable." }
+      {
+        "num": "01",
+        "title": "Évaluation de l'éligibilité",
+        "desc": "Vérification des prérequis réglementaires et de la conformité de base."
+      },
+      {
+        "num": "02",
+        "title": "Diagnostic sur site",
+        "desc": "Intervention des équipes WEL au sein de votre organisation pour un audit structuré."
+      },
+      {
+        "num": "03",
+        "title": "Analyse et revue experte",
+        "desc": "Revue approfondie des données collectées par notre comité d'experts."
+      },
+      {
+        "num": "04",
+        "title": "Labellisation : pas un verdict, un levier de transformation",
+        "desc": "Restitution des résultats et mise en place d'une trajectoire de progrès durable."
+      }
     ],
     "governanceEyebrow": "Gouvernance",
     "governanceTitle1": "Un comité éthique",
     "governanceTitle2": "indépendant",
     "governanceText": "Un comité composé d'experts indépendants, DRH, juristes, chercheurs et dirigeants, qui garantit la rigueur, la cohérence et l'intégrité du référentiel WEL.",
-    "governanceRoles": ["Dirigeants", "Avocats", "DRH", "Académiciens"],
+    "governanceRoles": [
+      "Dirigeants",
+      "Avocats",
+      "DRH",
+      "Académiciens"
+    ],
     "impactEyebrow": "Impact",
     "impactTitle1": "Un levier de",
     "impactTitle2": "valeur ESG",
     "impacts": [
-      { "title": "Valorisation extra-financière", "desc": "Structurez et objectivez vos engagements ESG." },
-      { "title": "Stratégie ESG renforcée", "desc": "Intégrez l'égalité professionnelle à votre reporting durable." },
-      { "title": "Avantage appels d'offres", "desc": "Un atout différenciant dans les marchés publics et privés." }
+      {
+        "title": "Valorisation extra-financière",
+        "desc": "Structurez et objectivez vos engagements ESG."
+      },
+      {
+        "title": "Stratégie ESG renforcée",
+        "desc": "Intégrez l'égalité professionnelle à votre reporting durable."
+      },
+      {
+        "title": "Avantage appels d'offres",
+        "desc": "Un atout différenciant dans les marchés publics et privés."
+      }
     ],
     "resultsEyebrow": "Livrables",
     "resultsTitle1": "Des résultats",
     "resultsTitle2": "concrets",
     "resultsSubtitle": "À l'issue de la démarche, vous recevez des livrables opérationnels pour structurer et valoriser votre engagement.",
     "results": [
-      { "title": "Plan d'action personnalisé", "desc": "Un plan structuré, priorisé et adapté à vos enjeux, avec des actions concrètes et un rétro-planning pour progresser efficacement." },
-      { "title": "Rapport d'indicateurs extra-financiers", "desc": "Une synthèse claire de vos performances en égalité professionnelle, pour piloter votre stratégie et valoriser vos engagements." },
-      { "title": "Kit de communication", "desc": "Des éléments clés pour valoriser votre démarche en interne et en externe, en cohérence avec votre positionnement." },
-      { "title": "Écosystème de partenaires", "desc": "Un accès à des acteurs engagés (formation, accompagnement, sensibilisation) pour déployer concrètement vos actions." }
+      {
+        "title": "Plan d'action personnalisé",
+        "desc": "Un plan structuré, priorisé et adapté à vos enjeux, avec des actions concrètes et un rétro-planning pour progresser efficacement."
+      },
+      {
+        "title": "Rapport d'indicateurs extra-financiers",
+        "desc": "Une synthèse claire de vos performances en égalité professionnelle, pour piloter votre stratégie et valoriser vos engagements."
+      },
+      {
+        "title": "Kit de communication",
+        "desc": "Des éléments clés pour valoriser votre démarche en interne et en externe, en cohérence avec votre positionnement."
+      },
+      {
+        "title": "Écosystème de partenaires",
+        "desc": "Un accès à des acteurs engagés (formation, accompagnement, sensibilisation) pour déployer concrètement vos actions."
+      }
     ],
     "pricingEyebrow": "Tarification",
     "pricingText": "Les modalités d'accompagnement WEL débutent à partir de <strong>3 900€</strong> et sont ajustées en fonction de la taille de l'organisation et du périmètre du diagnostic. Une brochure détaillant l'offre est disponible sur demande.",
@@ -220,33 +363,70 @@
     "formationsTitle2": "conférences",
     "formationsIntro": "Interventions pour faire évoluer les regards et déclencher l'action.",
     "formations": [
-      { "title": "Égalité femmes-hommes", "desc": "Quelle place pour les hommes ?" },
-      { "title": "Parentalité & carrière", "desc": "Comprendre et réduire les inégalités" },
-      { "title": "Sexisme ordinaire", "desc": "Ce que nous ne voyons plus" },
-      { "title": "Femmes et leadership", "desc": "Dynamiques d'accès aux responsabilités" },
-      { "title": "Process de recrutement", "desc": "Adopter un process de recrutement inclusif" }
+      {
+        "title": "Égalité femmes-hommes",
+        "desc": "Quelle place pour les hommes ?"
+      },
+      {
+        "title": "Parentalité & carrière",
+        "desc": "Comprendre et réduire les inégalités"
+      },
+      {
+        "title": "Sexisme ordinaire",
+        "desc": "Ce que nous ne voyons plus"
+      },
+      {
+        "title": "Femmes et leadership",
+        "desc": "Dynamiques d'accès aux responsabilités"
+      },
+      {
+        "title": "Process de recrutement",
+        "desc": "Adopter un process de recrutement inclusif"
+      }
     ],
     "enquetesEyebrow": "Écoute",
     "enquetesTitle1": "Enquêtes",
     "enquetesTitle2": "internes",
     "enquetesTagline": "Donner la parole pour mieux comprendre.",
     "enquetesIntro": "Enquêtes quantitatives et qualitatives pour mesurer la perception et identifier les zones de risque.",
-    "enquetesBullets": ["Baromètres internes", "Enquêtes anonymes", "Analyse et recommandations"],
+    "enquetesBullets": [
+      "Baromètres internes",
+      "Enquêtes anonymes",
+      "Analyse et recommandations"
+    ],
     "missionsEyebrow": "Sur mesure",
     "missionsTitle1": "Missions de",
     "missionsTitle2": "conseil",
     "missionsTagline": "Transformer les intentions en actions.",
     "missionsIntro": "Stratégie, audits, plans d'action, communication, nous vous accompagnons à chaque étape.",
-    "missionsTags": ["Stratégie", "Conformité", "Plans d'action", "Communication", "Audits"],
+    "missionsTags": [
+      "Stratégie",
+      "Conformité",
+      "Plans d'action",
+      "Communication",
+      "Audits"
+    ],
     "approcheEyebrow": "Ce qui nous distingue",
     "approcheTitle1": "Notre",
     "approcheTitle2": "approche",
     "approcheTagline": "Moins de slides, plus de terrain.",
     "approche": [
-      { "title": "Sur le terrain", "text": "Pas de théorie déconnectée. Nous venons chez vous, nous écoutons, nous observons." },
-      { "title": "Avec vos équipes", "text": "Nous travaillons avec celles et ceux qui font tourner l'entreprise, au plus près du terrain." },
-      { "title": "À votre rythme", "text": "Chaque entreprise est différente. Notre approche s'adapte à vos réalités." },
-      { "title": "Pour du concret", "text": "Des résultats mesurables, traduits en actions concrètes et accompagnés de mises en relation ciblées, nous allons bien au-delà d'un simple rapport." }
+      {
+        "title": "Sur le terrain",
+        "text": "Pas de théorie déconnectée. Nous venons chez vous, nous écoutons, nous observons."
+      },
+      {
+        "title": "Avec vos équipes",
+        "text": "Nous travaillons avec celles et ceux qui font tourner l'entreprise, au plus près du terrain."
+      },
+      {
+        "title": "À votre rythme",
+        "text": "Chaque entreprise est différente. Notre approche s'adapte à vos réalités."
+      },
+      {
+        "title": "Pour du concret",
+        "text": "Des résultats mesurables, traduits en actions concrètes et accompagnés de mises en relation ciblées, nous allons bien au-delà d'un simple rapport."
+      }
     ],
     "ctaEyebrow": "Parlons-en",
     "ctaTitle1": "Échangeons sur votre",
@@ -274,14 +454,43 @@
     "pillarLabel": "Pilier",
     "answerRequired": "Veuillez répondre à cette question",
     "engagementQuestion": "Êtes-vous prêt à structurer une démarche sur les 12 prochains mois ?",
-    "yesNo": { "oui": "Oui", "non": "Non", "en_cours": "En cours", "na": "Non applicable" },
-    "part": { "lt20": "< 20 %", "20_40": "20 – 40 %", "gt40": "> 40 %" },
-    "engagement": { "oui": "Oui", "en_reflexion": "En réflexion", "non": "Non" },
+    "yesNo": {
+      "oui": "Oui",
+      "non": "Non",
+      "en_cours": "En cours",
+      "na": "Non applicable"
+    },
+    "part": {
+      "lt20": "< 20 %",
+      "20_40": "20 – 40 %",
+      "gt40": "> 40 %"
+    },
+    "engagement": {
+      "oui": "Oui",
+      "en_reflexion": "En réflexion",
+      "non": "Non"
+    },
     "pillars": [
-      { "title": "Écart de rémunération", "q1": "Avez-vous mesuré votre écart de rémunération femmes-hommes ?", "q2": "Des actions ont-elles été mises en place pour le réduire ?" },
-      { "title": "Gouvernance", "q1": "Quelle est la part de femmes dans vos instances dirigeantes ?", "q2": "Avez-vous des objectifs de mixité définis ?" },
-      { "title": "Prévention & culture", "q1": "Avez-vous mis en place des actions de prévention du sexisme / VSS ?", "q2": "Les collaborateurs sont-ils formés sur ces sujets ?" },
-      { "title": "Équilibre & conditions de travail", "q1": "Proposez-vous des dispositifs favorisant l'équilibre vie professionnelle / personnelle ?", "q2": "Avez-vous des politiques spécifiques (retour maternité, congé paternité, etc.) ?" }
+      {
+        "title": "Écart de rémunération",
+        "q1": "Avez-vous mesuré votre écart de rémunération femmes-hommes ?",
+        "q2": "Des actions ont-elles été mises en place pour le réduire ?"
+      },
+      {
+        "title": "Gouvernance",
+        "q1": "Quelle est la part de femmes dans vos instances dirigeantes ?",
+        "q2": "Avez-vous des objectifs de mixité définis ?"
+      },
+      {
+        "title": "Prévention & culture",
+        "q1": "Avez-vous mis en place des actions de prévention du sexisme / VSS ?",
+        "q2": "Les collaborateurs sont-ils formés sur ces sujets ?"
+      },
+      {
+        "title": "Équilibre & conditions de travail",
+        "q1": "Proposez-vous des dispositifs favorisant l'équilibre vie professionnelle / personnelle ?",
+        "q2": "Avez-vous des politiques spécifiques (retour maternité, congé paternité, etc.) ?"
+      }
     ],
     "contactTitle1": "C'est bientôt",
     "contactTitle2": "fini !",
@@ -334,5 +543,12 @@
     "back": "Retour à l'accueil"
   },
   "language": "Langue",
-  "languageNames": { "fr": "Français", "en": "English", "es": "Español" }
+  "languageNames": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español"
+  },
+  "partners": {
+    "title": "Nos partenaires"
+  }
 }

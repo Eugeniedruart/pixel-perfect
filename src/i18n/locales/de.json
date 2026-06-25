@@ -30,10 +30,22 @@
     "title2": "bringt",
     "subtitle": "Eine Methodik zur Messung und Steuerung von Wirkung:",
     "items": [
-      { "title": "HR- & CSR-Steuerung", "description": "Identifizieren Sie Ihre Handlungshebel und verfolgen Sie Ihre Fortschritte." },
-      { "title": "Klare Compliance", "description": "Antizipieren Sie französische und europäische Verpflichtungen." },
-      { "title": "Gestärkte Arbeitgebermarke", "description": "Gewinnen Sie engagierte Talente, Partner und Investoren." },
-      { "title": "Nachhaltige Leistung", "description": "Gleichstellung als Motor für Engagement und Transformation." }
+      {
+        "title": "HR- & CSR-Steuerung",
+        "description": "Identifizieren Sie Ihre Handlungshebel und verfolgen Sie Ihre Fortschritte."
+      },
+      {
+        "title": "Klare Compliance",
+        "description": "Antizipieren Sie französische und europäische Verpflichtungen."
+      },
+      {
+        "title": "Gestärkte Arbeitgebermarke",
+        "description": "Gewinnen Sie engagierte Talente, Partner und Investoren."
+      },
+      {
+        "title": "Nachhaltige Leistung",
+        "description": "Gleichstellung als Motor für Engagement und Transformation."
+      }
     ]
   },
   "audit": {
@@ -42,10 +54,22 @@
     "title2": "individuelles Audit",
     "intro": "Ein <strong>Audit, strukturiert um 4 Säulen</strong>, das von unseren Expert:innen analysiert wird, um Ihr Engagement in eine nachhaltige Entwicklung einzubetten.",
     "pillars": [
-      { "title": "Governance", "questions": "15 Fragen" },
-      { "title": "Lohngleichheit", "questions": "15 Fragen" },
-      { "title": "Prävention von Sexismus und inklusive Kultur", "questions": "15 Fragen" },
-      { "title": "Work-Life-Balance", "questions": "15 Fragen" }
+      {
+        "title": "Governance",
+        "questions": "15 Fragen"
+      },
+      {
+        "title": "Lohngleichheit",
+        "questions": "15 Fragen"
+      },
+      {
+        "title": "Prävention von Sexismus und inklusive Kultur",
+        "questions": "15 Fragen"
+      },
+      {
+        "title": "Work-Life-Balance",
+        "questions": "15 Fragen"
+      }
     ]
   },
   "process": {
@@ -54,10 +78,23 @@
     "title2": "Methode",
     "subtitle": "Ein rigoroser Ansatz, angepasst an Ihre Größe und Branche.",
     "steps": [
-      { "title": "Eignung", "description": "Einige Fragen, um Ihren Reifegrad zu verstehen.", "badge": "Unverbindlich" },
-      { "title": "Diagnose", "description": "Ein Audit rund um die 4 Säulen des WEL-Labels." },
-      { "title": "Analyse", "description": "Sorgfältige Prüfung Ihrer Antworten." },
-      { "title": "Labelvergabe", "description": "Erhalten Sie das Label und profitieren Sie von individuellen Empfehlungen." }
+      {
+        "title": "Eignung",
+        "description": "Einige Fragen, um Ihren Reifegrad zu verstehen.",
+        "badge": "Unverbindlich"
+      },
+      {
+        "title": "Diagnose",
+        "description": "Ein Audit rund um die 4 Säulen des WEL-Labels."
+      },
+      {
+        "title": "Analyse",
+        "description": "Sorgfältige Prüfung Ihrer Antworten."
+      },
+      {
+        "title": "Labelvergabe",
+        "description": "Erhalten Sie das Label und profitieren Sie von individuellen Empfehlungen."
+      }
     ]
   },
   "solutions": {
@@ -65,8 +102,15 @@
     "title1": "Maßgeschneiderte",
     "title2": "Lösungen",
     "subtitle": "Angepasst an Ihren Reifegrad in der Gleichstellung F/M.",
-    "labellisation": { "title": "Labelvergabe", "desc": "Diagnose, Bewertung und Zertifizierung Ihrer Praktiken in der beruflichen Gleichstellung." },
-    "conseil": { "title": "Beratung", "desc": "Schulungen, Sensibilisierung, interne Umfragen und Vorbereitung auf Compliance. Eine pragmatische und schrittweise Begleitung.", "cta": "Mehr erfahren" }
+    "labellisation": {
+      "title": "Labelvergabe",
+      "desc": "Diagnose, Bewertung und Zertifizierung Ihrer Praktiken in der beruflichen Gleichstellung."
+    },
+    "conseil": {
+      "title": "Beratung",
+      "desc": "Schulungen, Sensibilisierung, interne Umfragen und Vorbereitung auf Compliance. Eine pragmatische und schrittweise Begleitung.",
+      "cta": "Mehr erfahren"
+    }
   },
   "cta": {
     "quote": "Die Gleichstellung von Frauen und Männern ist kein Geschlechterkampf.<br/>Es ist eine Frage von Rechten und kollektiver Verantwortung.",
@@ -78,25 +122,57 @@
     "title1": "Häufig gestellte",
     "title2": "Fragen",
     "items": [
-      { "q": "Darf ich das Logo verwenden?", "a": "Ja, sobald Sie zertifiziert sind, erhalten Sie das Recht, das WEL-Logo auf Ihren Kommunikationsmitteln gemäß den im Vertrag festgelegten Bedingungen zu verwenden." },
-      { "q": "Welche Dokumente muss ich bereitstellen?", "a": "Die erforderlichen Dokumente hängen von der Größe und Branche Ihres Unternehmens ab. Unser Team begleitet Sie in jedem Schritt." },
-      { "q": "Wie gewährleisten Sie die Vertraulichkeit?", "a": "WEL hat sich zu einer DSGVO-konformen Vorgehensweise verpflichtet, die im Vorfeld vertraglich geregelt wird. Die Vertraulichkeit der Antworten hat absolute Priorität." },
-      { "q": "Warum ist WEL kein „Women Washing\"?", "a": "WEL basiert auf Beweisen, messbaren Kriterien und einer unabhängigen Analyse. Ziel ist es, Praktiken nachhaltig zu verändern, nicht ein Image aufzuwerten." },
-      { "q": "Wer steht hinter dem WEL-Label?", "a": "Das Audit wird von den WEL-Teams nach einer strukturierten Methodik durchgeführt. Ein unabhängiger Ethikausschuss überwacht das Referenzsystem und garantiert die Strenge des Ansatzes." }
+      {
+        "q": "Darf ich das Logo verwenden?",
+        "a": "Ja, sobald Sie zertifiziert sind, erhalten Sie das Recht, das WEL-Logo auf Ihren Kommunikationsmitteln gemäß den im Vertrag festgelegten Bedingungen zu verwenden."
+      },
+      {
+        "q": "Welche Dokumente muss ich bereitstellen?",
+        "a": "Die erforderlichen Dokumente hängen von der Größe und Branche Ihres Unternehmens ab. Unser Team begleitet Sie in jedem Schritt."
+      },
+      {
+        "q": "Wie gewährleisten Sie die Vertraulichkeit?",
+        "a": "WEL hat sich zu einer DSGVO-konformen Vorgehensweise verpflichtet, die im Vorfeld vertraglich geregelt wird. Die Vertraulichkeit der Antworten hat absolute Priorität."
+      },
+      {
+        "q": "Warum ist WEL kein „Women Washing\"?",
+        "a": "WEL basiert auf Beweisen, messbaren Kriterien und einer unabhängigen Analyse. Ziel ist es, Praktiken nachhaltig zu verändern, nicht ein Image aufzuwerten."
+      },
+      {
+        "q": "Wer steht hinter dem WEL-Label?",
+        "a": "Das Audit wird von den WEL-Teams nach einer strukturierten Methodik durchgeführt. Ein unabhängiger Ethikausschuss überwacht das Referenzsystem und garantiert die Strenge des Ansatzes."
+      }
     ]
   },
   "footer": {
     "tagline": "Erstes europäisches Label, das Unternehmen für berufliche Gleichstellung zertifiziert und begleitet.",
     "links": [
-      { "label": "Das Label", "href": "#label" },
-      { "label": "Unsere Angebote", "href": "/offres" },
-      { "label": "Methodik", "href": "/methodologie" },
-      { "label": "Eignungstest", "href": "/eligibilite" }
+      {
+        "label": "Das Label",
+        "href": "#label"
+      },
+      {
+        "label": "Unsere Angebote",
+        "href": "/offres"
+      },
+      {
+        "label": "Methodik",
+        "href": "/methodologie"
+      },
+      {
+        "label": "Eignungstest",
+        "href": "/eligibilite"
+      }
     ],
     "ctaTitle": "Bereit, Ihr WEL-Label zu erhalten?",
     "ctaDesc": "Bewerten Sie Ihre Praktiken und erhalten Sie ein anerkanntes Label.",
     "ctaButton": "Ich möchte Welbellisiert werden",
-    "legal": { "contact": "Kontakt", "mentions": "Impressum", "privacy": "Datenschutz", "cookies": "Cookies" }
+    "legal": {
+      "contact": "Kontakt",
+      "mentions": "Impressum",
+      "privacy": "Datenschutz",
+      "cookies": "Cookies"
+    }
   },
   "contact": {
     "back": "Zurück zur Startseite",
@@ -133,10 +209,26 @@
     "pillarsTitle2": "4 Säulen",
     "pillarsSubtitle": "Vier grundlegende Dimensionen, die alle Aspekte der beruflichen Gleichstellung abdecken.",
     "pillars": [
-      { "emoji": "⚖️", "title": "Lohngleichheit", "desc": "Analyse der Lohnunterschiede und der Praktiken zur Lohngleichheit." },
-      { "emoji": "👥", "title": "Vertretung in Entscheidungsgremien", "desc": "Messung der Vertretung von Frauen in Führungspositionen, Vorstandsausschüssen (COMEX) und Verwaltungsräten." },
-      { "emoji": "🛡️", "title": "Prävention von Sexismus und Belästigung", "desc": "Bewertung der Präventionsmaßnahmen und der inklusiven Kultur." },
-      { "emoji": "💜", "title": "Work-Life-Balance", "desc": "Richtlinien zu Flexibilität, Elternschaft und Wohlbefinden am Arbeitsplatz." }
+      {
+        "emoji": "⚖️",
+        "title": "Lohngleichheit",
+        "desc": "Analyse der Lohnunterschiede und der Praktiken zur Lohngleichheit."
+      },
+      {
+        "emoji": "👥",
+        "title": "Vertretung in Entscheidungsgremien",
+        "desc": "Messung der Vertretung von Frauen in Führungspositionen, Vorstandsausschüssen (COMEX) und Verwaltungsräten."
+      },
+      {
+        "emoji": "🛡️",
+        "title": "Prävention von Sexismus und Belästigung",
+        "desc": "Bewertung der Präventionsmaßnahmen und der inklusiven Kultur."
+      },
+      {
+        "emoji": "💜",
+        "title": "Work-Life-Balance",
+        "desc": "Richtlinien zu Flexibilität, Elternschaft und Wohlbefinden am Arbeitsplatz."
+      }
     ],
     "complianceEyebrow": "Compliance & Glaubwürdigkeit",
     "complianceTitle1": "Ein Referenzsystem im Einklang mit",
@@ -153,39 +245,90 @@
     "processEyebrow": "Der Prozess",
     "processTitle1": "Ein Vorgehen in",
     "processTitle2": "4 Schritten",
-    "timelineLabels": ["Eignung", "Diagnose", "Analyse", "Labelvergabe"],
-    "delays": ["~ 1 Woche", "~ 1 Woche", "2 bis 3 Wochen"],
+    "timelineLabels": [
+      "Eignung",
+      "Diagnose",
+      "Analyse",
+      "Labelvergabe"
+    ],
+    "delays": [
+      "~ 1 Woche",
+      "~ 1 Woche",
+      "2 bis 3 Wochen"
+    ],
     "totalDuration": "Geschätzte Gesamtdauer: 4 bis 6 Wochen",
     "totalDurationMobile": "Gesamtdauer: 6 bis 8 Wochen",
     "stepLabel": "Schritt",
     "steps": [
-      { "num": "01", "title": "Bewertung der Eignung", "desc": "Überprüfung der gesetzlichen Voraussetzungen und der grundlegenden Konformität." },
-      { "num": "02", "title": "Diagnose vor Ort", "desc": "Einsatz der WEL-Teams in Ihrer Organisation für ein strukturiertes Audit." },
-      { "num": "03", "title": "Analyse und Expertenprüfung", "desc": "Eingehende Prüfung der gesammelten Daten durch unseren Expertenausschuss." },
-      { "num": "04", "title": "Labelvergabe: kein Urteil, ein Transformationshebel", "desc": "Ergebnisrückmeldung und Einrichtung einer nachhaltigen Fortschrittsstrategie." }
+      {
+        "num": "01",
+        "title": "Bewertung der Eignung",
+        "desc": "Überprüfung der gesetzlichen Voraussetzungen und der grundlegenden Konformität."
+      },
+      {
+        "num": "02",
+        "title": "Diagnose vor Ort",
+        "desc": "Einsatz der WEL-Teams in Ihrer Organisation für ein strukturiertes Audit."
+      },
+      {
+        "num": "03",
+        "title": "Analyse und Expertenprüfung",
+        "desc": "Eingehende Prüfung der gesammelten Daten durch unseren Expertenausschuss."
+      },
+      {
+        "num": "04",
+        "title": "Labelvergabe: kein Urteil, ein Transformationshebel",
+        "desc": "Ergebnisrückmeldung und Einrichtung einer nachhaltigen Fortschrittsstrategie."
+      }
     ],
     "governanceEyebrow": "Governance",
     "governanceTitle1": "Ein unabhängiger",
     "governanceTitle2": "Ethikausschuss",
     "governanceText": "Ein Ausschuss aus unabhängigen Expert:innen, HR-Leitungen, Jurist:innen, Forscher:innen und Führungskräften, der die Strenge, Kohärenz und Integrität des WEL-Referenzsystems garantiert.",
-    "governanceRoles": ["Führungskräfte", "Anwält:innen", "HR-Leitung", "Akademiker:innen"],
+    "governanceRoles": [
+      "Führungskräfte",
+      "Anwält:innen",
+      "HR-Leitung",
+      "Akademiker:innen"
+    ],
     "impactEyebrow": "Wirkung",
     "impactTitle1": "Ein Hebel für",
     "impactTitle2": "ESG-Wert",
     "impacts": [
-      { "title": "Nicht-finanzielle Bewertung", "desc": "Strukturieren und objektivieren Sie Ihre ESG-Verpflichtungen." },
-      { "title": "Gestärkte ESG-Strategie", "desc": "Integrieren Sie berufliche Gleichstellung in Ihr Nachhaltigkeitsreporting." },
-      { "title": "Vorteil bei Ausschreibungen", "desc": "Ein differenzierender Vorteil bei öffentlichen und privaten Aufträgen." }
+      {
+        "title": "Nicht-finanzielle Bewertung",
+        "desc": "Strukturieren und objektivieren Sie Ihre ESG-Verpflichtungen."
+      },
+      {
+        "title": "Gestärkte ESG-Strategie",
+        "desc": "Integrieren Sie berufliche Gleichstellung in Ihr Nachhaltigkeitsreporting."
+      },
+      {
+        "title": "Vorteil bei Ausschreibungen",
+        "desc": "Ein differenzierender Vorteil bei öffentlichen und privaten Aufträgen."
+      }
     ],
     "resultsEyebrow": "Ergebnisse",
     "resultsTitle1": "Konkrete",
     "resultsTitle2": "Ergebnisse",
     "resultsSubtitle": "Am Ende des Prozesses erhalten Sie operative Ergebnisse, um Ihr Engagement zu strukturieren und aufzuwerten.",
     "results": [
-      { "title": "Individueller Aktionsplan", "desc": "Ein strukturierter, priorisierter und an Ihre Herausforderungen angepasster Plan mit konkreten Maßnahmen und Zeitplan, um effizient voranzukommen." },
-      { "title": "Bericht mit nicht-finanziellen Indikatoren", "desc": "Eine klare Übersicht Ihrer Leistung in der beruflichen Gleichstellung zur Steuerung Ihrer Strategie und Aufwertung Ihres Engagements." },
-      { "title": "Kommunikations-Kit", "desc": "Schlüsselelemente, um Ihren Ansatz intern und extern stimmig in Wert zu setzen." },
-      { "title": "Partner-Ökosystem", "desc": "Zugang zu engagierten Akteuren (Schulung, Begleitung, Sensibilisierung), um Ihre Maßnahmen konkret umzusetzen." }
+      {
+        "title": "Individueller Aktionsplan",
+        "desc": "Ein strukturierter, priorisierter und an Ihre Herausforderungen angepasster Plan mit konkreten Maßnahmen und Zeitplan, um effizient voranzukommen."
+      },
+      {
+        "title": "Bericht mit nicht-finanziellen Indikatoren",
+        "desc": "Eine klare Übersicht Ihrer Leistung in der beruflichen Gleichstellung zur Steuerung Ihrer Strategie und Aufwertung Ihres Engagements."
+      },
+      {
+        "title": "Kommunikations-Kit",
+        "desc": "Schlüsselelemente, um Ihren Ansatz intern und extern stimmig in Wert zu setzen."
+      },
+      {
+        "title": "Partner-Ökosystem",
+        "desc": "Zugang zu engagierten Akteuren (Schulung, Begleitung, Sensibilisierung), um Ihre Maßnahmen konkret umzusetzen."
+      }
     ],
     "pricingEyebrow": "Preisgestaltung",
     "pricingText": "Die WEL-Begleitungsmodalitäten beginnen ab <strong>3.900 €</strong> und werden an die Größe der Organisation und den Umfang der Diagnose angepasst. Eine ausführliche Broschüre ist auf Anfrage erhältlich.",
@@ -220,33 +363,70 @@
     "formationsTitle2": "Konferenzen",
     "formationsIntro": "Interventionen, um Perspektiven zu wandeln und Handeln anzustoßen.",
     "formations": [
-      { "title": "Gleichstellung Frauen-Männer", "desc": "Welcher Platz für Männer?" },
-      { "title": "Elternschaft & Karriere", "desc": "Ungleichheiten verstehen und reduzieren" },
-      { "title": "Alltagssexismus", "desc": "Was wir nicht mehr sehen" },
-      { "title": "Frauen und Führung", "desc": "Dynamik des Zugangs zu Verantwortung" },
-      { "title": "Einstellungsprozesse", "desc": "Einen inklusiven Einstellungsprozess einführen" }
+      {
+        "title": "Gleichstellung Frauen-Männer",
+        "desc": "Welcher Platz für Männer?"
+      },
+      {
+        "title": "Elternschaft & Karriere",
+        "desc": "Ungleichheiten verstehen und reduzieren"
+      },
+      {
+        "title": "Alltagssexismus",
+        "desc": "Was wir nicht mehr sehen"
+      },
+      {
+        "title": "Frauen und Führung",
+        "desc": "Dynamik des Zugangs zu Verantwortung"
+      },
+      {
+        "title": "Einstellungsprozesse",
+        "desc": "Einen inklusiven Einstellungsprozess einführen"
+      }
     ],
     "enquetesEyebrow": "Zuhören",
     "enquetesTitle1": "Interne",
     "enquetesTitle2": "Befragungen",
     "enquetesTagline": "Das Wort geben, um besser zu verstehen.",
     "enquetesIntro": "Quantitative und qualitative Befragungen zur Messung der Wahrnehmung und Identifikation von Risikobereichen.",
-    "enquetesBullets": ["Interne Barometer", "Anonyme Befragungen", "Analyse und Empfehlungen"],
+    "enquetesBullets": [
+      "Interne Barometer",
+      "Anonyme Befragungen",
+      "Analyse und Empfehlungen"
+    ],
     "missionsEyebrow": "Maßgeschneidert",
     "missionsTitle1": "Beratungs-",
     "missionsTitle2": "missionen",
     "missionsTagline": "Absichten in Handlungen verwandeln.",
     "missionsIntro": "Strategie, Audits, Aktionspläne, Kommunikation – wir begleiten Sie in jedem Schritt.",
-    "missionsTags": ["Strategie", "Compliance", "Aktionspläne", "Kommunikation", "Audits"],
+    "missionsTags": [
+      "Strategie",
+      "Compliance",
+      "Aktionspläne",
+      "Kommunikation",
+      "Audits"
+    ],
     "approcheEyebrow": "Was uns auszeichnet",
     "approcheTitle1": "Unser",
     "approcheTitle2": "Ansatz",
     "approcheTagline": "Weniger Folien, mehr Praxis.",
     "approche": [
-      { "title": "Vor Ort", "text": "Keine abgehobene Theorie. Wir kommen zu Ihnen, hören zu, beobachten." },
-      { "title": "Mit Ihren Teams", "text": "Wir arbeiten mit denen, die das Unternehmen am Laufen halten, ganz nah am Geschehen." },
-      { "title": "In Ihrem Tempo", "text": "Jedes Unternehmen ist anders. Unser Ansatz passt sich Ihrer Realität an." },
-      { "title": "Für Konkretes", "text": "Messbare Ergebnisse, übersetzt in konkrete Maßnahmen und begleitet von gezielten Vernetzungen – wir gehen weit über einen einfachen Bericht hinaus." }
+      {
+        "title": "Vor Ort",
+        "text": "Keine abgehobene Theorie. Wir kommen zu Ihnen, hören zu, beobachten."
+      },
+      {
+        "title": "Mit Ihren Teams",
+        "text": "Wir arbeiten mit denen, die das Unternehmen am Laufen halten, ganz nah am Geschehen."
+      },
+      {
+        "title": "In Ihrem Tempo",
+        "text": "Jedes Unternehmen ist anders. Unser Ansatz passt sich Ihrer Realität an."
+      },
+      {
+        "title": "Für Konkretes",
+        "text": "Messbare Ergebnisse, übersetzt in konkrete Maßnahmen und begleitet von gezielten Vernetzungen – wir gehen weit über einen einfachen Bericht hinaus."
+      }
     ],
     "ctaEyebrow": "Lass uns reden",
     "ctaTitle1": "Sprechen wir über Ihren",
@@ -274,14 +454,43 @@
     "pillarLabel": "Säule",
     "answerRequired": "Bitte beantworten Sie diese Frage",
     "engagementQuestion": "Sind Sie bereit, in den nächsten 12 Monaten einen strukturierten Prozess aufzusetzen?",
-    "yesNo": { "oui": "Ja", "non": "Nein", "en_cours": "In Bearbeitung", "na": "Nicht zutreffend" },
-    "part": { "lt20": "< 20 %", "20_40": "20 – 40 %", "gt40": "> 40 %" },
-    "engagement": { "oui": "Ja", "en_reflexion": "In Überlegung", "non": "Nein" },
+    "yesNo": {
+      "oui": "Ja",
+      "non": "Nein",
+      "en_cours": "In Bearbeitung",
+      "na": "Nicht zutreffend"
+    },
+    "part": {
+      "lt20": "< 20 %",
+      "20_40": "20 – 40 %",
+      "gt40": "> 40 %"
+    },
+    "engagement": {
+      "oui": "Ja",
+      "en_reflexion": "In Überlegung",
+      "non": "Nein"
+    },
     "pillars": [
-      { "title": "Lohnunterschied", "q1": "Haben Sie Ihren Lohnunterschied zwischen Frauen und Männern gemessen?", "q2": "Wurden Maßnahmen zur Reduzierung ergriffen?" },
-      { "title": "Governance", "q1": "Wie hoch ist der Frauenanteil in Ihren Führungsgremien?", "q2": "Haben Sie definierte Diversitätsziele?" },
-      { "title": "Prävention & Kultur", "q1": "Haben Sie Präventionsmaßnahmen gegen Sexismus / sexualisierte Gewalt eingeführt?", "q2": "Sind die Mitarbeitenden zu diesen Themen geschult?" },
-      { "title": "Balance & Arbeitsbedingungen", "q1": "Bieten Sie Maßnahmen zur Förderung der Work-Life-Balance?", "q2": "Haben Sie spezifische Richtlinien (Rückkehr aus Mutterschaft, Vaterschaftsurlaub usw.)?" }
+      {
+        "title": "Lohnunterschied",
+        "q1": "Haben Sie Ihren Lohnunterschied zwischen Frauen und Männern gemessen?",
+        "q2": "Wurden Maßnahmen zur Reduzierung ergriffen?"
+      },
+      {
+        "title": "Governance",
+        "q1": "Wie hoch ist der Frauenanteil in Ihren Führungsgremien?",
+        "q2": "Haben Sie definierte Diversitätsziele?"
+      },
+      {
+        "title": "Prävention & Kultur",
+        "q1": "Haben Sie Präventionsmaßnahmen gegen Sexismus / sexualisierte Gewalt eingeführt?",
+        "q2": "Sind die Mitarbeitenden zu diesen Themen geschult?"
+      },
+      {
+        "title": "Balance & Arbeitsbedingungen",
+        "q1": "Bieten Sie Maßnahmen zur Förderung der Work-Life-Balance?",
+        "q2": "Haben Sie spezifische Richtlinien (Rückkehr aus Mutterschaft, Vaterschaftsurlaub usw.)?"
+      }
     ],
     "contactTitle1": "Es ist bald",
     "contactTitle2": "geschafft!",
@@ -334,5 +543,13 @@
     "back": "Zurück zur Startseite"
   },
   "language": "Sprache",
-  "languageNames": { "fr": "Français", "en": "English", "es": "Español", "de": "Deutsch" }
+  "languageNames": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "de": "Deutsch"
+  },
+  "partners": {
+    "title": "Unsere Partner"
+  }
 }

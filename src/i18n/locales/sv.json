@@ -30,10 +30,22 @@
     "title2": "dig",
     "subtitle": "En metodik för att mäta och styra påverkan:",
     "items": [
-      { "title": "HR- & CSR-styrning", "description": "Identifiera era hävstångseffekter och följ era framsteg." },
-      { "title": "Tydlig efterlevnad", "description": "Förutse franska och europeiska skyldigheter." },
-      { "title": "Stärkt arbetsgivarvarumärke", "description": "Attrahera engagerade talanger, partners och investerare." },
-      { "title": "Hållbar prestation", "description": "Jämställdhet som drivkraft för engagemang och transformation." }
+      {
+        "title": "HR- & CSR-styrning",
+        "description": "Identifiera era hävstångseffekter och följ era framsteg."
+      },
+      {
+        "title": "Tydlig efterlevnad",
+        "description": "Förutse franska och europeiska skyldigheter."
+      },
+      {
+        "title": "Stärkt arbetsgivarvarumärke",
+        "description": "Attrahera engagerade talanger, partners och investerare."
+      },
+      {
+        "title": "Hållbar prestation",
+        "description": "Jämställdhet som drivkraft för engagemang och transformation."
+      }
     ]
   },
   "audit": {
@@ -42,10 +54,22 @@
     "title2": "skräddarsydd granskning",
     "intro": "En <strong>granskning strukturerad kring 4 pelare</strong>, analyserad av våra experter för att förankra ert engagemang i en hållbar utveckling.",
     "pillars": [
-      { "title": "Styrning", "questions": "15 frågor" },
-      { "title": "Lönejämställdhet", "questions": "15 frågor" },
-      { "title": "Förebyggande av sexism och inkluderande kultur", "questions": "15 frågor" },
-      { "title": "Livsbalans", "questions": "15 frågor" }
+      {
+        "title": "Styrning",
+        "questions": "15 frågor"
+      },
+      {
+        "title": "Lönejämställdhet",
+        "questions": "15 frågor"
+      },
+      {
+        "title": "Förebyggande av sexism och inkluderande kultur",
+        "questions": "15 frågor"
+      },
+      {
+        "title": "Livsbalans",
+        "questions": "15 frågor"
+      }
     ]
   },
   "process": {
@@ -54,10 +78,23 @@
     "title2": "metod",
     "subtitle": "Ett noggrant tillvägagångssätt anpassat till er storlek och bransch.",
     "steps": [
-      { "title": "Behörighet", "description": "Några frågor för att förstå er mognadsnivå.", "badge": "Utan förpliktelse" },
-      { "title": "Diagnos", "description": "En granskning strukturerad kring WEL-märkningens 4 pelare." },
-      { "title": "Analys", "description": "Noggrann granskning av era svar." },
-      { "title": "Märkning", "description": "Få tillgång till märkningen och dra nytta av personliga rekommendationer." }
+      {
+        "title": "Behörighet",
+        "description": "Några frågor för att förstå er mognadsnivå.",
+        "badge": "Utan förpliktelse"
+      },
+      {
+        "title": "Diagnos",
+        "description": "En granskning strukturerad kring WEL-märkningens 4 pelare."
+      },
+      {
+        "title": "Analys",
+        "description": "Noggrann granskning av era svar."
+      },
+      {
+        "title": "Märkning",
+        "description": "Få tillgång till märkningen och dra nytta av personliga rekommendationer."
+      }
     ]
   },
   "solutions": {
@@ -65,8 +102,15 @@
     "title1": "Skräddarsydda",
     "title2": "lösningar",
     "subtitle": "Anpassade till er mognadsnivå inom jämställdhet K/M.",
-    "labellisation": { "title": "Märkning", "desc": "Diagnos, utvärdering och certifiering av era metoder inom yrkesmässig jämställdhet." },
-    "conseil": { "title": "Rådgivning", "desc": "Utbildningar, medvetandegörande, interna undersökningar och förberedelse för efterlevnad. Ett pragmatiskt och stegvis stöd.", "cta": "Läs mer" }
+    "labellisation": {
+      "title": "Märkning",
+      "desc": "Diagnos, utvärdering och certifiering av era metoder inom yrkesmässig jämställdhet."
+    },
+    "conseil": {
+      "title": "Rådgivning",
+      "desc": "Utbildningar, medvetandegörande, interna undersökningar och förberedelse för efterlevnad. Ett pragmatiskt och stegvis stöd.",
+      "cta": "Läs mer"
+    }
   },
   "cta": {
     "quote": "Jämställdhet mellan kvinnor och män är inte en könsstrid.<br/>Det är en fråga om rättigheter och kollektivt ansvar.",
@@ -78,25 +122,57 @@
     "title1": "Vanliga",
     "title2": "frågor",
     "items": [
-      { "q": "Har jag rätt att använda logotypen?", "a": "Ja, när ni är certifierade får ni rätt att använda WEL-logotypen i er kommunikation enligt villkoren i ert märkningsavtal." },
-      { "q": "Vilka dokument måste jag tillhandahålla?", "a": "De nödvändiga dokumenten beror på företagets storlek och bransch. Vårt team vägleder er i varje steg." },
-      { "q": "Hur garanterar ni sekretessen?", "a": "WEL har åtagit sig GDPR-efterlevnad, avtalad i förväg. Sekretessen för svaren är en absolut prioritet." },
-      { "q": "Varför är WEL inte \"women washing\"?", "a": "WEL bygger på bevis, mätbara kriterier och oberoende analys. Målet är att varaktigt förändra metoder, inte att försköna en image." },
-      { "q": "Vem står bakom WEL-märkningen?", "a": "Granskningen utförs av WEL-team enligt en strukturerad metodik. En oberoende etikkommitté övervakar referensramen och garanterar processens stringens." }
+      {
+        "q": "Har jag rätt att använda logotypen?",
+        "a": "Ja, när ni är certifierade får ni rätt att använda WEL-logotypen i er kommunikation enligt villkoren i ert märkningsavtal."
+      },
+      {
+        "q": "Vilka dokument måste jag tillhandahålla?",
+        "a": "De nödvändiga dokumenten beror på företagets storlek och bransch. Vårt team vägleder er i varje steg."
+      },
+      {
+        "q": "Hur garanterar ni sekretessen?",
+        "a": "WEL har åtagit sig GDPR-efterlevnad, avtalad i förväg. Sekretessen för svaren är en absolut prioritet."
+      },
+      {
+        "q": "Varför är WEL inte \"women washing\"?",
+        "a": "WEL bygger på bevis, mätbara kriterier och oberoende analys. Målet är att varaktigt förändra metoder, inte att försköna en image."
+      },
+      {
+        "q": "Vem står bakom WEL-märkningen?",
+        "a": "Granskningen utförs av WEL-team enligt en strukturerad metodik. En oberoende etikkommitté övervakar referensramen och garanterar processens stringens."
+      }
     ]
   },
   "footer": {
     "tagline": "Första europeiska märkningen som certifierar och stödjer företag för yrkesmässig jämställdhet.",
     "links": [
-      { "label": "Märkningen", "href": "#label" },
-      { "label": "Våra erbjudanden", "href": "/offres" },
-      { "label": "Metodik", "href": "/methodologie" },
-      { "label": "Behörighetstest", "href": "/eligibilite" }
+      {
+        "label": "Märkningen",
+        "href": "#label"
+      },
+      {
+        "label": "Våra erbjudanden",
+        "href": "/offres"
+      },
+      {
+        "label": "Metodik",
+        "href": "/methodologie"
+      },
+      {
+        "label": "Behörighetstest",
+        "href": "/eligibilite"
+      }
     ],
     "ctaTitle": "Redo att få er WEL-märkning?",
     "ctaDesc": "Utvärdera era metoder och få en erkänd märkning.",
     "ctaButton": "Jag vill bli Welbelliserad",
-    "legal": { "contact": "Kontakt", "mentions": "Juridisk information", "privacy": "Sekretess", "cookies": "Cookies" }
+    "legal": {
+      "contact": "Kontakt",
+      "mentions": "Juridisk information",
+      "privacy": "Sekretess",
+      "cookies": "Cookies"
+    }
   },
   "contact": {
     "back": "Tillbaka till startsidan",
@@ -133,10 +209,26 @@
     "pillarsTitle2": "4 pelare",
     "pillarsSubtitle": "Fyra grundläggande dimensioner som täcker alla aspekter av yrkesmässig jämställdhet.",
     "pillars": [
-      { "emoji": "⚖️", "title": "Lönejämställdhet", "desc": "Analys av löneskillnader och metoder för lönejämställdhet." },
-      { "emoji": "👥", "title": "Representation i beslutsorgan", "desc": "Mätning av kvinnors representation i ledande befattningar, exekutivkommittéer (COMEX) och styrelser." },
-      { "emoji": "🛡️", "title": "Förebyggande av sexism och trakasserier", "desc": "Utvärdering av förebyggande åtgärder och inkluderande kultur." },
-      { "emoji": "💜", "title": "Livsbalans", "desc": "Policyer för flexibilitet, föräldraskap och välbefinnande på jobbet." }
+      {
+        "emoji": "⚖️",
+        "title": "Lönejämställdhet",
+        "desc": "Analys av löneskillnader och metoder för lönejämställdhet."
+      },
+      {
+        "emoji": "👥",
+        "title": "Representation i beslutsorgan",
+        "desc": "Mätning av kvinnors representation i ledande befattningar, exekutivkommittéer (COMEX) och styrelser."
+      },
+      {
+        "emoji": "🛡️",
+        "title": "Förebyggande av sexism och trakasserier",
+        "desc": "Utvärdering av förebyggande åtgärder och inkluderande kultur."
+      },
+      {
+        "emoji": "💜",
+        "title": "Livsbalans",
+        "desc": "Policyer för flexibilitet, föräldraskap och välbefinnande på jobbet."
+      }
     ],
     "complianceEyebrow": "Efterlevnad & trovärdighet",
     "complianceTitle1": "En referensram i linje med",
@@ -153,39 +245,90 @@
     "processEyebrow": "Processen",
     "processTitle1": "Ett tillvägagångssätt i",
     "processTitle2": "4 steg",
-    "timelineLabels": ["Behörighet", "Diagnos", "Analys", "Märkning"],
-    "delays": ["~ 1 vecka", "~ 1 vecka", "2 till 3 veckor"],
+    "timelineLabels": [
+      "Behörighet",
+      "Diagnos",
+      "Analys",
+      "Märkning"
+    ],
+    "delays": [
+      "~ 1 vecka",
+      "~ 1 vecka",
+      "2 till 3 veckor"
+    ],
     "totalDuration": "Beräknad total varaktighet: 4 till 6 veckor",
     "totalDurationMobile": "Total varaktighet: 6 till 8 veckor",
     "stepLabel": "Steg",
     "steps": [
-      { "num": "01", "title": "Behörighetsbedömning", "desc": "Kontroll av regulatoriska förutsättningar och grundläggande efterlevnad." },
-      { "num": "02", "title": "Diagnos på plats", "desc": "WEL-teamens insats i er organisation för en strukturerad granskning." },
-      { "num": "03", "title": "Analys och expertgranskning", "desc": "Djupgående granskning av insamlade data av vår expertkommitté." },
-      { "num": "04", "title": "Märkning: inte en dom, en hävstång för transformation", "desc": "Återrapportering av resultat och inrättande av en hållbar utvecklingsbana." }
+      {
+        "num": "01",
+        "title": "Behörighetsbedömning",
+        "desc": "Kontroll av regulatoriska förutsättningar och grundläggande efterlevnad."
+      },
+      {
+        "num": "02",
+        "title": "Diagnos på plats",
+        "desc": "WEL-teamens insats i er organisation för en strukturerad granskning."
+      },
+      {
+        "num": "03",
+        "title": "Analys och expertgranskning",
+        "desc": "Djupgående granskning av insamlade data av vår expertkommitté."
+      },
+      {
+        "num": "04",
+        "title": "Märkning: inte en dom, en hävstång för transformation",
+        "desc": "Återrapportering av resultat och inrättande av en hållbar utvecklingsbana."
+      }
     ],
     "governanceEyebrow": "Styrning",
     "governanceTitle1": "En oberoende",
     "governanceTitle2": "etikkommitté",
     "governanceText": "En kommitté bestående av oberoende experter, HR-direktörer, jurister, forskare och ledare som garanterar stringensen, koherensen och integriteten i WEL:s referensram.",
-    "governanceRoles": ["Ledare", "Advokater", "HR-direktörer", "Akademiker"],
+    "governanceRoles": [
+      "Ledare",
+      "Advokater",
+      "HR-direktörer",
+      "Akademiker"
+    ],
     "impactEyebrow": "Påverkan",
     "impactTitle1": "En hävstång för",
     "impactTitle2": "ESG-värde",
     "impacts": [
-      { "title": "Icke-finansiell värdering", "desc": "Strukturera och objektivisera era ESG-åtaganden." },
-      { "title": "Stärkt ESG-strategi", "desc": "Integrera yrkesmässig jämställdhet i er hållbarhetsrapportering." },
-      { "title": "Fördel vid upphandlingar", "desc": "En särskiljande fördel i offentliga och privata marknader." }
+      {
+        "title": "Icke-finansiell värdering",
+        "desc": "Strukturera och objektivisera era ESG-åtaganden."
+      },
+      {
+        "title": "Stärkt ESG-strategi",
+        "desc": "Integrera yrkesmässig jämställdhet i er hållbarhetsrapportering."
+      },
+      {
+        "title": "Fördel vid upphandlingar",
+        "desc": "En särskiljande fördel i offentliga och privata marknader."
+      }
     ],
     "resultsEyebrow": "Leveranser",
     "resultsTitle1": "Konkreta",
     "resultsTitle2": "resultat",
     "resultsSubtitle": "Vid processens slut får ni operativa leveranser för att strukturera och värdera ert engagemang.",
     "results": [
-      { "title": "Personlig handlingsplan", "desc": "En strukturerad, prioriterad plan anpassad till era utmaningar, med konkreta åtgärder och tidsplan för att gå framåt effektivt." },
-      { "title": "Rapport med icke-finansiella indikatorer", "desc": "En tydlig sammanfattning av er prestation inom yrkesmässig jämställdhet, för att styra er strategi och värdera era åtaganden." },
-      { "title": "Kommunikationskit", "desc": "Nyckelelement för att värdera er process internt och externt, i linje med er positionering." },
-      { "title": "Partnerekosystem", "desc": "Tillgång till engagerade aktörer (utbildning, stöd, medvetandegörande) för att konkret genomföra era åtgärder." }
+      {
+        "title": "Personlig handlingsplan",
+        "desc": "En strukturerad, prioriterad plan anpassad till era utmaningar, med konkreta åtgärder och tidsplan för att gå framåt effektivt."
+      },
+      {
+        "title": "Rapport med icke-finansiella indikatorer",
+        "desc": "En tydlig sammanfattning av er prestation inom yrkesmässig jämställdhet, för att styra er strategi och värdera era åtaganden."
+      },
+      {
+        "title": "Kommunikationskit",
+        "desc": "Nyckelelement för att värdera er process internt och externt, i linje med er positionering."
+      },
+      {
+        "title": "Partnerekosystem",
+        "desc": "Tillgång till engagerade aktörer (utbildning, stöd, medvetandegörande) för att konkret genomföra era åtgärder."
+      }
     ],
     "pricingEyebrow": "Prissättning",
     "pricingText": "WEL:s stödmodaliteter börjar från <strong>3 900 €</strong> och justeras efter organisationens storlek och diagnosens omfattning. En broschyr med detaljer om erbjudandet finns på begäran.",
@@ -220,33 +363,70 @@
     "formationsTitle2": "konferenser",
     "formationsIntro": "Insatser för att förändra perspektiv och utlösa handling.",
     "formations": [
-      { "title": "Jämställdhet kvinnor-män", "desc": "Vilken plats för männen?" },
-      { "title": "Föräldraskap & karriär", "desc": "Förstå och minska ojämlikheter" },
-      { "title": "Vardagssexism", "desc": "Det vi inte längre ser" },
-      { "title": "Kvinnor och ledarskap", "desc": "Dynamik i tillgång till ansvar" },
-      { "title": "Rekryteringsprocesser", "desc": "Anta en inkluderande rekryteringsprocess" }
+      {
+        "title": "Jämställdhet kvinnor-män",
+        "desc": "Vilken plats för männen?"
+      },
+      {
+        "title": "Föräldraskap & karriär",
+        "desc": "Förstå och minska ojämlikheter"
+      },
+      {
+        "title": "Vardagssexism",
+        "desc": "Det vi inte längre ser"
+      },
+      {
+        "title": "Kvinnor och ledarskap",
+        "desc": "Dynamik i tillgång till ansvar"
+      },
+      {
+        "title": "Rekryteringsprocesser",
+        "desc": "Anta en inkluderande rekryteringsprocess"
+      }
     ],
     "enquetesEyebrow": "Lyssnande",
     "enquetesTitle1": "Interna",
     "enquetesTitle2": "undersökningar",
     "enquetesTagline": "Ge röst för att bättre förstå.",
     "enquetesIntro": "Kvantitativa och kvalitativa undersökningar för att mäta uppfattning och identifiera riskområden.",
-    "enquetesBullets": ["Interna barometrar", "Anonyma undersökningar", "Analys och rekommendationer"],
+    "enquetesBullets": [
+      "Interna barometrar",
+      "Anonyma undersökningar",
+      "Analys och rekommendationer"
+    ],
     "missionsEyebrow": "Skräddarsytt",
     "missionsTitle1": "Rådgivnings-",
     "missionsTitle2": "uppdrag",
     "missionsTagline": "Förvandla avsikter till handlingar.",
     "missionsIntro": "Strategi, granskningar, handlingsplaner, kommunikation – vi stödjer er i varje steg.",
-    "missionsTags": ["Strategi", "Efterlevnad", "Handlingsplaner", "Kommunikation", "Granskningar"],
+    "missionsTags": [
+      "Strategi",
+      "Efterlevnad",
+      "Handlingsplaner",
+      "Kommunikation",
+      "Granskningar"
+    ],
     "approcheEyebrow": "Det som utmärker oss",
     "approcheTitle1": "Vårt",
     "approcheTitle2": "tillvägagångssätt",
     "approcheTagline": "Färre slides, mer fältarbete.",
     "approche": [
-      { "title": "På fältet", "text": "Ingen frånkopplad teori. Vi kommer till er, vi lyssnar, vi observerar." },
-      { "title": "Med era team", "text": "Vi arbetar med dem som driver företaget, nära fältet." },
-      { "title": "I er takt", "text": "Varje företag är annorlunda. Vårt tillvägagångssätt anpassas till er verklighet." },
-      { "title": "För konkreta resultat", "text": "Mätbara resultat, omsatta i konkreta åtgärder och åtföljda av riktade kontakter, vi går långt bortom en enkel rapport." }
+      {
+        "title": "På fältet",
+        "text": "Ingen frånkopplad teori. Vi kommer till er, vi lyssnar, vi observerar."
+      },
+      {
+        "title": "Med era team",
+        "text": "Vi arbetar med dem som driver företaget, nära fältet."
+      },
+      {
+        "title": "I er takt",
+        "text": "Varje företag är annorlunda. Vårt tillvägagångssätt anpassas till er verklighet."
+      },
+      {
+        "title": "För konkreta resultat",
+        "text": "Mätbara resultat, omsatta i konkreta åtgärder och åtföljda av riktade kontakter, vi går långt bortom en enkel rapport."
+      }
     ],
     "ctaEyebrow": "Låt oss prata",
     "ctaTitle1": "Låt oss diskutera er",
@@ -274,14 +454,43 @@
     "pillarLabel": "Pelare",
     "answerRequired": "Vänligen besvara denna fråga",
     "engagementQuestion": "Är ni redo att strukturera en process under de kommande 12 månaderna?",
-    "yesNo": { "oui": "Ja", "non": "Nej", "en_cours": "Pågående", "na": "Ej tillämpligt" },
-    "part": { "lt20": "< 20 %", "20_40": "20 – 40 %", "gt40": "> 40 %" },
-    "engagement": { "oui": "Ja", "en_reflexion": "Under övervägande", "non": "Nej" },
+    "yesNo": {
+      "oui": "Ja",
+      "non": "Nej",
+      "en_cours": "Pågående",
+      "na": "Ej tillämpligt"
+    },
+    "part": {
+      "lt20": "< 20 %",
+      "20_40": "20 – 40 %",
+      "gt40": "> 40 %"
+    },
+    "engagement": {
+      "oui": "Ja",
+      "en_reflexion": "Under övervägande",
+      "non": "Nej"
+    },
     "pillars": [
-      { "title": "Löneskillnad", "q1": "Har ni mätt löneskillnaden mellan kvinnor och män?", "q2": "Har åtgärder vidtagits för att minska den?" },
-      { "title": "Styrning", "q1": "Hur stor är andelen kvinnor i era ledande organ?", "q2": "Har ni definierade mångfaldsmål?" },
-      { "title": "Förebyggande & kultur", "q1": "Har ni infört åtgärder för att förebygga sexism / sexuellt våld?", "q2": "Är medarbetarna utbildade i dessa ämnen?" },
-      { "title": "Balans & arbetsvillkor", "q1": "Erbjuder ni åtgärder som främjar balans mellan arbete och privatliv?", "q2": "Har ni specifika policyer (återgång efter mammaledighet, pappaledighet osv.)?" }
+      {
+        "title": "Löneskillnad",
+        "q1": "Har ni mätt löneskillnaden mellan kvinnor och män?",
+        "q2": "Har åtgärder vidtagits för att minska den?"
+      },
+      {
+        "title": "Styrning",
+        "q1": "Hur stor är andelen kvinnor i era ledande organ?",
+        "q2": "Har ni definierade mångfaldsmål?"
+      },
+      {
+        "title": "Förebyggande & kultur",
+        "q1": "Har ni infört åtgärder för att förebygga sexism / sexuellt våld?",
+        "q2": "Är medarbetarna utbildade i dessa ämnen?"
+      },
+      {
+        "title": "Balans & arbetsvillkor",
+        "q1": "Erbjuder ni åtgärder som främjar balans mellan arbete och privatliv?",
+        "q2": "Har ni specifika policyer (återgång efter mammaledighet, pappaledighet osv.)?"
+      }
     ],
     "contactTitle1": "Det är snart",
     "contactTitle2": "klart!",
@@ -334,5 +543,14 @@
     "back": "Tillbaka till startsidan"
   },
   "language": "Språk",
-  "languageNames": { "fr": "Français", "en": "English", "es": "Español", "de": "Deutsch", "sv": "Svenska" }
+  "languageNames": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "de": "Deutsch",
+    "sv": "Svenska"
+  },
+  "partners": {
+    "title": "Våra partners"
+  }
 }
