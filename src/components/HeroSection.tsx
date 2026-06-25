@@ -41,19 +41,19 @@ const HeroSection = () => {
           <span className="align-middle" dangerouslySetInnerHTML={{ __html: t("hero.tagline") }} />
         </p>
 
-        <div className="mt-8 sm:mt-12 relative max-w-4xl mx-auto">
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 lg:gap-14 pt-4 sm:pt-6">
+        <div className="mt-8 sm:mt-12 relative max-w-4xl mx-auto pt-16 sm:pt-6">
+          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 lg:gap-14">
             <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-12 sm:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
             <img src={mobiapps.url} alt="Mobiapps" className="h-6 sm:h-8 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
             <img src={kanoma.url} alt="Kanoma" className="h-10 sm:h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
             <img src={prolaser.url} alt="Prolaser" className="h-10 sm:h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
           </div>
 
-          <div className="absolute top-0 right-0 sm:right-2 -translate-y-1/2 sm:-translate-y-3/4 flex flex-col items-center">
+          <div className="absolute top-0 right-0 sm:right-2 -translate-y-1/4 sm:-translate-y-3/4 flex flex-col items-center">
             <img
               src={certifiedWel.url}
               alt="Certified WEL"
-              className="h-20 sm:h-24 w-auto object-contain"
+              className="h-16 sm:h-24 w-auto object-contain"
             />
             <svg
               className="text-foreground w-10 sm:w-16 h-8 sm:h-10 mt-1"
