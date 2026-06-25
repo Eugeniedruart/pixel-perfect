@@ -61,7 +61,7 @@ const HeroSection = () => {
             <img
               src={certifiedWel.url}
               alt="Certified WEL"
-              className="h-16 sm:h-24 w-auto object-contain rotate-[-8deg]"
+              className="h-12 sm:h-16 w-auto object-contain rotate-[-8deg]"
             />
             <svg
               className="text-foreground w-10 sm:w-16 h-8 sm:h-12 mt-1"
