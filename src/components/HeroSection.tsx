@@ -8,7 +8,6 @@ import prolaser from "@/assets/clients/prolaser.png.asset.json";
 import mobiapps from "@/assets/clients/mobiapps.png.asset.json";
 import certifiedWel from "@/assets/clients/certified-wel.png.asset.json";
 
-
 const HeroSection = () => {
   const { t } = useTranslation();
   return (
@@ -42,51 +41,38 @@ const HeroSection = () => {
           <span className="align-middle" dangerouslySetInnerHTML={{ __html: t("hero.tagline") }} />
         </p>
 
-        <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
-          <div className="relative flex items-center gap-2 sm:gap-3 shrink-0">
-            <img
-              src={certifiedWel.url}
-              alt="Certified WEL"
-              className="h-20 sm:h-24 w-auto object-contain"
-            />
-            <svg
-              className="text-primary w-10 sm:w-16 h-8 sm:h-10 hidden sm:block"
-              viewBox="0 0 80 40"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M5 20 C 30 5, 55 35, 75 20" />
-              <path d="M65 12 L 75 20 L 65 28" />
-            </svg>
-            <svg
-              className="text-primary w-8 h-10 sm:hidden rotate-90"
-              viewBox="0 0 40 40"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M20 5 L 20 35" />
-              <path d="M12 27 L 20 35 L 28 27" />
-            </svg>
-          </div>
+        <div className="mt-8 sm:mt-12 relative max-w-4xl mx-auto pt-16 sm:pt-6">
           <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 lg:gap-14">
             <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-12 sm:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
             <img src={mobiapps.url} alt="Mobiapps" className="h-6 sm:h-8 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
             <img src={kanoma.url} alt="Kanoma" className="h-10 sm:h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
             <img src={prolaser.url} alt="Prolaser" className="h-10 sm:h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
           </div>
+
+          <div className="absolute top-0 right-0 sm:right-2 -translate-y-1/4 sm:-translate-y-3/4 flex flex-col items-center">
+            <img
+              src={certifiedWel.url}
+              alt="Certified WEL"
+              className="h-16 sm:h-24 w-auto object-contain"
+            />
+            <svg
+              className="text-foreground w-10 sm:w-16 h-8 sm:h-10 mt-1"
+              viewBox="0 0 80 50"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M70 5 C 60 20, 40 35, 15 40" />
+              <path d="M22 32 L 15 40 L 26 45" />
+            </svg>
+          </div>
         </div>
       </div>
     </section>
   );
 };
-
 
 export default HeroSection;
