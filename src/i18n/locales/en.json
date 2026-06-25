@@ -30,10 +30,22 @@
     "title2": "brings you",
     "subtitle": "A methodology to measure and steer impact:",
     "items": [
-      { "title": "HR & CSR steering", "description": "Identify your action levers and track your progress." },
-      { "title": "Clear compliance", "description": "Anticipate French and European obligations." },
-      { "title": "Stronger employer brand", "description": "Attract talent, partners and committed investors." },
-      { "title": "Sustainable performance", "description": "Equality as a driver of engagement and transformation." }
+      {
+        "title": "HR & CSR steering",
+        "description": "Identify your action levers and track your progress."
+      },
+      {
+        "title": "Clear compliance",
+        "description": "Anticipate French and European obligations."
+      },
+      {
+        "title": "Stronger employer brand",
+        "description": "Attract talent, partners and committed investors."
+      },
+      {
+        "title": "Sustainable performance",
+        "description": "Equality as a driver of engagement and transformation."
+      }
     ]
   },
   "audit": {
@@ -42,10 +54,22 @@
     "title2": "audit",
     "intro": "A <strong>structured audit around 4 pillars</strong>, analysed by our experts to anchor your commitment in a sustainable trajectory.",
     "pillars": [
-      { "title": "Governance", "questions": "15 questions" },
-      { "title": "Pay equality", "questions": "15 questions" },
-      { "title": "Sexism prevention & inclusive culture", "questions": "15 questions" },
-      { "title": "Work-life balance", "questions": "15 questions" }
+      {
+        "title": "Governance",
+        "questions": "15 questions"
+      },
+      {
+        "title": "Pay equality",
+        "questions": "15 questions"
+      },
+      {
+        "title": "Sexism prevention & inclusive culture",
+        "questions": "15 questions"
+      },
+      {
+        "title": "Work-life balance",
+        "questions": "15 questions"
+      }
     ]
   },
   "process": {
@@ -54,10 +78,23 @@
     "title2": "method",
     "subtitle": "A rigorous approach, tailored to your size and industry.",
     "steps": [
-      { "title": "Eligibility", "description": "A few questions to assess your maturity level.", "badge": "No commitment" },
-      { "title": "Diagnosis", "description": "A structured audit around the 4 pillars of the WEL label." },
-      { "title": "Analysis", "description": "Rigorous review of your answers." },
-      { "title": "Certification", "description": "Receive the label and personalised recommendations." }
+      {
+        "title": "Eligibility",
+        "description": "A few questions to assess your maturity level.",
+        "badge": "No commitment"
+      },
+      {
+        "title": "Diagnosis",
+        "description": "A structured audit around the 4 pillars of the WEL label."
+      },
+      {
+        "title": "Analysis",
+        "description": "Rigorous review of your answers."
+      },
+      {
+        "title": "Certification",
+        "description": "Receive the label and personalised recommendations."
+      }
     ]
   },
   "solutions": {
@@ -65,8 +102,15 @@
     "title1": "Tailor-made",
     "title2": "solutions",
     "subtitle": "Adapted to your level of maturity on gender equality.",
-    "labellisation": { "title": "Certification", "desc": "Diagnosis, assessment and certification of your workplace equality practices." },
-    "conseil": { "title": "Consulting", "desc": "Training, awareness, internal surveys and compliance preparation. A pragmatic, gradual support.", "cta": "Learn more" }
+    "labellisation": {
+      "title": "Certification",
+      "desc": "Diagnosis, assessment and certification of your workplace equality practices."
+    },
+    "conseil": {
+      "title": "Consulting",
+      "desc": "Training, awareness, internal surveys and compliance preparation. A pragmatic, gradual support.",
+      "cta": "Learn more"
+    }
   },
   "cta": {
     "quote": "Gender equality is not a battle of sexes.<br/>It's a matter of rights and collective responsibility.",
@@ -78,25 +122,57 @@
     "title1": "Frequently asked",
     "title2": "questions",
     "items": [
-      { "q": "Am I allowed to use the logo?", "a": "Yes, once certified, you receive the right to use the WEL logo on your communication materials according to the conditions defined in your certification contract." },
-      { "q": "What documents must I provide?", "a": "Required documents depend on the size of your company and your industry. Our team will guide you step by step to make sure you provide what's needed." },
-      { "q": "How do you guarantee confidentiality?", "a": "WEL is GDPR compliant, contractualised upfront. Confidentiality of answers is an absolute priority." },
-      { "q": "Why isn't WEL just \"women washing\"?", "a": "WEL is based on evidence, measurable criteria and independent analysis. The goal is to transform practices sustainably, not to polish an image." },
-      { "q": "Who is behind the WEL label?", "a": "The audit is carried out by WEL teams using a structured methodology. An independent ethics committee oversees the framework and ensures the rigour of the approach." }
+      {
+        "q": "Am I allowed to use the logo?",
+        "a": "Yes, once certified, you receive the right to use the WEL logo on your communication materials according to the conditions defined in your certification contract."
+      },
+      {
+        "q": "What documents must I provide?",
+        "a": "Required documents depend on the size of your company and your industry. Our team will guide you step by step to make sure you provide what's needed."
+      },
+      {
+        "q": "How do you guarantee confidentiality?",
+        "a": "WEL is GDPR compliant, contractualised upfront. Confidentiality of answers is an absolute priority."
+      },
+      {
+        "q": "Why isn't WEL just \"women washing\"?",
+        "a": "WEL is based on evidence, measurable criteria and independent analysis. The goal is to transform practices sustainably, not to polish an image."
+      },
+      {
+        "q": "Who is behind the WEL label?",
+        "a": "The audit is carried out by WEL teams using a structured methodology. An independent ethics committee oversees the framework and ensures the rigour of the approach."
+      }
     ]
   },
   "footer": {
     "tagline": "The first European label that certifies and supports companies for workplace equality.",
     "links": [
-      { "label": "The label", "href": "#label" },
-      { "label": "Our offers", "href": "/offres" },
-      { "label": "Methodology", "href": "/methodologie" },
-      { "label": "Eligibility test", "href": "/eligibilite" }
+      {
+        "label": "The label",
+        "href": "#label"
+      },
+      {
+        "label": "Our offers",
+        "href": "/offres"
+      },
+      {
+        "label": "Methodology",
+        "href": "/methodologie"
+      },
+      {
+        "label": "Eligibility test",
+        "href": "/eligibilite"
+      }
     ],
     "ctaTitle": "Ready to obtain your WEL label?",
     "ctaDesc": "Assess your practices and obtain a recognised label.",
     "ctaButton": "I want to be Welbellised",
-    "legal": { "contact": "Contact", "mentions": "Legal notice", "privacy": "Privacy", "cookies": "Cookies" }
+    "legal": {
+      "contact": "Contact",
+      "mentions": "Legal notice",
+      "privacy": "Privacy",
+      "cookies": "Cookies"
+    }
   },
   "contact": {
     "back": "Back to home",
@@ -133,10 +209,26 @@
     "pillarsTitle2": "4 pillars",
     "pillarsSubtitle": "Four fundamental dimensions covering all the challenges of workplace equality.",
     "pillars": [
-      { "emoji": "⚖️", "title": "Pay equality", "desc": "Analysis of pay gaps and pay equality practices." },
-      { "emoji": "👥", "title": "Representation in decision-making bodies", "desc": "Measurement of women's representation in senior management positions, executive committees (COMEX) and boards of directors." },
-      { "emoji": "🛡️", "title": "Sexism and harassment prevention", "desc": "Assessment of prevention systems and inclusive culture." },
-      { "emoji": "💜", "title": "Work-life balance", "desc": "Flexibility, parenting and workplace wellbeing policies." }
+      {
+        "emoji": "⚖️",
+        "title": "Pay equality",
+        "desc": "Analysis of pay gaps and pay equality practices."
+      },
+      {
+        "emoji": "👥",
+        "title": "Representation in decision-making bodies",
+        "desc": "Measurement of women's representation in senior management positions, executive committees (COMEX) and boards of directors."
+      },
+      {
+        "emoji": "🛡️",
+        "title": "Sexism and harassment prevention",
+        "desc": "Assessment of prevention systems and inclusive culture."
+      },
+      {
+        "emoji": "💜",
+        "title": "Work-life balance",
+        "desc": "Flexibility, parenting and workplace wellbeing policies."
+      }
     ],
     "complianceEyebrow": "Compliance & credibility",
     "complianceTitle1": "A framework aligned with",
@@ -153,39 +245,90 @@
     "processEyebrow": "The process",
     "processTitle1": "A process in",
     "processTitle2": "4 steps",
-    "timelineLabels": ["Eligibility", "Diagnosis", "Analysis", "Certification"],
-    "delays": ["~ 1 week", "~ 1 week", "2 to 3 weeks"],
+    "timelineLabels": [
+      "Eligibility",
+      "Diagnosis",
+      "Analysis",
+      "Certification"
+    ],
+    "delays": [
+      "~ 1 week",
+      "~ 1 week",
+      "2 to 3 weeks"
+    ],
     "totalDuration": "Estimated total duration: 4 to 6 weeks",
     "totalDurationMobile": "Total duration: 6 to 8 weeks",
     "stepLabel": "Step",
     "steps": [
-      { "num": "01", "title": "Eligibility assessment", "desc": "Verification of regulatory prerequisites and basic compliance." },
-      { "num": "02", "title": "On-site diagnosis", "desc": "WEL teams intervene within your organisation for a structured audit." },
-      { "num": "03", "title": "Analysis and expert review", "desc": "In-depth review of the data collected by our expert committee." },
-      { "num": "04", "title": "Certification: not a verdict, a lever for transformation", "desc": "Results delivery and definition of a sustainable progress trajectory." }
+      {
+        "num": "01",
+        "title": "Eligibility assessment",
+        "desc": "Verification of regulatory prerequisites and basic compliance."
+      },
+      {
+        "num": "02",
+        "title": "On-site diagnosis",
+        "desc": "WEL teams intervene within your organisation for a structured audit."
+      },
+      {
+        "num": "03",
+        "title": "Analysis and expert review",
+        "desc": "In-depth review of the data collected by our expert committee."
+      },
+      {
+        "num": "04",
+        "title": "Certification: not a verdict, a lever for transformation",
+        "desc": "Results delivery and definition of a sustainable progress trajectory."
+      }
     ],
     "governanceEyebrow": "Governance",
     "governanceTitle1": "An independent",
     "governanceTitle2": "ethics committee",
     "governanceText": "A committee of independent experts — HR directors, lawyers, researchers and executives — that guarantees the rigour, consistency and integrity of the WEL framework.",
-    "governanceRoles": ["Executives", "Lawyers", "HR Directors", "Academics"],
+    "governanceRoles": [
+      "Executives",
+      "Lawyers",
+      "HR Directors",
+      "Academics"
+    ],
     "impactEyebrow": "Impact",
     "impactTitle1": "A lever for",
     "impactTitle2": "ESG value",
     "impacts": [
-      { "title": "Extra-financial valuation", "desc": "Structure and objectivise your ESG commitments." },
-      { "title": "Strengthened ESG strategy", "desc": "Integrate workplace equality into your sustainability reporting." },
-      { "title": "Tender advantage", "desc": "A differentiating asset in public and private tenders." }
+      {
+        "title": "Extra-financial valuation",
+        "desc": "Structure and objectivise your ESG commitments."
+      },
+      {
+        "title": "Strengthened ESG strategy",
+        "desc": "Integrate workplace equality into your sustainability reporting."
+      },
+      {
+        "title": "Tender advantage",
+        "desc": "A differentiating asset in public and private tenders."
+      }
     ],
     "resultsEyebrow": "Deliverables",
     "resultsTitle1": "Concrete",
     "resultsTitle2": "results",
     "resultsSubtitle": "At the end of the process, you receive operational deliverables to structure and showcase your commitment.",
     "results": [
-      { "title": "Personalised action plan", "desc": "A structured, prioritised plan tailored to your challenges, with concrete actions and a roadmap to progress efficiently." },
-      { "title": "Extra-financial indicators report", "desc": "A clear summary of your equality performance, to steer your strategy and showcase your commitments." },
-      { "title": "Communication kit", "desc": "Key elements to promote your approach internally and externally, in line with your positioning." },
-      { "title": "Partner ecosystem", "desc": "Access to committed stakeholders (training, support, awareness) to concretely deploy your actions." }
+      {
+        "title": "Personalised action plan",
+        "desc": "A structured, prioritised plan tailored to your challenges, with concrete actions and a roadmap to progress efficiently."
+      },
+      {
+        "title": "Extra-financial indicators report",
+        "desc": "A clear summary of your equality performance, to steer your strategy and showcase your commitments."
+      },
+      {
+        "title": "Communication kit",
+        "desc": "Key elements to promote your approach internally and externally, in line with your positioning."
+      },
+      {
+        "title": "Partner ecosystem",
+        "desc": "Access to committed stakeholders (training, support, awareness) to concretely deploy your actions."
+      }
     ],
     "pricingEyebrow": "Pricing",
     "pricingText": "WEL support packages start from <strong>€3,900</strong> and are adjusted to the size of your organisation and the scope of the diagnosis. A detailed brochure is available on request.",
@@ -220,33 +363,70 @@
     "formationsTitle2": "conferences",
     "formationsIntro": "Interventions to shift perspectives and spark action.",
     "formations": [
-      { "title": "Gender equality", "desc": "What place for men?" },
-      { "title": "Parenting & career", "desc": "Understanding and reducing inequalities" },
-      { "title": "Everyday sexism", "desc": "What we no longer see" },
-      { "title": "Women and leadership", "desc": "Dynamics of access to responsibility" },
-      { "title": "Recruitment process", "desc": "Adopting an inclusive recruitment process" }
+      {
+        "title": "Gender equality",
+        "desc": "What place for men?"
+      },
+      {
+        "title": "Parenting & career",
+        "desc": "Understanding and reducing inequalities"
+      },
+      {
+        "title": "Everyday sexism",
+        "desc": "What we no longer see"
+      },
+      {
+        "title": "Women and leadership",
+        "desc": "Dynamics of access to responsibility"
+      },
+      {
+        "title": "Recruitment process",
+        "desc": "Adopting an inclusive recruitment process"
+      }
     ],
     "enquetesEyebrow": "Listening",
     "enquetesTitle1": "Internal",
     "enquetesTitle2": "surveys",
     "enquetesTagline": "Giving voice to better understand.",
     "enquetesIntro": "Quantitative and qualitative surveys to measure perception and identify risk areas.",
-    "enquetesBullets": ["Internal barometers", "Anonymous surveys", "Analysis and recommendations"],
+    "enquetesBullets": [
+      "Internal barometers",
+      "Anonymous surveys",
+      "Analysis and recommendations"
+    ],
     "missionsEyebrow": "Tailor-made",
     "missionsTitle1": "Consulting",
     "missionsTitle2": "missions",
     "missionsTagline": "Turning intentions into actions.",
     "missionsIntro": "Strategy, audits, action plans, communication — we support you at every step.",
-    "missionsTags": ["Strategy", "Compliance", "Action plans", "Communication", "Audits"],
+    "missionsTags": [
+      "Strategy",
+      "Compliance",
+      "Action plans",
+      "Communication",
+      "Audits"
+    ],
     "approcheEyebrow": "What sets us apart",
     "approcheTitle1": "Our",
     "approcheTitle2": "approach",
     "approcheTagline": "Less slides, more fieldwork.",
     "approche": [
-      { "title": "On the ground", "text": "No disconnected theory. We come to you, we listen, we observe." },
-      { "title": "With your teams", "text": "We work with those who run the company, close to the field." },
-      { "title": "At your pace", "text": "Every company is different. Our approach adapts to your realities." },
-      { "title": "For concrete results", "text": "Measurable results, translated into concrete actions and supported by targeted introductions — we go well beyond a simple report." }
+      {
+        "title": "On the ground",
+        "text": "No disconnected theory. We come to you, we listen, we observe."
+      },
+      {
+        "title": "With your teams",
+        "text": "We work with those who run the company, close to the field."
+      },
+      {
+        "title": "At your pace",
+        "text": "Every company is different. Our approach adapts to your realities."
+      },
+      {
+        "title": "For concrete results",
+        "text": "Measurable results, translated into concrete actions and supported by targeted introductions — we go well beyond a simple report."
+      }
     ],
     "ctaEyebrow": "Let's talk",
     "ctaTitle1": "Let's discuss your",
@@ -274,14 +454,43 @@
     "pillarLabel": "Pillar",
     "answerRequired": "Please answer this question",
     "engagementQuestion": "Are you ready to structure an approach over the next 12 months?",
-    "yesNo": { "oui": "Yes", "non": "No", "en_cours": "In progress", "na": "Not applicable" },
-    "part": { "lt20": "< 20%", "20_40": "20 – 40%", "gt40": "> 40%" },
-    "engagement": { "oui": "Yes", "en_reflexion": "Considering it", "non": "No" },
+    "yesNo": {
+      "oui": "Yes",
+      "non": "No",
+      "en_cours": "In progress",
+      "na": "Not applicable"
+    },
+    "part": {
+      "lt20": "< 20%",
+      "20_40": "20 – 40%",
+      "gt40": "> 40%"
+    },
+    "engagement": {
+      "oui": "Yes",
+      "en_reflexion": "Considering it",
+      "non": "No"
+    },
     "pillars": [
-      { "title": "Pay gap", "q1": "Have you measured your gender pay gap?", "q2": "Have actions been put in place to reduce it?" },
-      { "title": "Governance", "q1": "What is the share of women in your governing bodies?", "q2": "Do you have defined diversity targets?" },
-      { "title": "Prevention & culture", "q1": "Have you implemented actions to prevent sexism / SGBV?", "q2": "Are employees trained on these issues?" },
-      { "title": "Work-life balance & conditions", "q1": "Do you offer measures that support work-life balance?", "q2": "Do you have specific policies (return from maternity leave, paternity leave, etc.)?" }
+      {
+        "title": "Pay gap",
+        "q1": "Have you measured your gender pay gap?",
+        "q2": "Have actions been put in place to reduce it?"
+      },
+      {
+        "title": "Governance",
+        "q1": "What is the share of women in your governing bodies?",
+        "q2": "Do you have defined diversity targets?"
+      },
+      {
+        "title": "Prevention & culture",
+        "q1": "Have you implemented actions to prevent sexism / SGBV?",
+        "q2": "Are employees trained on these issues?"
+      },
+      {
+        "title": "Work-life balance & conditions",
+        "q1": "Do you offer measures that support work-life balance?",
+        "q2": "Do you have specific policies (return from maternity leave, paternity leave, etc.)?"
+      }
     ],
     "contactTitle1": "Almost",
     "contactTitle2": "done!",
@@ -334,5 +543,12 @@
     "back": "Return to Home"
   },
   "language": "Language",
-  "languageNames": { "fr": "Français", "en": "English", "es": "Español" }
+  "languageNames": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español"
+  },
+  "partners": {
+    "title": "Our partners"
+  }
 }
