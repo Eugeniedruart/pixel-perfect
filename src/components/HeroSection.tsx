@@ -49,7 +49,7 @@ const HeroSection = () => {
         </div>
 
         <div className="mt-8 sm:mt-12 relative max-w-4xl mx-auto pt-16 sm:pt-6">
-          <div className="flex flex-nowrap items-center justify-center gap-3 sm:gap-6 lg:gap-10 overflow-x-auto">
+          <div className="flex flex-nowrap items-center justify-center gap-6 sm:gap-10 lg:gap-16 overflow-x-auto">
             <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={mobiapps.url} alt="Mobiapps" className="h-3 sm:h-4 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={kanoma.url} alt="Kanoma" className="h-6 sm:h-8 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
