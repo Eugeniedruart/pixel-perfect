@@ -14,7 +14,6 @@ const PartnersSection = () => {
         <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-20">
           <img src={bpifrance.url} alt="Bpifrance" className="h-16 sm:h-24 w-auto object-contain hover:opacity-100 transition-opacity" />
           <img src={paysDeLaLoire.url} alt="Région Pays de la Loire" className="h-10 sm:h-12 w-auto object-contain hover:opacity-100 transition-opacity" />
-          <img src={frenchTech.url} alt="La French Tech" className="h-14 sm:h-20 w-auto object-contain hover:opacity-100 transition-opacity" />
         </div>
       </div>
     </section>
