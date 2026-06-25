@@ -47,7 +47,7 @@ const HeroSection = () => {
             <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={mobiapps.url} alt="Mobiapps" className="h-5 sm:h-7 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={kanoma.url} alt="Kanoma" className="h-10 sm:h-14 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
-            <img src={prolaser.url} alt="Prolaser" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={prolaser.url} alt="Prolaser" className="h-16 sm:h-24 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={exponantes.url} alt="Exponantes Le Parc" className="h-12 sm:h-16 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
           </div>
 
@@ -58,8 +58,8 @@ const HeroSection = () => {
               className="h-16 sm:h-24 w-auto object-contain rotate-[-8deg]"
             />
             <svg
-              className="text-foreground w-10 sm:w-16 h-8 sm:h-10 mt-1"
-              viewBox="0 0 80 50"
+              className="text-foreground w-10 sm:w-16 h-8 sm:h-12 mt-1"
+              viewBox="0 0 80 60"
               fill="none"
               stroke="currentColor"
               strokeWidth="2.5"
@@ -67,8 +67,8 @@ const HeroSection = () => {
               strokeLinejoin="round"
               aria-hidden="true"
             >
-              <path d="M60 5 C 65 20, 60 35, 62 45" />
-              <path d="M55 40 L 62 45 L 55 50" />
+              <path d="M60 5 C 65 20, 60 35, 60 50" />
+              <path d="M52 43 L 60 50 L 68 43 Z" fill="currentColor" />
             </svg>
           </div>
         </div>
