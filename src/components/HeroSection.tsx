@@ -48,13 +48,13 @@ const HeroSection = () => {
           <img src={frenchTech.url} alt="French Tech" className="h-10 sm:h-14 w-auto object-contain" />
         </div>
 
-        <div className="mt-8 sm:mt-12 relative w-full pt-16 sm:pt-6 px-4 sm:px-8">
-          <div className="flex flex-nowrap items-center justify-between w-full overflow-x-auto">
-            <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-20 sm:h-32 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
-            <img src={mobiapps.url} alt="Mobiapps" className="h-5 sm:h-8 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
-            <img src={kanoma.url} alt="Kanoma" className="h-12 sm:h-16 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
-            <img src={prolaser.url} alt="Prolaser" className="h-40 sm:h-52 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
-            <img src={exponantes.url} alt="Exponantes Le Parc" className="h-20 sm:h-28 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+        <div className="mt-8 sm:mt-12 relative max-w-4xl mx-auto pt-16 sm:pt-6 px-4 sm:px-8">
+          <div className="flex flex-nowrap items-center justify-center gap-3 sm:gap-5 lg:gap-8 overflow-x-auto">
+            <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-16 sm:h-24 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={mobiapps.url} alt="Mobiapps" className="h-4 sm:h-5 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={kanoma.url} alt="Kanoma" className="h-8 sm:h-10 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={prolaser.url} alt="Prolaser" className="h-32 sm:h-40 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={exponantes.url} alt="Exponantes Le Parc" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
           </div>
 
           <div className="absolute top-0 right-0 sm:right-2 -translate-y-1/4 sm:-translate-y-3/4 flex flex-col items-center">
