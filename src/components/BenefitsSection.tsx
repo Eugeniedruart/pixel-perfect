@@ -26,7 +26,7 @@ const BenefitsSection = () => {
               <div key={i} className="flex gap-3">
                 <div className="mt-1.5 w-2 h-2 rounded-full bg-foreground shrink-0" />
                 <div>
-                  <p className="font-semibold text-foreground text-sm md:text-base">{benefit.title}</p>
+                  <p className="font-bold text-foreground text-sm md:text-base">{benefit.title}</p>
                   <p className="text-muted-foreground text-xs md:text-sm mt-0.5">{benefit.description}</p>
                 </div>
               </div>
