@@ -75,3 +75,24 @@
 .font-serif-display {
   font-family: 'Libre Caslon Text', serif;
 }
+
+@media (max-width: 768px) {
+  .mobile-logos-scroll {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(39, 39, 109, 0.4) transparent;
+  }
+
+  .mobile-logos-scroll::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .mobile-logos-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .mobile-logos-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(39, 39, 109, 0.4);
+    border-radius: 999px;
+  }
+}
