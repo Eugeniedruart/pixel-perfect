@@ -80,11 +80,6 @@
     "subtitle": "Un enfoque riguroso, adaptado a su tamaño y sector.",
     "steps": [
       {
-        "title": "Elegibilidad",
-        "description": "Algunas preguntas para entender su nivel de madurez.",
-        "badge": "Sin compromiso"
-      },
-      {
         "title": "Diagnóstico",
         "description": "Una auditoría estructurada en torno a los 4 pilares del sello WEL."
       },
@@ -95,6 +90,10 @@
       {
         "title": "Certificación",
         "description": "Acceda al sello y reciba recomendaciones personalizadas."
+      },
+      {
+        "title": "Plan de acción",
+        "description": "Una hoja de ruta con un retroplanning a 5 años concreto y adaptado a sus retos."
       }
     ]
   },

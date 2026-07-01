@@ -80,11 +80,6 @@
     "subtitle": "Ett noggrant tillvägagångssätt anpassat till er storlek och bransch.",
     "steps": [
       {
-        "title": "Behörighet",
-        "description": "Några frågor för att förstå er mognadsnivå.",
-        "badge": "Utan förpliktelse"
-      },
-      {
         "title": "Diagnos",
         "description": "En granskning strukturerad kring WEL-märkningens 4 pelare."
       },
@@ -95,6 +90,10 @@
       {
         "title": "Märkning",
         "description": "Få tillgång till märkningen och dra nytta av personliga rekommendationer."
+      },
+      {
+        "title": "Handlingsplan",
+        "description": "En färdplan med en konkret 5-års retroplanering anpassad till era utmaningar."
       }
     ]
   },

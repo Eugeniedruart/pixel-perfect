@@ -80,11 +80,6 @@
     "subtitle": "Ein rigoroser Ansatz, angepasst an Ihre Größe und Branche.",
     "steps": [
       {
-        "title": "Eignung",
-        "description": "Einige Fragen, um Ihren Reifegrad zu verstehen.",
-        "badge": "Unverbindlich"
-      },
-      {
         "title": "Diagnose",
         "description": "Ein Audit rund um die 4 Säulen des WEL-Labels."
       },
@@ -95,6 +90,10 @@
       {
         "title": "Labelvergabe",
         "description": "Erhalten Sie das Label und profitieren Sie von individuellen Empfehlungen."
+      },
+      {
+        "title": "Aktionsplan",
+        "description": "Eine Roadmap mit einer konkreten 5-Jahres-Retroplanung, die auf Ihre Herausforderungen zugeschnitten ist."
       }
     ]
   },

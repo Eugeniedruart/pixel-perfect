@@ -80,11 +80,6 @@
     "subtitle": "Une démarche rigoureuse, adaptée à votre taille et secteur.",
     "steps": [
       {
-        "title": "Éligibilité",
-        "description": "Quelques questions pour comprendre votre niveau de maturité.",
-        "badge": "Sans engagement"
-      },
-      {
         "title": "Diagnostic",
         "description": "Un audit structuré autour des 4 piliers du label WEL."
       },
@@ -95,6 +90,10 @@
       {
         "title": "Labellisation",
         "description": "Accédez au label et bénéficiez de recommandations personnalisées."
+      },
+      {
+        "title": "Plan d'action",
+        "description": "Une feuille de route avec un rétroplanning à 5 ans concret et adapté à vos enjeux."
       }
     ]
   },

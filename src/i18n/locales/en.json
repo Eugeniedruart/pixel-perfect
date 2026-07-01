@@ -80,11 +80,6 @@
     "subtitle": "A rigorous approach, tailored to your size and industry.",
     "steps": [
       {
-        "title": "Eligibility",
-        "description": "A few questions to assess your maturity level.",
-        "badge": "No commitment"
-      },
-      {
         "title": "Diagnosis",
         "description": "A structured audit around the 4 pillars of the WEL label."
       },
@@ -95,6 +90,10 @@
       {
         "title": "Certification",
         "description": "Receive the label and personalised recommendations."
+      },
+      {
+        "title": "Action plan",
+        "description": "A roadmap with a concrete 5-year retroplanning tailored to your challenges."
       }
     ]
   },
