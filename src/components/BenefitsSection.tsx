@@ -32,7 +32,7 @@ const BenefitsSection = () => {
           <span className="font-serif-display italic text-primary font-normal">{t("benefits.title2")}</span>
         </h2>
 
-        <div className="max-w-5xl mx-auto rounded-2xl border border-border bg-card shadow-[0_10px_40px_-20px_hsl(var(--wel-navy)/0.15)] px-5 py-6 md:px-10 md:py-8">
+        <div className="max-w-5xl mx-auto px-1 py-2">
           {/* 3 enjeux */}
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="hidden sm:block h-px w-14 bg-primary/40" />
