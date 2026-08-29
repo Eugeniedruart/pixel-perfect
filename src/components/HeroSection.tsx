@@ -51,12 +51,12 @@ const HeroSection = () => {
 
         <div className="mt-8 sm:mt-12 relative max-w-6xl mx-auto pt-16 sm:pt-6 px-4 sm:px-8">
           <div className="flex flex-nowrap items-center justify-start md:justify-between gap-4 md:gap-6 overflow-x-auto md:overflow-x-visible mobile-logos-scroll pb-3 md:pb-0">
-            <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-14 sm:h-16 lg:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
             <img src={mobiapps.url} alt="Mobiapps" className="h-4 sm:h-5 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
-            <img src={kanoma.url} alt="Kanoma" className="h-7 sm:h-9 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
-            <img src={prolaser.url} alt="Prolaser" className="h-28 sm:h-36 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
-            <img src={exponantes.url} alt="Exponantes Le Parc" className="h-12 sm:h-16 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
-            <img src={valeuriad.url} alt="Valeuriad" className="h-14 sm:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={kanoma.url} alt="Kanoma" className="h-7 sm:h-8 lg:h-9 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={prolaser.url} alt="Prolaser" className="h-28 sm:h-32 lg:h-36 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={exponantes.url} alt="Exponantes Le Parc" className="h-12 sm:h-14 lg:h-16 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
+            <img src={valeuriad.url} alt="Valeuriad" className="h-14 sm:h-16 lg:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
           </div>
 
           <div className="absolute top-0 right-0 sm:right-2 -translate-y-1/4 sm:-translate-y-3/4 flex flex-col items-center">
