@@ -7,17 +7,10 @@
     "cta": "I want to be Welbellised"
   },
   "hero": {
-    "eyebrow": "WOMEN EQUITY LABEL",
-    "title": "Measure. Progress. Showcase your commitments.",
-    "subtitle": "WEL assesses your gender equality practices, identifies areas for improvement, and highlights the actions you have already undertaken.",
-    "ctaPrimary": "Discover the label",
-    "ctaSecondary": "Contact us",
-    "reassuranceItems": [
-      "4 pillars",
-      "Independent audit",
-      "Personalized action plan",
-      "3-year certification"
-    ],
+    "eyebrow": "Women Equity Label",
+    "title1": "The reference for",
+    "title2": "workplace gender",
+    "title3": "equality",
     "ctaTest": "Test my eligibility",
     "ctaLabel": "I want to be Welbellised",
     "tagline": "The first French label that certifies and supports companies",

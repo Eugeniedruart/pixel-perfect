@@ -7,17 +7,10 @@
     "cta": "Jag vill bli Welbelliserad"
   },
   "hero": {
-    "eyebrow": "WOMEN EQUITY LABEL",
-    "title": "Mät. Utvecklas. Synliggör era åtaganden.",
-    "subtitle": "WEL utvärderar era jämställdhetsrutiner, identifierar utvecklingsområden och synliggör de åtgärder som redan har inletts.",
-    "ctaPrimary": "Upptäck etiketten",
-    "ctaSecondary": "Kontakta oss",
-    "reassuranceItems": [
-      "4 pelare",
-      "Oberoende granskning",
-      "Skräddarsydd handlingsplan",
-      "3-årig certifiering"
-    ],
+    "eyebrow": "Women Equity Label",
+    "title1": "Referensen för",
+    "title2": "yrkesmässig jämställdhet",
+    "title3": "mellan kvinnor och män",
     "ctaTest": "Testa min behörighet",
     "ctaLabel": "Jag vill bli Welbelliserad",
     "tagline": "Första franska märkningen som certifierar och stödjer företag",
