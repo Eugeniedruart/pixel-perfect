@@ -7,10 +7,17 @@
     "cta": "Quiero ser Welbellizado"
   },
   "hero": {
-    "eyebrow": "Women Equity Label",
-    "title1": "La referencia de la",
-    "title2": "igualdad profesional",
-    "title3": "mujeres-hombres",
+    "eyebrow": "WOMEN EQUITY LABEL",
+    "title": "Mide. Progresa. Destaca tus compromisos.",
+    "subtitle": "WEL evalúa sus prácticas en materia de igualdad profesional, identifica sus ejes de progreso y valora las acciones ya emprendidas.",
+    "ctaPrimary": "Descubrir el sello",
+    "ctaSecondary": "Contáctenos",
+    "reassuranceItems": [
+      "4 pilares",
+      "Auditoría independiente",
+      "Plan de acción personalizado",
+      "Certificación 3 años"
+    ],
     "ctaTest": "Probar mi elegibilidad",
     "ctaLabel": "Quiero ser Welbellizado",
     "tagline": "Primer sello francés que certifica y acompaña a las empresas",

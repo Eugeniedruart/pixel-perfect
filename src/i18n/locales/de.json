@@ -7,10 +7,17 @@
     "cta": "Ich möchte Welbellisiert werden"
   },
   "hero": {
-    "eyebrow": "Women Equity Label",
-    "title1": "Die Referenz für",
-    "title2": "berufliche Gleichstellung",
-    "title3": "von Frauen und Männern",
+    "eyebrow": "WOMEN EQUITY LABEL",
+    "title": "Messen. Fortschritt erzielen. Engagement sichtbar machen.",
+    "subtitle": "WEL bewertet Ihre Praktiken in Bezug auf berufliche Gleichstellung, identifiziert Ihre Entwicklungsfelder und würdigt bereits ergriffene Maßnahmen.",
+    "ctaPrimary": "Das Label entdecken",
+    "ctaSecondary": "Kontaktieren Sie uns",
+    "reassuranceItems": [
+      "4 Säulen",
+      "Unabhängige Prüfung",
+      "Maßgeschneiderter Aktionsplan",
+      "3 Jahre Zertifizierung"
+    ],
     "ctaTest": "Meine Eignung testen",
     "ctaLabel": "Ich möchte Welbellisiert werden",
     "tagline": "Erstes französisches Label, das Unternehmen zertifiziert und begleitet",
