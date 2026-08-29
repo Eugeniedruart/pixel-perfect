@@ -63,6 +63,7 @@ const Offres = () => {
   const labelBullets = t("offres.labelBullets", { returnObjects: true }) as string[];
   const enquetesBullets = (t("offres.enquetesBullets", { returnObjects: true }) as string[]).map((text, i) => ({ icon: enqueteIcons[i], text }));
   const missionsTags = t("offres.missionsTags", { returnObjects: true }) as string[];
+  const missionsExamples = (t("offres.missionsExamples", { returnObjects: true }) as Array<{ title: string; desc: string }>).map((m, i) => ({ ...m, icon: missionExampleIcons[i] }));
   const approche = (t("offres.approche", { returnObjects: true }) as Array<{ title: string; text: string }>).map((a, i) => ({ ...a, icon: approcheIcons[i] }));
 
   return (
@@ -227,6 +228,29 @@ const Offres = () => {
                 ))}
               </div>
             </Reveal>
+          </div>
+
+          <div className="mt-12 md:mt-24">
+            <Reveal>
+              <h3 className="text-xl sm:text-2xl font-bold text-center mb-8 md:mb-12">
+                {t("offres.missionsExamplesTitle")}
+              </h3>
+            </Reveal>
+            <div className="space-y-4 md:space-y-5 max-w-3xl mx-auto">
+              {missionsExamples.map((m, i) => (
+                <Reveal key={i}>
+                  <div className="flex items-start gap-4 md:gap-6 rounded-2xl bg-background p-5 md:p-7 shadow-lg shadow-foreground/[0.04] ring-1 ring-foreground/5 hover:shadow-xl hover:shadow-foreground/[0.06] transition-shadow">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-primary/[0.06] flex items-center justify-center shrink-0">
+                      <m.icon className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-xs md:text-sm font-bold uppercase tracking-[0.12em] text-primary mb-1.5 md:mb-2">{m.title}</p>
+                      <p className="text-xs md:text-sm text-foreground/80 leading-relaxed">{m.desc}</p>
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>
