@@ -36,7 +36,7 @@ const BenefitsSection = () => {
           {/* 3 enjeux */}
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="hidden sm:block h-px w-14 bg-primary/40" />
-            <p className="text-[11px] tracking-[0.25em] uppercase text-primary font-semibold">{t("benefits.enjeuxLabel")}</p>
+            <p className="inline-block rounded-full bg-white/90 px-4 py-1 text-[11px] tracking-[0.25em] uppercase text-primary font-semibold shadow-sm">{t("benefits.enjeuxLabel")}</p>
             <span className="hidden sm:block h-px w-14 bg-primary/40" />
           </div>
 
