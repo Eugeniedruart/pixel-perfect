@@ -50,10 +50,10 @@
     ]
   },
   "audit": {
-    "eyebrow": "L'audit en 4 piliers",
-    "title1": "Un audit",
+    "eyebrow": "Le diagnostic en 4 piliers",
+    "title1": "Un diagnostic",
     "title2": "personnalisé",
-    "intro": "Un <strong>audit structuré autour de 4 piliers</strong>, analysé par nos experts pour inscrire votre engagement dans une trajectoire durable.",
+    "intro": "Un <strong>diagnostic structuré autour de 4 piliers</strong>, analysé par nos experts pour inscrire votre engagement dans une trajectoire durable.",
     "pillars": [
       {
         "title": "La gouvernance",
@@ -81,7 +81,7 @@
     "steps": [
       {
         "title": "Diagnostic",
-        "description": "Un audit structuré autour des 4 piliers du label WEL."
+        "description": "Un diagnostic structuré autour des 4 piliers du label WEL."
       },
       {
         "title": "Analyse",
@@ -140,7 +140,7 @@
       },
       {
         "q": "Qui est derrière le label WEL ?",
-        "a": "L'audit est réalisé par les équipes WEL selon une méthodologie structurée. Un comité éthique indépendant supervise le référentiel et garantit la rigueur de la démarche."
+        "a": "Le diagnostic est réalisé par les équipes WEL selon une méthodologie structurée. Un comité éthique indépendant supervise le référentiel et garantit la rigueur de la démarche."
       }
     ]
   },
@@ -268,7 +268,7 @@
       {
         "num": "02",
         "title": "Diagnostic sur site",
-        "desc": "Intervention des équipes WEL au sein de votre organisation pour un audit structuré."
+        "desc": "Intervention des équipes WEL au sein de votre organisation pour un diagnostic structuré."
       },
       {
         "num": "03",
@@ -398,13 +398,13 @@
     "missionsTitle1": "Missions de",
     "missionsTitle2": "conseil",
     "missionsTagline": "Transformer les intentions en actions.",
-    "missionsIntro": "Stratégie, audits, plans d'action, communication, nous vous accompagnons à chaque étape.",
+    "missionsIntro": "Stratégie, diagnostics, plans d'action, communication, nous vous accompagnons à chaque étape.",
     "missionsTags": [
       "Stratégie",
       "Conformité",
       "Plans d'action",
       "Communication",
-      "Audits"
+      "Diagnostics"
     ],
     "approcheEyebrow": "Ce qui nous distingue",
     "approcheTitle1": "Notre",

@@ -50,10 +50,10 @@
     ]
   },
   "audit": {
-    "eyebrow": "Das Audit in 4 Säulen",
+    "eyebrow": "Die Diagnose in 4 Säulen",
     "title1": "Ein",
-    "title2": "individuelles Audit",
-    "intro": "Ein <strong>Audit, strukturiert um 4 Säulen</strong>, das von unseren Expert:innen analysiert wird, um Ihr Engagement in eine nachhaltige Entwicklung einzubetten.",
+    "title2": "individuelle Diagnose",
+    "intro": "Eine <strong>Diagnose, strukturiert um 4 Säulen</strong>, das von unseren Expert:innen analysiert wird, um Ihr Engagement in eine nachhaltige Entwicklung einzubetten.",
     "pillars": [
       {
         "title": "Governance",
@@ -81,7 +81,7 @@
     "steps": [
       {
         "title": "Diagnose",
-        "description": "Ein Audit rund um die 4 Säulen des WEL-Labels."
+        "description": "Eine Diagnose rund um die 4 Säulen des WEL-Labels."
       },
       {
         "title": "Analyse",
@@ -140,7 +140,7 @@
       },
       {
         "q": "Wer steht hinter dem WEL-Label?",
-        "a": "Das Audit wird von den WEL-Teams nach einer strukturierten Methodik durchgeführt. Ein unabhängiger Ethikausschuss überwacht das Referenzsystem und garantiert die Strenge des Ansatzes."
+        "a": "Die Diagnose wird von den WEL-Teams nach einer strukturierten Methodik durchgeführt. Ein unabhängiger Ethikausschuss überwacht das Referenzsystem und garantiert die Strenge des Ansatzes."
       }
     ]
   },
@@ -268,7 +268,7 @@
       {
         "num": "02",
         "title": "Diagnose vor Ort",
-        "desc": "Einsatz der WEL-Teams in Ihrer Organisation für ein strukturiertes Audit."
+        "desc": "Einsatz der WEL-Teams in Ihrer Organisation für eine strukturierte Diagnose."
       },
       {
         "num": "03",
@@ -398,13 +398,13 @@
     "missionsTitle1": "Beratungs-",
     "missionsTitle2": "missionen",
     "missionsTagline": "Absichten in Handlungen verwandeln.",
-    "missionsIntro": "Strategie, Audits, Aktionspläne, Kommunikation – wir begleiten Sie in jedem Schritt.",
+    "missionsIntro": "Strategie, Diagnosen, Aktionspläne, Kommunikation – wir begleiten Sie in jedem Schritt.",
     "missionsTags": [
       "Strategie",
       "Compliance",
       "Aktionspläne",
       "Kommunikation",
-      "Audits"
+      "Diagnosen"
     ],
     "approcheEyebrow": "Was uns auszeichnet",
     "approcheTitle1": "Unser",

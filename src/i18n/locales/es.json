@@ -50,10 +50,10 @@
     ]
   },
   "audit": {
-    "eyebrow": "La auditoría en 4 pilares",
-    "title1": "Una auditoría",
+    "eyebrow": "El diagnóstico en 4 pilares",
+    "title1": "Un diagnóstico",
     "title2": "personalizada",
-    "intro": "Una <strong>auditoría estructurada en torno a 4 pilares</strong>, analizada por nuestros expertos para inscribir su compromiso en una trayectoria sostenible.",
+    "intro": "Un <strong>diagnóstico estructurado en torno a 4 pilares</strong>, analizado por nuestros expertos para inscribir su compromiso en una trayectoria sostenible.",
     "pillars": [
       {
         "title": "La gobernanza",
@@ -81,7 +81,7 @@
     "steps": [
       {
         "title": "Diagnóstico",
-        "description": "Una auditoría estructurada en torno a los 4 pilares del sello WEL."
+        "description": "Un diagnóstico estructurado en torno a los 4 pilares del sello WEL."
       },
       {
         "title": "Análisis",
@@ -140,7 +140,7 @@
       },
       {
         "q": "¿Quién está detrás del sello WEL?",
-        "a": "La auditoría la realizan los equipos WEL según una metodología estructurada. Un comité ético independiente supervisa el referencial y garantiza el rigor del proceso."
+        "a": "El diagnóstico lo realizan los equipos WEL según una metodología estructurada. Un comité ético independiente supervisa el referencial y garantiza el rigor del proceso."
       }
     ]
   },
@@ -268,7 +268,7 @@
       {
         "num": "02",
         "title": "Diagnóstico in situ",
-        "desc": "Intervención de los equipos WEL en su organización para una auditoría estructurada."
+        "desc": "Intervención de los equipos WEL en su organización para un diagnóstico estructurado."
       },
       {
         "num": "03",
@@ -398,13 +398,13 @@
     "missionsTitle1": "Misiones de",
     "missionsTitle2": "consultoría",
     "missionsTagline": "Transformar las intenciones en acciones.",
-    "missionsIntro": "Estrategia, auditorías, planes de acción, comunicación: le acompañamos en cada etapa.",
+    "missionsIntro": "Estrategia, diagnósticos, planes de acción, comunicación: le acompañamos en cada etapa.",
     "missionsTags": [
       "Estrategia",
       "Conformidad",
       "Planes de acción",
       "Comunicación",
-      "Auditorías"
+      "Diagnósticos"
     ],
     "approcheEyebrow": "Lo que nos distingue",
     "approcheTitle1": "Nuestro",
