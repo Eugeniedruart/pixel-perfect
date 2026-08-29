@@ -26,28 +26,45 @@
     "quote2": "This is the conviction that gave rise to WEL"
   },
   "benefits": {
-    "eyebrow": "The benefits",
-    "title1": "What WEL",
-    "title2": "brings you",
-    "subtitle": "A methodology to measure and steer impact:",
-    "items": [
+    "eyebrow": "Why act?",
+    "title1": "Gender equality in the workplace,",
+    "title2": "a now strategic challenge",
+    "enjeuxLabel": "3 key challenges",
+    "enjeux": [
       {
-        "title": "Benchmark and exchanges between committed organizations",
-        "description": "Identify your action levers and track your progress."
+        "title": "Economic performance",
+        "highlight": "+15% profitability*",
+        "detail": "when at least 30% of executive committee members are women"
       },
       {
-        "title": "Clear compliance",
-        "description": "Anticipate French and European obligations."
+        "title": "Regulatory change",
+        "detail": "Anticipate French and European requirements"
       },
       {
-        "title": "Stronger employer brand",
-        "description": "Attract talent, partners and committed investors."
-      },
-      {
-        "title": "Sustainable performance",
-        "description": "Equality as a driver of engagement and transformation."
+        "title": "Societal expectations",
+        "detail": "Meet the expectations of talent and stakeholders"
       }
-    ]
+    ],
+    "welTagline": "Measure · Structure · Promote",
+    "resultatsLabel": "3 concrete outcomes",
+    "resultats": [
+      {
+        "num": "01",
+        "title": "Stronger employer brand",
+        "detail": "Showcase commitments and strengthen attractiveness"
+      },
+      {
+        "num": "02",
+        "title": "More gender-balanced jobs",
+        "detail": "Durably improve women's representation"
+      },
+      {
+        "num": "03",
+        "title": "Fairer access to governance",
+        "detail": "Support women's access to decision-making roles"
+      }
+    ],
+    "source": "* McKinsey"
   },
   "audit": {
     "eyebrow": "The 4-pillar diagnostic",

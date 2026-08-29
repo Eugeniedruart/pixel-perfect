@@ -26,28 +26,45 @@
     "quote2": "Det är ur denna övertygelse som WEL har fötts"
   },
   "benefits": {
-    "eyebrow": "Fördelarna",
-    "title1": "Vad WEL ger",
-    "title2": "dig",
-    "subtitle": "En metodik för att mäta och styra påverkan:",
-    "items": [
+    "eyebrow": "Varför agera?",
+    "title1": "Jämställdhet i arbetslivet,",
+    "title2": "en strategisk fråga",
+    "enjeuxLabel": "3 centrala utmaningar",
+    "enjeux": [
       {
-        "title": "Benchmark och utbyten mellan engagerade organisationer",
-        "description": "Identifiera era hävstångseffekter och följ era framsteg."
+        "title": "Ekonomisk prestation",
+        "highlight": "+15 % lönsamhet*",
+        "detail": "när minst 30 % av ledningsgruppen är kvinnor"
       },
       {
-        "title": "Tydlig efterlevnad",
-        "description": "Förutse franska och europeiska skyldigheter."
+        "title": "Regulatorisk utveckling",
+        "detail": "Förutse franska och europeiska krav"
       },
       {
-        "title": "Stärkt arbetsgivarvarumärke",
-        "description": "Attrahera engagerade talanger, partners och investerare."
-      },
-      {
-        "title": "Hållbar prestation",
-        "description": "Jämställdhet som drivkraft för engagemang och transformation."
+        "title": "Samhälleliga förväntningar",
+        "detail": "Möta förväntningar från talanger och intressenter"
       }
-    ]
+    ],
+    "welTagline": "Mäta · Strukturera · Lyfta fram",
+    "resultatsLabel": "3 konkreta resultat",
+    "resultats": [
+      {
+        "num": "01",
+        "title": "Stärkt arbetsgivarvarumärke",
+        "detail": "Synliggör engagemang och stärk attraktionskraften"
+      },
+      {
+        "num": "02",
+        "title": "Mer jämställda yrken",
+        "detail": "Öka kvinnors representation hållbart"
+      },
+      {
+        "num": "03",
+        "title": "Mer rättvis tillgång till ledning",
+        "detail": "Underlätta kvinnors tillgång till beslutsfattande roller"
+      }
+    ],
+    "source": "* McKinsey"
   },
   "audit": {
     "eyebrow": "Diagnosen i 4 pelare",

@@ -26,28 +26,45 @@
     "quote2": "Aus dieser Überzeugung ist WEL entstanden"
   },
   "benefits": {
-    "eyebrow": "Die Vorteile",
-    "title1": "Was WEL Ihnen",
-    "title2": "bringt",
-    "subtitle": "Eine Methodik zur Messung und Steuerung von Wirkung:",
-    "items": [
+    "eyebrow": "Warum handeln?",
+    "title1": "Gleichstellung im Beruf,",
+    "title2": "eine strategische Herausforderung",
+    "enjeuxLabel": "3 zentrale Herausforderungen",
+    "enjeux": [
       {
-        "title": "Benchmark und Austausch zwischen engagierten Organisationen",
-        "description": "Identifizieren Sie Ihre Handlungshebel und verfolgen Sie Ihre Fortschritte."
+        "title": "Wirtschaftliche Leistung",
+        "highlight": "+15 % Rentabilität*",
+        "detail": "bei mindestens 30 % Frauen im Vorstand"
       },
       {
-        "title": "Klare Compliance",
-        "description": "Antizipieren Sie französische und europäische Verpflichtungen."
+        "title": "Regulatorische Entwicklung",
+        "detail": "Französische und europäische Anforderungen antizipieren"
       },
       {
-        "title": "Gestärkte Arbeitgebermarke",
-        "description": "Gewinnen Sie engagierte Talente, Partner und Investoren."
-      },
-      {
-        "title": "Nachhaltige Leistung",
-        "description": "Gleichstellung als Motor für Engagement und Transformation."
+        "title": "Gesellschaftliche Erwartungen",
+        "detail": "Erwartungen von Talenten und Stakeholdern erfüllen"
       }
-    ]
+    ],
+    "welTagline": "Messen · Strukturieren · Sichtbar machen",
+    "resultatsLabel": "3 konkrete Ergebnisse",
+    "resultats": [
+      {
+        "num": "01",
+        "title": "Gestärkte Arbeitgebermarke",
+        "detail": "Engagements sichtbar machen und Attraktivität stärken"
+      },
+      {
+        "num": "02",
+        "title": "Gemischtere Berufe",
+        "detail": "Die Vertretung von Frauen nachhaltig verbessern"
+      },
+      {
+        "num": "03",
+        "title": "Fairerer Zugang zur Unternehmensführung",
+        "detail": "Frauen den Zugang zu Entscheidungspositionen erleichtern"
+      }
+    ],
+    "source": "* McKinsey"
   },
   "audit": {
     "eyebrow": "Die Diagnose in 4 Säulen",
