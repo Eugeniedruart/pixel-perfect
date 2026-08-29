@@ -43,11 +43,6 @@ const HeroSection = () => {
           <span className="align-middle" dangerouslySetInnerHTML={{ __html: t("hero.tagline") }} />
         </p>
 
-        <div className="mt-3 sm:mt-4 flex flex-col items-center justify-center gap-1">
-          <span className="text-xs sm:text-sm text-muted-foreground">{t("hero.frenchTech")}</span>
-          <img src={frenchTech.url} alt="French Tech" className="h-10 sm:h-14 w-auto object-contain" />
-        </div>
-
         <div className="mt-8 sm:mt-12 relative max-w-6xl mx-auto pt-16 sm:pt-6 px-4 sm:px-8">
           <div className="flex flex-nowrap items-center justify-start md:justify-between gap-4 md:gap-6 overflow-x-auto md:overflow-x-visible mobile-logos-scroll pb-3 md:pb-0">
             <img src={citeCongres.url} alt="La Cité Congrès Nantes" className="h-14 sm:h-16 lg:h-20 w-auto object-contain grayscale opacity-60 hover:opacity-90 transition-opacity shrink-0" />
