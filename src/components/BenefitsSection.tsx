@@ -40,7 +40,7 @@ const BenefitsSection = () => {
             <span className="hidden sm:block h-px w-14 bg-primary/40" />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-0 sm:divide-x sm:divide-border">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {enjeux.map((e, i) => {
               const Icon = icons[i];
               return (
