@@ -96,3 +96,33 @@
     border-radius: 999px;
   }
 }
+
+/* Trust section: logos with thin vertical separators */
+.trust-logo {
+  object-fit: contain;
+  width: auto;
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .trust-logo {
+    padding: 0 1.5rem;
+    border-left: 1px solid hsl(228 25% 88%);
+  }
+
+  .trust-logo:first-child {
+    border-left: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .trust-logo {
+    padding: 0 0.9rem;
+    border-left: 1px solid hsl(228 25% 88%);
+  }
+
+  .trust-logo:nth-child(3n + 1),
+  .trust-logo:first-child {
+    border-left: none;
+  }
+}

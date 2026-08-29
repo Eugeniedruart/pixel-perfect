@@ -12,24 +12,28 @@ import paysDeLaLoire from "@/assets/partners/pays-de-la-loire.png.asset.json";
 const TrustSection = () => {
   const { t } = useTranslation();
   return (
-    <section className="py-12 sm:py-16 bg-background">
+    <section className="py-8 sm:py-10 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
-          {t("trust.title")}
-        </h2>
-        <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto mb-8 sm:mb-12">
+        <div className="flex items-center gap-6 mb-2">
+          <div className="flex-1 h-px bg-[hsl(228,25%,88%)]" aria-hidden="true" />
+          <h2 className="font-serif-display italic text-xl sm:text-2xl text-wel-blue whitespace-nowrap">
+            {t("trust.title")}
+          </h2>
+          <div className="flex-1 h-px bg-[hsl(228,25%,88%)]" aria-hidden="true" />
+        </div>
+        <p className="text-xs sm:text-sm text-muted-foreground max-w-2xl mx-auto mb-6 sm:mb-8">
           {t("trust.subtitle")}
         </p>
-        <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-x-8 gap-y-6 sm:gap-x-10 lg:gap-x-0 lg:justify-between">
-          <img src={frenchTech.url} alt="La French Tech" className="h-7 sm:h-8 lg:h-9 w-auto object-contain shrink-0" loading="lazy" />
-          <img src={bpifrance.url} alt="Bpifrance" className="h-7 sm:h-8 lg:h-10 w-auto object-contain shrink-0" loading="lazy" />
-          <img src={paysDeLaLoire.url} alt="Région Pays de la Loire" className="h-7 sm:h-8 lg:h-9 w-auto object-contain shrink-0" loading="lazy" />
-          <img src={citeCongres.url} alt="La Cité des Congrès de Nantes" className="h-8 sm:h-9 lg:h-11 w-auto object-contain shrink-0" loading="lazy" />
-          <img src={mobiapps.url} alt="Mobiapps" className="h-3 sm:h-3.5 lg:h-4 w-auto object-contain shrink-0" loading="lazy" />
-          <img src={kanoma.url} alt="Kanoma" className="h-5 sm:h-5.5 lg:h-6 w-auto object-contain shrink-0" loading="lazy" />
-          <img src={prolaser.url} alt="Prolaser" className="h-11 sm:h-12 lg:h-14 w-auto object-contain shrink-0" loading="lazy" />
-          <img src={exponantes.url} alt="Exponantes Le Parc" className="h-8 sm:h-9 lg:h-10 w-auto object-contain shrink-0" loading="lazy" />
-          <img src={valeuriad.url} alt="Valeuriad" className="h-8 sm:h-9 lg:h-11 w-auto object-contain shrink-0" loading="lazy" />
+        <div className="flex flex-wrap items-center justify-center gap-y-5">
+          <img src={frenchTech.url} alt="La French Tech" className="trust-logo h-7 sm:h-8" loading="lazy" />
+          <img src={bpifrance.url} alt="Bpifrance" className="trust-logo h-7 sm:h-9" loading="lazy" />
+          <img src={paysDeLaLoire.url} alt="Région Pays de la Loire" className="trust-logo h-7 sm:h-9" loading="lazy" />
+          <img src={citeCongres.url} alt="La Cité des Congrès de Nantes" className="trust-logo h-8 sm:h-10" loading="lazy" />
+          <img src={mobiapps.url} alt="Mobiapps" className="trust-logo h-[18px] sm:h-5" loading="lazy" />
+          <img src={kanoma.url} alt="Kanoma" className="trust-logo h-6 sm:h-7" loading="lazy" />
+          <img src={prolaser.url} alt="Prolaser" className="trust-logo h-12 sm:h-14" loading="lazy" />
+          <img src={exponantes.url} alt="Exponantes Le Parc" className="trust-logo h-8 sm:h-9" loading="lazy" />
+          <img src={valeuriad.url} alt="Valeuriad" className="trust-logo h-8 sm:h-10" loading="lazy" />
         </div>
       </div>
     </section>
