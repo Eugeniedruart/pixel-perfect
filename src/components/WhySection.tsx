@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import whyImg from "@/assets/team-meeting.jpg";
+import teamMeetingAsset from "@/assets/team-meeting.jpg.asset.json";
 import womanTablet from "@/assets/woman-tablet.jpg";
+
+const whyImg = teamMeetingAsset.url;
 
 const WhySection = () => {
   const { t } = useTranslation();
