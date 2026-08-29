@@ -10,19 +10,19 @@ const BenefitsSection = () => {
   const icons = [TrendingUp, Scale, Users];
 
   return (
-    <section className="relative overflow-hidden py-10 md:py-14">
+    <section className="relative isolate overflow-hidden py-10 md:py-14">
       {/* Photo de fond */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 z-0">
         <img
           src={benefitsBg}
           alt=""
           aria-hidden="true"
           className="h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-background/85 backdrop-blur-[2px]" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-xs tracking-[0.3em] uppercase text-primary text-center mb-3">
           {t("benefits.eyebrow")}
         </p>
