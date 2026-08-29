@@ -81,7 +81,7 @@ const BenefitsSection = () => {
             <span className="hidden sm:block h-px w-14 bg-primary/40" />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-0 sm:divide-x sm:divide-border">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {resultats.map((r, i) => (
               <div key={i} className="text-center sm:px-6">
                 <p className="font-serif-display italic text-primary/60 text-lg md:text-xl">{r.num}</p>
