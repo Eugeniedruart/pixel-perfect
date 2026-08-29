@@ -32,7 +32,7 @@ const HeroSection = () => {
         </div>
 
         <p className="mt-5 sm:mt-8 text-xs sm:text-sm text-muted-foreground text-center">
-          <img src={euFlag} alt="" className="inline-block h-4 w-6 sm:h-5 sm:w-7 object-contain align-middle mr-1 rounded-[2px]" />
+          <img src={euFlag} alt="Drapeau européen" className="eu-flag-wave inline-block h-4 w-6 sm:h-5 sm:w-7 object-cover align-middle mr-1 rounded-[3px] shadow-sm" />
           <span className="align-middle" dangerouslySetInnerHTML={{ __html: t("hero.tagline") }} />
         </p>
       </div>
