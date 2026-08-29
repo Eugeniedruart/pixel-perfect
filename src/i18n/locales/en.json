@@ -13,7 +13,7 @@
     "title3": "equality",
     "ctaTest": "Test my eligibility",
     "ctaLabel": "I want to be Welbellised",
-    "tagline": "The first French label that certifies and supports companies",
+    "tagline": "The first European label that certifies and supports companies",
     "frenchTech": "Supported by French Tech"
   },
   "why": {
@@ -569,5 +569,9 @@
   },
   "partners": {
     "title": "Our partners"
+  },
+  "trust": {
+    "title": "They trust us",
+    "subtitle": "Certified companies, supported organizations and partners of the WEL ecosystem."
   }
 }

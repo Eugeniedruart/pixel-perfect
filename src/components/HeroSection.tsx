@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import frenchFlag from "@/assets/french-flag.png";
+import euFlag from "@/assets/eu-flag.png";
 import kanoma from "@/assets/clients/kanoma.png.asset.json";
 import citeCongres from "@/assets/clients/cite-congres-nantes.png.asset.json";
 import prolaser from "@/assets/clients/prolaser.png.asset.json";
@@ -9,7 +9,7 @@ import mobiapps from "@/assets/clients/mobiapps.png.asset.json";
 import certifiedWel from "@/assets/clients/certified-wel.png.asset.json";
 import exponantes from "@/assets/clients/exponantes.png.asset.json";
 import valeuriad from "@/assets/clients/valeuriad.png.asset.json";
-import frenchTech from "@/assets/partners/french-tech.webp.asset.json";
+
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -40,14 +40,9 @@ const HeroSection = () => {
         </div>
 
         <p className="mt-5 sm:mt-8 text-xs sm:text-sm text-muted-foreground text-center">
-          <img src={frenchFlag} alt="" className="inline-block h-4 w-4 sm:h-5 sm:w-5 object-contain align-middle mr-1" width={512} height={512} />
+          <img src={euFlag} alt="" className="inline-block h-4 w-6 sm:h-5 sm:w-7 object-contain align-middle mr-1 rounded-[2px]" />
           <span className="align-middle" dangerouslySetInnerHTML={{ __html: t("hero.tagline") }} />
         </p>
-
-        <div className="mt-3 sm:mt-4 flex flex-col items-center justify-center gap-1">
-          <span className="text-xs sm:text-sm text-muted-foreground">{t("hero.frenchTech")}</span>
-          <img src={frenchTech.url} alt="French Tech" className="h-10 sm:h-14 w-auto object-contain" />
-        </div>
 
         <div className="mt-8 sm:mt-12 relative max-w-6xl mx-auto pt-16 sm:pt-6 px-4 sm:px-8">
           <div className="flex flex-nowrap items-center justify-start md:justify-between gap-4 md:gap-6 overflow-x-auto md:overflow-x-visible mobile-logos-scroll pb-3 md:pb-0">
