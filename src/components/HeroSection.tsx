@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import frenchFlag from "@/assets/french-flag.png";
 import kanoma from "@/assets/clients/kanoma.png.asset.json";
 import citeCongres from "@/assets/clients/cite-congres-nantes.png.asset.json";
 import prolaser from "@/assets/clients/prolaser.png.asset.json";
