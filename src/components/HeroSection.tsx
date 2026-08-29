@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import euFlag from "@/assets/eu-flag.png";
 import kanoma from "@/assets/clients/kanoma.png.asset.json";
 import citeCongres from "@/assets/clients/cite-congres-nantes.png.asset.json";
 import prolaser from "@/assets/clients/prolaser.png.asset.json";
@@ -39,7 +40,7 @@ const HeroSection = () => {
         </div>
 
         <p className="mt-5 sm:mt-8 text-xs sm:text-sm text-muted-foreground text-center">
-          <span className="inline-block align-middle mr-1 text-base sm:text-lg leading-none" aria-hidden="true">🇪🇺</span>
+          <img src={euFlag} alt="" className="inline-block h-4 w-6 sm:h-5 sm:w-7 object-contain align-middle mr-1 rounded-[2px]" />
           <span className="align-middle" dangerouslySetInnerHTML={{ __html: t("hero.tagline") }} />
         </p>
 
