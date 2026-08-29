@@ -13,7 +13,7 @@
     "title3": "mellan kvinnor och män",
     "ctaTest": "Testa min behörighet",
     "ctaLabel": "Jag vill bli Welbelliserad",
-    "tagline": "Första franska märkningen som certifierar och stödjer företag",
+    "tagline": "Första europeiska märkningen som certifierar och stödjer företag",
     "frenchTech": "Stödd av French Tech"
   },
   "why": {
@@ -571,5 +571,9 @@
   },
   "partners": {
     "title": "Våra partners"
+  },
+  "trust": {
+    "title": "De litar på oss",
+    "subtitle": "Certifierade företag, stödda organisationer och partner i WEL-ekosystemet."
   }
 }

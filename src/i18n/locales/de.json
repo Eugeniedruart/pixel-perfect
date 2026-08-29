@@ -13,7 +13,7 @@
     "title3": "von Frauen und Männern",
     "ctaTest": "Meine Eignung testen",
     "ctaLabel": "Ich möchte Welbellisiert werden",
-    "tagline": "Erstes französisches Label, das Unternehmen zertifiziert und begleitet",
+    "tagline": "Erstes europäisches Label, das Unternehmen zertifiziert und begleitet",
     "frenchTech": "Unterstützt von French Tech"
   },
   "why": {
@@ -570,5 +570,9 @@
   },
   "partners": {
     "title": "Unsere Partner"
+  },
+  "trust": {
+    "title": "Sie vertrauen uns",
+    "subtitle": "Zertifizierte Unternehmen, begleitete Organisationen und Partner des WEL-Ökosystems."
   }
 }

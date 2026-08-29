@@ -13,7 +13,7 @@
     "title3": "mujeres-hombres",
     "ctaTest": "Probar mi elegibilidad",
     "ctaLabel": "Quiero ser Welbellizado",
-    "tagline": "Primer sello francés que certifica y acompaña a las empresas",
+    "tagline": "Primer sello europeo que certifica y acompaña a las empresas",
     "frenchTech": "Apoyado por French Tech"
   },
   "why": {
@@ -569,5 +569,9 @@
   },
   "partners": {
     "title": "Nuestros socios"
+  },
+  "trust": {
+    "title": "Confían en nosotros",
+    "subtitle": "Empresas certificadas, organizaciones acompañadas y socios del ecosistema WEL."
   }
 }
