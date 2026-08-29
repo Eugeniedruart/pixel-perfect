@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { TrendingUp, Scale, Users, ArrowDown } from "lucide-react";
 import welLogo from "@/assets/wel-logo.png";
+import benefitsBg from "@/assets/benefits-woman.jpg";
 
 const BenefitsSection = () => {
   const { t } = useTranslation();
