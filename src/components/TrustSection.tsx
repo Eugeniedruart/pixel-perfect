@@ -29,7 +29,7 @@ const TrustSection = () => {
           <img src={bpifrance.url} alt="Bpifrance" className="trust-logo h-7 sm:h-9" loading="lazy" />
           <img src={paysDeLaLoire.url} alt="Région Pays de la Loire" className="trust-logo h-7 sm:h-9" loading="lazy" />
           <img src={citeCongres.url} alt="La Cité des Congrès de Nantes" className="trust-logo h-8 sm:h-10" loading="lazy" />
-          <img src={mobiapps.url} alt="Mobiapps" className="trust-logo h-4.5 sm:h-5" loading="lazy" />
+          <img src={mobiapps.url} alt="Mobiapps" className="trust-logo h-[18px] sm:h-5" loading="lazy" />
           <img src={kanoma.url} alt="Kanoma" className="trust-logo h-6 sm:h-7" loading="lazy" />
           <img src={prolaser.url} alt="Prolaser" className="trust-logo h-12 sm:h-14" loading="lazy" />
           <img src={exponantes.url} alt="Exponantes Le Parc" className="trust-logo h-8 sm:h-9" loading="lazy" />
