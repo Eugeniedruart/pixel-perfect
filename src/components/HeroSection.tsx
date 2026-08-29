@@ -14,7 +14,7 @@ const HeroSection = () => {
           {t("hero.eyebrow")}
         </p>
 
-        <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-foreground leading-tight mb-2">
+        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-foreground leading-tight mb-2">
           {t("hero.title1")}
           <br />
           {t("hero.title2")}
