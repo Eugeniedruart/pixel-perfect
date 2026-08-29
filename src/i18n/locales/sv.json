@@ -50,10 +50,10 @@
     ]
   },
   "audit": {
-    "eyebrow": "Granskningen i 4 pelare",
+    "eyebrow": "Diagnosen i 4 pelare",
     "title1": "En",
-    "title2": "skräddarsydd granskning",
-    "intro": "En <strong>granskning strukturerad kring 4 pelare</strong>, analyserad av våra experter för att förankra ert engagemang i en hållbar utveckling.",
+    "title2": "skräddarsydd diagnos",
+    "intro": "En <strong>diagnos strukturerad kring 4 pelare</strong>, analyserad av våra experter för att förankra ert engagemang i en hållbar utveckling.",
     "pillars": [
       {
         "title": "Styrning",
@@ -81,7 +81,7 @@
     "steps": [
       {
         "title": "Diagnos",
-        "description": "En granskning strukturerad kring WEL-märkningens 4 pelare."
+        "description": "En diagnos strukturerad kring WEL-märkningens 4 pelare."
       },
       {
         "title": "Analys",
@@ -140,7 +140,7 @@
       },
       {
         "q": "Vem står bakom WEL-märkningen?",
-        "a": "Granskningen utförs av WEL-team enligt en strukturerad metodik. En oberoende etikkommitté övervakar referensramen och garanterar processens stringens."
+        "a": "Diagnosen utförs av WEL-team enligt en strukturerad metodik. En oberoende etikkommitté övervakar referensramen och garanterar processens stringens."
       }
     ]
   },
@@ -268,7 +268,7 @@
       {
         "num": "02",
         "title": "Diagnos på plats",
-        "desc": "WEL-teamens insats i er organisation för en strukturerad granskning."
+        "desc": "WEL-teamens insats i er organisation för en strukturerad diagnos."
       },
       {
         "num": "03",
@@ -398,13 +398,13 @@
     "missionsTitle1": "Rådgivnings-",
     "missionsTitle2": "uppdrag",
     "missionsTagline": "Förvandla avsikter till handlingar.",
-    "missionsIntro": "Strategi, granskningar, handlingsplaner, kommunikation – vi stödjer er i varje steg.",
+    "missionsIntro": "Strategi, diagnoser, handlingsplaner, kommunikation – vi stödjer er i varje steg.",
     "missionsTags": [
       "Strategi",
       "Efterlevnad",
       "Handlingsplaner",
       "Kommunikation",
-      "Granskningar"
+      "Diagnoser"
     ],
     "approcheEyebrow": "Det som utmärker oss",
     "approcheTitle1": "Vårt",

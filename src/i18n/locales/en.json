@@ -50,10 +50,10 @@
     ]
   },
   "audit": {
-    "eyebrow": "The 4-pillar audit",
+    "eyebrow": "The 4-pillar diagnostic",
     "title1": "A tailored",
-    "title2": "audit",
-    "intro": "A <strong>structured audit around 4 pillars</strong>, analysed by our experts to anchor your commitment in a sustainable trajectory.",
+    "title2": "diagnostic",
+    "intro": "A <strong>structured diagnostic around 4 pillars</strong>, analysed by our experts to anchor your commitment in a sustainable trajectory.",
     "pillars": [
       {
         "title": "Governance",
@@ -81,7 +81,7 @@
     "steps": [
       {
         "title": "Diagnosis",
-        "description": "A structured audit around the 4 pillars of the WEL label."
+        "description": "A structured diagnostic around the 4 pillars of the WEL label."
       },
       {
         "title": "Analysis",
@@ -140,7 +140,7 @@
       },
       {
         "q": "Who is behind the WEL label?",
-        "a": "The audit is carried out by WEL teams using a structured methodology. An independent ethics committee oversees the framework and ensures the rigour of the approach."
+        "a": "The diagnostic is carried out by WEL teams using a structured methodology. An independent ethics committee oversees the framework and ensures the rigour of the approach."
       }
     ]
   },
@@ -268,7 +268,7 @@
       {
         "num": "02",
         "title": "On-site diagnosis",
-        "desc": "WEL teams intervene within your organisation for a structured audit."
+        "desc": "WEL teams intervene within your organisation for a structured diagnostic."
       },
       {
         "num": "03",
@@ -398,13 +398,13 @@
     "missionsTitle1": "Consulting",
     "missionsTitle2": "missions",
     "missionsTagline": "Turning intentions into actions.",
-    "missionsIntro": "Strategy, audits, action plans, communication — we support you at every step.",
+    "missionsIntro": "Strategy, diagnostics, action plans, communication — we support you at every step.",
     "missionsTags": [
       "Strategy",
       "Compliance",
       "Action plans",
       "Communication",
-      "Audits"
+      "Diagnostics"
     ],
     "approcheEyebrow": "What sets us apart",
     "approcheTitle1": "Our",
