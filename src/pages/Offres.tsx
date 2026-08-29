@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import {
   ArrowRight, Users, Heart, Eye, Rocket, Search, MessageSquare, FileText,
   CheckCircle2, MapPin, Handshake, Settings, Target, ChevronDown,
+  Percent, Building2, Scale, BarChart3,
 } from "lucide-react";
 import offresHero from "@/assets/offres-hero-v2.jpg";
 import offresLabellisation from "@/assets/offres-labellisation.jpg";
@@ -38,6 +39,7 @@ const Reveal = ({ children, className = "" }: { children: React.ReactNode; class
 const formationIcons = [Users, Heart, Eye, Rocket, Search];
 const approcheIcons = [MapPin, Handshake, Settings, Target];
 const enqueteIcons = [Search, MessageSquare, FileText];
+const missionExampleIcons = [Percent, Building2, Scale, BarChart3];
 
 const ApprochAccordionCard = ({ icon: Icon, title, text }: { icon: React.ElementType; title: string; text: string }) => {
   const [open, setOpen] = useState(false);
