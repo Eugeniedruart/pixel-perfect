@@ -574,5 +574,28 @@
   "trust": {
     "title": "Sie vertrauen uns",
     "subtitle": "Zertifizierte Unternehmen, begleitete Organisationen und Partner des WEL-Ökosystems."
+  },
+  "whyNow": {
+    "eyebrow": "Warum jetzt handeln?",
+    "title1": "Warum jetzt",
+    "title2": "handeln?",
+    "items": {
+      "regulation": {
+        "category": "Regulierung",
+        "title": "Neue Anforderungen vorwegnehmen",
+        "text": "Das Unternehmen auf französische und europäische regulatorische Entwicklungen in Bezug auf berufliche Gleichstellung und Gehaltstransparenz vorbereiten."
+      },
+      "employer": {
+        "category": "Arbeitgebermarke",
+        "title": "Attraktivität stärken",
+        "text": "Engagements gegenüber Mitarbeitenden, Bewerbern, Kunden und Partnern objektivieren und sichtbar machen."
+      },
+      "piloting": {
+        "category": "Steuerung",
+        "title": "Von Zusagen zu Ergebnissen",
+        "text": "Praktiken messen, Prioritäten erkennen und eine konkrete, messbare Roadmap strukturieren."
+      }
+    },
+    "conclusion": "WEL macht Ihre Zusagen zu einem messbaren, strukturierten und wertvollen Ansatz."
   }
 }
