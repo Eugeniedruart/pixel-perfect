@@ -53,10 +53,7 @@ const BenefitsSection = () => {
 
           {/* WEL */}
           <div className="mx-auto w-fit rounded-xl bg-wel-blue-light px-8 py-4 text-center shadow-[0_8px_25px_-12px_hsl(var(--primary)/0.35)] transition-transform duration-300 hover:-translate-y-0.5">
-            <p className="font-serif-display italic text-2xl md:text-3xl text-wel-navy">WEL</p>
-            <p className="text-[11px] md:text-xs tracking-[0.15em] uppercase text-primary mt-1">
-              {t("benefits.welTagline")}
-            </p>
+            <img src={welLogo} alt="WEL — Women Equity Label" className="h-12 md:h-16 w-auto mx-auto" />
           </div>
 
           <div className="flex items-center justify-center gap-6 my-5 text-primary/50">
