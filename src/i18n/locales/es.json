@@ -573,5 +573,46 @@
   "trust": {
     "title": "Confían en nosotros",
     "subtitle": "Empresas certificadas, organizaciones acompañadas y socios del ecosistema WEL."
+  },
+  "whyAct": {
+    "eyebrow": "¿Por qué actuar?",
+    "title1": "La igualdad profesional,",
+    "title2": "un reto ya",
+    "title3": "estratégico",
+    "issuesEyebrow": "3 retos clave",
+    "issues": [
+      {
+        "title": "Rendimiento económico",
+        "description": "Convierta la igualdad profesional en una palanca de rendimiento y perennidad."
+      },
+      {
+        "title": "Evolución normativa",
+        "description": "Anticipe las obligaciones francesas y europeas y asegure su cumplimiento."
+      },
+      {
+        "title": "Expectativas sociales",
+        "description": "Responda a las crecientes expectativas de talentos, clientes e inversores en materia de igualdad."
+      }
+    ],
+    "welPillars": "Medir · Estructurar · Valorar",
+    "statValue": "+15 %",
+    "statLabel": "de rentabilidad",
+    "statSource": "cuando hay al menos un 30 % de mujeres en el comité ejecutivo — McKinsey.",
+    "resultsEyebrow": "3 resultados concretos",
+    "results": [
+      {
+        "title": "Una marca empleadora reforzada",
+        "description": "Valore sus compromisos y refuerce su atractivo ante talentos y socios."
+      },
+      {
+        "title": "Profesiones más mixtas",
+        "description": "Identifique los frenos y active las palancas que favorecen de forma duradera la mixidad."
+      },
+      {
+        "title": "Un acceso más equitativo a la gobernanza",
+        "description": "Mida las brechas y estructure acciones que favorezcan el acceso de las mujeres a los puestos de decisión."
+      }
+    ],
+    "closing": "WEL le acompaña de la medición al impacto, para acciones concretas y duraderas."
   }
 }
