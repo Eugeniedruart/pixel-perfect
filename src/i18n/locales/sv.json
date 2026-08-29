@@ -22,7 +22,7 @@
     "title2": "för jämställdhet mellan kvinnor och män?",
     "subtitle": "Första europeiska märkningen som certifierar och stödjer företag engagerade i yrkesmässig jämställdhet.",
     "statText": "I denna takt kommer yrkesmässig jämställdhet<br />att uppnås år",
-    "quote1": "Kön bör inte ha någon inverkan på den yrkesmässiga karriären.\u00a0",
+    "quote1": "Kön bör inte ha någon inverkan på den yrkesmässiga karriären. ",
     "quote2": "Det är ur denna övertygelse som WEL har fötts"
   },
   "benefits": {
@@ -405,6 +405,25 @@
       "Handlingsplaner",
       "Kommunikation",
       "Diagnoser"
+    ],
+    "missionsExamplesTitle": "Exempel på genomförda konsultuppdrag",
+    "missionsExamples": [
+      {
+        "title": "Kvinnors tillgång till ledningsorgan",
+        "desc": "Identifiera hinder i karriärvägarna och bygga en handlingsplan för att stärka kvinnors närvaro i ledningsgruppen + individuell negotraining-session."
+      },
+      {
+        "title": "Investeringsfonder & jämställdhet",
+        "desc": "Stöd till en fond och dess bolag för att integrera jämställdhetsfrågor i investeringspraxis och uppföljning av portföljen."
+      },
+      {
+        "title": "Feminisering av yrken & rekrytering",
+        "desc": "Identifiera hinder för att attrahera och rekrytera kvinnor i yrken eller branscher där de är underrepresenterade."
+      },
+      {
+        "title": "Barometer & medarbetarlyssnande",
+        "desc": "Utformning av interna undersökningar för att mäta upplevelser, identifiera klyftor och ta fram konkreta handlingsområden."
+      }
     ],
     "approcheEyebrow": "Det som utmärker oss",
     "approcheTitle1": "Vårt",

@@ -22,7 +22,7 @@
     "title2": "de igualdad mujeres-hombres?",
     "subtitle": "Primer sello europeo que certifica y acompaña a las empresas comprometidas con la igualdad profesional.",
     "statText": "A este ritmo, la igualdad profesional<br />se alcanzará en",
-    "quote1": "El género no debería tener impacto en las carreras profesionales.\u00a0",
+    "quote1": "El género no debería tener impacto en las carreras profesionales. ",
     "quote2": "De esta convicción nació WEL"
   },
   "benefits": {
@@ -405,6 +405,25 @@
       "Planes de acción",
       "Comunicación",
       "Diagnósticos"
+    ],
+    "missionsExamplesTitle": "Ejemplos de misiones de consultoría realizadas",
+    "missionsExamples": [
+      {
+        "title": "Acceso de las mujeres a los órganos de dirección",
+        "desc": "Identificar los obstáculos en las trayectorias y construir un plan de acción para reforzar la presencia de las mujeres en el CODIR/COMEX + sesión de negotraining individual."
+      },
+      {
+        "title": "Fondos de inversión e igualdad",
+        "desc": "Acompañamiento de un fondo y de sus empresas para integrar los retos de igualdad en sus prácticas de inversión y en el seguimiento de su cartera."
+      },
+      {
+        "title": "Feminización de las profesiones y contratación",
+        "desc": "Identificar los obstáculos a la atracción y contratación de mujeres en profesiones o sectores donde están infrarrepresentadas."
+      },
+      {
+        "title": "Barómetro y escucha de los colaboradores",
+        "desc": "Diseño de encuestas internas para medir percepciones, identificar brechas y hacer emerger ejes de acción concretos."
+      }
     ],
     "approcheEyebrow": "Lo que nos distingue",
     "approcheTitle1": "Nuestro",
