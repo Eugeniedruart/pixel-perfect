@@ -8,7 +8,7 @@ import mobiapps from "@/assets/clients/mobiapps.png.asset.json";
 import certifiedWel from "@/assets/clients/certified-wel.png.asset.json";
 import exponantes from "@/assets/clients/exponantes.png.asset.json";
 import valeuriad from "@/assets/clients/valeuriad.png.asset.json";
-import frenchTech from "@/assets/partners/french-tech.webp.asset.json";
+
 
 const HeroSection = () => {
   const { t } = useTranslation();
