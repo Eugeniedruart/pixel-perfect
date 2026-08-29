@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { TrendingUp, Scale, Users, ArrowDown } from "lucide-react";
 import welLogo from "@/assets/wel-logo.png";
+import benefitsBg from "@/assets/benefits-woman.jpg";
 
 const BenefitsSection = () => {
   const { t } = useTranslation();
@@ -9,7 +10,18 @@ const BenefitsSection = () => {
   const icons = [TrendingUp, Scale, Users];
 
   return (
-    <section className="py-10 md:py-14 bg-muted/30">
+    <section className="relative overflow-hidden py-10 md:py-14">
+      {/* Photo de fond */}
+      <div className="absolute inset-0 -z-10">
+        <img
+          src={benefitsBg}
+          alt=""
+          aria-hidden="true"
+          className="h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-[2px]" />
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-xs tracking-[0.3em] uppercase text-primary text-center mb-3">
           {t("benefits.eyebrow")}
