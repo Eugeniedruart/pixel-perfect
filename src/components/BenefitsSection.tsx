@@ -83,7 +83,7 @@ const BenefitsSection = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {resultats.map((r, i) => (
-              <div key={i} className="text-center sm:px-6">
+              <div key={i} className="text-center sm:px-6 rounded-2xl bg-white/90 backdrop-blur-sm px-4 py-5 shadow-[0_8px_30px_-12px_hsl(var(--wel-navy)/0.25)] sm:mx-2">
                 <p className="font-serif-display italic text-primary/60 text-lg md:text-xl">{r.num}</p>
                 <p className="font-bold text-foreground text-sm md:text-base mt-0.5">{r.title}</p>
                 <p className="text-muted-foreground text-xs md:text-sm mt-1 leading-snug">{r.detail}</p>
