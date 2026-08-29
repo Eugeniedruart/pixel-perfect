@@ -575,46 +575,5 @@
   "trust": {
     "title": "De litar på oss",
     "subtitle": "Certifierade företag, stödda organisationer och partner i WEL-ekosystemet."
-  },
-  "whyAct": {
-    "eyebrow": "Varför agera?",
-    "title1": "Professionell jämställdhet,",
-    "title2": "en fråga som blivit",
-    "title3": "strategisk",
-    "issuesEyebrow": "3 nyckelutmaningar",
-    "issues": [
-      {
-        "title": "Ekonomisk prestanda",
-        "description": "Gör jämställdhet till en hävstång för prestanda och långsiktighet."
-      },
-      {
-        "title": "Regulatorisk utveckling",
-        "description": "Ligg steget före franska och europeiska krav och säkra er efterlevnad."
-      },
-      {
-        "title": "Samhälleliga förväntningar",
-        "description": "Möt talangers, kunders och investerares växande förväntningar på jämställdhet."
-      }
-    ],
-    "welPillars": "Mäta · Strukturera · Synliggöra",
-    "statValue": "+15 %",
-    "statLabel": "lönsamhet",
-    "statSource": "när minst 30 % av ledningsgruppen är kvinnor — McKinsey.",
-    "resultsEyebrow": "3 konkreta resultat",
-    "results": [
-      {
-        "title": "Ett starkare arbetsgivarvarumärke",
-        "description": "Synliggör era åtaganden och stärk er attraktionskraft hos talanger och partner."
-      },
-      {
-        "title": "Mer jämställda yrken",
-        "description": "Identifiera hinder och aktivera de hävstänger som varaktigt främjar jämn könsfördelning."
-      },
-      {
-        "title": "Mer rättvis tillgång till ledning",
-        "description": "Mät klyftorna och strukturera åtgärder som öppnar beslutspositioner för kvinnor."
-      }
-    ],
-    "closing": "WEL följer er från mätning till påverkan – för konkreta och hållbara insatser."
   }
 }

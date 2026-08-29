@@ -574,46 +574,5 @@
   "trust": {
     "title": "Sie vertrauen uns",
     "subtitle": "Zertifizierte Unternehmen, begleitete Organisationen und Partner des WEL-Ökosystems."
-  },
-  "whyAct": {
-    "eyebrow": "Warum handeln?",
-    "title1": "Berufliche Gleichstellung,",
-    "title2": "eine inzwischen",
-    "title3": "strategische Herausforderung",
-    "issuesEyebrow": "3 zentrale Herausforderungen",
-    "issues": [
-      {
-        "title": "Wirtschaftliche Leistung",
-        "description": "Machen Sie Gleichstellung zu einem Hebel für Leistung und Zukunftsfähigkeit."
-      },
-      {
-        "title": "Regulatorische Entwicklung",
-        "description": "Antizipieren Sie französische und europäische Anforderungen und sichern Sie Ihre Compliance."
-      },
-      {
-        "title": "Gesellschaftliche Erwartungen",
-        "description": "Erfüllen Sie die wachsenden Erwartungen von Talenten, Kunden und Investoren an Gleichstellung."
-      }
-    ],
-    "welPillars": "Messen · Strukturieren · Sichtbar machen",
-    "statValue": "+15 %",
-    "statLabel": "Rentabilität",
-    "statSource": "bei mindestens 30 % Frauen im Vorstand — McKinsey.",
-    "resultsEyebrow": "3 konkrete Ergebnisse",
-    "results": [
-      {
-        "title": "Eine gestärkte Arbeitgebermarke",
-        "description": "Machen Sie Ihr Engagement sichtbar und stärken Sie Ihre Attraktivität für Talente und Partner."
-      },
-      {
-        "title": "Mehr Durchmischung in den Berufen",
-        "description": "Erkennen Sie Hindernisse und aktivieren Sie Hebel, die die Geschlechtervielfalt nachhaltig fördern."
-      },
-      {
-        "title": "Fairerer Zugang zur Unternehmensführung",
-        "description": "Messen Sie Unterschiede und strukturieren Sie Maßnahmen für den Zugang von Frauen zu Entscheidungspositionen."
-      }
-    ],
-    "closing": "WEL begleitet Sie von der Messung bis zur Wirkung – für konkrete und nachhaltige Maßnahmen."
   }
 }

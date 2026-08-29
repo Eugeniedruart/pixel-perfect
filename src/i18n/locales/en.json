@@ -573,46 +573,5 @@
   "trust": {
     "title": "They trust us",
     "subtitle": "Certified companies, supported organizations and partners of the WEL ecosystem."
-  },
-  "whyAct": {
-    "eyebrow": "Why act?",
-    "title1": "Professional equality,",
-    "title2": "a now",
-    "title3": "strategic challenge",
-    "issuesEyebrow": "3 key challenges",
-    "issues": [
-      {
-        "title": "Economic performance",
-        "description": "Turn professional equality into a driver of performance and long-term resilience."
-      },
-      {
-        "title": "Regulatory change",
-        "description": "Anticipate French and European requirements and secure your compliance."
-      },
-      {
-        "title": "Societal expectations",
-        "description": "Meet the growing expectations of talent, clients and investors on equality."
-      }
-    ],
-    "welPillars": "Measure · Structure · Showcase",
-    "statValue": "+15%",
-    "statLabel": "profitability",
-    "statSource": "when at least 30% of executive committee members are women — McKinsey.",
-    "resultsEyebrow": "3 concrete outcomes",
-    "results": [
-      {
-        "title": "A stronger employer brand",
-        "description": "Showcase your commitments and boost your appeal to talent and partners."
-      },
-      {
-        "title": "More gender-balanced jobs",
-        "description": "Identify barriers and activate the levers that sustainably foster gender diversity across roles."
-      },
-      {
-        "title": "Fairer access to governance",
-        "description": "Measure gaps and structure actions that open decision-making positions to women."
-      }
-    ],
-    "closing": "WEL supports you from measurement to impact, for concrete and lasting action."
   }
 }
