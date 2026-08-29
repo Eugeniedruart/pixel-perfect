@@ -26,28 +26,45 @@
     "quote2": "De esta convicción nació WEL"
   },
   "benefits": {
-    "eyebrow": "Los beneficios",
-    "title1": "Lo que WEL",
-    "title2": "le aporta",
-    "subtitle": "Una metodología para medir y dirigir el impacto:",
-    "items": [
+    "eyebrow": "¿Por qué actuar?",
+    "title1": "La igualdad profesional,",
+    "title2": "un reto ya estratégico",
+    "enjeuxLabel": "3 retos clave",
+    "enjeux": [
       {
-        "title": "Benchmark e intercambios entre organizaciones comprometidas",
-        "description": "Identifique sus palancas de acción y siga su progreso."
+        "title": "Rendimiento económico",
+        "highlight": "+15 % de rentabilidad*",
+        "detail": "cuando hay al menos un 30 % de mujeres en el comité de dirección"
       },
       {
-        "title": "Conformidad clara",
-        "description": "Anticipe las obligaciones francesas y europeas."
+        "title": "Evolución normativa",
+        "detail": "Anticipar las obligaciones francesas y europeas"
       },
       {
-        "title": "Marca empleadora reforzada",
-        "description": "Atraiga talento, socios e inversores comprometidos."
-      },
-      {
-        "title": "Desempeño sostenible",
-        "description": "La igualdad como motor de compromiso y transformación."
+        "title": "Expectativas sociales",
+        "detail": "Responder a las expectativas del talento y las partes interesadas"
       }
-    ]
+    ],
+    "welTagline": "Medir · Estructurar · Valorar",
+    "resultatsLabel": "3 resultados concretos",
+    "resultats": [
+      {
+        "num": "01",
+        "title": "Marca empleadora reforzada",
+        "detail": "Valorar los compromisos y reforzar el atractivo"
+      },
+      {
+        "num": "02",
+        "title": "Oficios más mixtos",
+        "detail": "Mejorar de forma duradera la representación de las mujeres"
+      },
+      {
+        "num": "03",
+        "title": "Acceso más equitativo a la gobernanza",
+        "detail": "Facilitar el acceso de las mujeres a los puestos de decisión"
+      }
+    ],
+    "source": "* McKinsey"
   },
   "audit": {
     "eyebrow": "El diagnóstico en 4 pilares",

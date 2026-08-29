@@ -26,28 +26,45 @@
     "quote2": "C'est de cette conviction qu'est né WEL"
   },
   "benefits": {
-    "eyebrow": "Les bénéfices",
-    "title1": "Ce que WEL vous",
-    "title2": "apporte",
-    "subtitle": "Une méthodologie de mesure et de pilotage de l'impact :",
-    "items": [
+    "eyebrow": "Pourquoi agir ?",
+    "title1": "L’égalité professionnelle,",
+    "title2": "un enjeu devenu stratégique",
+    "enjeuxLabel": "3 enjeux clés",
+    "enjeux": [
       {
-        "title": "Benchmark et échanges entre organisations engagées",
-        "description": "Identifiez vos leviers d'action et suivez vos progrès."
+        "title": "Performance économique",
+        "highlight": "+15 % de rentabilité*",
+        "detail": "lorsqu’il y a au moins 30 % de femmes au COMEX"
       },
       {
-        "title": "Conformité claire",
-        "description": "Anticipez les obligations françaises et européennes."
+        "title": "Évolution réglementaire",
+        "detail": "Anticiper les obligations françaises et européennes"
       },
       {
-        "title": "Marque employeur renforcée",
-        "description": "Attirez talents, partenaires et investisseurs engagés."
-      },
-      {
-        "title": "Performance durable",
-        "description": "L'égalité comme moteur d'engagement et de transformation."
+        "title": "Attentes sociétales",
+        "detail": "Répondre aux attentes des talents et parties prenantes"
       }
-    ]
+    ],
+    "welTagline": "Mesurer · Structurer · Valoriser",
+    "resultatsLabel": "3 résultats concrets",
+    "resultats": [
+      {
+        "num": "01",
+        "title": "Marque employeur renforcée",
+        "detail": "Valoriser les engagements et renforcer l’attractivité"
+      },
+      {
+        "num": "02",
+        "title": "Des métiers plus mixtes",
+        "detail": "Faire progresser durablement la représentation des femmes"
+      },
+      {
+        "num": "03",
+        "title": "Un accès plus équitable à la gouvernance",
+        "detail": "Favoriser l’accès des femmes aux postes de décision"
+      }
+    ],
+    "source": "* McKinsey"
   },
   "audit": {
     "eyebrow": "Le diagnostic en 4 piliers",
