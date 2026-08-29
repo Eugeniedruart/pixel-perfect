@@ -91,7 +91,9 @@ const BenefitsSection = () => {
             ))}
           </div>
 
-          <p className="inline-block bg-white/80 px-3 py-1 rounded-full text-[10px] text-muted-foreground text-center mt-5">{t("benefits.source")}</p>
+          <div className="text-center mt-5">
+            <p className="inline-block bg-white/80 px-3 py-1 rounded-full text-[10px] text-muted-foreground">{t("benefits.source")}</p>
+          </div>
         </div>
       </div>
     </section>
