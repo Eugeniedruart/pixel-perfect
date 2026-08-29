@@ -22,7 +22,7 @@
     "title2": "für die Gleichstellung von Frauen und Männern?",
     "subtitle": "Erstes europäisches Label, das engagierte Unternehmen in Sachen beruflicher Gleichstellung zertifiziert und begleitet.",
     "statText": "In diesem Tempo wird die berufliche Gleichstellung<br />erreicht im Jahr",
-    "quote1": "Das Geschlecht sollte keinen Einfluss auf die berufliche Laufbahn haben.\u00a0",
+    "quote1": "Das Geschlecht sollte keinen Einfluss auf die berufliche Laufbahn haben. ",
     "quote2": "Aus dieser Überzeugung ist WEL entstanden"
   },
   "benefits": {
@@ -405,6 +405,25 @@
       "Aktionspläne",
       "Kommunikation",
       "Diagnosen"
+    ],
+    "missionsExamplesTitle": "Beispiele durchgeführter Beratungsmandate",
+    "missionsExamples": [
+      {
+        "title": "Zugang von Frauen zu Führungsgremien",
+        "desc": "Hürden in Karrierewegen identifizieren und einen Aktionsplan zur Stärkung der Präsenz von Frauen im CODIR/COMEX aufstellen + 1:1-Negotraining-Session."
+      },
+      {
+        "title": "Investmentfonds & Gleichstellung",
+        "desc": "Begleitung eines Fonds und seiner Unternehmen, um Gleichstellungsaspekte in ihre Anlagepraxis und das Portfoliomonitoring zu integrieren."
+      },
+      {
+        "title": "Feminisierung von Berufen & Recruiting",
+        "desc": "Hürden bei der Attraktivität und Rekrutierung von Frauen in Berufen oder Branchen identifizieren, in denen sie unterrepräsentiert sind."
+      },
+      {
+        "title": "Barometer & Mitarbeitendenbefragung",
+        "desc": "Konzeption interner Umfragen, um Wahrnehmungen zu messen, Unterschiede zu erkennen und konkrete Handlungsfelder aufzuzeigen."
+      }
     ],
     "approcheEyebrow": "Was uns auszeichnet",
     "approcheTitle1": "Unser",

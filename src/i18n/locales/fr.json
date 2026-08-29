@@ -22,7 +22,7 @@
     "title2": "d'égalité femmes-hommes ?",
     "subtitle": "Premier label européen qui certifie et accompagne les entreprises engagées pour l'égalité professionnelle.",
     "statText": "À ce rythme, l'égalité professionnelle<br />sera atteinte en",
-    "quote1": "Le genre ne devrait pas avoir d'impact sur les carrières professionnelles.\u00a0",
+    "quote1": "Le genre ne devrait pas avoir d'impact sur les carrières professionnelles. ",
     "quote2": "C'est de cette conviction qu'est né WEL"
   },
   "benefits": {
@@ -405,6 +405,25 @@
       "Plans d'action",
       "Communication",
       "Diagnostics"
+    ],
+    "missionsExamplesTitle": "Exemples de missions de conseil réalisées",
+    "missionsExamples": [
+      {
+        "title": "Accès des femmes aux instances de direction",
+        "desc": "Identifier les freins dans les parcours et construire un plan d'action pour renforcer la présence des femmes au CODIR/COMEX + session de negotraining en 1 to 1."
+      },
+      {
+        "title": "Fonds d'investissement & égalité",
+        "desc": "Accompagnement d'un fonds et de ses entreprises pour intégrer les enjeux d'égalité dans leurs pratiques d'investissement et le suivi de leur portefeuille."
+      },
+      {
+        "title": "Féminisation des métiers & recrutement",
+        "desc": "Identifier les freins à l'attractivité et au recrutement des femmes dans les métiers ou filières où elles sont sous-représentées."
+      },
+      {
+        "title": "Baromètre & écoute des collaborateurs",
+        "desc": "Conception d'enquêtes internes pour mesurer les perceptions, identifier les écarts et faire émerger des axes d'action concrets."
+      }
     ],
     "approcheEyebrow": "Ce qui nous distingue",
     "approcheTitle1": "Notre",

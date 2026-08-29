@@ -22,7 +22,7 @@
     "title2": "for gender equality at work?",
     "subtitle": "The first European label that certifies and supports companies committed to workplace equality.",
     "statText": "At this pace, workplace equality<br />will be achieved in",
-    "quote1": "Gender should not have an impact on professional careers.\u00a0",
+    "quote1": "Gender should not have an impact on professional careers. ",
     "quote2": "This is the conviction that gave rise to WEL"
   },
   "benefits": {
@@ -405,6 +405,25 @@
       "Action plans",
       "Communication",
       "Diagnostics"
+    ],
+    "missionsExamplesTitle": "Examples of consulting missions delivered",
+    "missionsExamples": [
+      {
+        "title": "Women's access to executive bodies",
+        "desc": "Identifying career-path barriers and building an action plan to strengthen women's presence on the Executive Committee + one-to-one negotraining session."
+      },
+      {
+        "title": "Investment funds & equality",
+        "desc": "Supporting a fund and its portfolio companies in embedding equality issues into their investment practices and portfolio monitoring."
+      },
+      {
+        "title": "Feminising professions & recruitment",
+        "desc": "Identifying barriers to attracting and recruiting women in professions or sectors where they are underrepresented."
+      },
+      {
+        "title": "Employee barometer & listening",
+        "desc": "Designing internal surveys to measure perceptions, identify gaps and surface concrete areas for action."
+      }
     ],
     "approcheEyebrow": "What sets us apart",
     "approcheTitle1": "Our",
