@@ -575,28 +575,5 @@
   "trust": {
     "title": "De litar på oss",
     "subtitle": "Certifierade företag, stödda organisationer och partner i WEL-ekosystemet."
-  },
-  "whyNow": {
-    "eyebrow": "Varför agera nu?",
-    "title1": "Varför agera",
-    "title2": "nu?",
-    "items": {
-      "regulation": {
-        "category": "Reglering",
-        "title": "Förutse nya krav",
-        "text": "Förbered företaget på franska och europeiska regelverkens utveckling när det gäller jämställdhet och lönetransparens."
-      },
-      "employer": {
-        "category": "Arbetsgivarvarumärke",
-        "title": "Stärk din attraktionskraft",
-        "text": "Objektivisera och visa upp dina åtaganden inför medarbetare, kandidater, kunder och partners."
-      },
-      "piloting": {
-        "category": "Styrning",
-        "title": "Från åtaganden till resultat",
-        "text": "Mät era metoder, identifiera era prioriteringar och strukturera en konkret och mätbar färdplan."
-      }
-    },
-    "conclusion": "WEL förvandlar dina åtaganden till en mätbar, strukturerad och värdeskapande metod."
   }
 }

@@ -573,28 +573,5 @@
   "trust": {
     "title": "Confían en nosotros",
     "subtitle": "Empresas certificadas, organizaciones acompañadas y socios del ecosistema WEL."
-  },
-  "whyNow": {
-    "eyebrow": "¿Por qué actuar ahora?",
-    "title1": "¿Por qué actuar",
-    "title2": "ahora?",
-    "items": {
-      "regulation": {
-        "category": "Regulación",
-        "title": "Anticipar las nuevas exigencias",
-        "text": "Preparar la empresa para las evoluciones reglamentarias francesas y europeas en materia de igualdad profesional y transparencia salarial."
-      },
-      "employer": {
-        "category": "Marca empleadora",
-        "title": "Reforzar su atractivo",
-        "text": "Objetivar y valorizar sus compromisos ante colaboradores, candidatos, clientes y socios."
-      },
-      "piloting": {
-        "category": "Pilotaje",
-        "title": "De los compromisos a los resultados",
-        "text": "Medir sus prácticas, identificar sus prioridades y estructurar una hoja de ruta concreta y medible."
-      }
-    },
-    "conclusion": "WEL transforma sus compromisos en un enfoque medible, estructurado y valorizable."
   }
 }

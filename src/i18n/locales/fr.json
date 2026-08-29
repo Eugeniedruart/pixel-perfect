@@ -573,28 +573,5 @@
   "trust": {
     "title": "Ils nous font confiance",
     "subtitle": "Entreprises labellisées, organisations accompagnées et partenaires de l’écosystème WEL."
-  },
-  "whyNow": {
-    "eyebrow": "Pourquoi agir maintenant ?",
-    "title1": "Pourquoi agir",
-    "title2": "maintenant ?",
-    "items": {
-      "regulation": {
-        "category": "Réglementation",
-        "title": "Anticiper les nouvelles exigences",
-        "text": "Préparer l’entreprise aux évolutions réglementaires françaises et européennes en matière d’égalité professionnelle et de transparence salariale."
-      },
-      "employer": {
-        "category": "Marque employeur",
-        "title": "Renforcer son attractivité",
-        "text": "Objectiver et valoriser ses engagements auprès des collaborateurs, candidats, clients et partenaires."
-      },
-      "piloting": {
-        "category": "Pilotage",
-        "title": "Passer des engagements aux résultats",
-        "text": "Mesurer ses pratiques, identifier ses priorités et structurer une feuille de route concrète et mesurable."
-      }
-    },
-    "conclusion": "WEL transforme vos engagements en une démarche mesurable, structurée et valorisable."
   }
 }

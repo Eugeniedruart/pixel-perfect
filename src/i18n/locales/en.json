@@ -573,28 +573,5 @@
   "trust": {
     "title": "They trust us",
     "subtitle": "Certified companies, supported organizations and partners of the WEL ecosystem."
-  },
-  "whyNow": {
-    "eyebrow": "Why act now?",
-    "title1": "Why act",
-    "title2": "now?",
-    "items": {
-      "regulation": {
-        "category": "Regulation",
-        "title": "Anticipate new requirements",
-        "text": "Prepare your company for French and European regulatory changes in gender equality and pay transparency."
-      },
-      "employer": {
-        "category": "Employer brand",
-        "title": "Strengthen your attractiveness",
-        "text": "Objectify and showcase your commitments to employees, candidates, clients and partners."
-      },
-      "piloting": {
-        "category": "Piloting",
-        "title": "From commitments to results",
-        "text": "Measure your practices, identify your priorities and structure a concrete, measurable roadmap."
-      }
-    },
-    "conclusion": "WEL turns your commitments into a measurable, structured and valuable approach."
   }
 }
