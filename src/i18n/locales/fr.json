@@ -340,17 +340,17 @@
     "title2": "professionnelle",
     "subtitle": "WEL accompagne les organisations dans des démarches concrètes et durables.",
     "heroCta": "Échangez avec nous",
-    "quote1": "\"L'égalité ne se décrète pas. Elle se construit, au quotidien.\"",
-    "quote2": "\"Un label n'a de valeur que par les transformations qu'il engage.\"",
+    "quote1": "L'égalité ne se décrète pas. Elle se construit, au quotidien.",
+    "quote2": "Un label n'a de valeur que par les transformations qu'il engage.",
     "labelEyebrow": "Labellisation",
     "labelTitle1": "Le label",
     "labelTitle2": "WEL",
     "labelTagline": "Un levier de transformation.",
     "labelIntro": "Évaluer vos pratiques. Reconnaître vos engagements. Vous inscrire dans une trajectoire de progrès durable.",
     "labelBullets": [
-      "Diagnostic structuré, 4 piliers concrets",
-      "Critères mesurables, pas déclaratif",
-      "Reconnaissance qui valorise l'action",
+      "Diagnostic structuré",
+      "Critères mesurables, pas déclaratifs",
+      "Plan d'action ",
       "Atout pour vos appels d'offres et ESG"
     ],
     "labelCta": "Découvrir la méthodologie",
@@ -361,27 +361,27 @@
     "formationsEyebrow": "Sensibilisation",
     "formationsTitle1": "Formations &",
     "formationsTitle2": "conférences",
-    "formationsIntro": "Interventions pour faire évoluer les regards et déclencher l'action.",
+    "formationsIntro": "Toutes nos interventions sont conçues pour être interactives, ludiques et engageantes.",
     "formations": [
       {
         "title": "Égalité femmes-hommes",
         "desc": "Quelle place pour les hommes ?"
       },
       {
-        "title": "Parentalité & carrière",
-        "desc": "Comprendre et réduire les inégalités"
+        "title": "Biais inconscients ",
+        "desc": "Décidons-nous vraiment objectivement ?"
       },
       {
         "title": "Sexisme ordinaire",
         "desc": "Ce que nous ne voyons plus"
       },
       {
-        "title": "Femmes et leadership",
-        "desc": "Dynamiques d'accès aux responsabilités"
+        "title": "Handicaps invisibles & santé mentale",
+        "desc": " Les femmes sous les radars"
       },
       {
-        "title": "Process de recrutement",
-        "desc": "Adopter un process de recrutement inclusif"
+        "title": "Âgisme et parcours professionnels :",
+        "desc": "“Trop jeune, trop vieille ?”"
       }
     ],
     "enquetesEyebrow": "Écoute",
