@@ -19,7 +19,7 @@ const BenefitsSection = () => {
           aria-hidden="true"
           className="h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-background/75 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-background/40 backdrop-blur-[2px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,19 +32,19 @@ const BenefitsSection = () => {
           <span className="font-serif-display italic text-primary font-normal">{t("benefits.title2")}</span>
         </h2>
 
-        <div className="max-w-5xl mx-auto rounded-2xl border border-border bg-card shadow-[0_10px_40px_-20px_hsl(var(--wel-navy)/0.15)] px-5 py-6 md:px-10 md:py-8">
+        <div className="max-w-5xl mx-auto px-1 py-2">
           {/* 3 enjeux */}
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="hidden sm:block h-px w-14 bg-primary/40" />
-            <p className="text-[11px] tracking-[0.25em] uppercase text-primary font-semibold">{t("benefits.enjeuxLabel")}</p>
+            <p className="inline-block rounded-full bg-white/90 px-4 py-1 text-[11px] tracking-[0.25em] uppercase text-primary font-semibold shadow-sm">{t("benefits.enjeuxLabel")}</p>
             <span className="hidden sm:block h-px w-14 bg-primary/40" />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-0 sm:divide-x sm:divide-border">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {enjeux.map((e, i) => {
               const Icon = icons[i];
               return (
-                <div key={i} className="text-center sm:px-6">
+                <div key={i} className="text-center sm:px-6 rounded-2xl bg-white/90 backdrop-blur-sm px-4 py-5 shadow-[0_8px_30px_-12px_hsl(var(--wel-navy)/0.25)] sm:mx-2">
                   <Icon className="w-5 h-5 text-primary mx-auto mb-2" strokeWidth={1.5} />
                   <p className="font-bold text-foreground text-sm md:text-base">{e.title}</p>
                   {e.highlight && (
@@ -77,13 +77,13 @@ const BenefitsSection = () => {
           {/* 3 résultats */}
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="hidden sm:block h-px w-14 bg-primary/40" />
-            <p className="text-[11px] tracking-[0.25em] uppercase text-primary font-semibold">{t("benefits.resultatsLabel")}</p>
+            <p className="inline-block rounded-full bg-white/90 px-4 py-1 text-[11px] tracking-[0.25em] uppercase text-primary font-semibold shadow-sm">{t("benefits.resultatsLabel")}</p>
             <span className="hidden sm:block h-px w-14 bg-primary/40" />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-0 sm:divide-x sm:divide-border">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {resultats.map((r, i) => (
-              <div key={i} className="text-center sm:px-6">
+              <div key={i} className="text-center sm:px-6 rounded-2xl bg-white/90 backdrop-blur-sm px-4 py-5 shadow-[0_8px_30px_-12px_hsl(var(--wel-navy)/0.25)] sm:mx-2">
                 <p className="font-serif-display italic text-primary/60 text-lg md:text-xl">{r.num}</p>
                 <p className="font-bold text-foreground text-sm md:text-base mt-0.5">{r.title}</p>
                 <p className="text-muted-foreground text-xs md:text-sm mt-1 leading-snug">{r.detail}</p>
@@ -91,7 +91,9 @@ const BenefitsSection = () => {
             ))}
           </div>
 
-          <p className="text-[10px] text-muted-foreground text-center mt-5">{t("benefits.source")}</p>
+          <div className="text-center mt-5">
+            <p className="inline-block bg-white/80 px-3 py-1 rounded-full text-[10px] text-muted-foreground">{t("benefits.source")}</p>
+          </div>
         </div>
       </div>
     </section>
