@@ -573,5 +573,46 @@
   "trust": {
     "title": "Ils nous font confiance",
     "subtitle": "Entreprises labellisées, organisations accompagnées et partenaires de l’écosystème WEL."
+  },
+  "whyAct": {
+    "eyebrow": "Pourquoi agir ?",
+    "title1": "L'égalité professionnelle,",
+    "title2": "un enjeu devenu",
+    "title3": "stratégique",
+    "issuesEyebrow": "3 enjeux clés",
+    "issues": [
+      {
+        "title": "Performance économique",
+        "description": "Faites de l'égalité professionnelle un levier de performance et de pérennité."
+      },
+      {
+        "title": "Évolution réglementaire",
+        "description": "Anticipez les obligations françaises et européennes et sécurisez votre conformité."
+      },
+      {
+        "title": "Attentes sociétales",
+        "description": "Répondez aux attentes croissantes des talents, clients et investisseurs en matière d'égalité."
+      }
+    ],
+    "welPillars": "Mesurer · Structurer · Valoriser",
+    "statValue": "+15 %",
+    "statLabel": "de rentabilité",
+    "statSource": "lorsqu'il y a au moins 30 % de femmes au COMEX — McKinsey.",
+    "resultsEyebrow": "3 résultats concrets",
+    "results": [
+      {
+        "title": "Une marque employeur renforcée",
+        "description": "Valorisez vos engagements et renforcez votre attractivité auprès des talents et partenaires."
+      },
+      {
+        "title": "Des métiers plus mixtes",
+        "description": "Identifiez les freins et activez les leviers qui favorisent durablement la mixité des métiers."
+      },
+      {
+        "title": "Un accès plus équitable à la gouvernance",
+        "description": "Mesurez les écarts et structurez les actions favorisant l'accès des femmes aux postes de décision."
+      }
+    ],
+    "closing": "WEL vous accompagne de la mesure à l'impact, pour des actions concrètes et durables."
   }
 }
