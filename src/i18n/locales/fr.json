@@ -7,17 +7,10 @@
     "cta": "Je veux être Welbellisé"
   },
   "hero": {
-    "eyebrow": "WOMEN EQUITY LABEL",
-    "title": "Mesurez. Progressez. Valorisez vos engagements.",
-    "subtitle": "WEL évalue vos pratiques en matière d'égalité professionnelle, identifie vos axes de progression et valorise les actions déjà engagées.",
-    "ctaPrimary": "Découvrir le label",
-    "ctaSecondary": "Nous contacter",
-    "reassuranceItems": [
-      "4 piliers",
-      "Audit indépendant",
-      "Plan d'action personnalisé",
-      "Certification 3 ans"
-    ],
+    "eyebrow": "WEL (Women Equity Label)",
+    "title1": "WEL, le label de référence",
+    "title2": "pour l'égalité professionnelle",
+    "title3": "femmes-hommes",
     "ctaTest": "Tester mon éligibilité",
     "ctaLabel": "Je veux être Welbellisé",
     "tagline": "Premier label français qui certifie et accompagne les entreprises",
