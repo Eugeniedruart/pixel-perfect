@@ -44,7 +44,7 @@ const BenefitsSection = () => {
             {enjeux.map((e, i) => {
               const Icon = icons[i];
               return (
-                <div key={i} className="text-center sm:px-6">
+                <div key={i} className="text-center sm:px-6 rounded-2xl bg-white/90 backdrop-blur-sm px-4 py-5 shadow-[0_8px_30px_-12px_hsl(var(--wel-navy)/0.25)] sm:mx-2">
                   <Icon className="w-5 h-5 text-primary mx-auto mb-2" strokeWidth={1.5} />
                   <p className="font-bold text-foreground text-sm md:text-base">{e.title}</p>
                   {e.highlight && (
