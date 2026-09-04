@@ -9,8 +9,31 @@ import frenchTech from "@/assets/partners/french-tech.webp.asset.json";
 import bpifrance from "@/assets/partners/bpifrance.png.asset.json";
 import paysDeLaLoire from "@/assets/partners/pays-de-la-loire.png.asset.json";
 
+const logos = [
+  { src: mobiapps.url, alt: "Mobiapps", mobileH: "h-3", desktopH: "sm:h-3.5" },
+  { src: bpifrance.url, alt: "Bpifrance", mobileH: "h-7", desktopH: "sm:h-11" },
+  { src: paysDeLaLoire.url, alt: "Région Pays de la Loire", mobileH: "h-6", desktopH: "sm:h-9" },
+  { src: citeCongres.url, alt: "La Cité des Congrès de Nantes", mobileH: "h-9", desktopH: "sm:h-14" },
+  { src: frenchTech.url, alt: "La French Tech", mobileH: "h-8", desktopH: "sm:h-12" },
+  { src: kanoma.url, alt: "Kanoma", mobileH: "h-5", desktopH: "sm:h-7" },
+  { src: prolaser.url, alt: "Prolaser", mobileH: "h-12", desktopH: "sm:h-24" },
+  { src: exponantes.url, alt: "Exponantes Le Parc", mobileH: "h-7", desktopH: "sm:h-9" },
+  { src: valeuriad.url, alt: "Valeuriad", mobileH: "h-9", desktopH: "sm:h-14" },
+];
+
 const TrustSection = () => {
   const { t } = useTranslation();
+
+  const Logo = ({ logo, index }: { logo: typeof logos[0]; index: number }) => (
+    <img
+      src={logo.src}
+      alt={logo.alt}
+      className={`trust-logo ${logo.mobileH} ${logo.desktopH}`}
+      loading="lazy"
+      data-index={index}
+    />
+  );
+
   return (
     <section className="py-8 sm:py-10 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -24,16 +47,26 @@ const TrustSection = () => {
         <p className="text-xs sm:text-sm text-muted-foreground max-w-2xl mx-auto mb-6 sm:mb-8">
           {t("trust.subtitle")}
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-y-5">
-          <img src={mobiapps.url} alt="Mobiapps" className="trust-logo h-[9px] sm:h-3" loading="lazy" />
-          <img src={bpifrance.url} alt="Bpifrance" className="trust-logo h-9 sm:h-11" loading="lazy" />
-          <img src={paysDeLaLoire.url} alt="Région Pays de la Loire" className="trust-logo h-7 sm:h-9" loading="lazy" />
-          <img src={citeCongres.url} alt="La Cité des Congrès de Nantes" className="trust-logo h-12 sm:h-14" loading="lazy" />
-          <img src={frenchTech.url} alt="La French Tech" className="trust-logo h-11 sm:h-12" loading="lazy" />
-          <img src={kanoma.url} alt="Kanoma" className="trust-logo h-6 sm:h-7" loading="lazy" />
-          <img src={prolaser.url} alt="Prolaser" className="trust-logo h-20 sm:h-24" loading="lazy" />
-          <img src={exponantes.url} alt="Exponantes Le Parc" className="trust-logo h-8 sm:h-9" loading="lazy" />
-          <img src={valeuriad.url} alt="Valeuriad" className="trust-logo h-11 sm:h-14" loading="lazy" />
+
+        {/* Desktop : une seule ligne */}
+        <div className="trust-desktop-row items-center justify-center">
+          {logos.map((logo, i) => (
+            <Logo key={i} logo={logo} index={i} />
+          ))}
+        </div>
+
+        {/* Mobile : exactement 2 lignes (5 + 4 logos) */}
+        <div className="trust-mobile-row flex-col items-center gap-y-5">
+          <div className="flex items-center justify-center gap-x-3.5 flex-nowrap">
+            {logos.slice(0, 5).map((logo, i) => (
+              <Logo key={i} logo={logo} index={i} />
+            ))}
+          </div>
+          <div className="flex items-center justify-center gap-x-3.5 flex-nowrap">
+            {logos.slice(5).map((logo, i) => (
+              <Logo key={i + 5} logo={logo} index={i + 5} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
