@@ -84,21 +84,21 @@ const BenefitsSection = () => {
           </div>
 
           {/* Transition vers WEL */}
-          <div className="flex items-center justify-center gap-4 my-3 md:my-4 text-primary/40">
-            <span className="hidden sm:block h-px flex-1 max-w-[6rem] bg-primary/25" />
-            <ArrowDown className="w-3.5 h-3.5" strokeWidth={1.5} />
-            <span className="hidden sm:block h-px flex-1 max-w-[6rem] bg-primary/25" />
+          <div className="flex items-center justify-center gap-3 my-2.5 md:my-3 text-primary/30">
+            <span className="hidden sm:block h-px flex-1 max-w-[5rem] bg-primary/20" />
+            <ArrowDown className="w-3 h-3" strokeWidth={1.5} />
+            <span className="hidden sm:block h-px flex-1 max-w-[5rem] bg-primary/20" />
           </div>
 
           {/* WEL */}
-          <div className="mx-auto w-fit rounded-lg bg-wel-blue-light px-5 py-2 md:px-6 md:py-2.5 text-center shadow-[0_6px_18px_-10px_hsl(var(--primary)/0.3)] transition-transform duration-300 hover:-translate-y-0.5">
-            <img src={welLogo} alt="WEL — Women Equity Label" className="h-8 md:h-10 w-auto mx-auto" />
+          <div className="mx-auto w-fit rounded-lg bg-wel-blue-light px-4 py-1.5 md:px-5 md:py-2 text-center shadow-[0_5px_14px_-8px_hsl(var(--primary)/0.25)] transition-transform duration-300 hover:-translate-y-0.5">
+            <img src={welLogo} alt="WEL — Women Equity Label" className="h-7 md:h-9 w-auto mx-auto" />
           </div>
 
-          <div className="flex items-center justify-center gap-4 my-3 md:my-4 text-primary/40">
-            <span className="hidden sm:block h-px flex-1 max-w-[6rem] bg-primary/25" />
-            <ArrowDown className="w-3.5 h-3.5" strokeWidth={1.5} />
-            <span className="hidden sm:block h-px flex-1 max-w-[6rem] bg-primary/25" />
+          <div className="flex items-center justify-center gap-3 my-2.5 md:my-3 text-primary/30">
+            <span className="hidden sm:block h-px flex-1 max-w-[5rem] bg-primary/20" />
+            <ArrowDown className="w-3 h-3" strokeWidth={1.5} />
+            <span className="hidden sm:block h-px flex-1 max-w-[5rem] bg-primary/20" />
           </div>
 
           {/* 3 résultats */}
