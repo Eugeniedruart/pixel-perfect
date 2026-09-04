@@ -49,14 +49,14 @@ const TrustSection = () => {
         </p>
 
         {/* Desktop : une seule ligne */}
-        <div className="hidden sm:flex items-center justify-center">
+        <div className="trust-desktop-row items-center justify-center">
           {logos.map((logo, i) => (
             <Logo key={i} logo={logo} index={i} />
           ))}
         </div>
 
         {/* Mobile : exactement 2 lignes (5 + 4 logos) */}
-        <div className="sm:hidden flex flex-col items-center gap-y-5">
+        <div className="trust-mobile-row flex-col items-center gap-y-5">
           <div className="flex items-center justify-center gap-x-3.5 flex-nowrap">
             {logos.slice(0, 5).map((logo, i) => (
               <Logo key={i} logo={logo} index={i} />
