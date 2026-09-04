@@ -110,11 +110,11 @@ const BenefitsSection = () => {
             <span className="hidden sm:block h-px flex-1 max-w-[4rem] bg-primary/40" />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 auto-rows-fr">
             {resultats.map((r) => (
               <div
                 key={r.num}
-                className="flex flex-col h-full justify-center text-center rounded-xl bg-white/90 backdrop-blur-sm px-4 py-4 md:px-5 md:py-5 shadow-[0_6px_20px_-10px_hsl(var(--wel-navy)/0.2)]"
+                className="flex flex-col h-full justify-center text-center rounded-xl bg-white/90 backdrop-blur-sm px-4 py-3 md:px-5 md:py-4 shadow-[0_6px_20px_-10px_hsl(var(--wel-navy)/0.2)]"
               >
                 <p className="font-serif-display italic text-primary/60 text-base md:text-lg leading-none">{r.num}</p>
                 <p className="font-bold text-foreground text-sm md:text-base mt-1.5 leading-tight">{r.title}</p>
