@@ -132,7 +132,23 @@
   flex-shrink: 0;
 }
 
+.trust-desktop-row {
+  display: none;
+}
+
+.trust-mobile-row {
+  display: flex;
+}
+
 @media (min-width: 640px) {
+  .trust-desktop-row {
+    display: flex;
+  }
+
+  .trust-mobile-row {
+    display: none;
+  }
+
   .trust-logo {
     padding: 0 1.5rem;
     border-left: 1px solid hsl(228 25% 88%);
