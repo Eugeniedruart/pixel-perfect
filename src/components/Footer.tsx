@@ -41,9 +41,9 @@ const Footer = () => {
             </div>
 
             <div className="rounded-xl bg-wel-cream p-4 md:p-6">
-              <h4 className="font-bold text-foreground text-sm md:text-base mb-2">
+              <p className="font-bold text-foreground text-sm md:text-base mb-2">
                 {t("footer.ctaTitle")}
-              </h4>
+              </p>
               <p className="text-xs md:text-sm text-muted-foreground mb-3">
                 {t("footer.ctaDesc")}
               </p>
