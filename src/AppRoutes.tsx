@@ -5,6 +5,7 @@ import Methodologie from "./pages/Methodologie.tsx";
 import Offres from "./pages/Offres.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Eligibilite from "./pages/Eligibilite.tsx";
+import EntreprisesLabellisees from "./pages/EntreprisesLabellisees.tsx";
 import MentionsLegales from "./pages/MentionsLegales.tsx";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
 import GestionCookies from "./pages/GestionCookies.tsx";
