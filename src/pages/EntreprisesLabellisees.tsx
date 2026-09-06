@@ -13,6 +13,8 @@ import citePhoto from "@/assets/testimonials/cite-photo.jpg.asset.json";
 import valeuriadPhoto from "@/assets/testimonials/valeuriad-photo.jpg.asset.json";
 import kanomaVideo from "@/assets/testimonials/kanoma-video.mp4.asset.json";
 import mobiappsVideo from "@/assets/testimonials/mobiapps-video.mp4.asset.json";
+import kanomaPoster from "@/assets/testimonials/kanoma-poster.jpg.asset.json";
+import mobiappsPoster from "@/assets/testimonials/mobiapps-poster.jpg.asset.json";
 import certifiedBadge from "@/assets/wel-certified-logo-dark.png.asset.json";
 
 const companyLogos: Record<string, string> = {
@@ -41,6 +43,16 @@ const companyPhotos: Record<string, string> = {
 const companyVideos: Record<string, string> = {
   kanoma: kanomaVideo.url,
   mobiapps: mobiappsVideo.url,
+};
+
+const companyVideoPosters: Record<string, string> = {
+  kanoma: kanomaPoster.url,
+  mobiapps: mobiappsPoster.url,
+};
+
+const companyVideoCaptions: Record<string, string> = {
+  kanoma: "Créateur & dirigeant, Kanoma",
+  mobiapps: "Annabelle Sadet, Responsable des Ressources Humaines",
 };
 
 interface Company {
@@ -80,15 +92,23 @@ const CompanyMedia = ({ company }: { company: Company }) => {
     const src = companyVideos[company.key];
     if (src) {
       return (
-        <div className="w-full sm:w-72 lg:w-80 shrink-0 overflow-hidden rounded-2xl border border-border bg-black shadow-sm">
-          <video
-            src={src}
-            controls
-            preload="metadata"
-            playsInline
-            className="aspect-video h-full w-full object-cover"
-          />
-        </div>
+        <figure className="w-full sm:w-72 lg:w-80 shrink-0">
+          <div className="overflow-hidden rounded-xl border border-border bg-foreground shadow-sm">
+            <video
+              src={src}
+              poster={companyVideoPosters[company.key]}
+              controls
+              preload="metadata"
+              playsInline
+              className="aspect-video w-full object-cover"
+            />
+          </div>
+          {companyVideoCaptions[company.key] && (
+            <figcaption className="mt-2 text-center text-xs font-medium text-muted-foreground">
+              {companyVideoCaptions[company.key]}
+            </figcaption>
+          )}
+        </figure>
       );
     }
     return (
@@ -109,7 +129,7 @@ const CompanyMedia = ({ company }: { company: Company }) => {
       <img
         src={photo}
         alt={`Remise du label WEL – ${company.name}`}
-        className="h-32 w-32 sm:h-40 sm:w-40 shrink-0 rounded-full border border-border object-cover shadow-sm"
+        className="aspect-[4/3] w-full sm:w-64 lg:w-72 shrink-0 rounded-xl border border-border object-cover shadow-sm"
         loading="lazy"
       />
     );
