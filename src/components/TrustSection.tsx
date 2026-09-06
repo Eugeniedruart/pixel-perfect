@@ -16,7 +16,7 @@ const logos = [
   { src: citeCongres.url, alt: "La Cité des Congrès de Nantes", mobileH: "h-9", desktopH: "sm:h-14" },
   { src: frenchTech.url, alt: "La French Tech", mobileH: "h-8", desktopH: "sm:h-12" },
   { src: kanoma.url, alt: "Kanoma", mobileH: "h-5", desktopH: "sm:h-7" },
-  { src: prolaser.url, alt: "Prolaser", mobileH: "h-28", desktopH: "sm:h-56" },
+  { src: prolaser.url, alt: "Prolaser", mobileH: "h-36", desktopH: "sm:h-72" },
   { src: exponantes.url, alt: "Exponantes Le Parc", mobileH: "h-7", desktopH: "sm:h-9" },
   { src: valeuriad.url, alt: "Valeuriad", mobileH: "h-9", desktopH: "sm:h-14" },
 ];
