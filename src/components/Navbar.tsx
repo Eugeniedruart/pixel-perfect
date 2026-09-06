@@ -24,6 +24,7 @@ const Navbar = () => {
             <Link to="/#label" className="text-sm text-foreground hover:text-primary transition-colors">{t("nav.label")}</Link>
             <Link to="/offres" className="text-sm text-foreground hover:text-primary transition-colors">{t("nav.offres")}</Link>
             <Link to="/methodologie" className="text-sm text-foreground hover:text-primary transition-colors">{t("nav.methodologie")}</Link>
+            <Link to="/entreprises-labellisees" className="text-sm text-foreground hover:text-primary transition-colors">{t("nav.labeled")}</Link>
             <Link to="/contact" className="text-sm text-foreground hover:text-primary transition-colors">{t("nav.contact")}</Link>
           </div>
 
@@ -51,6 +52,7 @@ const Navbar = () => {
           <Link to="/#label" className="block text-sm text-foreground">{t("nav.label")}</Link>
           <Link to="/offres" className="block text-sm text-foreground">{t("nav.offres")}</Link>
           <Link to="/methodologie" className="block text-sm text-foreground">{t("nav.methodologie")}</Link>
+          <Link to="/entreprises-labellisees" className="block text-sm text-foreground">{t("nav.labeled")}</Link>
           <Link to="/contact" className="block text-sm text-foreground">{t("nav.contact")}</Link>
           <div className="flex gap-2 pt-2">
             <Button size="sm" className="flex-1 bg-primary text-primary-foreground" asChild><Link to="/contact">{t("nav.cta")}</Link></Button>

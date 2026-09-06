@@ -4,7 +4,8 @@
     "offres": "Nuestras ofertas",
     "methodologie": "Metodología",
     "contact": "Contacto",
-    "cta": "Quiero ser Welbellizado"
+    "cta": "Quiero ser Welbellizado",
+    "labeled": "Empresas certificadas"
   },
   "hero": {
     "eyebrow": "Women Equity Label",
@@ -591,5 +592,49 @@
   "trust": {
     "title": "Confían en nosotros",
     "subtitle": "Empresas certificadas, organizaciones acompañadas y socios del ecosistema WEL."
+  },
+  "labeled": {
+    "eyebrow": "El sello WEL en acción",
+    "h1": "Empresas certificadas WEL – Women Equity Label",
+    "intro": "Han medido, estructurado y hecho avanzar la igualdad profesional en su organización. Descubra las empresas que han obtenido el sello WEL.",
+    "badge": "Empresa certificada WEL",
+    "companies": [
+      {
+        "key": "cite",
+        "name": "La Cité des Congrès de Nantes",
+        "sector": "Eventos",
+        "text": "Un plan de acción estructurado para reforzar la igualdad mujeres-hombres en todos los niveles."
+      },
+      {
+        "key": "mobiapps",
+        "name": "Mobiapps",
+        "sector": "Tecnología",
+        "text": "Prácticas de RRHH evaluadas y mejoradas en los cuatro pilares del referencial WEL."
+      },
+      {
+        "key": "kanoma",
+        "name": "Kanoma",
+        "sector": "Consultoría y datos",
+        "text": "Un enfoque medible de la igualdad profesional, del diagnóstico al plan de acción."
+      },
+      {
+        "key": "exponantes",
+        "name": "Exponantes Le Parc",
+        "sector": "Eventos",
+        "text": "La igualdad profesional integrada en la gestión de equipos y carreras."
+      },
+      {
+        "key": "prolaser",
+        "name": "Prolaser",
+        "sector": "Industria",
+        "text": "Un compromiso concreto con la feminización y la progresión profesional."
+      },
+      {
+        "key": "valeuriad",
+        "name": "Valeuriad",
+        "sector": "Consultoría",
+        "text": "Prácticas certificadas para medir y valorar la igualdad mujeres-hombres a diario."
+      }
+    ]
   }
 }

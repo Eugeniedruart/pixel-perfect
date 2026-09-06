@@ -27,6 +27,12 @@ export const prerenderRoutes: PrerenderRoute[] = [
       "Vérifiez en quelques minutes si votre organisation est éligible au label WEL pour l'égalité professionnelle femmes-hommes.",
   },
   {
+    path: "/entreprises-labellisees",
+    title: "Les entreprises labellisées WEL – Women Equity Label",
+    description:
+      "Découvrez les entreprises labellisées WEL : des organisations qui mesurent, structurent et font progresser l'égalité professionnelle femmes-hommes.",
+  },
+  {
     path: "/contact",
     title: "Contact | WEL – Women Equity Label",
     description: "Échangez avec l'équipe WEL sur la labellisation et l'accompagnement à l'égalité professionnelle.",

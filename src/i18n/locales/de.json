@@ -4,7 +4,8 @@
     "offres": "Unsere Angebote",
     "methodologie": "Methodik",
     "contact": "Kontakt",
-    "cta": "Ich möchte Welbellisiert werden"
+    "cta": "Ich möchte Welbellisiert werden",
+    "labeled": "Zertifizierte Unternehmen"
   },
   "hero": {
     "eyebrow": "Women Equity Label",
@@ -592,5 +593,49 @@
   "trust": {
     "title": "Sie vertrauen uns",
     "subtitle": "Zertifizierte Unternehmen, begleitete Organisationen und Partner des WEL-Ökosystems."
+  },
+  "labeled": {
+    "eyebrow": "Das WEL-Label in der Praxis",
+    "h1": "WEL-zertifizierte Unternehmen – Women Equity Label",
+    "intro": "Sie haben die berufliche Gleichstellung in ihrer Organisation gemessen, strukturiert und vorangebracht. Entdecken Sie die Unternehmen mit dem WEL-Label.",
+    "badge": "WEL-zertifiziertes Unternehmen",
+    "companies": [
+      {
+        "key": "cite",
+        "name": "La Cité des Congrès de Nantes",
+        "sector": "Veranstaltungen",
+        "text": "Ein strukturierter Aktionsplan zur Stärkung der Gleichstellung auf allen Ebenen."
+      },
+      {
+        "key": "mobiapps",
+        "name": "Mobiapps",
+        "sector": "Technologie",
+        "text": "HR-Praktiken, bewertet und verbessert entlang der vier Säulen des WEL-Referenzrahmens."
+      },
+      {
+        "key": "kanoma",
+        "name": "Kanoma",
+        "sector": "Beratung & Daten",
+        "text": "Ein messbarer Ansatz für berufliche Gleichstellung, von der Diagnose bis zum Aktionsplan."
+      },
+      {
+        "key": "exponantes",
+        "name": "Exponantes Le Parc",
+        "sector": "Veranstaltungen",
+        "text": "Berufliche Gleichstellung im Zentrum von Team- und Karrieremanagement."
+      },
+      {
+        "key": "prolaser",
+        "name": "Prolaser",
+        "sector": "Industrie",
+        "text": "Ein konkretes Engagement für Feminisierung und berufliche Entwicklung."
+      },
+      {
+        "key": "valeuriad",
+        "name": "Valeuriad",
+        "sector": "Beratung",
+        "text": "Zertifizierte Praktiken, um Gleichstellung täglich zu messen und zu fördern."
+      }
+    ]
   }
 }

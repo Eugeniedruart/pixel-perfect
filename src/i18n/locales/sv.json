@@ -4,7 +4,8 @@
     "offres": "Våra erbjudanden",
     "methodologie": "Metodik",
     "contact": "Kontakt",
-    "cta": "Jag vill bli Welbelliserad"
+    "cta": "Jag vill bli Welbelliserad",
+    "labeled": "Certifierade företag"
   },
   "hero": {
     "eyebrow": "Women Equity Label",
@@ -593,5 +594,49 @@
   "trust": {
     "title": "De litar på oss",
     "subtitle": "Certifierade företag, stödda organisationer och partner i WEL-ekosystemet."
+  },
+  "labeled": {
+    "eyebrow": "WEL-märket i praktiken",
+    "h1": "WEL-certifierade företag – Women Equity Label",
+    "intro": "De har mätt, strukturerat och drivit jämställdheten framåt i sin organisation. Upptäck företagen som har fått WEL-märket.",
+    "badge": "WEL-certifierat företag",
+    "companies": [
+      {
+        "key": "cite",
+        "name": "La Cité des Congrès de Nantes",
+        "sector": "Evenemang",
+        "text": "En strukturerad handlingsplan för att stärka jämställdheten på alla nivåer."
+      },
+      {
+        "key": "mobiapps",
+        "name": "Mobiapps",
+        "sector": "Teknik",
+        "text": "HR-praxis utvärderad och förbättrad enligt WEL-ramverkets fyra pelare."
+      },
+      {
+        "key": "kanoma",
+        "name": "Kanoma",
+        "sector": "Rådgivning & data",
+        "text": "Ett mätbart arbetssätt för jämställdhet, från diagnos till handlingsplan."
+      },
+      {
+        "key": "exponantes",
+        "name": "Exponantes Le Parc",
+        "sector": "Evenemang",
+        "text": "Jämställdhet integrerad i ledningen av team och karriärer."
+      },
+      {
+        "key": "prolaser",
+        "name": "Prolaser",
+        "sector": "Industri",
+        "text": "Ett konkret engagemang för feminisering och karriärutveckling."
+      },
+      {
+        "key": "valeuriad",
+        "name": "Valeuriad",
+        "sector": "Rådgivning",
+        "text": "Certifierad praxis för att mäta och främja jämställdhet varje dag."
+      }
+    ]
   }
 }
