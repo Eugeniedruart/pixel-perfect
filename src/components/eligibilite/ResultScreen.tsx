@@ -45,10 +45,10 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
         <img src={patternBg} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-60" />
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
           <CheckCircle className="h-12 w-12 text-primary mx-auto mb-6" />
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             {t("eligibilite.result.title1")}<br />
             {t("eligibilite.result.title2")} <span className="font-serif-display italic font-normal">{t("eligibilite.result.title3")}</span>
-          </h1>
+          </h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-8">
             {t("eligibilite.result.intro")}
           </p>

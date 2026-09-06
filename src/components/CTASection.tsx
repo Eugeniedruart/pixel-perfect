@@ -17,7 +17,7 @@ const CTASection = () => {
         <div className="max-w-3xl mx-auto rounded-xl bg-muted/50 border border-border overflow-hidden">
           <div className="grid md:grid-cols-5 gap-0">
             <div className="md:col-span-3 p-5 md:p-8 flex flex-col justify-center">
-              <h3 className="text-lg md:text-2xl font-bold text-foreground mb-2">{t("cta.title")}</h3>
+              <h2 className="text-lg md:text-2xl font-bold text-foreground mb-2">{t("cta.title")}</h2>
               <p className="text-muted-foreground text-xs md:text-sm mb-4 md:mb-6">
                 {t("cta.desc")}
               </p>
