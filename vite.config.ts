@@ -67,8 +67,8 @@ function prerenderPlugin(): Plugin {
             `<meta property="og:title" content="${escapeAttr(route.title)}">`
           );
           html = html.replace(
-            /<meta name="twitter:title" content="[^"]*" \/>/,
-            `<meta name="twitter:title" content="${escapeAttr(route.title)}" />`
+            /<meta name="twitter:title" content="[^"]*" ?\/?>/,
+            `<meta name="twitter:title" content="${escapeAttr(route.title)}">`
           );
         }
         if (route.description) {
