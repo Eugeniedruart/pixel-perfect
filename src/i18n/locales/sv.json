@@ -597,7 +597,8 @@
   },
   "labeled": {
     "eyebrow": "WEL-märket i praktiken",
-    "h1": "WEL-certifierade företag – Women Equity Label",
+    "h1Main": "WEL-certifierade företag",
+    "h1Sub": "Women Equity Label",
     "intro": "De har mätt, strukturerat och drivit jämställdheten framåt i sin organisation. Upptäck företagen som har fått WEL-märket.",
     "badge": "WEL-certifierat företag",
     "companies": [
