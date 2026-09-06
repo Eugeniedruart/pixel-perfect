@@ -17,6 +17,7 @@ const AppRoutes = () => (
     <Route path="/offres" element={<Offres />} />
     <Route path="/methodologie" element={<Methodologie />} />
     <Route path="/eligibilite" element={<Eligibilite />} />
+    <Route path="/entreprises-labellisees" element={<EntreprisesLabellisees />} />
     <Route path="/mentions-legales" element={<MentionsLegales />} />
     <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
     <Route path="/gestion-cookies" element={<GestionCookies />} />
