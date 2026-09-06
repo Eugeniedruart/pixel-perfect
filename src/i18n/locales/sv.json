@@ -610,7 +610,8 @@
         "quoteAuthor": "Arnaud Guibret",
         "quoteRole": "Responsable des Ressources Humaines",
         "mediaType": "photo",
-        "mediaPlaceholder": true
+        "mediaPlaceholder": true,
+        "labelDate": "2026"
       },
       {
         "key": "mobiapps",
@@ -618,7 +619,8 @@
         "sector": "Teknik",
         "text": "HR-praxis utvärderad och förbättrad enligt WEL-ramverkets fyra pelare.",
         "mediaType": "video",
-        "mediaPlaceholder": true
+        "mediaPlaceholder": true,
+        "labelDate": "2026"
       },
       {
         "key": "kanoma",
@@ -628,19 +630,22 @@
         "quote": "Nous avons beaucoup apprécié l'accompagnement d'Eugénie dans la labellisation. Il y a une véritable notion d'engagement chez WEL au-delà du simple coup de tampon, notamment prouvé par le plan d'action qu'on nous propose de suivre et qui impulse le fait de s'améliorer et/ou de développer nos actions d'entreprise en faveur de l'égalité femme/homme.",
         "quoteAuthor": "Cassandre Guillet",
         "mediaType": "video",
-        "mediaPlaceholder": true
+        "mediaPlaceholder": true,
+        "labelDate": "2026"
       },
       {
         "key": "exponantes",
         "name": "Exponantes Le Parc",
         "sector": "Evenemang",
-        "text": "Jämställdhet integrerad i ledningen av team och karriärer."
+        "text": "Jämställdhet integrerad i ledningen av team och karriärer.",
+        "labelDate": "2026"
       },
       {
         "key": "prolaser",
         "name": "Prolaser",
         "sector": "Industri",
-        "text": "Ett konkret engagemang för feminisering och karriärutveckling."
+        "text": "Ett konkret engagemang för feminisering och karriärutveckling.",
+        "labelDate": "2026"
       },
       {
         "key": "valeuriad",
@@ -648,7 +653,8 @@
         "sector": "Rådgivning",
         "text": "Certifierad praxis för att mäta och främja jämställdhet varje dag.",
         "mediaType": "photo",
-        "mediaPlaceholder": true
+        "mediaPlaceholder": true,
+        "labelDate": "2026"
       }
     ]
   }
