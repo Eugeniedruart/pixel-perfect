@@ -261,7 +261,7 @@ const EntreprisesLabellisees = () => {
                     key={company.key}
                     className="sm:col-span-2 lg:col-span-3 flex flex-col rounded-2xl border border-border bg-background p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow"
                   >
-                    <CompanyHeader company={company} className="mb-6" />
+                    <CompanyHeader company={company} className="mb-6" centered />
                     <div className="flex flex-col sm:flex-row items-center sm:items-stretch gap-6 sm:gap-8">
                       <div className="w-full sm:w-auto shrink-0">
                         <CompanyMedia company={company} />
