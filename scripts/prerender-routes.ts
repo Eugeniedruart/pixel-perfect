@@ -31,7 +31,19 @@ export const prerenderRoutes: PrerenderRoute[] = [
     title: "Contact | WEL – Women Equity Label",
     description: "Échangez avec l'équipe WEL sur la labellisation et l'accompagnement à l'égalité professionnelle.",
   },
-  { path: "/mentions-legales", title: "Mentions légales | WEL – Women Equity Label" },
-  { path: "/politique-confidentialite", title: "Politique de confidentialité | WEL – Women Equity Label" },
-  { path: "/gestion-cookies", title: "Gestion des cookies | WEL – Women Equity Label" },
+  {
+    path: "/mentions-legales",
+    title: "Mentions légales | WEL – Women Equity Label",
+    description: "Mentions légales du site womenequitylabel.fr : éditeur, hébergement, propriété intellectuelle et contact de WEL – Women Equity Label.",
+  },
+  {
+    path: "/politique-confidentialite",
+    title: "Politique de confidentialité | WEL – Women Equity Label",
+    description: "Politique de confidentialité de WEL : données collectées, finalités du traitement, durée de conservation et droits des utilisateurs.",
+  },
+  {
+    path: "/gestion-cookies",
+    title: "Gestion des cookies | WEL – Women Equity Label",
+    description: "Gestion des cookies sur womenequitylabel.fr : cookies utilisés, finalités et modalités de paramétrage de vos préférences.",
+  },
 ];
