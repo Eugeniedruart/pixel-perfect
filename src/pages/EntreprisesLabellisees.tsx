@@ -13,7 +13,7 @@ import citePhoto from "@/assets/testimonials/cite-photo.jpg.asset.json";
 import valeuriadPhoto from "@/assets/testimonials/valeuriad-photo.jpg.asset.json";
 import kanomaVideo from "@/assets/testimonials/kanoma-video.mp4.asset.json";
 import mobiappsVideo from "@/assets/testimonials/mobiapps-video.mp4.asset.json";
-import certifiedBadge from "@/assets/wel-certified-logo.png";
+import certifiedBadge from "@/assets/wel-certified-logo-dark.png.asset.json";
 
 const companyLogos: Record<string, string> = {
   cite: citeCongres.url,
@@ -67,7 +67,7 @@ const initialsOf = (name?: string) =>
 
 const CertifiedBadge = ({ label }: { label: string }) => (
   <img
-    src={certifiedBadge}
+    src={certifiedBadge.url}
     alt={label}
     title={label}
     className="mt-4 h-14 w-auto object-contain"
@@ -216,7 +216,10 @@ const EntreprisesLabellisees = () => {
                     </div>
                     {company.quote ? (
                       <blockquote>
-                        <p className="font-serif-display italic text-sm sm:text-base text-foreground leading-relaxed">
+                        <p
+                          className="font-serif-display italic text-sm sm:text-base text-foreground leading-relaxed"
+                          style={{ fontFamily: "'Libre Caslon Text', serif", fontStyle: "italic" }}
+                        >
                           « {company.quote} »
                         </p>
                         <footer className="mt-3 text-sm">
