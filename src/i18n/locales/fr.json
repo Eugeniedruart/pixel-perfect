@@ -603,19 +603,30 @@
         "key": "cite",
         "name": "La Cité des Congrès de Nantes",
         "sector": "Événementiel",
-        "text": "Un plan d'action structuré pour renforcer l'égalité femmes-hommes à tous les niveaux de l'organisation."
+        "text": "Un plan d'action structuré pour renforcer l'égalité femmes-hommes à tous les niveaux de l'organisation.",
+        "quote": "L'accompagnement mené par les équipes du label WEL nous a permis, en un temps record, d'obtenir un diagnostic et un plan d'actions parfaitement ciblés à notre organisation.",
+        "quoteAuthor": "Arnaud Guibret",
+        "quoteRole": "Responsable des Ressources Humaines",
+        "mediaType": "photo",
+        "mediaPlaceholder": true
       },
       {
         "key": "mobiapps",
         "name": "Mobiapps",
         "sector": "Technologies",
-        "text": "Des pratiques RH évaluées et progressées sur les quatre piliers du référentiel WEL."
+        "text": "Des pratiques RH évaluées et progressées sur les quatre piliers du référentiel WEL.",
+        "mediaType": "video",
+        "mediaPlaceholder": true
       },
       {
         "key": "kanoma",
         "name": "Kanoma",
         "sector": "Conseil & data",
-        "text": "Une démarche mesurable d'égalité professionnelle, du diagnostic au plan d'action."
+        "text": "Une démarche mesurable d'égalité professionnelle, du diagnostic au plan d'action.",
+        "quote": "Nous avons beaucoup apprécié l'accompagnement d'Eugénie dans la labellisation. Il y a une véritable notion d'engagement chez WEL au-delà du simple coup de tampon, notamment prouvé par le plan d'action qu'on nous propose de suivre et qui impulse le fait de s'améliorer et/ou de développer nos actions d'entreprise en faveur de l'égalité femme/homme.",
+        "quoteAuthor": "Cassandre Guillet",
+        "mediaType": "video",
+        "mediaPlaceholder": true
       },
       {
         "key": "exponantes",
@@ -633,7 +644,9 @@
         "key": "valeuriad",
         "name": "Valeuriad",
         "sector": "Conseil",
-        "text": "Des pratiques certifiées pour mesurer et valoriser l'égalité femmes-hommes au quotidien."
+        "text": "Des pratiques certifiées pour mesurer et valoriser l'égalité femmes-hommes au quotidien.",
+        "mediaType": "photo",
+        "mediaPlaceholder": true
       }
     ]
   }

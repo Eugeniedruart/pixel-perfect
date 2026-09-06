@@ -605,19 +605,30 @@
         "key": "cite",
         "name": "La Cité des Congrès de Nantes",
         "sector": "Evenemang",
-        "text": "En strukturerad handlingsplan för att stärka jämställdheten på alla nivåer."
+        "text": "En strukturerad handlingsplan för att stärka jämställdheten på alla nivåer.",
+        "quote": "L'accompagnement mené par les équipes du label WEL nous a permis, en un temps record, d'obtenir un diagnostic et un plan d'actions parfaitement ciblés à notre organisation.",
+        "quoteAuthor": "Arnaud Guibret",
+        "quoteRole": "Responsable des Ressources Humaines",
+        "mediaType": "photo",
+        "mediaPlaceholder": true
       },
       {
         "key": "mobiapps",
         "name": "Mobiapps",
         "sector": "Teknik",
-        "text": "HR-praxis utvärderad och förbättrad enligt WEL-ramverkets fyra pelare."
+        "text": "HR-praxis utvärderad och förbättrad enligt WEL-ramverkets fyra pelare.",
+        "mediaType": "video",
+        "mediaPlaceholder": true
       },
       {
         "key": "kanoma",
         "name": "Kanoma",
         "sector": "Rådgivning & data",
-        "text": "Ett mätbart arbetssätt för jämställdhet, från diagnos till handlingsplan."
+        "text": "Ett mätbart arbetssätt för jämställdhet, från diagnos till handlingsplan.",
+        "quote": "Nous avons beaucoup apprécié l'accompagnement d'Eugénie dans la labellisation. Il y a une véritable notion d'engagement chez WEL au-delà du simple coup de tampon, notamment prouvé par le plan d'action qu'on nous propose de suivre et qui impulse le fait de s'améliorer et/ou de développer nos actions d'entreprise en faveur de l'égalité femme/homme.",
+        "quoteAuthor": "Cassandre Guillet",
+        "mediaType": "video",
+        "mediaPlaceholder": true
       },
       {
         "key": "exponantes",
@@ -635,7 +646,9 @@
         "key": "valeuriad",
         "name": "Valeuriad",
         "sector": "Rådgivning",
-        "text": "Certifierad praxis för att mäta och främja jämställdhet varje dag."
+        "text": "Certifierad praxis för att mäta och främja jämställdhet varje dag.",
+        "mediaType": "photo",
+        "mediaPlaceholder": true
       }
     ]
   }

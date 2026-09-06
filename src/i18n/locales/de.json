@@ -604,19 +604,30 @@
         "key": "cite",
         "name": "La Cité des Congrès de Nantes",
         "sector": "Veranstaltungen",
-        "text": "Ein strukturierter Aktionsplan zur Stärkung der Gleichstellung auf allen Ebenen."
+        "text": "Ein strukturierter Aktionsplan zur Stärkung der Gleichstellung auf allen Ebenen.",
+        "quote": "L'accompagnement mené par les équipes du label WEL nous a permis, en un temps record, d'obtenir un diagnostic et un plan d'actions parfaitement ciblés à notre organisation.",
+        "quoteAuthor": "Arnaud Guibret",
+        "quoteRole": "Responsable des Ressources Humaines",
+        "mediaType": "photo",
+        "mediaPlaceholder": true
       },
       {
         "key": "mobiapps",
         "name": "Mobiapps",
         "sector": "Technologie",
-        "text": "HR-Praktiken, bewertet und verbessert entlang der vier Säulen des WEL-Referenzrahmens."
+        "text": "HR-Praktiken, bewertet und verbessert entlang der vier Säulen des WEL-Referenzrahmens.",
+        "mediaType": "video",
+        "mediaPlaceholder": true
       },
       {
         "key": "kanoma",
         "name": "Kanoma",
         "sector": "Beratung & Daten",
-        "text": "Ein messbarer Ansatz für berufliche Gleichstellung, von der Diagnose bis zum Aktionsplan."
+        "text": "Ein messbarer Ansatz für berufliche Gleichstellung, von der Diagnose bis zum Aktionsplan.",
+        "quote": "Nous avons beaucoup apprécié l'accompagnement d'Eugénie dans la labellisation. Il y a une véritable notion d'engagement chez WEL au-delà du simple coup de tampon, notamment prouvé par le plan d'action qu'on nous propose de suivre et qui impulse le fait de s'améliorer et/ou de développer nos actions d'entreprise en faveur de l'égalité femme/homme.",
+        "quoteAuthor": "Cassandre Guillet",
+        "mediaType": "video",
+        "mediaPlaceholder": true
       },
       {
         "key": "exponantes",
@@ -634,7 +645,9 @@
         "key": "valeuriad",
         "name": "Valeuriad",
         "sector": "Beratung",
-        "text": "Zertifizierte Praktiken, um Gleichstellung täglich zu messen und zu fördern."
+        "text": "Zertifizierte Praktiken, um Gleichstellung täglich zu messen und zu fördern.",
+        "mediaType": "photo",
+        "mediaPlaceholder": true
       }
     ]
   }
