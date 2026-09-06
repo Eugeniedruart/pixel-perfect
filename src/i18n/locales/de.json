@@ -596,7 +596,8 @@
   },
   "labeled": {
     "eyebrow": "Das WEL-Label in der Praxis",
-    "h1": "WEL-zertifizierte Unternehmen – Women Equity Label",
+    "h1Main": "WEL-zertifizierte Unternehmen",
+    "h1Sub": "Women Equity Label",
     "intro": "Sie haben die berufliche Gleichstellung in ihrer Organisation gemessen, strukturiert und vorangebracht. Entdecken Sie die Unternehmen mit dem WEL-Label.",
     "badge": "WEL-zertifiziertes Unternehmen",
     "companies": [

@@ -595,7 +595,8 @@
   },
   "labeled": {
     "eyebrow": "The WEL label in action",
-    "h1": "WEL-certified companies – Women Equity Label",
+    "h1Main": "WEL-certified companies",
+    "h1Sub": "Women Equity Label",
     "intro": "They have measured, structured and advanced workplace gender equality in their organization. Discover the companies that have earned the WEL label.",
     "badge": "WEL-certified company",
     "companies": [

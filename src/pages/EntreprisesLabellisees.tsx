@@ -242,7 +242,10 @@ const EntreprisesLabellisees = () => {
             {t("labeled.eyebrow")}
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-            {t("labeled.h1")}
+            {t("labeled.h1Main")}
+            <span className="block mt-1 text-lg sm:text-xl font-medium text-muted-foreground">
+              {t("labeled.h1Sub")}
+            </span>
           </h1>
           <p className="mt-5 text-muted-foreground text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
             {t("labeled.intro")}
