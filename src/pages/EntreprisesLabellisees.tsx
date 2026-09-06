@@ -177,11 +177,13 @@ const CompanyName = ({
 const CompanyHeader = ({
   company,
   className = "mb-3",
+  centered = false,
 }: {
   company: Company;
   className?: string;
+  centered?: boolean;
 }) => (
-  <div className={`flex items-center justify-center sm:justify-start gap-3 ${className}`}>
+  <div className={`flex items-center gap-3 ${centered ? "justify-center" : "justify-center sm:justify-start"} ${className}`}>
     {companyLogos[company.key] && (
       <img
         src={companyLogos[company.key]}
@@ -190,7 +192,7 @@ const CompanyHeader = ({
         loading="lazy"
       />
     )}
-    <div>
+    <div className={centered ? "text-center" : "text-center sm:text-left"}>
       <CompanyName
         company={company}
         className="text-base sm:text-lg font-semibold text-foreground leading-tight"
