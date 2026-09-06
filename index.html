@@ -26,12 +26,38 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "WEL",
-      "alternateName": "Women Equity Label",
-      "url": "https://www.womenequitylabel.fr/",
-      "logo": "https://www.womenequitylabel.fr/favicon.png",
-      "description": "WEL (Women Equity Label) est le label dédié à l'égalité professionnelle femmes-hommes. Diagnostic, certification et accompagnement des entreprises."
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.womenequitylabel.fr/#website",
+          "url": "https://www.womenequitylabel.fr/",
+          "name": "WEL – Women Equity Label",
+          "alternateName": [
+            "WEL",
+            "Women Equity Label",
+            "womenequitylabel.fr"
+          ],
+          "publisher": {
+            "@id": "https://www.womenequitylabel.fr/#organization"
+          },
+          "inLanguage": "fr-FR"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.womenequitylabel.fr/#organization",
+          "name": "WEL – Women Equity Label",
+          "alternateName": [
+            "WEL",
+            "Women Equity Label"
+          ],
+          "url": "https://www.womenequitylabel.fr/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.womenequitylabel.fr/favicon-192.png"
+          },
+          "description": "WEL (Women Equity Label) est le label dédié à l’égalité professionnelle entre les femmes et les hommes. Diagnostic, certification et accompagnement des entreprises."
+        }
+      ]
     }
     </script>
 
