@@ -10,13 +10,13 @@ import bpifrance from "@/assets/partners/bpifrance.png.asset.json";
 import paysDeLaLoire from "@/assets/partners/pays-de-la-loire.png.asset.json";
 
 const logos = [
-  { src: mobiapps.url, alt: "Mobiapps", mobileH: "h-3", desktopH: "sm:h-3.5" },
+  { src: mobiapps.url, alt: "Mobiapps", mobileH: "h-2.5", desktopH: "sm:h-3" },
   { src: bpifrance.url, alt: "Bpifrance", mobileH: "h-7", desktopH: "sm:h-11" },
   { src: paysDeLaLoire.url, alt: "Région Pays de la Loire", mobileH: "h-6", desktopH: "sm:h-9" },
   { src: citeCongres.url, alt: "La Cité des Congrès de Nantes", mobileH: "h-9", desktopH: "sm:h-14" },
   { src: frenchTech.url, alt: "La French Tech", mobileH: "h-8", desktopH: "sm:h-12" },
   { src: kanoma.url, alt: "Kanoma", mobileH: "h-5", desktopH: "sm:h-7" },
-  { src: prolaser.url, alt: "Prolaser", mobileH: "h-12", desktopH: "sm:h-24" },
+  { src: prolaser.url, alt: "Prolaser", mobileH: "h-14", desktopH: "sm:h-28" },
   { src: exponantes.url, alt: "Exponantes Le Parc", mobileH: "h-7", desktopH: "sm:h-9" },
   { src: valeuriad.url, alt: "Valeuriad", mobileH: "h-9", desktopH: "sm:h-14" },
 ];
