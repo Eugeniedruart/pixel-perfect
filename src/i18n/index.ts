@@ -8,8 +8,11 @@ import es from "./locales/es.json";
 import de from "./locales/de.json";
 import sv from "./locales/sv.json";
 
-i18n
-  .use(LanguageDetector)
+const isBrowser = typeof window !== "undefined";
+
+const instance = isBrowser ? i18n.use(LanguageDetector) : i18n;
+
+instance
   .use(initReactI18next)
   .init({
     resources: {
@@ -19,6 +22,7 @@ i18n
       de: { translation: de },
       sv: { translation: sv },
     },
+    lng: isBrowser ? undefined : "fr",
     fallbackLng: "fr",
     supportedLngs: ["fr", "en", "es", "de", "sv"],
     interpolation: { escapeValue: false },
