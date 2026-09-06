@@ -603,19 +603,30 @@
         "key": "cite",
         "name": "La Cité des Congrès de Nantes",
         "sector": "Eventos",
-        "text": "Un plan de acción estructurado para reforzar la igualdad mujeres-hombres en todos los niveles."
+        "text": "Un plan de acción estructurado para reforzar la igualdad mujeres-hombres en todos los niveles.",
+        "quote": "L'accompagnement mené par les équipes du label WEL nous a permis, en un temps record, d'obtenir un diagnostic et un plan d'actions parfaitement ciblés à notre organisation.",
+        "quoteAuthor": "Arnaud Guibret",
+        "quoteRole": "Responsable des Ressources Humaines",
+        "mediaType": "photo",
+        "mediaPlaceholder": true
       },
       {
         "key": "mobiapps",
         "name": "Mobiapps",
         "sector": "Tecnología",
-        "text": "Prácticas de RRHH evaluadas y mejoradas en los cuatro pilares del referencial WEL."
+        "text": "Prácticas de RRHH evaluadas y mejoradas en los cuatro pilares del referencial WEL.",
+        "mediaType": "video",
+        "mediaPlaceholder": true
       },
       {
         "key": "kanoma",
         "name": "Kanoma",
         "sector": "Consultoría y datos",
-        "text": "Un enfoque medible de la igualdad profesional, del diagnóstico al plan de acción."
+        "text": "Un enfoque medible de la igualdad profesional, del diagnóstico al plan de acción.",
+        "quote": "Nous avons beaucoup apprécié l'accompagnement d'Eugénie dans la labellisation. Il y a une véritable notion d'engagement chez WEL au-delà du simple coup de tampon, notamment prouvé par le plan d'action qu'on nous propose de suivre et qui impulse le fait de s'améliorer et/ou de développer nos actions d'entreprise en faveur de l'égalité femme/homme.",
+        "quoteAuthor": "Cassandre Guillet",
+        "mediaType": "video",
+        "mediaPlaceholder": true
       },
       {
         "key": "exponantes",
@@ -633,7 +644,9 @@
         "key": "valeuriad",
         "name": "Valeuriad",
         "sector": "Consultoría",
-        "text": "Prácticas certificadas para medir y valorar la igualdad mujeres-hombres a diario."
+        "text": "Prácticas certificadas para medir y valorar la igualdad mujeres-hombres a diario.",
+        "mediaType": "photo",
+        "mediaPlaceholder": true
       }
     ]
   }

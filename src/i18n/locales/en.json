@@ -603,19 +603,30 @@
         "key": "cite",
         "name": "La Cité des Congrès de Nantes",
         "sector": "Events",
-        "text": "A structured action plan to strengthen gender equality at every level of the organization."
+        "text": "A structured action plan to strengthen gender equality at every level of the organization.",
+        "quote": "L'accompagnement mené par les équipes du label WEL nous a permis, en un temps record, d'obtenir un diagnostic et un plan d'actions parfaitement ciblés à notre organisation.",
+        "quoteAuthor": "Arnaud Guibret",
+        "quoteRole": "Responsable des Ressources Humaines",
+        "mediaType": "photo",
+        "mediaPlaceholder": true
       },
       {
         "key": "mobiapps",
         "name": "Mobiapps",
         "sector": "Technology",
-        "text": "HR practices assessed and improved across the four pillars of the WEL framework."
+        "text": "HR practices assessed and improved across the four pillars of the WEL framework.",
+        "mediaType": "video",
+        "mediaPlaceholder": true
       },
       {
         "key": "kanoma",
         "name": "Kanoma",
         "sector": "Consulting & data",
-        "text": "A measurable approach to workplace equality, from diagnosis to action plan."
+        "text": "A measurable approach to workplace equality, from diagnosis to action plan.",
+        "quote": "Nous avons beaucoup apprécié l'accompagnement d'Eugénie dans la labellisation. Il y a une véritable notion d'engagement chez WEL au-delà du simple coup de tampon, notamment prouvé par le plan d'action qu'on nous propose de suivre et qui impulse le fait de s'améliorer et/ou de développer nos actions d'entreprise en faveur de l'égalité femme/homme.",
+        "quoteAuthor": "Cassandre Guillet",
+        "mediaType": "video",
+        "mediaPlaceholder": true
       },
       {
         "key": "exponantes",
@@ -633,7 +644,9 @@
         "key": "valeuriad",
         "name": "Valeuriad",
         "sector": "Consulting",
-        "text": "Certified practices to measure and promote gender equality every day."
+        "text": "Certified practices to measure and promote gender equality every day.",
+        "mediaType": "photo",
+        "mediaPlaceholder": true
       }
     ]
   }
