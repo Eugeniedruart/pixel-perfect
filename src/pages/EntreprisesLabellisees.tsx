@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { useTranslation } from "react-i18next";
-import { BadgeCheck } from "lucide-react";
+import { BadgeCheck, Play, ImageIcon } from "lucide-react";
 import citeCongres from "@/assets/clients/cite-congres-nantes.png.asset.json";
 import mobiapps from "@/assets/clients/mobiapps.png.asset.json";
 import kanoma from "@/assets/clients/kanoma.png.asset.json";
@@ -24,7 +24,50 @@ interface Company {
   name: string;
   sector: string;
   text: string;
+  quote?: string;
+  quoteAuthor?: string;
+  quoteRole?: string;
+  mediaType?: "photo" | "video" | null;
+  mediaPlaceholder?: boolean;
 }
+
+const initialsOf = (name?: string) =>
+  (name ?? "")
+    .split(" ")
+    .filter(Boolean)
+    .map((w) => w[0])
+    .slice(0, 2)
+    .join("")
+    .toUpperCase();
+
+const MediaPlaceholder = ({ company }: { company: Company }) => {
+  if (company.mediaType === "video") {
+    return (
+      <div className="relative aspect-video w-full sm:w-72 lg:w-80 shrink-0 rounded-2xl border border-dashed border-primary/40 bg-wel-blue-light/50 flex flex-col items-center justify-center gap-2 text-primary">
+        <span className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+          <Play className="h-5 w-5 fill-current" />
+        </span>
+        <span className="text-[11px] font-medium uppercase tracking-wide text-primary/70">
+          Vidéo à venir
+        </span>
+      </div>
+    );
+  }
+  return (
+    <div className="flex shrink-0 flex-col items-center gap-2">
+      <div className="flex h-20 w-20 items-center justify-center rounded-full border border-dashed border-primary/40 bg-wel-blue-light/50 text-primary">
+        {company.quoteAuthor ? (
+          <span className="text-lg font-bold">{initialsOf(company.quoteAuthor)}</span>
+        ) : (
+          <ImageIcon className="h-6 w-6" />
+        )}
+      </div>
+      <span className="text-[11px] font-medium uppercase tracking-wide text-primary/70">
+        Photo à venir
+      </span>
+    </div>
+  );
+};
 
 const EntreprisesLabellisees = () => {
   const { t } = useTranslation();
@@ -53,32 +96,80 @@ const EntreprisesLabellisees = () => {
       <section className="py-14 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            {companies.map((company) => (
-              <article
-                key={company.key}
-                className="flex flex-col items-center text-center rounded-2xl border border-border bg-background p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="h-16 flex items-center justify-center mb-4">
-                  {companyLogos[company.key] ? (
-                    <img
-                      src={companyLogos[company.key]}
-                      alt={company.name}
-                      className="max-h-16 max-w-[160px] object-contain"
-                      loading="lazy"
-                    />
-                  ) : (
-                    <span className="text-lg font-bold text-wel-blue">{company.name}</span>
-                  )}
-                </div>
-                <h2 className="text-base sm:text-lg font-semibold text-foreground">{company.name}</h2>
-                <p className="mt-1 text-xs font-medium uppercase tracking-wide text-primary">{company.sector}</p>
-                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{company.text}</p>
-                <span className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-primary/[0.08] px-3 py-1 text-[11px] font-semibold text-primary">
-                  <BadgeCheck className="h-3.5 w-3.5" />
-                  {t("labeled.badge")}
-                </span>
-              </article>
-            ))}
+            {companies.map((company) =>
+              company.mediaType ? (
+                <article
+                  key={company.key}
+                  className="sm:col-span-2 lg:col-span-3 flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-8 rounded-2xl border border-border bg-background p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <MediaPlaceholder company={company} />
+                  <div className="flex-1 text-center sm:text-left">
+                    <div className="flex items-center justify-center sm:justify-start gap-3 mb-3">
+                      {companyLogos[company.key] && (
+                        <img
+                          src={companyLogos[company.key]}
+                          alt={company.name}
+                          className="max-h-8 max-w-[110px] object-contain"
+                          loading="lazy"
+                        />
+                      )}
+                      <div>
+                        <h2 className="text-base sm:text-lg font-semibold text-foreground leading-tight">
+                          {company.name}
+                        </h2>
+                        <p className="text-xs font-medium uppercase tracking-wide text-primary">
+                          {company.sector}
+                        </p>
+                      </div>
+                    </div>
+                    {company.quote ? (
+                      <blockquote>
+                        <p className="font-serif-display italic text-sm sm:text-base text-foreground leading-relaxed">
+                          « {company.quote} »
+                        </p>
+                        <footer className="mt-3 text-sm">
+                          <span className="font-semibold text-foreground">{company.quoteAuthor}</span>
+                          {company.quoteRole && (
+                            <span className="text-muted-foreground"> — {company.quoteRole}</span>
+                          )}
+                        </footer>
+                      </blockquote>
+                    ) : (
+                      <p className="text-sm text-muted-foreground leading-relaxed">{company.text}</p>
+                    )}
+                    <span className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-primary/[0.08] px-3 py-1 text-[11px] font-semibold text-primary">
+                      <BadgeCheck className="h-3.5 w-3.5" />
+                      {t("labeled.badge")}
+                    </span>
+                  </div>
+                </article>
+              ) : (
+                <article
+                  key={company.key}
+                  className="flex flex-col items-center text-center rounded-2xl border border-border bg-background p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <div className="h-16 flex items-center justify-center mb-4">
+                    {companyLogos[company.key] ? (
+                      <img
+                        src={companyLogos[company.key]}
+                        alt={company.name}
+                        className="max-h-16 max-w-[160px] object-contain"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <span className="text-lg font-bold text-wel-blue">{company.name}</span>
+                    )}
+                  </div>
+                  <h2 className="text-base sm:text-lg font-semibold text-foreground">{company.name}</h2>
+                  <p className="mt-1 text-xs font-medium uppercase tracking-wide text-primary">{company.sector}</p>
+                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{company.text}</p>
+                  <span className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-primary/[0.08] px-3 py-1 text-[11px] font-semibold text-primary">
+                    <BadgeCheck className="h-3.5 w-3.5" />
+                    {t("labeled.badge")}
+                  </span>
+                </article>
+              )
+            )}
           </div>
         </div>
       </section>
