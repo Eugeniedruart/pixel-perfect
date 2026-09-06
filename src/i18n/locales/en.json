@@ -4,7 +4,8 @@
     "offres": "Our Offers",
     "methodologie": "Methodology",
     "contact": "Contact",
-    "cta": "I want to be Welbellised"
+    "cta": "I want to be Welbellised",
+    "labeled": "Certified companies"
   },
   "hero": {
     "eyebrow": "Women Equity Label",
@@ -591,5 +592,49 @@
   "trust": {
     "title": "They trust us",
     "subtitle": "Certified companies, supported organizations and partners of the WEL ecosystem."
+  },
+  "labeled": {
+    "eyebrow": "The WEL label in action",
+    "h1": "WEL-certified companies – Women Equity Label",
+    "intro": "They have measured, structured and advanced workplace gender equality in their organization. Discover the companies that have earned the WEL label.",
+    "badge": "WEL-certified company",
+    "companies": [
+      {
+        "key": "cite",
+        "name": "La Cité des Congrès de Nantes",
+        "sector": "Events",
+        "text": "A structured action plan to strengthen gender equality at every level of the organization."
+      },
+      {
+        "key": "mobiapps",
+        "name": "Mobiapps",
+        "sector": "Technology",
+        "text": "HR practices assessed and improved across the four pillars of the WEL framework."
+      },
+      {
+        "key": "kanoma",
+        "name": "Kanoma",
+        "sector": "Consulting & data",
+        "text": "A measurable approach to workplace equality, from diagnosis to action plan."
+      },
+      {
+        "key": "exponantes",
+        "name": "Exponantes Le Parc",
+        "sector": "Events",
+        "text": "Workplace equality embedded at the heart of team and career management."
+      },
+      {
+        "key": "prolaser",
+        "name": "Prolaser",
+        "sector": "Industry",
+        "text": "A concrete commitment to feminization and career progression."
+      },
+      {
+        "key": "valeuriad",
+        "name": "Valeuriad",
+        "sector": "Consulting",
+        "text": "Certified practices to measure and promote gender equality every day."
+      }
+    ]
   }
 }
