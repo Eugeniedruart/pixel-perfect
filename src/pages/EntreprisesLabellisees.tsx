@@ -51,7 +51,7 @@ const companyVideoPosters: Record<string, string> = {
 };
 
 const companyVideoCaptions: Record<string, string> = {
-  kanoma: "Créateur & dirigeant, Kanoma",
+  kanoma: "Xavier Maire — Fondateur, Kanoma",
   mobiapps: "Annabelle Sadet, Responsable des Ressources Humaines",
 };
 
@@ -174,6 +174,56 @@ const CompanyName = ({
   return <h2 className={className}>{content}</h2>;
 };
 
+const CompanyHeader = ({
+  company,
+  className = "mb-3",
+}: {
+  company: Company;
+  className?: string;
+}) => (
+  <div className={`flex items-center justify-center sm:justify-start gap-3 ${className}`}>
+    {companyLogos[company.key] && (
+      <img
+        src={companyLogos[company.key]}
+        alt={company.name}
+        className="max-h-8 max-w-[110px] object-contain"
+        loading="lazy"
+      />
+    )}
+    <div>
+      <CompanyName
+        company={company}
+        className="text-base sm:text-lg font-semibold text-foreground leading-tight"
+      />
+      {company.labelDate && (
+        <p className="text-xs text-muted-foreground">
+          Labellisée depuis {company.labelDate}
+        </p>
+      )}
+      <p className="text-xs font-medium uppercase tracking-wide text-primary">
+        {company.sector}
+      </p>
+    </div>
+  </div>
+);
+
+const CompanyQuote = ({ company }: { company: Company }) => (
+  <blockquote>
+    <p
+      className="font-serif-display italic text-sm sm:text-base text-foreground leading-relaxed"
+      style={{ fontFamily: "'Libre Caslon Text', serif", fontStyle: "italic" }}
+    >
+      « {company.quote} »
+    </p>
+    <footer className="mt-3 text-sm">
+      <span className="font-semibold text-foreground">{company.quoteAuthor}</span>
+      {company.quoteRole && (
+        <span className="text-muted-foreground"> — {company.quoteRole}</span>
+      )}
+    </footer>
+  </blockquote>
+);
+
 const EntreprisesLabellisees = () => {
   const { t } = useTranslation();
   const companies = t("labeled.companies", { returnObjects: true }) as Company[];
@@ -204,57 +254,41 @@ const EntreprisesLabellisees = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {companies.map((company) =>
               company.mediaType ? (
-                <article
-                  key={company.key}
-                  className="sm:col-span-2 lg:col-span-3 flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-8 rounded-2xl border border-border bg-background p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <CompanyMedia company={company} />
-                  <div className="flex-1 text-center sm:text-left">
-                    <div className="flex items-center justify-center sm:justify-start gap-3 mb-3">
-                      {companyLogos[company.key] && (
-                        <img
-                          src={companyLogos[company.key]}
-                          alt={company.name}
-                          className="max-h-8 max-w-[110px] object-contain"
-                          loading="lazy"
-                        />
-                      )}
-                      <div>
-                        <CompanyName
-                          company={company}
-                          className="text-base sm:text-lg font-semibold text-foreground leading-tight"
-                        />
-                        {company.labelDate && (
-                          <p className="text-xs text-muted-foreground">
-                            Labellisée depuis {company.labelDate}
-                          </p>
-                        )}
-                        <p className="text-xs font-medium uppercase tracking-wide text-primary">
-                          {company.sector}
-                        </p>
+                company.key === "kanoma" ? (
+                  <article
+                    key={company.key}
+                    className="sm:col-span-2 lg:col-span-3 flex flex-col rounded-2xl border border-border bg-background p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow"
+                  >
+                    <CompanyHeader company={company} className="mb-6" />
+                    <div className="flex flex-col sm:flex-row items-center sm:items-stretch gap-6 sm:gap-8">
+                      <div className="w-full sm:w-auto shrink-0">
+                        <CompanyMedia company={company} />
+                      </div>
+                      <div className="hidden sm:block w-px bg-border shrink-0" />
+                      <hr className="sm:hidden w-full border-border" />
+                      <div className="flex-1 flex flex-col justify-center text-center sm:text-left">
+                        <CompanyQuote company={company} />
                       </div>
                     </div>
-                    {company.quote ? (
-                      <blockquote>
-                        <p
-                          className="font-serif-display italic text-sm sm:text-base text-foreground leading-relaxed"
-                          style={{ fontFamily: "'Libre Caslon Text', serif", fontStyle: "italic" }}
-                        >
-                          « {company.quote} »
-                        </p>
-                        <footer className="mt-3 text-sm">
-                          <span className="font-semibold text-foreground">{company.quoteAuthor}</span>
-                          {company.quoteRole && (
-                            <span className="text-muted-foreground"> — {company.quoteRole}</span>
-                          )}
-                        </footer>
-                      </blockquote>
-                    ) : (
-                      <p className="text-sm text-muted-foreground leading-relaxed">{company.text}</p>
-                    )}
                     <CertifiedBadge label={badgeLabel} />
-                  </div>
-                </article>
+                  </article>
+                ) : (
+                  <article
+                    key={company.key}
+                    className="sm:col-span-2 lg:col-span-3 flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-8 rounded-2xl border border-border bg-background p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow"
+                  >
+                    <CompanyMedia company={company} />
+                    <div className="flex-1 text-center sm:text-left">
+                      <CompanyHeader company={company} />
+                      {company.quote ? (
+                        <CompanyQuote company={company} />
+                      ) : (
+                        <p className="text-sm text-muted-foreground leading-relaxed">{company.text}</p>
+                      )}
+                      <CertifiedBadge label={badgeLabel} />
+                    </div>
+                  </article>
+                )
               ) : (
                 <article
                   key={company.key}
