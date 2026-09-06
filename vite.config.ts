@@ -66,6 +66,10 @@ function prerenderPlugin(): Plugin {
             /<meta property="og:title" content="[^"]*">/,
             `<meta property="og:title" content="${escapeAttr(route.title)}">`
           );
+          html = html.replace(
+            /<meta name="twitter:title" content="[^"]*" ?\/?>/,
+            `<meta name="twitter:title" content="${escapeAttr(route.title)}">`
+          );
         }
         if (route.description) {
           html = html.replace(
@@ -75,6 +79,10 @@ function prerenderPlugin(): Plugin {
           html = html.replace(
             /<meta property="og:description" content="[^"]*">/,
             `<meta property="og:description" content="${escapeAttr(route.description)}">`
+          );
+          html = html.replace(
+            /<meta name="twitter:description" content="[^"]*" ?\/?>/,
+            `<meta name="twitter:description" content="${escapeAttr(route.description)}">`
           );
         }
 
