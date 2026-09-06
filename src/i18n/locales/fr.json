@@ -608,7 +608,8 @@
         "quoteAuthor": "Arnaud Guibret",
         "quoteRole": "Responsable des Ressources Humaines",
         "mediaType": "photo",
-        "mediaPlaceholder": true
+        "mediaPlaceholder": true,
+        "labelDate": "2026"
       },
       {
         "key": "mobiapps",
@@ -616,7 +617,8 @@
         "sector": "Technologies",
         "text": "Des pratiques RH évaluées et progressées sur les quatre piliers du référentiel WEL.",
         "mediaType": "video",
-        "mediaPlaceholder": true
+        "mediaPlaceholder": true,
+        "labelDate": "2026"
       },
       {
         "key": "kanoma",
@@ -626,19 +628,22 @@
         "quote": "Nous avons beaucoup apprécié l'accompagnement d'Eugénie dans la labellisation. Il y a une véritable notion d'engagement chez WEL au-delà du simple coup de tampon, notamment prouvé par le plan d'action qu'on nous propose de suivre et qui impulse le fait de s'améliorer et/ou de développer nos actions d'entreprise en faveur de l'égalité femme/homme.",
         "quoteAuthor": "Cassandre Guillet",
         "mediaType": "video",
-        "mediaPlaceholder": true
+        "mediaPlaceholder": true,
+        "labelDate": "2026"
       },
       {
         "key": "exponantes",
         "name": "Exponantes Le Parc",
         "sector": "Événementiel",
-        "text": "L'égalité professionnelle intégrée au cœur de la gestion des équipes et des carrières."
+        "text": "L'égalité professionnelle intégrée au cœur de la gestion des équipes et des carrières.",
+        "labelDate": "2026"
       },
       {
         "key": "prolaser",
         "name": "Prolaser",
         "sector": "Industrie",
-        "text": "Un engagement concret pour la féminisation et la progression des parcours professionnels."
+        "text": "Un engagement concret pour la féminisation et la progression des parcours professionnels.",
+        "labelDate": "2026"
       },
       {
         "key": "valeuriad",
@@ -646,7 +651,8 @@
         "sector": "Conseil",
         "text": "Des pratiques certifiées pour mesurer et valoriser l'égalité femmes-hommes au quotidien.",
         "mediaType": "photo",
-        "mediaPlaceholder": true
+        "mediaPlaceholder": true,
+        "labelDate": "2026"
       }
     ]
   }

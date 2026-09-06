@@ -2,13 +2,18 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { useTranslation } from "react-i18next";
-import { BadgeCheck, Play, ImageIcon } from "lucide-react";
+import { Play, ImageIcon } from "lucide-react";
 import citeCongres from "@/assets/clients/cite-congres-nantes.png.asset.json";
 import mobiapps from "@/assets/clients/mobiapps.png.asset.json";
 import kanoma from "@/assets/clients/kanoma.png.asset.json";
 import exponantes from "@/assets/clients/exponantes.png.asset.json";
 import prolaser from "@/assets/clients/prolaser.png.asset.json";
 import valeuriad from "@/assets/clients/valeuriad.png.asset.json";
+import citePhoto from "@/assets/testimonials/cite-photo.jpg.asset.json";
+import valeuriadPhoto from "@/assets/testimonials/valeuriad-photo.jpg.asset.json";
+import kanomaVideo from "@/assets/testimonials/kanoma-video.mp4.asset.json";
+import mobiappsVideo from "@/assets/testimonials/mobiapps-video.mp4.asset.json";
+import certifiedBadge from "@/assets/wel-certified-logo.png";
 
 const companyLogos: Record<string, string> = {
   cite: citeCongres.url,
@@ -19,11 +24,31 @@ const companyLogos: Record<string, string> = {
   valeuriad: valeuriad.url,
 };
 
+const companyWebsites: Record<string, string> = {
+  cite: "https://www.lacite-nantes.fr",
+  mobiapps: "https://www.mobiapps.fr",
+  kanoma: "https://www.kanoma.fr",
+  exponantes: "https://www.exponantes.com",
+  prolaser: "https://www.pro-laser.fr",
+  valeuriad: "https://www.valeuriad.fr",
+};
+
+const companyPhotos: Record<string, string> = {
+  cite: citePhoto.url,
+  valeuriad: valeuriadPhoto.url,
+};
+
+const companyVideos: Record<string, string> = {
+  kanoma: kanomaVideo.url,
+  mobiapps: mobiappsVideo.url,
+};
+
 interface Company {
   key: string;
   name: string;
   sector: string;
   text: string;
+  labelDate?: string;
   quote?: string;
   quoteAuthor?: string;
   quoteRole?: string;
@@ -40,8 +65,32 @@ const initialsOf = (name?: string) =>
     .join("")
     .toUpperCase();
 
-const MediaPlaceholder = ({ company }: { company: Company }) => {
+const CertifiedBadge = ({ label }: { label: string }) => (
+  <img
+    src={certifiedBadge}
+    alt={label}
+    title={label}
+    className="mt-4 h-14 w-auto object-contain"
+    loading="lazy"
+  />
+);
+
+const CompanyMedia = ({ company }: { company: Company }) => {
   if (company.mediaType === "video") {
+    const src = companyVideos[company.key];
+    if (src) {
+      return (
+        <div className="w-full sm:w-72 lg:w-80 shrink-0 overflow-hidden rounded-2xl border border-border bg-black shadow-sm">
+          <video
+            src={src}
+            controls
+            preload="metadata"
+            playsInline
+            className="aspect-video h-full w-full object-cover"
+          />
+        </div>
+      );
+    }
     return (
       <div className="relative aspect-video w-full sm:w-72 lg:w-80 shrink-0 rounded-2xl border border-dashed border-primary/40 bg-wel-blue-light/50 flex flex-col items-center justify-center gap-2 text-primary">
         <span className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
@@ -53,6 +102,19 @@ const MediaPlaceholder = ({ company }: { company: Company }) => {
       </div>
     );
   }
+
+  const photo = companyPhotos[company.key];
+  if (photo) {
+    return (
+      <img
+        src={photo}
+        alt={`Remise du label WEL – ${company.name}`}
+        className="h-32 w-32 sm:h-40 sm:w-40 shrink-0 rounded-full border border-border object-cover shadow-sm"
+        loading="lazy"
+      />
+    );
+  }
+
   return (
     <div className="flex shrink-0 flex-col items-center gap-2">
       <div className="flex h-20 w-20 items-center justify-center rounded-full border border-dashed border-primary/40 bg-wel-blue-light/50 text-primary">
@@ -69,9 +131,33 @@ const MediaPlaceholder = ({ company }: { company: Company }) => {
   );
 };
 
+const CompanyName = ({
+  company,
+  className,
+}: {
+  company: Company;
+  className: string;
+}) => {
+  const href = companyWebsites[company.key];
+  const content = href ? (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline underline-offset-4 decoration-primary/60"
+    >
+      {company.name}
+    </a>
+  ) : (
+    company.name
+  );
+  return <h2 className={className}>{content}</h2>;
+};
+
 const EntreprisesLabellisees = () => {
   const { t } = useTranslation();
   const companies = t("labeled.companies", { returnObjects: true }) as Company[];
+  const badgeLabel = t("labeled.badge");
 
   return (
     <div className="min-h-screen bg-background">
@@ -102,7 +188,7 @@ const EntreprisesLabellisees = () => {
                   key={company.key}
                   className="sm:col-span-2 lg:col-span-3 flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-8 rounded-2xl border border-border bg-background p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <MediaPlaceholder company={company} />
+                  <CompanyMedia company={company} />
                   <div className="flex-1 text-center sm:text-left">
                     <div className="flex items-center justify-center sm:justify-start gap-3 mb-3">
                       {companyLogos[company.key] && (
@@ -114,9 +200,15 @@ const EntreprisesLabellisees = () => {
                         />
                       )}
                       <div>
-                        <h2 className="text-base sm:text-lg font-semibold text-foreground leading-tight">
-                          {company.name}
-                        </h2>
+                        <CompanyName
+                          company={company}
+                          className="text-base sm:text-lg font-semibold text-foreground leading-tight"
+                        />
+                        {company.labelDate && (
+                          <p className="text-xs text-muted-foreground">
+                            Labellisée depuis {company.labelDate}
+                          </p>
+                        )}
                         <p className="text-xs font-medium uppercase tracking-wide text-primary">
                           {company.sector}
                         </p>
@@ -137,10 +229,7 @@ const EntreprisesLabellisees = () => {
                     ) : (
                       <p className="text-sm text-muted-foreground leading-relaxed">{company.text}</p>
                     )}
-                    <span className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-primary/[0.08] px-3 py-1 text-[11px] font-semibold text-primary">
-                      <BadgeCheck className="h-3.5 w-3.5" />
-                      {t("labeled.badge")}
-                    </span>
+                    <CertifiedBadge label={badgeLabel} />
                   </div>
                 </article>
               ) : (
@@ -160,13 +249,18 @@ const EntreprisesLabellisees = () => {
                       <span className="text-lg font-bold text-wel-blue">{company.name}</span>
                     )}
                   </div>
-                  <h2 className="text-base sm:text-lg font-semibold text-foreground">{company.name}</h2>
+                  <CompanyName
+                    company={company}
+                    className="text-base sm:text-lg font-semibold text-foreground"
+                  />
+                  {company.labelDate && (
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      Labellisée depuis {company.labelDate}
+                    </p>
+                  )}
                   <p className="mt-1 text-xs font-medium uppercase tracking-wide text-primary">{company.sector}</p>
                   <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{company.text}</p>
-                  <span className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-primary/[0.08] px-3 py-1 text-[11px] font-semibold text-primary">
-                    <BadgeCheck className="h-3.5 w-3.5" />
-                    {t("labeled.badge")}
-                  </span>
+                  <CertifiedBadge label={badgeLabel} />
                 </article>
               )
             )}
