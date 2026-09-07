@@ -304,7 +304,7 @@ const EntreprisesLabellisees = () => {
                       <img
                         src={companyLogos[company.key]}
                         alt={company.name}
-                        className="max-h-16 max-w-[160px] object-contain"
+                        className="max-h-28 max-w-[220px] object-contain"
                         loading="lazy"
                       />
                     ) : (
