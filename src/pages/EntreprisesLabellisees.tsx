@@ -321,7 +321,13 @@ const EntreprisesLabellisees = () => {
                     </p>
                   )}
                   <p className="mt-1 text-xs font-medium uppercase tracking-wide text-primary">{company.sector}</p>
-                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{company.text}</p>
+                  <div className="mt-3">
+                    {company.quote ? (
+                      <CompanyQuote company={company} />
+                    ) : (
+                      <p className="text-sm text-muted-foreground leading-relaxed">{company.text}</p>
+                    )}
+                  </div>
                   <CertifiedBadge label={badgeLabel} />
                 </article>
               )
