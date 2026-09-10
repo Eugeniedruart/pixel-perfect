@@ -638,7 +638,10 @@
         "name": "Exponantes Le Parc",
         "sector": "Events",
         "text": "Workplace equality embedded at the heart of team and career management.",
-        "labelDate": "2026"
+        "labelDate": "2026",
+        "quote": "L'accompagnement mené par les équipes du label WEL nous a permis, en un temps record, d'obtenir un diagnostic et un plan d'actions parfaitement ciblés à notre organisation.",
+        "quoteAuthor": "Arnaud Guibret",
+        "quoteRole": "HR Director, Parc des Expositions de Nantes"
       },
       {
         "key": "prolaser",
