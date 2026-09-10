@@ -639,7 +639,10 @@
         "name": "Exponantes Le Parc",
         "sector": "Veranstaltungen",
         "text": "Berufliche Gleichstellung im Zentrum von Team- und Karrieremanagement.",
-        "labelDate": "2026"
+        "labelDate": "2026",
+        "quote": "L'accompagnement mené par les équipes du label WEL nous a permis, en un temps record, d'obtenir un diagnostic et un plan d'actions parfaitement ciblés à notre organisation.",
+        "quoteAuthor": "Arnaud Guibret",
+        "quoteRole": "Personalchef, Parc des Expositions de Nantes"
       },
       {
         "key": "prolaser",
