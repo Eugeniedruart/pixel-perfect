@@ -217,7 +217,7 @@ const Offres = () => {
               </div>
             </Reveal>
             <Reveal className="order-1 md:order-2">
-              <div className="flex flex-col gap-6 md:gap-8">
+              <div className="flex flex-col gap-6 md:gap-8 md:mt-20">
                 <div className="relative">
                   <img src={offresFormation.url} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                   <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
