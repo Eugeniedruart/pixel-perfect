@@ -518,7 +518,8 @@
     "ctaTitle1": "Échangeons sur votre",
     "ctaTitle2": "démarche",
     "ctaSubtitle": "Chaque organisation est unique. Discutons de vos enjeux.",
-    "ctaButton": "Nous contacter"
+    "ctaButton": "Nous contacter",
+    "labelBudgetNote": "Le label peut être financé via les budgets communication, RSE ou marque employeur de vos équipes."
   },
   "eligibilite": {
     "headerTitle1": "Testez votre",

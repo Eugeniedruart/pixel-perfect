@@ -518,7 +518,8 @@
     "ctaTitle1": "Låt oss diskutera er",
     "ctaTitle2": "process",
     "ctaSubtitle": "Varje organisation är unik. Låt oss diskutera era utmaningar.",
-    "ctaButton": "Kontakta oss"
+    "ctaButton": "Kontakta oss",
+    "labelBudgetNote": "Märkningen kan finansieras via era budgetar för kommunikation, CSR eller arbetsgivarvarumärke."
   },
   "eligibilite": {
     "headerTitle1": "Testa er",

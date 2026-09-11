@@ -518,7 +518,8 @@
     "ctaTitle1": "Let's discuss your",
     "ctaTitle2": "approach",
     "ctaSubtitle": "Every organisation is unique. Let's discuss your challenges.",
-    "ctaButton": "Contact us"
+    "ctaButton": "Contact us",
+    "labelBudgetNote": "The label can be funded through your communication, CSR or employer-brand budgets."
   },
   "eligibilite": {
     "headerTitle1": "Test your",
