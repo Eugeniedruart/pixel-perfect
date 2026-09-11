@@ -12,9 +12,8 @@ import {
 } from "lucide-react";
 import offresHero from "@/assets/offres-hero-v2.png.asset.json";
 import offresLabellisation from "@/assets/offres-labellisation.jpg";
-import offresConseil from "@/assets/offres-conseil-v2.jpg";
+import offresConseil from "@/assets/offres-conseil-v3.png.asset.json";
 import offresFormation from "@/assets/offres-formation-v2.png.asset.json";
-import offresEnquetes from "@/assets/offres-enquetes.jpg";
 import offresApproche from "@/assets/offres-approche.jpg";
 import patternHero from "@/assets/pattern-hero-clean.png";
 
@@ -274,7 +273,7 @@ const Offres = () => {
             <Reveal className="order-1 md:order-1">
 
               <div className="relative">
-                <img src={offresEnquetes} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
+                <img src={offresHero.url} alt="" width={1280} height={720} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
@@ -284,7 +283,7 @@ const Offres = () => {
             <Reveal className="order-1 md:order-2">
 
               <div className="relative">
-                <img src={offresConseil} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
+                <img src={offresConseil.url} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
