@@ -7,7 +7,8 @@ import { useTranslation } from "react-i18next";
 import {
   ArrowRight, Users, Heart, Eye, Rocket, Search, MessageSquare, FileText,
   CheckCircle2, MapPin, Handshake, Settings, Target, ChevronDown,
-  Percent, Building2, Scale, BarChart3,
+  Percent, Building2, Scale, BarChart3, BriefcaseBusiness, ShieldCheck,
+  UserCog, Clock3, Quote, WalletCards, TrendingUp,
 } from "lucide-react";
 import offresHero from "@/assets/offres-hero-v2.jpg";
 import offresLabellisation from "@/assets/offres-labellisation.jpg";
@@ -36,7 +37,7 @@ const Reveal = ({ children, className = "" }: { children: React.ReactNode; class
   return <div ref={ref} className={`opacity-0 translate-y-4 ${className}`} style={{ animationFillMode: "forwards" }}>{children}</div>;
 };
 
-const formationIcons = [Users, Heart, Eye, Rocket, Search];
+const formationIcons = [Users, Heart, Eye, Rocket, Search, BriefcaseBusiness, ShieldCheck, UserCog];
 const approcheIcons = [MapPin, Handshake, Settings, Target];
 const enqueteIcons = [Search, MessageSquare, FileText];
 const missionExampleIcons = [Percent, Building2, Scale, BarChart3];
@@ -61,6 +62,8 @@ const Offres = () => {
   const { t } = useTranslation();
   const formations = (t("offres.formations", { returnObjects: true }) as Array<{ title: string; desc: string }>).map((f, i) => ({ ...f, icon: formationIcons[i] }));
   const labelBullets = t("offres.labelBullets", { returnObjects: true }) as string[];
+  const labelTimeline = t("offres.labelTimeline", { returnObjects: true }) as Array<{ week: string; title: string; desc: string }>;
+  const trainingFormats = t("offres.trainingFormats", { returnObjects: true }) as string[];
   const enquetesBullets = (t("offres.enquetesBullets", { returnObjects: true }) as string[]).map((text, i) => ({ icon: enqueteIcons[i], text }));
   const missionsTags = t("offres.missionsTags", { returnObjects: true }) as string[];
   const missionsExamples = (t("offres.missionsExamples", { returnObjects: true }) as Array<{ title: string; desc: string }>).map((m, i) => ({ ...m, icon: missionExampleIcons[i] }));
@@ -83,6 +86,14 @@ const Offres = () => {
               <p className="text-muted-foreground text-sm sm:text-lg leading-relaxed mb-5 md:mb-8 max-w-lg">
                 {t("offres.subtitle")}
               </p>
+              <div className="mb-5 md:mb-8 flex max-w-lg items-center gap-3 border-l-2 border-primary pl-4">
+                <TrendingUp className="h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+                <p className="text-xs sm:text-sm text-foreground">
+                  <strong className="text-primary">{t("offres.businessStatValue")}</strong>{" "}
+                  {t("offres.businessStatText")}{" "}
+                  <span className="text-muted-foreground">— {t("offres.businessStatSource")}</span>
+                </p>
+              </div>
               <Button size="lg" variant="outline" className="w-full sm:w-auto h-11" asChild>
                 <Link to="/contact">{t("offres.heroCta")}</Link>
               </Button>
@@ -135,6 +146,41 @@ const Offres = () => {
               </Button>
             </Reveal>
           </div>
+
+          <Reveal className="mt-10 md:mt-16">
+            <div className="rounded-lg border border-border bg-muted/20 p-5 md:p-8">
+              <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">{t("offres.labelTimelineEyebrow")}</p>
+                  <h3 className="mt-1 text-lg font-bold text-foreground md:text-xl">{t("offres.labelTimelineTitle")}</h3>
+                </div>
+                <div className="inline-flex w-fit items-center rounded-full bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary">
+                  {t("offres.labelThreshold")}
+                </div>
+              </div>
+
+              <div className="relative grid gap-5 md:grid-cols-3 md:gap-0">
+                <div className="absolute bottom-5 left-[0.7rem] top-5 w-px bg-primary/25 md:bottom-auto md:left-[16.66%] md:right-[16.66%] md:top-5 md:h-px md:w-auto" aria-hidden="true" />
+                {labelTimeline.map((step, i) => (
+                  <div key={step.title} className="relative flex gap-4 md:block md:px-5 md:text-center">
+                    <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-background text-sm font-bold text-primary md:mx-auto">
+                      {i + 1}
+                    </div>
+                    <div className="pt-0.5 md:pt-4">
+                      <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-primary">{step.week}</p>
+                      <h4 className="mt-1 text-sm font-bold text-foreground">{step.title}</h4>
+                      <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{step.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6 flex items-center justify-center gap-2 border-t border-border pt-4 text-xs font-semibold text-foreground">
+                <Clock3 className="h-4 w-4 text-primary" aria-hidden="true" />
+                {t("offres.labelAccess")}
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -178,6 +224,40 @@ const Offres = () => {
                   </div>
                 ))}
               </div>
+
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                <div className="rounded-lg border border-border bg-background/80 p-4">
+                  <div className="mb-3 flex items-center gap-2">
+                    <Clock3 className="h-4 w-4 text-primary" aria-hidden="true" />
+                    <p className="text-sm font-bold text-foreground">{t("offres.trainingFormatsTitle")}</p>
+                  </div>
+                  <ul className="space-y-1.5">
+                    {trainingFormats.map((format) => (
+                      <li key={format} className="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
+                        <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                        {format}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mt-3 text-xs font-medium text-primary">{t("offres.trainingCustom")}</p>
+                </div>
+                <div className="rounded-lg border border-border bg-background/80 p-4">
+                  <div className="mb-3 flex items-center gap-2">
+                    <WalletCards className="h-4 w-4 text-primary" aria-hidden="true" />
+                    <p className="text-sm font-bold text-foreground">{t("offres.trainingBudgetTitle")}</p>
+                  </div>
+                  <p className="text-xs leading-relaxed text-muted-foreground">{t("offres.trainingBudgetText")}</p>
+                </div>
+              </div>
+
+              <blockquote className="relative mt-5 rounded-lg border border-primary/20 bg-primary/[0.05] p-5 pl-12">
+                <Quote className="absolute left-4 top-5 h-5 w-5 text-primary" aria-hidden="true" />
+                <p className="font-serif-display text-sm italic leading-relaxed text-foreground/80">{t("offres.trainingTestimonialQuote")}</p>
+                <footer className="mt-3">
+                  <p className="text-sm font-bold text-foreground">{t("offres.trainingTestimonialAuthor")}</p>
+                  <p className="text-xs text-primary">{t("offres.trainingTestimonialCompany")}</p>
+                </footer>
+              </blockquote>
             </Reveal>
           </div>
 
