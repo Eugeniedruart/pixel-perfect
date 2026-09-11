@@ -1,18 +1,21 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
 
 import fr from "./locales/fr.json";
 import en from "./locales/en.json";
 import es from "./locales/es.json";
 import de from "./locales/de.json";
 import sv from "./locales/sv.json";
+import { DEFAULT_LANGUAGE, LANGUAGES, parseLocalizedPath } from "@/lib/i18n-routes";
 
 const isBrowser = typeof window !== "undefined";
 
-const instance = isBrowser ? i18n.use(LanguageDetector) : i18n;
+// The URL is the single source of truth for the language: /offres (fr), /en/offres...
+const initialLanguage = isBrowser
+  ? parseLocalizedPath(window.location.pathname).lang
+  : DEFAULT_LANGUAGE;
 
-instance
+i18n
   .use(initReactI18next)
   .init({
     resources: {
@@ -22,15 +25,10 @@ instance
       de: { translation: de },
       sv: { translation: sv },
     },
-    lng: isBrowser ? undefined : "fr",
-    fallbackLng: "fr",
-    supportedLngs: ["fr", "en", "es", "de", "sv"],
+    lng: initialLanguage,
+    fallbackLng: DEFAULT_LANGUAGE,
+    supportedLngs: [...LANGUAGES],
     interpolation: { escapeValue: false },
-    detection: {
-      order: ["localStorage", "navigator"],
-      lookupLocalStorage: "wel-language",
-      caches: ["localStorage"],
-    },
   });
 
 export default i18n;
