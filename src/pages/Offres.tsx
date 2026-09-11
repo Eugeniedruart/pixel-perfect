@@ -260,7 +260,8 @@ const Offres = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
-            <Reveal className="order-2 md:order-1">
+            <Reveal className="order-2 md:order-2">
+
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.enquetesEyebrow")}</p>
               <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 {t("offres.enquetesTitle1")}{" "}
@@ -277,7 +278,8 @@ const Offres = () => {
                 ))}
               </div>
             </Reveal>
-            <Reveal className="order-1 md:order-2">
+            <Reveal className="order-1 md:order-1">
+
               <div className="relative">
                 <img src={offresEnquetes} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
@@ -286,13 +288,15 @@ const Offres = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center">
-            <Reveal>
+            <Reveal className="order-1 md:order-2">
+
               <div className="relative">
                 <img src={offresConseil} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
-            <Reveal>
+            <Reveal className="order-2 md:order-1">
+
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.missionsEyebrow")}</p>
               <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 {t("offres.missionsTitle1")}{" "}
