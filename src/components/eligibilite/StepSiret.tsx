@@ -13,7 +13,7 @@ const StepSiret = ({ form }: StepSiretProps) => {
 
   return (
     <div>
-      <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
+      <h2 className="text-2xl sm:text-4xl font-bold text-foreground mb-2">
         {t("eligibilite.siretTitle1")}{" "}
         <span className="font-serif-display italic font-normal text-primary">
           {t("eligibilite.siretTitle2")}

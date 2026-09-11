@@ -20,7 +20,7 @@ const Navbar = () => {
           </Link>
 
           {/* Center nav links */}
-          <div className="hidden md:flex items-center justify-center gap-6 flex-1">
+          <div className="hidden lg:flex items-center justify-center gap-6 flex-1">
             <Link to="/#label" className="text-sm text-foreground hover:text-primary transition-colors">{t("nav.label")}</Link>
             <Link to="/offres" className="text-sm text-foreground hover:text-primary transition-colors">{t("nav.offres")}</Link>
             <Link to="/methodologie" className="text-sm text-foreground hover:text-primary transition-colors">{t("nav.methodologie")}</Link>
@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
 
           {/* Right button */}
-          <div className="hidden md:flex items-center gap-3 shrink-0">
+          <div className="hidden lg:flex items-center gap-3 shrink-0">
             <LanguageSwitcher />
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
               <Link to="/contact">{t("nav.cta")}</Link>
@@ -37,9 +37,9 @@ const Navbar = () => {
           </div>
 
           {/* Mobile toggle */}
-          <div className="md:hidden ml-auto flex items-center gap-2">
+          <div className="lg:hidden ml-auto flex items-center gap-2">
             <LanguageSwitcher />
-            <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu">
+            <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu" className="inline-flex h-11 w-11 items-center justify-center -mr-2">
               {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -48,12 +48,12 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-border bg-background px-4 py-4 space-y-3">
-          <Link to="/#label" className="block text-sm text-foreground">{t("nav.label")}</Link>
-          <Link to="/offres" className="block text-sm text-foreground">{t("nav.offres")}</Link>
-          <Link to="/methodologie" className="block text-sm text-foreground">{t("nav.methodologie")}</Link>
-          <Link to="/entreprises-labellisees" className="block text-sm text-foreground">{t("nav.labeled")}</Link>
-          <Link to="/contact" className="block text-sm text-foreground">{t("nav.contact")}</Link>
+        <div className="lg:hidden border-t border-border bg-background px-4 py-4 space-y-3">
+          <Link to="/#label" className="block py-1.5 text-sm text-foreground">{t("nav.label")}</Link>
+          <Link to="/offres" className="block py-1.5 text-sm text-foreground">{t("nav.offres")}</Link>
+          <Link to="/methodologie" className="block py-1.5 text-sm text-foreground">{t("nav.methodologie")}</Link>
+          <Link to="/entreprises-labellisees" className="block py-1.5 text-sm text-foreground">{t("nav.labeled")}</Link>
+          <Link to="/contact" className="block py-1.5 text-sm text-foreground">{t("nav.contact")}</Link>
           <div className="flex gap-2 pt-2">
             <Button size="sm" className="flex-1 bg-primary text-primary-foreground" asChild><Link to="/contact">{t("nav.cta")}</Link></Button>
           </div>

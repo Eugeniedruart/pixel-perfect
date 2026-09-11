@@ -82,7 +82,7 @@ const Eligibilite = () => {
     <div className="min-h-screen flex flex-col bg-background">
       <EligibiliteHeader />
 
-      <div className="flex-1 flex flex-col max-w-2xl mx-auto w-full px-6 sm:px-10 py-8">
+      <div className="flex-1 flex flex-col max-w-2xl mx-auto w-full px-4 sm:px-8 lg:px-10 py-8">
         <StepIndicator currentStep={currentStep} totalSteps={TOTAL_STEPS} />
 
         <div className="flex-1">
@@ -91,16 +91,16 @@ const Eligibilite = () => {
           {currentStep === 3 && <StepContact form={form} onSkip={handleSkipContact} />}
         </div>
 
-        <div className="flex items-center gap-4 mt-10 pb-8">
+        <div className="flex flex-wrap items-center gap-3 sm:gap-4 mt-10 pb-8">
           {currentStep > 1 && (
-            <Button type="button" variant="outline" onClick={handlePrevious} className="gap-2">
+            <Button type="button" variant="outline" onClick={handlePrevious} className="h-11 gap-2">
               <ArrowLeft className="h-4 w-4" /> {t("eligibilite.previous")}
             </Button>
           )}
           <Button
             type="button"
             onClick={handleNext}
-            className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
+            className="h-11 bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
           >
             {currentStep === TOTAL_STEPS ? t("eligibilite.submit") : t("eligibilite.next")}
             <ArrowRight className="h-4 w-4" />

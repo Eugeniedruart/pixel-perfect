@@ -248,7 +248,7 @@ const EntreprisesLabellisees = () => {
 
       <main>
         {/* Hero */}
-        <section className="bg-wel-blue-light/40 py-14 sm:py-20">
+        <section className="bg-wel-blue-light/40 py-10 md:py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-primary mb-4">
               {t("labeled.eyebrow")}
@@ -266,15 +266,15 @@ const EntreprisesLabellisees = () => {
         </section>
 
         {/* Companies grid */}
-        <section className="py-14 sm:py-20">
+        <section className="py-10 md:py-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {companies.map((company) => (
                 <CompanyCard key={company.key} company={company} badgeLabel={badgeLabel} />
               ))}
             </div>
 
-            <p className="mt-12 text-center text-base sm:text-lg font-medium text-foreground">
+            <p className="mt-10 md:mt-20 text-center text-base sm:text-lg font-medium text-foreground">
               {t("labeled.transition")}
             </p>
           </div>

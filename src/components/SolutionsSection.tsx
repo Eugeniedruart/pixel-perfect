@@ -24,7 +24,7 @@ const SolutionsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto">
           <div className="rounded-xl border border-border overflow-hidden bg-card">
-            <div className="h-36 md:h-48 overflow-hidden">
+            <div className="h-36 sm:h-44 md:h-48 overflow-hidden">
               <img src={solutionLabellisation} alt="" className="w-full h-full object-cover" loading="lazy" width={800} height={600} />
             </div>
             <div className="p-4 md:p-6">
@@ -32,14 +32,14 @@ const SolutionsSection = () => {
               <p className="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4">
                 {t("solutions.labellisation.desc")}
               </p>
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-10 text-sm" asChild>
+              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-11 text-sm" asChild>
                 <Link to="/contact">{t("nav.cta")}</Link>
               </Button>
             </div>
           </div>
 
           <div className="rounded-xl border border-border overflow-hidden bg-card">
-            <div className="h-36 md:h-48 overflow-hidden">
+            <div className="h-36 sm:h-44 md:h-48 overflow-hidden">
               <img src={solutionConseil} alt="" className="w-full h-full object-cover" loading="lazy" width={800} height={600} />
             </div>
             <div className="p-4 md:p-6">
@@ -47,7 +47,7 @@ const SolutionsSection = () => {
               <p className="text-xs md:text-sm text-muted-foreground mb-3 md:mb-6">
                 {t("solutions.conseil.desc")}
               </p>
-              <Button variant="outline" className="w-full h-11 gap-2" asChild>
+              <Button variant="outline" className="w-full h-11 gap-2 text-sm" asChild>
                 <Link to="/contact">{t("solutions.conseil.cta")} <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </div>
