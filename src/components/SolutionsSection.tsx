@@ -25,7 +25,7 @@ const SolutionsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto">
           <div className="rounded-xl border border-border overflow-hidden bg-card">
             <div className="h-36 sm:h-44 md:h-48 overflow-hidden">
-              <img src={solutionLabellisation} alt="" className="w-full h-full object-cover" loading="lazy" width={800} height={600} />
+              <img src={solutionLabellisation} alt="Équipe en réunion lors d'une démarche de labellisation WEL" className="w-full h-full object-cover" loading="lazy" width={800} height={600} />
             </div>
             <div className="p-4 md:p-6">
               <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">{t("solutions.labellisation.title")}</h3>
@@ -40,7 +40,7 @@ const SolutionsSection = () => {
 
           <div className="rounded-xl border border-border overflow-hidden bg-card">
             <div className="h-36 sm:h-44 md:h-48 overflow-hidden">
-              <img src={solutionConseil} alt="" className="w-full h-full object-cover" loading="lazy" width={800} height={600} />
+              <img src={solutionConseil} alt="Consultante WEL accompagnant une entreprise sur l'égalité professionnelle" className="w-full h-full object-cover" loading="lazy" width={800} height={600} />
             </div>
             <div className="p-4 md:p-6">
               <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">{t("solutions.conseil.title")}</h3>

@@ -168,7 +168,7 @@ const Methodologie = () => {
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-20 items-center">
             <Reveal>
               <div className="relative overflow-hidden rounded-2xl">
-                <img src={constructionWorkers} alt="" width={1280} height={854} loading="lazy" className="shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] sm:max-h-[320px] md:max-h-none aspect-auto md:aspect-[4/3] object-[center_30%] scale-[1.15]" />
+                <img src={constructionWorkers} alt="Professionnelles sur un chantier, illustrant la mixité des métiers" width={1280} height={854} loading="lazy" className="shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] sm:max-h-[320px] md:max-h-none aspect-auto md:aspect-[4/3] object-[center_30%] scale-[1.15]" />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
@@ -292,7 +292,7 @@ const Methodologie = () => {
             </Reveal>
             <Reveal>
               <div className="relative">
-                <img src={corporateLeadership} alt="" width={1280} height={854} loading="lazy" className="rounded-2xl shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] sm:max-h-[320px] md:max-h-none aspect-auto md:aspect-[4/3]" />
+                <img src={corporateLeadership} alt="Dirigeante animant une réunion d'équipe en entreprise" width={1280} height={854} loading="lazy" className="rounded-2xl shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] sm:max-h-[320px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>

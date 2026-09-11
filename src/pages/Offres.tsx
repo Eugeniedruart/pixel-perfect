@@ -100,7 +100,7 @@ const Offres = () => {
             </Reveal>
             <Reveal>
               <div className="relative hidden sm:block">
-                <img src={offresHeroV3.url} alt="" width={1124} height={790} className="rounded-lg shadow-xl shadow-foreground/[0.06] object-cover w-full aspect-[4/3]" />
+                <img src={offresHeroV3.url} alt="Table ronde WEL en plein air avec trois intervenants devant un public" width={1124} height={790} className="rounded-lg shadow-xl shadow-foreground/[0.06] object-cover w-full aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
@@ -361,7 +361,7 @@ const Offres = () => {
 
           <Reveal>
             <div className="relative rounded-lg overflow-hidden mb-6 md:mb-12">
-              <img src={offresApproche} alt="" width={1200} height={600} loading="lazy" className="w-full h-48 sm:h-80 object-cover object-bottom" />
+              <img src={offresApproche} alt="Équipe WEL en atelier de travail avec une entreprise accompagnée" width={1200} height={600} loading="lazy" className="w-full h-48 sm:h-80 object-cover object-bottom" />
               <div className="absolute inset-0 ring-1 ring-inset ring-foreground/5 rounded-lg" />
             </div>
           </Reveal>
