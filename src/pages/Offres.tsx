@@ -10,10 +10,10 @@ import {
   Percent, Building2, Scale, BarChart3, BriefcaseBusiness, ShieldCheck,
   UserCog, Clock3, Quote, WalletCards, TrendingUp,
 } from "lucide-react";
-import offresHero from "@/assets/offres-hero-v2.jpg";
+import offresHero from "@/assets/offres-hero-v2.png.asset.json";
 import offresLabellisation from "@/assets/offres-labellisation.jpg";
 import offresConseil from "@/assets/offres-conseil-v2.jpg";
-import offresFormation from "@/assets/pexels-mizunokozuki-12899165.jpg";
+import offresFormation from "@/assets/offres-formation-v2.png.asset.json";
 import offresEnquetes from "@/assets/offres-enquetes.jpg";
 import offresApproche from "@/assets/offres-approche.jpg";
 import patternHero from "@/assets/pattern-hero-clean.png";
