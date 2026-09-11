@@ -11,6 +11,7 @@ import {
   UserCog, Clock3, Quote, WalletCards, TrendingUp,
 } from "lucide-react";
 import offresHero from "@/assets/offres-hero-v2.png.asset.json";
+import offresHeroV3 from "@/assets/offres-hero-v3.jpg.asset.json";
 import offresLabellisation from "@/assets/offres-labellisation.jpg";
 import offresConseil from "@/assets/offres-conseil-v3.png.asset.json";
 import offresFormation from "@/assets/offres-formation-v2.png.asset.json";
