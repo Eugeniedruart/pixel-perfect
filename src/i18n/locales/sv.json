@@ -373,6 +373,27 @@
       "Tillgång för era upphandlingar och ESG"
     ],
     "labelCta": "Upptäck metodiken",
+    "labelTimelineEyebrow": "Processen",
+    "labelTimelineTitle": "Märkningen i 3 steg",
+    "labelThreshold": "Märkning från 80/100 poäng",
+    "labelTimeline": [
+      {
+        "week": "Vecka 1",
+        "title": "Diagnos",
+        "desc": "50 frågor inom 4 pelare och analys av dokumenterade bevis."
+      },
+      {
+        "week": "Vecka 6",
+        "title": "Märkning",
+        "desc": "Leverans av benchmark, handlingsplan och guide för innovativa åtgärder."
+      },
+      {
+        "week": "Vecka 8",
+        "title": "Arbetsgivarvarumärke",
+        "desc": "Kommunikationskit, intervjuer och synliggörande av ert engagemang."
+      }
+    ],
+    "labelAccess": "WEL-märkning och tillgång till ekosystemet gäller i 3 år",
     "conseilEyebrow": "Stöd",
     "conseilTitle1": "Rådgivning &",
     "conseilTitle2": "stöd",
@@ -401,8 +422,35 @@
       {
         "title": "Rekryteringsprocesser",
         "desc": "Anta en inkluderande rekryteringsprocess"
+      },
+      {
+        "title": "Karriär: lika kompetens, lika möjligheter?",
+        "desc": "Identifiera mekanismer som bromsar yrkeskarriärer."
+      },
+      {
+        "title": "Ansvarig för sexuella trakasserier och sexistiskt beteende",
+        "desc": "Kunna upptäcka och agera."
+      },
+      {
+        "title": "Leda för jämställdhet",
+        "desc": "Vanorna som verkligen gör skillnad."
       }
     ],
+    "trainingFormatsTitle": "Tillgängliga format",
+    "trainingFormats": [
+      "Interaktiv konferens — 1 till 1,5 timme",
+      "Deltagande workshop — halvdag",
+      "Chefsutbildning — halvdag"
+    ],
+    "trainingCustom": "Varje format anpassas efter era utmaningar.",
+    "trainingBudgetTitle": "En delad budget",
+    "trainingBudgetText": "Utbildningsbudgeten kan bäras av HR, CSR, Kommunikation eller Affärsutveckling.",
+    "trainingTestimonialQuote": "Jag fick möjlighet att delta i heldagsutbildningen om trakasserier och sexism på arbetsplatsen och är mycket positiv. Insatsen var särskilt intressant och dynamisk, inte minst tack vare de olika spelen och övningarna. Efter dagen lämnar man med en mycket tydlig bild och god kunskap om ämnet.",
+    "trainingTestimonialAuthor": "Nabila Hocquard",
+    "trainingTestimonialCompany": "Mobiapps",
+    "businessStatValue": "+15 % lönsamhet",
+    "businessStatText": "med minst 30 % kvinnor i ledningsgruppen",
+    "businessStatSource": "McKinsey-studie",
     "enquetesEyebrow": "Lyssnande",
     "enquetesTitle1": "Interna",
     "enquetesTitle2": "undersökningar",

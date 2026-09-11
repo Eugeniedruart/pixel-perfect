@@ -373,6 +373,27 @@
       "An asset for tenders and ESG"
     ],
     "labelCta": "Discover the methodology",
+    "labelTimelineEyebrow": "The journey",
+    "labelTimelineTitle": "Certification in 3 stages",
+    "labelThreshold": "Label awarded from 80/100",
+    "labelTimeline": [
+      {
+        "week": "Week 1",
+        "title": "Diagnosis",
+        "desc": "50 questions across 4 pillars and analysis of supporting documents."
+      },
+      {
+        "week": "Week 6",
+        "title": "Certification",
+        "desc": "Delivery of the benchmark, action plan and innovative actions guide."
+      },
+      {
+        "week": "Week 8",
+        "title": "Employer brand",
+        "desc": "Communication kit, interviews and promotion of your commitment."
+      }
+    ],
+    "labelAccess": "WEL label and ecosystem access valid for 3 years",
     "conseilEyebrow": "Support",
     "conseilTitle1": "Consulting &",
     "conseilTitle2": "support",
@@ -401,8 +422,35 @@
       {
         "title": "Recruitment process",
         "desc": "Adopting an inclusive recruitment process"
+      },
+      {
+        "title": "Career: equal skills, equal opportunities?",
+        "desc": "Identify the mechanisms that hinder career paths."
+      },
+      {
+        "title": "Sexual harassment and sexist conduct officer",
+        "desc": "Know how to identify and act."
+      },
+      {
+        "title": "Managing equality",
+        "desc": "The habits that make a real difference."
       }
     ],
+    "trainingFormatsTitle": "Available formats",
+    "trainingFormats": [
+      "Interactive conference — 1 to 1.5 hours",
+      "Participatory workshop — half day",
+      "Manager training — half day"
+    ],
+    "trainingCustom": "Each format can be tailored to your priorities.",
+    "trainingBudgetTitle": "A shared budget",
+    "trainingBudgetText": "Training can be sponsored by HR, CSR, Communications or Business Development departments.",
+    "trainingTestimonialQuote": "I had the opportunity to attend the one-day training course on workplace harassment and sexism, and came away with a very positive impression. I found the session particularly engaging and dynamic, especially thanks to the various games and role-playing exercises. By the end of the day, you leave with a very clear understanding and strong knowledge of the subject.",
+    "trainingTestimonialAuthor": "Nabila Hocquard",
+    "trainingTestimonialCompany": "Mobiapps",
+    "businessStatValue": "+15% profitability",
+    "businessStatText": "with at least 30% women on the Executive Committee",
+    "businessStatSource": "McKinsey study",
     "enquetesEyebrow": "Listening",
     "enquetesTitle1": "Internal",
     "enquetesTitle2": "surveys",
