@@ -116,7 +116,7 @@ const Offres = () => {
         </div>
       </Reveal>
 
-      <section className="py-10 md:py-20">
+      <section className="py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center">
             <Reveal>
@@ -189,7 +189,7 @@ const Offres = () => {
         </div>
       </section>
 
-      <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.3)]">
+      <section className="py-8 md:py-16 bg-[hsl(var(--wel-cream)/0.3)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">{t("offres.conseilEyebrow")}</p>
@@ -202,7 +202,7 @@ const Offres = () => {
             </p>
           </Reveal>
 
-          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-start mb-8 md:mb-16">
             <Reveal className="order-1 md:order-2">
               <div className="relative">
                 <img src={offresFormation} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
@@ -226,7 +226,7 @@ const Offres = () => {
             </Reveal>
           </div>
 
-          <Reveal className="mb-12 md:mb-24">
+          <Reveal className="mb-8 md:mb-16">
             <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-stretch">
               <div className="rounded-lg border border-border bg-background/80 p-4">
                 <div className="mb-3 flex items-center gap-2">
@@ -254,7 +254,7 @@ const Offres = () => {
             </div>
           </Reveal>
 
-          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-8 md:mb-16">
             <Reveal className="order-2 md:order-2">
 
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.enquetesEyebrow")}</p>
@@ -307,7 +307,7 @@ const Offres = () => {
             </Reveal>
           </div>
 
-          <div className="mt-12 md:mt-24">
+          <div className="mt-8 md:mt-16">
             <Reveal>
               <h3 className="text-xl sm:text-2xl font-bold text-center mb-8 md:mb-12">
                 {t("offres.missionsExamplesTitle")}
@@ -340,7 +340,7 @@ const Offres = () => {
         </div>
       </Reveal>
 
-      <section className="py-10 md:py-20">
+      <section className="py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">{t("offres.approcheEyebrow")}</p>
