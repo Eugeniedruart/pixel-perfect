@@ -99,7 +99,7 @@ const Offres = () => {
               </Button>
             </Reveal>
             <Reveal>
-              <div className="relative hidden md:block">
+              <div className="relative hidden sm:block">
                 <img src={offresHeroV3.url} alt="" width={1124} height={790} className="rounded-lg shadow-xl shadow-foreground/[0.06] object-cover w-full aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
@@ -116,12 +116,12 @@ const Offres = () => {
         </div>
       </Reveal>
 
-      <section className="py-8 md:py-16">
+      <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-start">
             <Reveal>
               <div className="relative">
-                <img src={offresLabellisation} alt="Conférence WEL : intervenantes et intervenants sur scène devant une assemblée d'entreprises engagées pour l'égalité professionnelle" width={1920} height={1080} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
+                <img src={offresLabellisation} alt="Conférence WEL : intervenantes et intervenants sur scène devant une assemblée d'entreprises engagées pour l'égalité professionnelle" width={1920} height={1080} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full sm:max-h-[320px] max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
@@ -189,7 +189,7 @@ const Offres = () => {
         </div>
       </section>
 
-      <section className="py-8 md:py-16 bg-[hsl(var(--wel-cream)/0.3)]">
+      <section className="py-10 md:py-20 bg-[hsl(var(--wel-cream)/0.3)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">{t("offres.conseilEyebrow")}</p>
@@ -197,7 +197,7 @@ const Offres = () => {
               {t("offres.conseilTitle1")}{" "}
               <span className="font-serif-display italic text-primary font-normal">{t("offres.conseilTitle2")}</span>
             </h2>
-            <p className="font-serif-display italic text-primary/80 text-center text-base md:text-lg mb-8 md:mb-16">
+            <p className="font-serif-display italic text-primary/80 text-center text-base md:text-lg mb-10 md:mb-20">
               {t("offres.conseilTagline")}
             </p>
           </Reveal>
@@ -213,7 +213,7 @@ const Offres = () => {
             </div>
           </Reveal>
 
-          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-start mb-8 md:mb-16">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-start mb-10 md:mb-20">
             <Reveal className="order-2 md:order-1">
               <div className="grid gap-3 sm:grid-cols-2">
                 {formations.map((f, i) => (
@@ -223,13 +223,13 @@ const Offres = () => {
             </Reveal>
             <Reveal className="order-1 md:order-2">
               <div className="relative">
-                <img src={offresFormation.url} alt="Formation WEL en entreprise : atelier animé auprès d'une équipe sur l'égalité professionnelle" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
+                <img src={offresFormation.url} alt="Formation WEL en entreprise : atelier animé auprès d'une équipe sur l'égalité professionnelle" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full sm:max-h-[320px] max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-start mb-8 md:mb-16">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-start mb-10 md:mb-20">
             <Reveal>
               <div className="rounded-lg border border-border bg-background/80 p-4">
                 <div className="mb-3 flex items-center gap-2">
@@ -260,7 +260,7 @@ const Offres = () => {
           </div>
 
 
-          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-start mb-8 md:mb-16">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-start mb-10 md:mb-20">
             <Reveal className="order-2 md:order-2">
 
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.enquetesEyebrow")}</p>
@@ -282,7 +282,7 @@ const Offres = () => {
             <Reveal className="order-1 md:order-1">
 
               <div className="relative">
-                <img src={offresHero.url} alt="Échange en petit groupe lors d'une enquête interne WEL sur le climat de travail et l'égalité professionnelle" width={1280} height={720} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
+                <img src={offresHero.url} alt="Échange en petit groupe lors d'une enquête interne WEL sur le climat de travail et l'égalité professionnelle" width={1280} height={720} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full sm:max-h-[320px] max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
@@ -292,7 +292,7 @@ const Offres = () => {
             <Reveal className="order-1 md:order-2">
 
               <div className="relative">
-                <img src={offresConseil.url} alt="Mission de conseil WEL : réunion d'équipe animée par une consultante autour d'une table" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
+                <img src={offresConseil.url} alt="Mission de conseil WEL : réunion d'équipe animée par une consultante autour d'une table" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full sm:max-h-[320px] max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
@@ -339,14 +339,14 @@ const Offres = () => {
       </section>
 
       <Reveal>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20 text-center">
           <blockquote className="text-lg sm:text-2xl font-serif-display italic text-foreground/80 leading-relaxed">
             {t("offres.quote2")}
           </blockquote>
         </div>
       </Reveal>
 
-      <section className="py-8 md:py-16">
+      <section className="py-10 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground text-center mb-3">{t("offres.approcheEyebrow")}</p>
