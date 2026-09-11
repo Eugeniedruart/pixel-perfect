@@ -143,6 +143,8 @@
 @media (min-width: 1024px) {
   .trust-desktop-row {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.25rem;
   }
 
   .trust-mobile-row {
