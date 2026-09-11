@@ -223,32 +223,27 @@ const Offres = () => {
               </div>
 
 
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                <div className="rounded-lg border border-border bg-background/80 p-4">
-                  <div className="mb-3 flex items-center gap-2">
-                    <Clock3 className="h-4 w-4 text-primary" aria-hidden="true" />
-                    <p className="text-sm font-bold text-foreground">{t("offres.trainingFormatsTitle")}</p>
-                  </div>
-                  <ul className="space-y-1.5">
-                    {trainingFormats.map((format) => (
-                      <li key={format} className="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
-                        <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" aria-hidden="true" />
-                        {format}
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="mt-3 text-xs font-medium text-primary">{t("offres.trainingCustom")}</p>
-                </div>
-                <div className="rounded-lg border border-border bg-background/80 p-4">
-                  <div className="mb-3 flex items-center gap-2">
-                    <WalletCards className="h-4 w-4 text-primary" aria-hidden="true" />
-                    <p className="text-sm font-bold text-foreground">{t("offres.trainingBudgetTitle")}</p>
-                  </div>
-                  <p className="text-xs leading-relaxed text-muted-foreground">{t("offres.trainingBudgetText")}</p>
-                </div>
-              </div>
+            </Reveal>
+          </div>
 
-              <blockquote className="relative mt-5 rounded-lg border border-primary/20 bg-primary/[0.05] p-5 pl-12">
+          <Reveal className="mb-12 md:mb-24">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-stretch">
+              <div className="rounded-lg border border-border bg-background/80 p-4">
+                <div className="mb-3 flex items-center gap-2">
+                  <Clock3 className="h-4 w-4 text-primary" aria-hidden="true" />
+                  <p className="text-sm font-bold text-foreground">{t("offres.trainingFormatsTitle")}</p>
+                </div>
+                <ul className="space-y-1.5">
+                  {trainingFormats.map((format) => (
+                    <li key={format} className="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
+                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                      {format}
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-3 text-xs font-medium text-primary">{t("offres.trainingCustom")}</p>
+              </div>
+              <blockquote className="relative rounded-lg border border-primary/20 bg-primary/[0.05] p-5 pl-12">
                 <Quote className="absolute left-4 top-5 h-5 w-5 text-primary" aria-hidden="true" />
                 <p className="font-serif-display text-sm italic leading-relaxed text-foreground/80">{t("offres.trainingTestimonialQuote")}</p>
                 <footer className="mt-3">
@@ -256,8 +251,8 @@ const Offres = () => {
                   <p className="text-xs text-primary">{t("offres.trainingTestimonialCompany")}</p>
                 </footer>
               </blockquote>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
             <Reveal className="order-2 md:order-2">
