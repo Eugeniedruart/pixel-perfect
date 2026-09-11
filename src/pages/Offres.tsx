@@ -10,10 +10,10 @@ import {
   Percent, Building2, Scale, BarChart3, BriefcaseBusiness, ShieldCheck,
   UserCog, Clock3, Quote, WalletCards, TrendingUp,
 } from "lucide-react";
-import offresHero from "@/assets/offres-hero-v2.jpg";
+import offresHero from "@/assets/offres-hero-v2.png.asset.json";
 import offresLabellisation from "@/assets/offres-labellisation.jpg";
 import offresConseil from "@/assets/offres-conseil-v2.jpg";
-import offresFormation from "@/assets/pexels-mizunokozuki-12899165.jpg";
+import offresFormation from "@/assets/offres-formation-v2.png.asset.json";
 import offresEnquetes from "@/assets/offres-enquetes.jpg";
 import offresApproche from "@/assets/offres-approche.jpg";
 import patternHero from "@/assets/pattern-hero-clean.png";
@@ -100,7 +100,7 @@ const Offres = () => {
             </Reveal>
             <Reveal>
               <div className="relative hidden md:block">
-                <img src={offresHero} alt="" width={1280} height={720} className="rounded-lg shadow-xl shadow-foreground/[0.06] object-cover w-full aspect-[4/3]" />
+                <img src={offresHero.url} alt="" width={1280} height={720} className="rounded-lg shadow-xl shadow-foreground/[0.06] object-cover w-full aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
@@ -205,7 +205,7 @@ const Offres = () => {
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-start mb-8 md:mb-16">
             <Reveal className="order-1 md:order-2">
               <div className="relative">
-                <img src={offresFormation} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
+                <img src={offresFormation.url} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
