@@ -133,7 +133,7 @@ const Offres = () => {
               </h2>
               <p className="font-serif-display italic text-primary/80 text-base md:text-lg mb-4 md:mb-6">{t("offres.labelTagline")}</p>
               <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">{t("offres.labelIntro")}</p>
-              <div className="space-y-2 md:space-y-3 mb-5 md:mb-8">
+              <div className="space-y-2 md:space-y-3 mb-4 md:mb-5">
                 {labelBullets.map((text, i) => (
                   <div key={i} className="flex items-start gap-2 md:gap-3">
                     <CheckCircle2 className="h-3.5 w-3.5 md:h-4 md:w-4 text-primary mt-0.5 shrink-0" />
@@ -141,6 +141,11 @@ const Offres = () => {
                   </div>
                 ))}
               </div>
+              <div className="mb-5 md:mb-8 flex items-start gap-2 md:gap-3 rounded-lg border border-border bg-muted/20 p-3 md:p-4">
+                <WalletCards className="h-4 w-4 text-primary shrink-0 mt-0.5" aria-hidden="true" />
+                <p className="text-xs md:text-sm leading-relaxed text-muted-foreground">{t("offres.labelBudgetNote")}</p>
+              </div>
+
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 w-full sm:w-auto h-11" asChild>
                 <Link to="/methodologie">{t("offres.labelCta")} <ArrowRight className="h-4 w-4" /></Link>
               </Button>
@@ -198,32 +203,25 @@ const Offres = () => {
           </Reveal>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
-            <Reveal>
+            <Reveal className="order-1 md:order-2">
               <div className="relative">
-                <img src={offresFormation} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full md:w-[85%] max-h-[200px] md:max-h-[400px]" />
+                <img src={offresFormation} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
-            <Reveal>
+            <Reveal className="order-2 md:order-1">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.formationsEyebrow")}</p>
               <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 {t("offres.formationsTitle1")}{" "}
                 <span className="font-serif-display italic text-primary font-normal">{t("offres.formationsTitle2")}</span>
               </h3>
               <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-8">{t("offres.formationsIntro")}</p>
-              <div className="space-y-3 md:space-y-4">
+              <div className="grid gap-3 sm:grid-cols-2">
                 {formations.map((f, i) => (
-                  <div key={i} className="flex items-start gap-3 group">
-                    <div className="w-8 h-8 md:w-9 md:h-9 rounded-lg bg-primary/[0.06] flex items-center justify-center shrink-0 group-hover:bg-primary/[0.12] transition-colors">
-                      <f.icon className="h-4 w-4 text-primary" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-foreground">{f.title}</p>
-                      <p className="text-xs text-muted-foreground">{f.desc}</p>
-                    </div>
-                  </div>
+                  <ApprochAccordionCard key={i} icon={f.icon} title={f.title} text={f.desc} />
                 ))}
               </div>
+
 
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 <div className="rounded-lg border border-border bg-background/80 p-4">
@@ -262,7 +260,8 @@ const Offres = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-12 md:mb-24">
-            <Reveal className="order-2 md:order-1">
+            <Reveal className="order-2 md:order-2">
+
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.enquetesEyebrow")}</p>
               <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 {t("offres.enquetesTitle1")}{" "}
@@ -279,7 +278,8 @@ const Offres = () => {
                 ))}
               </div>
             </Reveal>
-            <Reveal className="order-1 md:order-2">
+            <Reveal className="order-1 md:order-1">
+
               <div className="relative">
                 <img src={offresEnquetes} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
@@ -288,13 +288,15 @@ const Offres = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center">
-            <Reveal>
+            <Reveal className="order-1 md:order-2">
+
               <div className="relative">
                 <img src={offresConseil} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
-            <Reveal>
+            <Reveal className="order-2 md:order-1">
+
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.missionsEyebrow")}</p>
               <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 {t("offres.missionsTitle1")}{" "}
