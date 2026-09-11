@@ -11,6 +11,7 @@ import {
   UserCog, Clock3, Quote, WalletCards, TrendingUp,
 } from "lucide-react";
 import offresHero from "@/assets/offres-hero-v2.png.asset.json";
+import offresHeroV3 from "@/assets/offres-hero-v3.jpg.asset.json";
 import offresLabellisation from "@/assets/offres-labellisation.jpg";
 import offresConseil from "@/assets/offres-conseil-v3.png.asset.json";
 import offresFormation from "@/assets/offres-formation-v2.png.asset.json";
@@ -99,7 +100,7 @@ const Offres = () => {
             </Reveal>
             <Reveal>
               <div className="relative hidden md:block">
-                <img src={offresHero.url} alt="" width={1280} height={720} className="rounded-lg shadow-xl shadow-foreground/[0.06] object-cover w-full aspect-[4/3]" />
+                <img src={offresHeroV3.url} alt="" width={1124} height={790} className="rounded-lg shadow-xl shadow-foreground/[0.06] object-cover w-full aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
