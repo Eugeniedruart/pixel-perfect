@@ -55,7 +55,7 @@ function prerenderPlugin(): Plugin {
 
       for (const route of prerenderRoutes) {
         let html = template;
-        const appHtml = render(route.path, route.lang);
+        const appHtml = render(route.urlPath, route.lang);
         html = html.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
 
         html = html.replace(/<html lang="[^"]*">/, `<html lang="${HTML_LANG[route.lang]}">`);
