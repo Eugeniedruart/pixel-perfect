@@ -373,6 +373,27 @@
       "Vorteil für Ausschreibungen und ESG"
     ],
     "labelCta": "Methodik entdecken",
+    "labelTimelineEyebrow": "Der Ablauf",
+    "labelTimelineTitle": "Die Labelvergabe in 3 Schritten",
+    "labelThreshold": "Label ab 80/100 Punkten",
+    "labelTimeline": [
+      {
+        "week": "Woche 1",
+        "title": "Diagnose",
+        "desc": "50 Fragen zu 4 Säulen und Analyse der Nachweisdokumente."
+      },
+      {
+        "week": "Woche 6",
+        "title": "Labelvergabe",
+        "desc": "Übergabe von Benchmark, Aktionsplan und Leitfaden für innovative Maßnahmen."
+      },
+      {
+        "week": "Woche 8",
+        "title": "Arbeitgebermarke",
+        "desc": "Kommunikationskit, Interviews und Sichtbarkeit Ihres Engagements."
+      }
+    ],
+    "labelAccess": "WEL-Label und Zugang zum Ökosystem 3 Jahre gültig",
     "conseilEyebrow": "Begleitung",
     "conseilTitle1": "Beratung &",
     "conseilTitle2": "Begleitung",
@@ -401,8 +422,35 @@
       {
         "title": "Einstellungsprozesse",
         "desc": "Einen inklusiven Einstellungsprozess einführen"
+      },
+      {
+        "title": "Karriere: gleiche Kompetenzen, gleiche Chancen?",
+        "desc": "Mechanismen erkennen, die berufliche Laufbahnen bremsen."
+      },
+      {
+        "title": "Beauftragte für sexuelle Belästigung und sexistisches Verhalten",
+        "desc": "Erkennen und handeln können."
+      },
+      {
+        "title": "Gleichstellung managen",
+        "desc": "Die Reflexe, die wirklich etwas verändern."
       }
     ],
+    "trainingFormatsTitle": "Verfügbare Formate",
+    "trainingFormats": [
+      "Interaktive Konferenz — 1 bis 1,5 Stunden",
+      "Partizipativer Workshop — halber Tag",
+      "Führungskräftetraining — halber Tag"
+    ],
+    "trainingCustom": "Jedes Format wird an Ihre Herausforderungen angepasst.",
+    "trainingBudgetTitle": "Ein gemeinsames Budget",
+    "trainingBudgetText": "Das Schulungsbudget kann von HR, CSR, Kommunikation oder Geschäftsentwicklung getragen werden.",
+    "trainingTestimonialQuote": "Ich hatte die Gelegenheit, an der eintägigen Schulung zu Belästigung und Sexismus am Arbeitsplatz teilzunehmen, und ziehe ein sehr positives Fazit. Die Veranstaltung war besonders interessant und dynamisch, vor allem dank der verschiedenen Spiele und Praxissituationen. Am Ende des Tages geht man mit einem sehr klaren Bild und guten Kenntnissen des Themas nach Hause.",
+    "trainingTestimonialAuthor": "Nabila Hocquard",
+    "trainingTestimonialCompany": "Mobiapps",
+    "businessStatValue": "+15 % Rentabilität",
+    "businessStatText": "bei mindestens 30 % Frauen in der Geschäftsleitung",
+    "businessStatSource": "McKinsey-Studie",
     "enquetesEyebrow": "Zuhören",
     "enquetesTitle1": "Interne",
     "enquetesTitle2": "Befragungen",

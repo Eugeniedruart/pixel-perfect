@@ -373,6 +373,27 @@
       "Atout pour vos appels d'offres et ESG"
     ],
     "labelCta": "Découvrir la méthodologie",
+    "labelTimelineEyebrow": "Le parcours",
+    "labelTimelineTitle": "La labellisation en 3 étapes",
+    "labelThreshold": "Label obtenu dès 80/100",
+    "labelTimeline": [
+      {
+        "week": "Semaine 1",
+        "title": "Diagnostic",
+        "desc": "50 questions sur les 4 piliers et analyse des preuves documentaires."
+      },
+      {
+        "week": "Semaine 6",
+        "title": "Labellisation",
+        "desc": "Remise du benchmark, du plan d'action et du guide des actions innovantes."
+      },
+      {
+        "week": "Semaine 8",
+        "title": "Marque employeur",
+        "desc": "Kit de communication, interviews et valorisation de votre engagement."
+      }
+    ],
+    "labelAccess": "Label et accès à l'écosystème WEL valables 3 ans",
     "conseilEyebrow": "Accompagnement",
     "conseilTitle1": "Conseil &",
     "conseilTitle2": "accompagnement",
@@ -401,8 +422,35 @@
       {
         "title": "Âgisme et parcours professionnels :",
         "desc": "“Trop jeune, trop vieille ?”"
+      },
+      {
+        "title": "Carrière : à compétences égales, mêmes opportunités ?",
+        "desc": "Identifier les mécanismes qui freinent les parcours professionnels."
+      },
+      {
+        "title": "Référent·e harcèlement sexuel et agissements sexistes",
+        "desc": "Savoir repérer, savoir agir."
+      },
+      {
+        "title": "Manager l'égalité",
+        "desc": "Les réflexes qui changent vraiment."
       }
     ],
+    "trainingFormatsTitle": "Formats disponibles",
+    "trainingFormats": [
+      "Conférence interactive — 1h à 1h30",
+      "Atelier participatif — 1/2 journée",
+      "Formation managers — 1/2 journée"
+    ],
+    "trainingCustom": "Chaque format est personnalisable selon vos enjeux.",
+    "trainingBudgetTitle": "Un budget partagé",
+    "trainingBudgetText": "Le budget formation peut être porté par les directions RH, RSE, Communication ou Développement commercial.",
+    "trainingTestimonialQuote": "J'ai eu l'opportunité de suivre la formation d'une journée sur le harcèlement et le sexisme au travail, et j'en tire un bilan très positif. J'ai trouvé l'intervention particulièrement intéressante et dynamique, notamment grâce aux différents jeux et mises en situation proposés. À l'issue de cette journée, on ressort avec une vision très claire et une bonne connaissance du sujet.",
+    "trainingTestimonialAuthor": "Nabila Hocquard",
+    "trainingTestimonialCompany": "Mobiapps",
+    "businessStatValue": "+15 % de rentabilité",
+    "businessStatText": "avec au moins 30 % de femmes au COMEX",
+    "businessStatSource": "Étude McKinsey",
     "enquetesEyebrow": "Écoute",
     "enquetesTitle1": "Enquêtes",
     "enquetesTitle2": "internes",

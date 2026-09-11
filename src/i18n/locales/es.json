@@ -373,6 +373,27 @@
       "Un activo para sus licitaciones y ESG"
     ],
     "labelCta": "Descubrir la metodología",
+    "labelTimelineEyebrow": "El recorrido",
+    "labelTimelineTitle": "La certificación en 3 etapas",
+    "labelThreshold": "Sello obtenido desde 80/100",
+    "labelTimeline": [
+      {
+        "week": "Semana 1",
+        "title": "Diagnóstico",
+        "desc": "50 preguntas sobre los 4 pilares y análisis de las pruebas documentales."
+      },
+      {
+        "week": "Semana 6",
+        "title": "Certificación",
+        "desc": "Entrega del benchmark, del plan de acción y de la guía de acciones innovadoras."
+      },
+      {
+        "week": "Semana 8",
+        "title": "Marca empleadora",
+        "desc": "Kit de comunicación, entrevistas y valorización de su compromiso."
+      }
+    ],
+    "labelAccess": "Sello y acceso al ecosistema WEL válidos durante 3 años",
     "conseilEyebrow": "Acompañamiento",
     "conseilTitle1": "Consultoría y",
     "conseilTitle2": "acompañamiento",
@@ -401,8 +422,35 @@
       {
         "title": "Proceso de contratación",
         "desc": "Adoptar un proceso de contratación inclusivo"
+      },
+      {
+        "title": "Carrera: a iguales competencias, ¿iguales oportunidades?",
+        "desc": "Identificar los mecanismos que frenan las trayectorias profesionales."
+      },
+      {
+        "title": "Referente de acoso sexual y conductas sexistas",
+        "desc": "Saber detectar, saber actuar."
+      },
+      {
+        "title": "Gestionar la igualdad",
+        "desc": "Los reflejos que realmente cambian las cosas."
       }
     ],
+    "trainingFormatsTitle": "Formatos disponibles",
+    "trainingFormats": [
+      "Conferencia interactiva — 1 a 1,5 horas",
+      "Taller participativo — media jornada",
+      "Formación para managers — media jornada"
+    ],
+    "trainingCustom": "Cada formato se personaliza según sus retos.",
+    "trainingBudgetTitle": "Un presupuesto compartido",
+    "trainingBudgetText": "El presupuesto puede ser asumido por las direcciones de RR. HH., RSE, Comunicación o Desarrollo comercial.",
+    "trainingTestimonialQuote": "Tuve la oportunidad de asistir a la formación de un día sobre acoso y sexismo en el trabajo, y mi balance es muy positivo. La intervención me pareció especialmente interesante y dinámica, gracias en particular a los diferentes juegos y situaciones prácticas. Al terminar la jornada, se sale con una visión muy clara y un buen conocimiento del tema.",
+    "trainingTestimonialAuthor": "Nabila Hocquard",
+    "trainingTestimonialCompany": "Mobiapps",
+    "businessStatValue": "+15 % de rentabilidad",
+    "businessStatText": "con al menos un 30 % de mujeres en el comité ejecutivo",
+    "businessStatSource": "Estudio McKinsey",
     "enquetesEyebrow": "Escucha",
     "enquetesTitle1": "Encuestas",
     "enquetesTitle2": "internas",
