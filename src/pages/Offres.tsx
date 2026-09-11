@@ -133,7 +133,7 @@ const Offres = () => {
               </h2>
               <p className="font-serif-display italic text-primary/80 text-base md:text-lg mb-4 md:mb-6">{t("offres.labelTagline")}</p>
               <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-6">{t("offres.labelIntro")}</p>
-              <div className="space-y-2 md:space-y-3 mb-5 md:mb-8">
+              <div className="space-y-2 md:space-y-3 mb-4 md:mb-5">
                 {labelBullets.map((text, i) => (
                   <div key={i} className="flex items-start gap-2 md:gap-3">
                     <CheckCircle2 className="h-3.5 w-3.5 md:h-4 md:w-4 text-primary mt-0.5 shrink-0" />
@@ -141,6 +141,11 @@ const Offres = () => {
                   </div>
                 ))}
               </div>
+              <div className="mb-5 md:mb-8 flex items-start gap-2 md:gap-3 rounded-lg border border-border bg-muted/20 p-3 md:p-4">
+                <WalletCards className="h-4 w-4 text-primary shrink-0 mt-0.5" aria-hidden="true" />
+                <p className="text-xs md:text-sm leading-relaxed text-muted-foreground">{t("offres.labelBudgetNote")}</p>
+              </div>
+
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2 w-full sm:w-auto h-11" asChild>
                 <Link to="/methodologie">{t("offres.labelCta")} <ArrowRight className="h-4 w-4" /></Link>
               </Button>
