@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import offresHero from "@/assets/offres-hero-v2.png.asset.json";
 import offresHeroV3 from "@/assets/offres-hero-v3.jpg.asset.json";
-import offresLabellisation from "@/assets/offres-labellisation.jpg";
+import offresLabellisation from "@/assets/offres-labellisation-v2.jpg.asset.json";
 import offresConseil from "@/assets/offres-conseil-v3.png.asset.json";
 import offresFormation from "@/assets/offres-formation-v2.png.asset.json";
 import offresApproche from "@/assets/offres-approche.jpg";
