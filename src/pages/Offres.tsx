@@ -202,14 +202,19 @@ const Offres = () => {
             </p>
           </Reveal>
 
-          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-start mb-8 md:mb-16">
-            <Reveal className="order-2 md:order-1">
+          <Reveal>
+            <div className="mb-6 md:mb-8">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{t("offres.formationsEyebrow")}</p>
               <h3 className="text-xl sm:text-3xl font-bold mb-2 md:mb-3">
                 {t("offres.formationsTitle1")}{" "}
                 <span className="font-serif-display italic text-primary font-normal">{t("offres.formationsTitle2")}</span>
               </h3>
-              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-4 md:mb-8">{t("offres.formationsIntro")}</p>
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">{t("offres.formationsIntro")}</p>
+            </div>
+          </Reveal>
+
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-start mb-8 md:mb-16">
+            <Reveal className="order-2 md:order-1">
               <div className="grid gap-3 sm:grid-cols-2">
                 {formations.map((f, i) => (
                   <ApprochAccordionCard key={i} icon={f.icon} title={f.title} text={f.desc} />
@@ -224,9 +229,9 @@ const Offres = () => {
             </Reveal>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-stretch mb-8 md:mb-16">
-            <Reveal className="h-full">
-              <div className="h-full rounded-lg border border-border bg-background/80 p-4">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-start mb-8 md:mb-16">
+            <Reveal>
+              <div className="rounded-lg border border-border bg-background/80 p-4">
                 <div className="mb-3 flex items-center gap-2">
                   <Clock3 className="h-4 w-4 text-primary" aria-hidden="true" />
                   <p className="text-sm font-bold text-foreground">{t("offres.trainingFormatsTitle")}</p>
@@ -242,8 +247,8 @@ const Offres = () => {
                 <p className="mt-3 text-xs font-medium text-primary">{t("offres.trainingCustom")}</p>
               </div>
             </Reveal>
-            <Reveal className="h-full">
-              <blockquote className="relative h-full rounded-lg border border-primary/20 bg-primary/[0.05] p-6 text-center">
+            <Reveal>
+              <blockquote className="relative rounded-lg border border-primary/20 bg-primary/[0.05] p-6 text-center">
                 <Quote className="mx-auto mb-3 h-5 w-5 text-primary" aria-hidden="true" />
                 <p className="font-serif-display text-sm italic leading-relaxed text-foreground/80">{t("offres.trainingTestimonialQuote")}</p>
                 <footer className="mt-4">
