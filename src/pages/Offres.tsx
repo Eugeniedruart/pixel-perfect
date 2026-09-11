@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import offresHero from "@/assets/offres-hero-v2.png.asset.json";
 import offresHeroV3 from "@/assets/offres-hero-v3.jpg.asset.json";
-import offresLabellisation from "@/assets/offres-labellisation.jpg";
+import offresLabellisation from "@/assets/offres-labellisation-v2.jpg.asset.json";
 import offresConseil from "@/assets/offres-conseil-v3.png.asset.json";
 import offresFormation from "@/assets/offres-formation-v2.png.asset.json";
 import offresApproche from "@/assets/offres-approche.jpg";
@@ -121,7 +121,7 @@ const Offres = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center">
             <Reveal>
               <div className="relative">
-                <img src={offresLabellisation} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
+                <img src={offresLabellisation.url} alt="" width={1920} height={1080} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
                 <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
