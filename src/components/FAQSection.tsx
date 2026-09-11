@@ -5,13 +5,40 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useTranslation } from "react-i18next";
+import JsonLd from "@/components/JsonLd";
+
+const stripHtml = (value: string) =>
+  value
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/\s+/g, " ")
+    .trim();
 
 const FAQSection = () => {
   const { t } = useTranslation();
   const faqs = t("faq.items", { returnObjects: true }) as Array<{ q: string; a: string }>;
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: stripHtml(faq.q),
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: stripHtml(faq.a),
+      },
+    })),
+  };
+
   return (
     <section id="faq" className="py-10 md:py-20 bg-muted/30">
+      <JsonLd data={faqJsonLd} />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-12">
           {t("faq.title1")} <span className="font-serif-display italic text-primary font-normal">{t("faq.title2")}</span>
