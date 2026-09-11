@@ -1,42 +1,497 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.womenequitylabel.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/es/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/de/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/sv/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.womenequitylabel.fr/offres</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/offres" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/offres" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/offres" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/offres" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/offres" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/offres" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/en/offres</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/offres" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/offres" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/offres" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/offres" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/offres" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/offres" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/es/offres</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/offres" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/offres" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/offres" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/offres" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/offres" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/offres" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/de/offres</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/offres" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/offres" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/offres" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/offres" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/offres" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/offres" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/sv/offres</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/offres" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/offres" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/offres" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/offres" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/offres" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/offres" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.womenequitylabel.fr/methodologie</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/methodologie" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/methodologie" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/methodologie" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/methodologie" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/methodologie" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/methodologie" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/en/methodologie</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/methodologie" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/methodologie" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/methodologie" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/methodologie" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/methodologie" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/methodologie" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/es/methodologie</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/methodologie" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/methodologie" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/methodologie" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/methodologie" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/methodologie" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/methodologie" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/de/methodologie</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/methodologie" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/methodologie" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/methodologie" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/methodologie" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/methodologie" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/methodologie" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/sv/methodologie</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/methodologie" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/methodologie" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/methodologie" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/methodologie" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/methodologie" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/methodologie" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/entreprises-labellisees</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/entreprises-labellisees" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/en/entreprises-labellisees</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/entreprises-labellisees" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/es/entreprises-labellisees</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/entreprises-labellisees" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/de/entreprises-labellisees</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/entreprises-labellisees" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/sv/entreprises-labellisees</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/entreprises-labellisees" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/entreprises-labellisees" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.womenequitylabel.fr/eligibilite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/eligibilite" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/en/eligibilite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/eligibilite" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/es/eligibilite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/eligibilite" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/de/eligibilite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/eligibilite" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/sv/eligibilite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/eligibilite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/eligibilite" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.womenequitylabel.fr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/contact" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/contact" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/es/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/contact" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/de/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/contact" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/sv/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/contact" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/contact" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.womenequitylabel.fr/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/mentions-legales" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/en/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/mentions-legales" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/es/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/mentions-legales" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/de/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/mentions-legales" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/sv/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/mentions-legales" />
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://www.womenequitylabel.fr/politique-confidentialite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/politique-confidentialite" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/en/politique-confidentialite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/politique-confidentialite" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/es/politique-confidentialite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/politique-confidentialite" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/de/politique-confidentialite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/politique-confidentialite" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/sv/politique-confidentialite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/politique-confidentialite" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/politique-confidentialite" />
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://www.womenequitylabel.fr/gestion-cookies</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/gestion-cookies" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/en/gestion-cookies</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/gestion-cookies" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/es/gestion-cookies</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/gestion-cookies" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/de/gestion-cookies</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/gestion-cookies" />
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.womenequitylabel.fr/sv/gestion-cookies</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.womenequitylabel.fr/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.womenequitylabel.fr/en/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.womenequitylabel.fr/es/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.womenequitylabel.fr/de/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.womenequitylabel.fr/sv/gestion-cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.womenequitylabel.fr/gestion-cookies" />
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
