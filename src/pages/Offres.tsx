@@ -217,40 +217,43 @@ const Offres = () => {
               </div>
             </Reveal>
             <Reveal className="order-1 md:order-2">
-              <div className="flex flex-col gap-6 md:gap-8 md:mt-20">
-                <div className="relative">
-                  <img src={offresFormation.url} alt="" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
-                  <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
-                </div>
-                <div className="rounded-lg border border-border bg-background/80 p-4">
-                  <div className="mb-3 flex items-center gap-2">
-                    <Clock3 className="h-4 w-4 text-primary" aria-hidden="true" />
-                    <p className="text-sm font-bold text-foreground">{t("offres.trainingFormatsTitle")}</p>
-                  </div>
-                  <ul className="space-y-1.5">
-                    {trainingFormats.map((format) => (
-                      <li key={format} className="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
-                        <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" aria-hidden="true" />
-                        {format}
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="mt-3 text-xs font-medium text-primary">{t("offres.trainingCustom")}</p>
-                </div>
+              <div className="relative">
+                <img src={offresFormation.url} alt="Formation WEL en entreprise : atelier animé auprès d'une équipe sur l'égalité professionnelle" width={800} height={600} loading="lazy" className="rounded-lg shadow-lg shadow-foreground/5 object-cover w-full max-h-[200px] md:max-h-none aspect-auto md:aspect-[4/3]" />
+                <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/5" />
               </div>
             </Reveal>
           </div>
 
-          <Reveal className="mb-8 md:mb-16">
-            <blockquote className="relative mx-auto max-w-3xl rounded-lg border border-primary/20 bg-primary/[0.05] p-6 text-center">
-              <Quote className="mx-auto mb-3 h-5 w-5 text-primary" aria-hidden="true" />
-              <p className="font-serif-display text-sm italic leading-relaxed text-foreground/80">{t("offres.trainingTestimonialQuote")}</p>
-              <footer className="mt-4">
-                <p className="text-sm font-bold text-foreground">{t("offres.trainingTestimonialAuthor")}</p>
-                <p className="text-xs text-primary">{t("offres.trainingTestimonialCompany")}</p>
-              </footer>
-            </blockquote>
-          </Reveal>
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-stretch mb-8 md:mb-16">
+            <Reveal className="h-full">
+              <div className="h-full rounded-lg border border-border bg-background/80 p-4">
+                <div className="mb-3 flex items-center gap-2">
+                  <Clock3 className="h-4 w-4 text-primary" aria-hidden="true" />
+                  <p className="text-sm font-bold text-foreground">{t("offres.trainingFormatsTitle")}</p>
+                </div>
+                <ul className="space-y-1.5">
+                  {trainingFormats.map((format) => (
+                    <li key={format} className="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
+                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                      {format}
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-3 text-xs font-medium text-primary">{t("offres.trainingCustom")}</p>
+              </div>
+            </Reveal>
+            <Reveal className="h-full">
+              <blockquote className="relative h-full rounded-lg border border-primary/20 bg-primary/[0.05] p-6 text-center">
+                <Quote className="mx-auto mb-3 h-5 w-5 text-primary" aria-hidden="true" />
+                <p className="font-serif-display text-sm italic leading-relaxed text-foreground/80">{t("offres.trainingTestimonialQuote")}</p>
+                <footer className="mt-4">
+                  <p className="text-sm font-bold text-foreground">{t("offres.trainingTestimonialAuthor")}</p>
+                  <p className="text-xs text-primary">{t("offres.trainingTestimonialCompany")}</p>
+                </footer>
+              </blockquote>
+            </Reveal>
+          </div>
+
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 items-center mb-8 md:mb-16">
             <Reveal className="order-2 md:order-2">
