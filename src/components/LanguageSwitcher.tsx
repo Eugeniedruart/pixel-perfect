@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import { Globe } from "lucide-react";
 import {
   DropdownMenu,
@@ -6,8 +7,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { langPrefix, type Language } from "@/lib/i18n-routes";
 
-const LANGS = [
+const LANGS: Array<{ code: Language; flag: string; label: string }> = [
   { code: "fr", flag: "🇫🇷", label: "Français" },
   { code: "en", flag: "🇬🇧", label: "English" },
   { code: "es", flag: "🇪🇸", label: "Español" },
@@ -21,7 +23,14 @@ interface Props {
 
 const LanguageSwitcher = ({ variant = "default" }: Props) => {
   const { i18n } = useTranslation();
+  const location = useLocation();
   const current = LANGS.find((l) => l.code === i18n.language.split("-")[0]) ?? LANGS[0];
+
+  // Each language lives on its own crawlable URL: /offres (fr) vs /en/offres.
+  const hrefFor = (code: Language) => {
+    const path = location.pathname === "/" ? "" : location.pathname;
+    return `${langPrefix(code)}${path}` || "/";
+  };
 
   return (
     <DropdownMenu>
@@ -35,15 +44,17 @@ const LanguageSwitcher = ({ variant = "default" }: Props) => {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-[140px]">
         {LANGS.map((lang) => (
-          <DropdownMenuItem
-            key={lang.code}
-            onClick={() => i18n.changeLanguage(lang.code)}
-            className={`gap-2 text-sm cursor-pointer ${
-              current.code === lang.code ? "bg-accent font-semibold" : ""
-            }`}
-          >
-            <span>{lang.flag}</span>
-            <span>{lang.label}</span>
+          <DropdownMenuItem key={lang.code} asChild className="p-0">
+            <a
+              href={hrefFor(lang.code)}
+              hrefLang={lang.code}
+              className={`flex w-full items-center gap-2 px-2 py-1.5 text-sm cursor-pointer ${
+                current.code === lang.code ? "bg-accent font-semibold" : ""
+              }`}
+            >
+              <span>{lang.flag}</span>
+              <span>{lang.label}</span>
+            </a>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
