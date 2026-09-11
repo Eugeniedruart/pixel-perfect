@@ -41,18 +41,18 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
 
   return (
     <div>
-      <div className="relative overflow-hidden py-16 min-h-[420px]">
+      <div className="relative overflow-hidden py-10 md:py-20 min-h-[380px] md:min-h-[420px]">
         <img src={patternBg} alt="" aria-hidden className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-60" />
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
           <CheckCircle className="h-12 w-12 text-primary mx-auto mb-6" />
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             {t("eligibilite.result.title1")}<br />
             {t("eligibilite.result.title2")} <span className="font-serif-display italic font-normal">{t("eligibilite.result.title3")}</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-8">
             {t("eligibilite.result.intro")}
           </p>
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2" asChild>
+          <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 gap-2" asChild>
             <Link to="/contact">{t("eligibilite.result.cta")} <ArrowRight className="h-4 w-4" /></Link>
           </Button>
           <div className="mt-4">
@@ -77,13 +77,13 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
       </div>
 
       <div ref={statsRef} className="max-w-5xl mx-auto px-4 pb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-2">{t("eligibilite.result.statsTitle1")}</h2>
+        <h2 className="text-2xl sm:text-4xl font-bold text-center mb-2">{t("eligibilite.result.statsTitle1")}</h2>
         <p className="text-2xl sm:text-3xl font-serif-display italic text-primary text-center mb-4">{t("eligibilite.result.statsTitle2")}</p>
         <p className="text-center text-muted-foreground max-w-lg mx-auto mb-12 text-sm sm:text-base">
           {t("eligibilite.result.statsSubtitle")}
         </p>
 
-        <div className="grid sm:grid-cols-2 gap-6 mb-12">
+        <div className="grid sm:grid-cols-2 gap-5 md:gap-6 mb-10 md:mb-20">
           <div className={`group rounded-2xl border border-border bg-background p-6 sm:p-7 transition-all duration-700 hover:shadow-lg hover:-translate-y-1 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <p className="font-bold text-foreground mb-5">{t("eligibilite.result.block1Title")}</p>
             <div className="space-y-3 mb-4">
@@ -144,7 +144,7 @@ const ResultScreen = ({ data }: ResultScreenProps) => {
           </div>
         </div>
 
-        <div className="rounded-xl bg-primary p-8 sm:p-10 text-center">
+        <div className="rounded-xl bg-primary p-6 sm:p-10 text-center">
           <p className="text-primary-foreground text-lg sm:text-xl font-medium leading-relaxed max-w-2xl mx-auto font-serif-display italic">
             {t("eligibilite.result.finalQuote")}
           </p>

@@ -24,21 +24,21 @@ const WhySection = () => {
           {t("why.subtitle")}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 max-w-5xl mx-auto">
-          <div className="hidden md:block rounded-lg border border-wel-cream bg-card p-2">
-            <div className="rounded overflow-hidden h-72">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 max-w-5xl mx-auto">
+          <div className="hidden sm:block rounded-lg border border-wel-cream bg-card p-2">
+            <div className="rounded overflow-hidden h-56 md:h-72">
               <img src={whyImg} alt="" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
             </div>
           </div>
 
           <div className="rounded-lg border border-wel-cream bg-card p-2">
-            <div className="rounded bg-primary p-5 md:p-8 flex flex-col justify-center text-primary-foreground h-full">
+            <div className="rounded bg-primary p-5 sm:p-6 md:p-8 flex flex-col justify-center text-primary-foreground h-full">
               <p className="text-xs md:text-lg mb-2 text-center" dangerouslySetInnerHTML={{ __html: t("why.statText") }} />
-              <p className="text-5xl md:text-7xl font-bold font-serif-display italic text-center">2167</p>
+              <p className="text-4xl sm:text-5xl md:text-7xl font-bold font-serif-display italic text-center">2167</p>
             </div>
           </div>
 
-          <div className="md:hidden rounded-lg border border-wel-cream bg-card p-2">
+          <div className="sm:hidden rounded-lg border border-wel-cream bg-card p-2">
             <div className="rounded overflow-hidden h-56">
               <img src={womanTablet} alt="" className="w-full h-full object-cover object-[center_8%]" loading="lazy" width={768} height={1024} />
             </div>
@@ -55,8 +55,8 @@ const WhySection = () => {
             </div>
           </div>
 
-          <div className="hidden md:block rounded-lg border border-wel-cream bg-card p-2">
-            <div className="rounded overflow-hidden h-72">
+          <div className="hidden sm:block rounded-lg border border-wel-cream bg-card p-2">
+            <div className="rounded overflow-hidden h-56 md:h-72">
               <img src={womanTablet} alt="" className="w-full h-full object-cover object-[center_30%]" loading="lazy" width={768} height={1024} />
             </div>
           </div>

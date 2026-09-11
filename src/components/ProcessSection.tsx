@@ -19,7 +19,7 @@ const ProcessSection = () => {
           <br />
           <span className="font-serif-display italic text-primary font-normal">{t("process.title2")}</span>
         </h2>
-        <p className="text-sm sm:text-base text-muted-foreground text-center max-w-3xl mx-auto mt-3 mb-8 md:mb-16">
+        <p className="text-sm sm:text-base text-muted-foreground text-center max-w-3xl mx-auto mt-3 mb-10 md:mb-20">
           {t("process.subtitle")}
         </p>
 
@@ -49,11 +49,11 @@ const ProcessSection = () => {
           ))}
         </div>
 
-        <div className="flex flex-row items-center justify-center gap-2 sm:gap-3 mt-8 md:mt-14">
-          <Button variant="outline" size="sm" className="h-9 text-xs sm:h-12 sm:text-base sm:px-8" asChild>
+        <div className="flex flex-row items-center justify-center gap-2 sm:gap-3 mt-10 md:mt-16">
+          <Button variant="outline" size="sm" className="h-11 text-xs sm:h-12 sm:text-base sm:px-8" asChild>
             <Link to="/eligibilite">{t("hero.ctaTest")}</Link>
           </Button>
-          <Button size="sm" className="h-9 text-xs sm:h-12 sm:text-base sm:px-8 bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+          <Button size="sm" className="h-11 text-xs sm:h-12 sm:text-base sm:px-8 bg-primary text-primary-foreground hover:bg-primary/90" asChild>
             <Link to="/contact">{t("nav.cta")}</Link>
           </Button>
         </div>

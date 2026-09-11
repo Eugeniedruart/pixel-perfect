@@ -14,7 +14,7 @@ const StepContact = ({ form }: StepContactProps) => {
 
   return (
     <div>
-      <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
+      <h2 className="text-2xl sm:text-4xl font-bold text-foreground mb-2">
         {t("eligibilite.contactTitle1")}{" "}
         <span className="font-serif-display italic font-normal text-primary">
           {t("eligibilite.contactTitle2")}

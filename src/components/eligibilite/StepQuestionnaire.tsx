@@ -12,7 +12,7 @@ const OptionButton = ({ option, isSelected, onSelect }: { option: AnswerOption; 
   <button
     type="button"
     onClick={onSelect}
-    className={`px-4 py-2 rounded-lg text-sm font-medium border transition-all ${
+    className={`min-h-[44px] px-4 py-2 rounded-lg text-sm font-medium border transition-all ${
       isSelected
         ? "bg-primary text-primary-foreground border-primary shadow-sm"
         : "bg-background text-foreground border-border hover:border-primary/40 hover:bg-accent/30"
@@ -69,7 +69,7 @@ const StepQuestionnaire = ({ form }: StepQuestionnaireProps) => {
 
   return (
     <div className="space-y-2">
-      <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-1">
+      <h2 className="text-xl sm:text-3xl font-bold text-foreground mb-1">
         {t("eligibilite.qTitle1")}{" "}
         <span className="font-serif-display italic font-normal text-primary">{t("eligibilite.qTitle2")}</span>
       </h2>
@@ -89,7 +89,7 @@ const StepQuestionnaire = ({ form }: StepQuestionnaireProps) => {
             </div>
           </div>
 
-          <div className="ml-4 border-l-2 border-primary/15 pl-6">
+          <div className="ml-0 sm:ml-4 border-l-2 border-primary/15 pl-4 sm:pl-6">
             {pillar.questions.map((q) => (
               <div key={q.field} className="py-4">
                 <p className="text-sm font-medium text-foreground mb-3">{q.label}</p>

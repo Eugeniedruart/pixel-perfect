@@ -24,12 +24,12 @@ const AuditSection = () => {
           {pillars.map((pillar, i) => (
             <div
               key={i}
-              className="rounded-xl p-4 md:p-5 flex items-center justify-between"
+              className="rounded-xl p-4 md:p-5 flex items-center justify-between gap-2"
               style={{
                 background: `linear-gradient(135deg, hsl(245 58% ${63 + i * 5}%), hsl(245 58% ${70 + i * 5}%))`,
               }}
             >
-              <p className="text-primary-foreground font-medium text-xs sm:text-sm pr-3">{pillar.title}</p>
+              <p className="text-primary-foreground font-medium text-xs sm:text-sm min-w-0">{pillar.title}</p>
               <span className="text-primary-foreground/80 text-xs sm:text-sm whitespace-nowrap">{pillar.questions}</span>
             </div>
           ))}

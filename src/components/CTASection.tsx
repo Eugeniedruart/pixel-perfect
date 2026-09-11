@@ -5,9 +5,9 @@ import { useTranslation } from "react-i18next";
 const CTASection = () => {
   const { t } = useTranslation();
   return (
-    <section className="py-8 md:py-20 bg-background">
+    <section className="py-10 md:py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-xl bg-primary p-5 sm:p-12 text-center mb-6 md:mb-16 -mt-2">
+        <div className="rounded-xl bg-primary p-5 sm:p-12 text-center mb-10 md:mb-20 -mt-2">
           <p
             className="text-primary-foreground text-xs sm:text-xl font-medium leading-relaxed max-w-3xl mx-auto"
             dangerouslySetInnerHTML={{ __html: t("cta.quote") }}
@@ -15,17 +15,17 @@ const CTASection = () => {
         </div>
 
         <div className="max-w-3xl mx-auto rounded-xl bg-muted/50 border border-border overflow-hidden">
-          <div className="grid md:grid-cols-5 gap-0">
-            <div className="md:col-span-3 p-5 md:p-8 flex flex-col justify-center">
+          <div className="grid grid-cols-1 gap-0">
+            <div className="p-5 md:p-8 flex flex-col justify-center">
               <h2 className="text-lg md:text-2xl font-bold text-foreground mb-2">{t("cta.title")}</h2>
               <p className="text-muted-foreground text-xs md:text-sm mb-4 md:mb-6">
                 {t("cta.desc")}
               </p>
               <div className="flex flex-row gap-2 md:gap-3 mb-3 items-center justify-center">
-                <Button variant="outline" size="sm" className="h-9 text-xs sm:text-sm" asChild>
+                <Button variant="outline" size="sm" className="h-11 text-xs sm:text-sm" asChild>
                   <Link to="/eligibilite">{t("hero.ctaTest")}</Link>
                 </Button>
-                <Button size="sm" className="h-9 text-xs sm:text-sm bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+                <Button size="sm" className="h-11 text-xs sm:text-sm bg-primary text-primary-foreground hover:bg-primary/90" asChild>
                   <Link to="/contact">{t("nav.cta")}</Link>
                 </Button>
               </div>

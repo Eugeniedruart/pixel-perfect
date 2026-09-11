@@ -140,7 +140,7 @@
   display: flex;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   .trust-desktop-row {
     display: flex;
   }
