@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import conferenceAsset from "@/assets/conference-wel.jpg.asset.json";
+import conferenceAsset from "@/assets/reunion-comex.png.asset.json";
 import womanTabletAsset from "@/assets/woman-tablet.jpg.asset.json";
 
 const whyImg = conferenceAsset.url;
@@ -27,7 +27,7 @@ const WhySection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 max-w-5xl mx-auto">
           <div className="hidden sm:block rounded-lg border border-wel-cream bg-card p-2">
             <div className="rounded overflow-hidden h-56 md:h-72">
-              <img src={whyImg} alt="Table ronde WEL sur l'égalité professionnelle femmes-hommes devant un public d'entreprises" className="w-full h-full object-cover" loading="lazy" width={1472} height={816} />
+              <img src={whyImg} alt="Poignée de main lors d'un comité de direction au-dessus de documents avec graphiques financiers" className="w-full h-full object-cover" loading="lazy" width={1024} height={1024} />
             </div>
           </div>
 
