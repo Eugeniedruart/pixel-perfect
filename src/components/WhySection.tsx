@@ -2,10 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import conferenceAsset from "@/assets/reunion-comex.png.asset.json";
-import womanTabletAsset from "@/assets/woman-tablet.jpg.asset.json";
+import teamAsset from "@/assets/reunion-equipe.png.asset.json";
 
 const whyImg = conferenceAsset.url;
-const womanTablet = womanTabletAsset.url;
+const teamPhoto = teamAsset.url;
 
 const WhySection = () => {
   const { t } = useTranslation();
@@ -40,7 +40,7 @@ const WhySection = () => {
 
           <div className="sm:hidden rounded-lg border border-wel-cream bg-card p-2">
             <div className="rounded overflow-hidden h-56">
-              <img src={womanTablet} alt="Femme consultant les résultats de son diagnostic égalité professionnelle sur une tablette" className="w-full h-full object-cover object-[center_8%]" loading="lazy" width={768} height={1024} />
+              <img src={teamPhoto} alt="Illustration de cinq personnes, hommes et femmes, échangeant autour d'une table de réunion" className="w-full h-full object-cover object-center" loading="lazy" width={1024} height={1024} />
             </div>
           </div>
 
@@ -57,7 +57,7 @@ const WhySection = () => {
 
           <div className="hidden sm:block rounded-lg border border-wel-cream bg-card p-2">
             <div className="rounded overflow-hidden h-56 md:h-72">
-              <img src={womanTablet} alt="Femme consultant les résultats de son diagnostic égalité professionnelle sur une tablette" className="w-full h-full object-cover object-[center_30%]" loading="lazy" width={768} height={1024} />
+              <img src={teamPhoto} alt="Illustration de cinq personnes, hommes et femmes, échangeant autour d'une table de réunion" className="w-full h-full object-cover object-center" loading="lazy" width={1024} height={1024} />
             </div>
           </div>
         </div>
