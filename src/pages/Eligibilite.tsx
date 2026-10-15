@@ -55,6 +55,37 @@ const Eligibilite = () => {
     });
     if (error) {
       toast({ title: t("eligibilite.errorTitle"), description: t("eligibilite.errorToast"), variant: "destructive" });
+      return;
+    }
+    if (data.contactEmail) {
+      supabase.functions
+        .invoke("notify-submission", {
+          body: {
+            type: "eligibilite",
+            companyName: data.companyName,
+            employeeCount: data.employeeCount,
+            conventionCollective: data.conventionCollective,
+            firstName: data.contactPrenom || "",
+            lastName: data.contactNom || "",
+            email: data.contactEmail,
+            fonction: data.contactFonction || "",
+            answers: {
+              "Rémunération – mesure": data.q_remuneration_mesure,
+              "Rémunération – actions": data.q_remuneration_actions,
+              "Gouvernance – part": data.q_gouvernance_part,
+              "Gouvernance – objectifs": data.q_gouvernance_objectifs,
+              "Prévention – actions": data.q_prevention_actions,
+              "Prévention – formation": data.q_prevention_formation,
+              "Équilibre – dispositifs": data.q_equilibre_dispositifs,
+              "Équilibre – politiques": data.q_equilibre_politiques,
+              "Engagement 12 mois": data.q_engagement_12mois,
+            },
+          },
+        })
+        .then(({ error: fnError }) => {
+          if (fnError) console.error("notify-submission failed:", fnError.message);
+        })
+        .catch((err) => console.error("notify-submission failed:", err));
     }
   };
 

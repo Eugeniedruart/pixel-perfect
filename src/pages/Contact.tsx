@@ -53,6 +53,17 @@ const Contact = () => {
       return;
     }
 
+    // Notification e-mail (non bloquante)
+    supabase.functions
+      .invoke("notify-submission", {
+        body: { type: "contact", firstName, lastName, email, company: company || "", message: message || "" },
+      })
+      .then(({ error: fnError }) => {
+        if (fnError) console.error("notify-submission failed:", fnError.message);
+      })
+      .catch((err) => console.error("notify-submission failed:", err));
+
+
     toast({ title: t("contact.successTitle"), description: t("contact.successDesc") });
     form.reset();
   };
