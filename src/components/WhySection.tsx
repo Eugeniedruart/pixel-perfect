@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import conferenceAsset from "@/assets/reunion-comex.png.asset.json";
-import teamAsset from "@/assets/reunion-equipe.png.asset.json";
+import conferenceAsset from "@/assets/conference-wel.jpg.asset.json";
+import teamAsset from "@/assets/team-meeting.jpg.asset.json";
 
 const whyImg = conferenceAsset.url;
 const teamPhoto = teamAsset.url;
@@ -27,7 +27,7 @@ const WhySection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 max-w-5xl mx-auto">
           <div className="hidden sm:block rounded-lg border border-wel-cream bg-card p-2">
             <div className="rounded overflow-hidden h-56 md:h-72">
-              <img src={whyImg} alt="Poignée de main lors d'un comité de direction au-dessus de documents avec graphiques financiers" className="w-full h-full object-cover" loading="lazy" width={1024} height={1024} />
+              <img src={whyImg} alt="Public assis en arc de cercle face à quatre intervenants dans une salle de conférence lumineuse" className="w-full h-full object-cover" loading="lazy" width={1472} height={816} />
             </div>
           </div>
 
@@ -40,7 +40,7 @@ const WhySection = () => {
 
           <div className="sm:hidden rounded-lg border border-wel-cream bg-card p-2">
             <div className="rounded overflow-hidden h-56">
-              <img src={teamPhoto} alt="Illustration de cinq personnes, hommes et femmes, échangeant autour d'une table de réunion" className="w-full h-full object-cover object-center" loading="lazy" width={1024} height={1024} />
+              <img src={teamPhoto} alt="Équipe en réunion autour d'une table, échangeant sur l'égalité professionnelle" className="w-full h-full object-cover object-center" loading="lazy" width={1376} height={768} />
             </div>
           </div>
 
@@ -57,7 +57,7 @@ const WhySection = () => {
 
           <div className="hidden sm:block rounded-lg border border-wel-cream bg-card p-2">
             <div className="rounded overflow-hidden h-56 md:h-72">
-              <img src={teamPhoto} alt="Illustration de cinq personnes, hommes et femmes, échangeant autour d'une table de réunion" className="w-full h-full object-cover object-center" loading="lazy" width={1024} height={1024} />
+              <img src={teamPhoto} alt="Équipe en réunion autour d'une table, échangeant sur l'égalité professionnelle" className="w-full h-full object-cover object-center" loading="lazy" width={1376} height={768} />
             </div>
           </div>
         </div>
