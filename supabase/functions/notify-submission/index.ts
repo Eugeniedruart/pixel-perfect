@@ -43,8 +43,9 @@ Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders })
   if (req.method !== 'POST') return json({ error: 'Method not allowed' }, 405)
 
-  const apiKey = Deno.env.get('BREVO_API_KEY')
-  if (!apiKey) return json({ error: 'BREVO_API_KEY is not configured' }, 500)
+  const lovableKey = Deno.env.get('LOVABLE_API_KEY')
+  const gmailKey = Deno.env.get('GOOGLE_MAIL_API_KEY')
+  if (!lovableKey || !gmailKey) return json({ error: 'Gmail connection is not configured' }, 500)
 
   let raw: unknown
   try { raw = await req.json() } catch { return json({ error: 'Invalid JSON' }, 400) }
@@ -76,22 +77,39 @@ Deno.serve(async (req) => {
 
   const htmlContent = `<div style="font-family:Arial,sans-serif;color:#27276D"><h2>${esc(clean(subject))}</h2><table style="border-collapse:collapse">${rows}</table></div>`
 
-  const res = await fetch('https://api.brevo.com/v3/smtp/email', {
+  const mime = [
+    `From: ${header(SENDER.name)} <${SENDER.email}>`,
+    `To: ${RECIPIENT}`,
+    `Reply-To: ${clean(d.email)}`,
+    `Subject: ${header(clean(subject))}`,
+    'MIME-Version: 1.0',
+    'Content-Type: text/html; charset="UTF-8"',
+    '',
+    htmlContent,
+  ].join('\r\n')
+  const rawMsg = b64(mime).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+
+  const res = await fetch('https://connector-gateway.lovable.dev/google_mail/gmail/v1/users/me/messages/send', {
     method: 'POST',
-    headers: { 'api-key': apiKey, 'Content-Type': 'application/json', Accept: 'application/json' },
-    body: JSON.stringify({
-      sender: SENDER,
-      to: [{ email: RECIPIENT }],
-      replyTo: { email: d.email },
-      subject: clean(subject),
-      htmlContent,
-    }),
+    headers: {
+      Authorization: `Bearer ${lovableKey}`,
+      'X-Connection-Api-Key': gmailKey,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ raw: rawMsg }),
   })
 
   if (!res.ok) {
     const details = await res.text()
-    console.error(`Brevo failed [${res.status}]: ${details}`)
+    console.error(`Gmail failed [${res.status}]: ${details}`)
     return json({ error: 'Email send failed', status: res.status, details }, 502)
   }
   return json({ ok: true })
 })
+
+function b64(s: string) {
+  return btoa(Array.from(new TextEncoder().encode(s), (b) => String.fromCharCode(b)).join(''))
+}
+function header(v: string) {
+  return /^[\x00-\x7F]*$/.test(v) ? v : `=?UTF-8?B?${b64(v)}?=`
+}
