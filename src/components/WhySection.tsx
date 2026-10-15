@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import conferenceAsset from "@/assets/conference-wel.jpg.asset.json";
-import teamAsset from "@/assets/team-meeting.jpg.asset.json";
+import teamAsset from "@/assets/woman-tablet.jpg.asset.json";
 
 const whyImg = conferenceAsset.url;
 const teamPhoto = teamAsset.url;
@@ -40,7 +40,7 @@ const WhySection = () => {
 
           <div className="sm:hidden rounded-lg border border-wel-cream bg-card p-2">
             <div className="rounded overflow-hidden h-56">
-              <img src={teamPhoto} alt="Équipe en réunion autour d'une table, échangeant sur l'égalité professionnelle" className="w-full h-full object-cover object-center" loading="lazy" width={1376} height={768} />
+              <img src={teamPhoto} alt="Femme consultant les résultats de son diagnostic égalité professionnelle sur une tablette" className="w-full h-full object-cover object-[center_8%]" loading="lazy" width={1535} height={1024} />
             </div>
           </div>
 
@@ -57,7 +57,7 @@ const WhySection = () => {
 
           <div className="hidden sm:block rounded-lg border border-wel-cream bg-card p-2">
             <div className="rounded overflow-hidden h-56 md:h-72">
-              <img src={teamPhoto} alt="Équipe en réunion autour d'une table, échangeant sur l'égalité professionnelle" className="w-full h-full object-cover object-center" loading="lazy" width={1376} height={768} />
+              <img src={teamPhoto} alt="Femme consultant les résultats de son diagnostic égalité professionnelle sur une tablette" className="w-full h-full object-cover object-[center_30%]" loading="lazy" width={1535} height={1024} />
             </div>
           </div>
         </div>
