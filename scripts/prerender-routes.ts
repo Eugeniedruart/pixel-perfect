@@ -53,7 +53,7 @@ export const routeDefinitions: RouteDefinition[] = [
     path: "/offres",
     meta: {
       fr: {
-        title: "Nos offres | WEL – Women Equity Label",
+        title: "Label, formation et conseil en égalité femmes-hommes | WEL",
         description:
           "Labellisation, formations, enquêtes internes et missions de conseil : les offres WEL pour structurer l'égalité professionnelle femmes-hommes.",
       },
@@ -83,7 +83,7 @@ export const routeDefinitions: RouteDefinition[] = [
     path: "/methodologie",
     meta: {
       fr: {
-        title: "Méthodologie du label | WEL – Women Equity Label",
+        title: "Méthodologie du label égalité professionnelle femmes-hommes | WEL",
         description:
           "Découvrez la méthodologie WEL : diagnostic, analyse, labellisation et plan d'action pour progresser sur l'égalité professionnelle.",
       },
@@ -143,7 +143,7 @@ export const routeDefinitions: RouteDefinition[] = [
     path: "/entreprises-labellisees",
     meta: {
       fr: {
-        title: "Les entreprises labellisées WEL – Women Equity Label",
+        title: "Entreprises labellisées égalité femmes-hommes | WEL",
         description:
           "Découvrez les entreprises labellisées WEL : des organisations qui mesurent, structurent et font progresser l'égalité professionnelle femmes-hommes.",
       },
