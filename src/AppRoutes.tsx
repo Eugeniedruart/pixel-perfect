@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Index from "./pages/Index.tsx";
 import Contact from "./pages/Contact.tsx";
 import Methodologie from "./pages/Methodologie.tsx";
@@ -21,6 +21,11 @@ const AppRoutes = () => (
     <Route path="/mentions-legales" element={<MentionsLegales />} />
     <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
     <Route path="/gestion-cookies" element={<GestionCookies />} />
+    {/* Redirects for old URLs still indexed by search engines.
+        Inside the language-prefixed basename, so they work as /en/labellisation, etc. */}
+    <Route path="/labellisation" element={<Navigate to="/methodologie" replace />} />
+    <Route path="/a-propos" element={<Navigate to="/" replace />} />
+    <Route path="/configuration" element={<Navigate to="/" replace />} />
     {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
     <Route path="*" element={<NotFound />} />
   </Routes>
